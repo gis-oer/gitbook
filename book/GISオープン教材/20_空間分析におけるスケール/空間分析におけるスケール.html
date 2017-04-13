@@ -1,0 +1,1050 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>♦ 空間分析におけるスケール · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../21_空間分析におけるスケール/空間分析におけるスケール.md" />
+    
+    
+    <link rel="prev" href="../19_空間相関分析/空間相関分析.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    GISオープン教材について
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    デスクトップGIS教材
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                    
+                    ♦ QGISビギナーズマニュアル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                    
+                    ♦ GRASSビギナーズマニュアル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../06_リモートセンシングとその解析/リモートセンシングとその解析.html">
+            
+                <a href="../06_リモートセンシングとその解析/リモートセンシングとその解析.html">
+            
+                    
+                    ♦ リモートセンシングとその解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html">
+            
+                <a href="../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html">
+            
+                    
+                    ♦ 既存データの地図データと属性データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../08_空間データ/空間データ.html">
+            
+                <a href="../08_空間データ/空間データ.html">
+            
+                    
+                    ♦ 空間データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../09_空間データベース/空間データベース.html">
+            
+                <a href="../09_空間データベース/空間データベース.html">
+            
+                    
+                    ♦ 空間データベース
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../10_空間データの統合・修正/空間データの統合・修正.html">
+            
+                <a href="../10_空間データの統合・修正/空間データの統合・修正.html">
+            
+                    
+                    ♦ 空間データの統合・修正
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../11_基本的な空間解析/基本的な空間解析.html">
+            
+                <a href="../11_基本的な空間解析/基本的な空間解析.html">
+            
+                    
+                    ♦ 基本的な空間解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../12_ネットワーク分析/ネットワーク分析.html">
+            
+                <a href="../12_ネットワーク分析/ネットワーク分析.html">
+            
+                    
+                    ♦ ネットワーク分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../13_領域分析/領域分析.html">
+            
+                <a href="../13_領域分析/領域分析.html">
+            
+                    
+                    ♦ 領域分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="../13_領域分析/領域分析.html">
+            
+                <a href="../13_領域分析/領域分析.html#バッファによる領域分析">
+            
+                    
+                    バッファによる領域分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.2" data-path="../13_領域分析/領域分析.html">
+            
+                <a href="../13_領域分析/領域分析.html#ボロノイ分割による領域分析">
+            
+                    
+                    ボロノイ分割による領域分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.3" data-path="../13_領域分析/領域分析.html">
+            
+                <a href="../13_領域分析/領域分析.html#ドローネ三角形">
+            
+                    
+                    ドローネ三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../14_点データの分析/点データの分析.html">
+            
+                <a href="../14_点データの分析/点データの分析.html">
+            
+                    
+                    ♦ 点データの分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="../14_点データの分析/点データの分析.html">
+            
+                <a href="../14_点データの分析/点データの分析.html#メッシュによる点密度の表示">
+            
+                    
+                    メッシュによる点密度の表示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.2" data-path="../14_点データの分析/点データの分析.html">
+            
+                <a href="../14_点データの分析/点データの分析.html#行政区内の点密度">
+            
+                    
+                    行政区内の点密度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.3" data-path="../14_点データの分析/点データの分析.html">
+            
+                <a href="../14_点データの分析/点データの分析.html#カーネル密度推計">
+            
+                    
+                    カーネル密度推計
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                    
+                    ♦ ラスタデータの分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.12.1" data-path="../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../15_ラスタデータの分析/ラスタデータの分析.html#数値標高モデルの変換">
+            
+                    
+                    数値標高モデルの変換
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.2" data-path="../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../15_ラスタデータの分析/ラスタデータの分析.html#数値標高モデルの視覚的分析">
+            
+                    
+                    数値標高モデルの視覚的分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.3" data-path="../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../15_ラスタデータの分析/ラスタデータの分析.html#基本的な統計量の確認">
+            
+                    
+                    基本的な統計量の確認
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.4" data-path="../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../15_ラスタデータの分析/ラスタデータの分析.html#ベクタの処理とラスタの集計の組み合わせ分析">
+            
+                    
+                    ベクタの処理とラスタの集計の組み合わせ分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.5" data-path="../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../15_ラスタデータの分析/ラスタデータの分析.html#フィルタリング">
+            
+                    
+                    フィルタリング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.6" data-path="../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../15_ラスタデータの分析/ラスタデータの分析.html#ラスタ演算">
+            
+                    
+                    ラスタ演算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.7" data-path="../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../15_ラスタデータの分析/ラスタデータの分析.html#流域解析">
+            
+                    
+                    流域解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.8" data-path="../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../15_ラスタデータの分析/ラスタデータの分析.html#コストパス解析">
+            
+                    
+                    コストパス解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../16_傾向面分析/傾向面分析.html">
+            
+                <a href="../16_傾向面分析/傾向面分析.html">
+            
+                    
+                    ♦ 傾向面分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../17_空間的自己相関/空間的自己相関.html">
+            
+                <a href="../17_空間的自己相関/空間的自己相関.html">
+            
+                    
+                    ♦ 空間的自己相関
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../18_空間補間/空間補間.html">
+            
+                <a href="../18_空間補間/空間補間.html">
+            
+                    
+                    ♦ 空間補間
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.1" data-path="../18_空間補間/空間補間.html">
+            
+                <a href="../18_空間補間/空間補間.html#不整三角網">
+            
+                    
+                    不整三角網
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.2" data-path="../18_空間補間/空間補間.html">
+            
+                <a href="../18_空間補間/空間補間.html#逆距離加重法">
+            
+                    
+                    逆距離加重法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.3" data-path="../18_空間補間/空間補間.html">
+            
+                <a href="../18_空間補間/空間補間.html#スプライン補間">
+            
+                    
+                    スプライン補間
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.4" data-path="../18_空間補間/空間補間.html">
+            
+                <a href="../18_空間補間/空間補間.html#クリギング">
+            
+                    
+                    クリギング
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../19_空間相関分析/空間相関分析.html">
+            
+                <a href="../19_空間相関分析/空間相関分析.html">
+            
+                    
+                    ♦ 空間相関分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.17" data-path="空間分析におけるスケール.html">
+            
+                <a href="空間分析におけるスケール.html">
+            
+                    
+                    ♦ 空間分析におけるスケール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../21_空間分析におけるスケール/空間分析におけるスケール.md">
+            
+                <span>
+            
+                    
+                    ♦ 視覚的伝達
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    WEB GIS教材
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../インターネットの活用に関する教材/CartoDBでWebMAPを作成.CartoDBでWebMAPを作成md">
+            
+                <span>
+            
+                    
+                    ♦ CartoDBでWebMAPを作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../インターネットの活用に関する教材/Cesiumによるデータの可視化/Cesiumによるデータの可視化.html">
+            
+                <a href="../インターネットの活用に関する教材/Cesiumによるデータの可視化/Cesiumによるデータの可視化.html">
+            
+                    
+                    ♦ Cesiumによるデータの可視化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../インターネットの活用に関する教材/czml入門/czml入門.html">
+            
+                <a href="../インターネットの活用に関する教材/czml入門/czml入門.html">
+            
+                    
+                    ♦ czml入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../インターネットの活用に関する教材/GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.html">
+            
+                <a href="../インターネットの活用に関する教材/GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.html">
+            
+                    
+                    ♦ GitHubビギナーズマニュアル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../インターネットの活用に関する教材/Google マイマップの活用/Google マイマップの活用.md">
+            
+                <span>
+            
+                    
+                    ♦ Google マイマップの活用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../インターネットの活用に関する教材/OpenStreetMAPとクライシスマッピング/OpenStreetMAPとクライシスマッピング.html">
+            
+                <a href="../インターネットの活用に関する教材/OpenStreetMAPとクライシスマッピング/OpenStreetMAPとクライシスマッピング.html">
+            
+                    
+                    ♦ OpenStreetMAPとクライシスマッピング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../インターネットの活用に関する教材/QGISとLeafLetの連携/QGISとLeafLetの連携.html">
+            
+                <a href="../インターネットの活用に関する教材/QGISとLeafLetの連携/QGISとLeafLetの連携.html">
+            
+                    
+                    ♦ QGISとLeafLetの連携
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../インターネットの活用に関する教材/地理院地図の活用/地理院地図の活用.html">
+            
+                <a href="../インターネットの活用に関する教材/地理院地図の活用/地理院地図の活用.html">
+            
+                    
+                    ♦ 地理院地図の活用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    実習コース
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../実習課題/実習課題.html">
+            
+                <a href="../実習課題/実習課題.html">
+            
+                    
+                    ♦ 実習課題
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../実習課題/実習課題.html">
+            
+                <a href="../実習課題/実習課題.html#第一回課題（20160929）">
+            
+                    
+                    第一回課題（20160929）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../実習課題/実習課題.html">
+            
+                <a href="../実習課題/実習課題.html#第二回課題（20161006）">
+            
+                    
+                    第二回課題（20161006）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../実習課題/実習課題.html">
+            
+                <a href="../実習課題/実習課題.html#第三回課題（20161013）">
+            
+                    
+                    第三回課題（20161006）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../実習課題/実習課題.html">
+            
+                <a href="../実習課題/実習課題.html#第四回課題（20161020）">
+            
+                    
+                    第四回課題（20161020）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="../実習課題/実習課題.html">
+            
+                <a href="../実習課題/実習課題.html#第五回課題（20161027）">
+            
+                    
+                    第五回課題（20161027）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.6" data-path="../実習課題/実習課題.html">
+            
+                <a href="../実習課題/実習課題.html#第六回課題（20161108）">
+            
+                    
+                    第六回課題（20161108）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    その他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../利用規約.html">
+            
+                <a href="../../利用規約.html">
+            
+                    
+                    利用規約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../教材編集について.html">
+            
+                <a href="../教材編集について.html">
+            
+                    
+                    教材編集について
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../その他のライセンスについて.html">
+            
+                <a href="../その他のライセンスについて.html">
+            
+                    
+                    その他のライセンスについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >♦ 空間分析におけるスケール</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7A7A;&#x9593;&#x5206;&#x6790;&#x306B;&#x304A;&#x3051;&#x308B;&#x30B9;&#x30B1;&#x30FC;&#x30EB;">&#x7A7A;&#x9593;&#x5206;&#x6790;&#x306B;&#x304A;&#x3051;&#x308B;&#x30B9;&#x30B1;&#x30FC;&#x30EB;</h1><p>&#x672C;&#x6559;&#x6750;&#x306F;&#x3001;&#x300C;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;&#x300D;&#x306E;&#x5B9F;&#x7FD2;&#x7528;&#x6559;&#x6750;&#x3067;&#x3059;&#x3002;GIS&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x3092;&#x7528;&#x3044;&#x305F;&#x3001;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;&#x306E;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x306B;&#x306F;&#x3001;&#x7121;&#x511F;&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;QGIS&#x3068;GRASS&#x3092;&#x7528;&#x3044;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p><p>&#x8B1B;&#x7FA9;&#x7528;&#x6559;&#x6750;&#x3068;&#x3057;&#x3066;&#x3001;<a href="http://curricula.csis.u-tokyo.ac.jp/slide/4.html" target="_blank">&#x5730;&#x7406;&#x60C5;&#x5831;&#x79D1;&#x5B66;&#x6559;&#x80B2;&#x7528;&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#xFF08;GISc&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#xFF09;</a>&#x306E;4&#x7AE0;&#x304C;&#x53C2;&#x8003;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p><p>&#x672C;&#x6559;&#x6750;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x969B;&#x306F;&#x3001;<a href="../../../master/&#x5229;&#x7528;&#x898F;&#x7D04;.md">&#x5229;&#x7528;&#x898F;&#x7D04;</a>&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x3044;&#x305F;&#x3060;&#x304D;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x6761;&#x4EF6;&#x306B;&#x540C;&#x610F;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x306E;&#x307F;&#x3054;&#x5229;&#x7528;&#x4E0B;&#x3055;&#x3044;&#x3002;</p><h2 id="menu"><strong>Menu</strong></h2><ul><li><a href="#GeoDa&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">GeoDa&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</a>
+</li>
+<li><a href="#local%20moran&#x2019;s%20I%20&#x306E;&#x7B97;&#x51FA;">local moran&#x2019;s I &#x306E;&#x7B97;&#x51FA;</a>
+</li></ul>
+<p><strong>&#x4F7F;&#x7528;&#x30C7;&#x30FC;&#x30BF;</strong></p><ul><li>GeoDa sample data &#x300C;clumbs.shp&#x300D;&#x3092;&#x5229;&#x7528;&#x3000;&#x30B7;&#x30AB;&#x30B4;&#x5927;&#x5B66;  
+&#xFF08;<a href="https://spatial.uchicago.edu/sample-data&#xFF09;" target="_blank">https://spatial.uchicago.edu/sample-data&#xFF09;</a>
+</li></ul>
+<p><strong>&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#x6559;&#x6750;</strong></p><p>&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x306F;<a href="../../../../raw/master/GIS&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x6559;&#x6750;/20_&#x7A7A;&#x9593;&#x5206;&#x6790;&#x306B;&#x304A;&#x3051;&#x308B;&#x30B9;&#x30B1;&#x30FC;&#x30EB;/&#x7A7A;&#x9593;&#x5206;&#x6790;&#x306B;&#x304A;&#x3051;&#x308B;&#x30B9;&#x30B1;&#x30FC;&#x30EB;.pptx">&#x3053;&#x3061;&#x3089;</a></p><hr><h2 id="geoda&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">GeoDa&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;<a name="GeoDa&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;"></a></h2><p><img alt="GeoDa" src="pic/20pic_1.png">
+<a href="https://geodacenter.asu.edu/" target="_blank">GeoDa&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x30B5;&#x30A4;&#x30C8;</a> &#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3057;&#x3066;&#x3001;GeoDa&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x3002;</p><h3 id="geoda&#x306E;&#x8D77;&#x52D5;&#x3068;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;">GeoDa&#x306E;&#x8D77;&#x52D5;&#x3068;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</h3><p><img alt="GeoDa" src="pic/20pic_2.png"></p><p>GeoDa&#x3092;&#x8D77;&#x52D5;&#x3057;&#x3001;File&gt;New project From&gt;Shape file&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#xFF08;&#x3082;&#x3057;&#x304F;&#x306F;&#x3001;&#x8D64;&#x67A0;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#xFF09;columbs.shp &#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;</p><h2 id="local-morans-i-&#x306E;&#x7B97;&#x51FA;">local moran&#x2019;s I &#x306E;&#x7B97;&#x51FA;<a name="local moran&#x2019;s I &#x306E;&#x7B97;&#x51FA;"></a></h2><p><img alt="GeoDa" src="pic/20pic_3.png">
+Local Moran&#x2019;s I &#x3092;&#x8A08;&#x7B97;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x3001;&#x91CD;&#x307F;&#x4ED8;&#x3051;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;
+Tool &gt; Weight &gt; Create &#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF08;&#x3082;&#x3057;&#x304F;&#x306F;&#x8D64;&#x67A0;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF09;&#x3002;
+&#x65B0;&#x898F;&#x306B;&#x3000;weights File ID Variable&#x3000;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3001;&#x4EFB;&#x610F;&#x306E;&#x9805;&#x76EE;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;create&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#xFF08;.gal&#x3082;&#x3057;&#x304F;&#x306F;.gwt&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;shape&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3068;&#x540C;&#x3058;&#x5834;&#x6240;&#x306B;&#x4FDD;&#x5B58;&#x3059;&#x308B;&#xFF09;&#x3002;</p><p><img alt="GeoDa" src="pic/20pic_4.png">
+Space&gt;Univate Local Morans&#x2019;s I &#x3092;&#x9078;&#x629E;&#x3057;&#x3001;CRIME &#x3092;&#x9078;&#x629E;&#x3059;&#x308B;(1000&#x4E16;&#x5E2F;&#x3042;&#x305F;&#x308A;&#x306E;&#x4F4F;&#x5C45;&#x4FB5;&#x5165;&#x7A83;&#x76D7;&#x3068;&#x8ECA;&#x4E21;&#x76D7;&#x96E3;&#x306E;Local Morans I &#x3092;&#x7B97;&#x51FA;&#x3059;&#x308B;)&#x3002;</p><p>&#x51FA;&#x529B;&#x3059;&#x308B;&#x6563;&#x5E03;&#x56F3;&#x3084;&#x5730;&#x56F3;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x300C;OK&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;</p><p><img alt="GeoDa" src="pic/20pic_5.png">
+1000&#x4E16;&#x5E2F;&#x3042;&#x305F;&#x308A;&#x306E;&#x4F4F;&#x5C45;&#x4FB5;&#x5165;&#x7A83;&#x76D7;&#x3068;&#x8ECA;&#x4E21;&#x76D7;&#x96E3;&#x306E;Local Moran&#x2019;s I &#x304C;&#x7B97;&#x51FA;&#x3067;&#x304D;&#x305F;&#x3002;</p><p><a href="(&#x7A7A;&#x9593;&#x5206;&#x6790;&#x306B;&#x304A;&#x3051;&#x308B;&#x30B9;&#x30B1;&#x30FC;&#x30EB;.md#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a>)</p><p><strong>&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;</strong></p><p>&#x672C;&#x6559;&#x6750;&#x3067;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x30AD;&#x30E3;&#x30D7;&#x30C1;&#x30E3;&#x753B;&#x50CF;&#x306E;&#x51FA;&#x5178;&#x3084;&#x30AF;&#x30EC;&#x30B8;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;.html">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;</a>&#x3088;&#x308A;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../19_空間相関分析/空間相関分析.html" class="navigation navigation-prev " aria-label="Previous page: ♦ 空間相関分析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../21_空間分析におけるスケール/空間分析におけるスケール.md" class="navigation navigation-next " aria-label="Next page: ♦ 視覚的伝達">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"♦ 空間分析におけるスケール","level":"1.2.17","depth":2,"next":{"title":"♦ 視覚的伝達","level":"1.2.18","depth":2,"path":"GISオープン教材/21_空間分析におけるスケール/空間分析におけるスケール.md","ref":"GISオープン教材/21_空間分析におけるスケール/空間分析におけるスケール.md","articles":[]},"previous":{"title":"♦ 空間相関分析","level":"1.2.16","depth":2,"path":"GISオープン教材/19_空間相関分析/空間相関分析.md","ref":"GISオープン教材/19_空間相関分析/空間相関分析.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"GISオープン教材/20_空間分析におけるスケール/空間分析におけるスケール.md","mtime":"2016-10-05T00:14:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-08T02:51:17.797Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
