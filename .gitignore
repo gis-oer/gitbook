@@ -1,4 +1,4 @@
 *.pptx
 *.md
 .travis.yml
-./book_3.1/prh
+/book_3.1/prh
