@@ -2,3 +2,4 @@
 *.md
 .travis.yml
 /book_3.1/prh
+.DS_Store
