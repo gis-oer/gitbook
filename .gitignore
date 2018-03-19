@@ -1,5 +1,6 @@
 *.pptx
 *.md
 .travis.yml
-/book_3.1/prh
+/book/prh
 .DS_Store
+*.txt
