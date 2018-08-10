@@ -1,0 +1,3201 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ArcGIS API for JavaScript · GIS実習オープン教材</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="GIS-Open Educational Resources WG, CC BY-SA 4.0">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../OpenLayers/OpenLayers.html" />
+    
+    
+    <link rel="prev" href="../Leaflet/Leaflet.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../../img/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../../img/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../../img/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon.ico">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    GISオープン教材について
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    GIS実習用基礎教材一覧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../01_GISの基本概念/GISの基本概念.html">
+            
+                <a href="../../01_GISの基本概念/GISの基本概念.html">
+            
+                    
+                    GISの基本概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../01_GISの基本概念/GISの基本概念.html">
+            
+                <a href="../../01_GISの基本概念/GISの基本概念.html#地理情報システムとは">
+            
+                    
+                    地理情報システムとは
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../01_GISの基本概念/GISの基本概念.html">
+            
+                <a href="../../01_GISの基本概念/GISの基本概念.html#ソフトウェア">
+            
+                    
+                    ソフトウェア
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../01_GISの基本概念/GISの基本概念.html">
+            
+                <a href="../../01_GISの基本概念/GISの基本概念.html#地理情報データ">
+            
+                    
+                    地理情報データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../01_GISの基本概念/GISの基本概念.html">
+            
+                <a href="../../01_GISの基本概念/GISの基本概念.html#ベクトルデータ">
+            
+                    
+                    ベクトルデータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../01_GISの基本概念/GISの基本概念.html">
+            
+                <a href="../../01_GISの基本概念/GISの基本概念.html#ラスタデータ">
+            
+                    
+                    ラスタデータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../01_GISの基本概念/GISの基本概念.html">
+            
+                <a href="../../01_GISの基本概念/GISの基本概念.html#地物とレイヤ構造">
+            
+                    
+                    地物とレイヤ構造
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../01_GISの基本概念/GISの基本概念.html">
+            
+                <a href="../../01_GISの基本概念/GISの基本概念.html#測地系と座標系">
+            
+                    
+                    測地系と座標系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../01_GISの基本概念/GISの基本概念.html">
+            
+                <a href="../../01_GISの基本概念/GISの基本概念.html#ウェブと地理情報システム">
+            
+                    
+                    ウェブと地理情報システム
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                    
+                    QGISビギナーズマニュアル
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#QGISとは？">
+            
+                    
+                    QGISとは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#インストールする">
+            
+                    
+                    インストールする
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#起動する">
+            
+                    
+                    起動する
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#ウインドウの確認">
+            
+                    
+                    ウインドウの確認
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#各種ボタンについて">
+            
+                    
+                    各種ボタンについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#データの読み込み">
+            
+                    
+                    データの読み込み
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#機能説明">
+            
+                    
+                    機能説明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#属性テーブル">
+            
+                    
+                    属性テーブル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#プロパティ">
+            
+                    
+                    プロパティ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#Python入門">
+            
+                    
+                    Python入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#データの保存形式">
+            
+                    
+                    データの保存形式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#プラグイン">
+            
+                    
+                    プラグイン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#地図のレイアウト">
+            
+                    
+                    地図のレイアウト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html">
+            
+                <a href="../../QGISビギナーズマニュアル/QGISビギナーズマニュアル.html#参考ページの紹介">
+            
+                    
+                    参考ページの紹介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                    
+                    GRASSビギナーズマニュアル
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                    
+                    GRASS GISとは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#インストール">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#ファイル形式について">
+            
+                    
+                    ファイル形式について
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#QGISでマップセットの作成">
+            
+                    
+                    QGISでマップセットの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#データの読み込み">
+            
+                    
+                    データの読み込み
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#マップセットをGRASSで表示する">
+            
+                    
+                    マップセットをGRASSで表示する
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#GRASSにデータを追加する">
+            
+                    
+                    GRASSにデータを追加する
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#機能説明">
+            
+                    
+                    機能説明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#コマンドコンソールとモジュールツリー">
+            
+                    
+                    コマンドコンソールとモジュールツリー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#レイヤの色分け">
+            
+                    
+                    レイヤの色分け
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#3Dビュー">
+            
+                    
+                    3Dビュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#属性テーブル">
+            
+                    
+                    属性テーブル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#フィールド演算">
+            
+                    
+                    フィールド演算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#レイアウト">
+            
+                    
+                    レイアウト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html">
+            
+                <a href="../../GRASSビギナーズマニュアル/GRASSビギナーズマニュアル.html#参考ページの紹介">
+            
+                    
+                    参考ページの紹介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html">
+            
+                <a href="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html">
+            
+                    
+                    リモートセンシングとその解析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html">
+            
+                <a href="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html#衛星画像データのダウンロード">
+            
+                    
+                    衛星画像データのダウンロード
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html">
+            
+                <a href="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html#MultiSpecのインストール">
+            
+                    
+                    MultiSpecのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html">
+            
+                <a href="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html#MultiSpecの起動">
+            
+                    
+                    MultiSpecの起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html">
+            
+                <a href="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html#RGB合成">
+            
+                    
+                    RGB合成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html">
+            
+                <a href="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html#NDVI">
+            
+                    
+                    NDVI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html">
+            
+                <a href="../../06_リモートセンシングとその解析/リモートセンシングとその解析.html#教師なし分類と教師つき分類">
+            
+                    
+                    教師なし分類と
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html">
+            
+                <a href="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html">
+            
+                    
+                    既存データの地図データと属性データ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html">
+            
+                <a href="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html#国土交通省のGISデータ基盤地図情報(国土地理院">
+            
+                    
+                    国土交通省のGISデータ基盤地図情報(国土地理院)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html">
+            
+                <a href="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html#国土交通省のGISデータ国土数値情報">
+            
+                    
+                    国土交通省のGISデータ国土数値情報
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html">
+            
+                <a href="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html#環境省のGISデータ">
+            
+                    
+                    環境省のGISデータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html">
+            
+                <a href="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html#総務省のGISデータ">
+            
+                    
+                    総務省のGISデータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html">
+            
+                <a href="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html#その他のGISデータ">
+            
+                    
+                    その他のGISデータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html">
+            
+                <a href="../../07_既存データの地図データと属性データ/既存データの地図データと属性データ.html#オープンデータ">
+            
+                    
+                    オープンデータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../08_空間データ/空間データ.html">
+            
+                <a href="../../08_空間データ/空間データ.html">
+            
+                    
+                    空間データ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../08_空間データ/空間データ.html">
+            
+                <a href="../../08_空間データ/空間データ.html#空間座標の変換(測地系変換、投影変換">
+            
+                    
+                    空間座標の変換(測地系変換、投影変換)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../08_空間データ/空間データ.html">
+            
+                <a href="../../08_空間データ/空間データ.html#ジオリファレンス">
+            
+                    
+                    ジオリファレンス
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../08_空間データ/空間データ.html">
+            
+                <a href="../../08_空間データ/空間データ.html#ジオコーディング">
+            
+                    
+                    ジオコーディング
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../09_空間データベース/空間データベース.html">
+            
+                <a href="../../09_空間データベース/空間データベース.html">
+            
+                    
+                    空間データベース
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../09_空間データベース/空間データベース.html">
+            
+                <a href="../../09_空間データベース/空間データベース.html#PostGISとは？">
+            
+                    
+                    PostGISとは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../09_空間データベース/空間データベース.html">
+            
+                <a href="../../09_空間データベース/空間データベース.html#pgAdmin_IIIの起動">
+            
+                    
+                    pgAdmin_IIIの起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../09_空間データベース/空間データベース.html">
+            
+                <a href="../../09_空間データベース/空間データベース.html#データベースの作成とテーブルの表示">
+            
+                    
+                    データベースの作成とテーブルの表示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../09_空間データベース/空間データベース.html">
+            
+                <a href="../../09_空間データベース/空間データベース.html#よく使うSQL文">
+            
+                    
+                    よく使うSQL文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../09_空間データベース/空間データベース.html">
+            
+                <a href="../../09_空間データベース/空間データベース.html#属性検索">
+            
+                    
+                    属性検索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../../09_空間データベース/空間データベース.html">
+            
+                <a href="../../09_空間データベース/空間データベース.html#空間検索">
+            
+                    
+                    空間検索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../../09_空間データベース/空間データベース.html">
+            
+                <a href="../../09_空間データベース/空間データベース.html#空間結合">
+            
+                    
+                    空間結合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../../09_空間データベース/空間データベース.html">
+            
+                <a href="../../09_空間データベース/空間データベース.html#23区の駅密度を計算しQGISで表示">
+            
+                    
+                    23区の駅密度を計算しQGISで表示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../10_空間データの統合・修正/空間データの統合・修正.html">
+            
+                <a href="../../10_空間データの統合・修正/空間データの統合・修正.html">
+            
+                    
+                    空間データの統合・修正
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../10_空間データの統合・修正/空間データの統合・修正.html">
+            
+                <a href="../../10_空間データの統合・修正/空間データの統合・修正.html#ラスタのモザイクとクリップ">
+            
+                    
+                    ラスタのモザイクとクリップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../10_空間データの統合・修正/空間データの統合・修正.html">
+            
+                <a href="../../10_空間データの統合・修正/空間データの統合・修正.html#等高線の抽出">
+            
+                    
+                    等高線の抽出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../10_空間データの統合・修正/空間データの統合・修正.html">
+            
+                <a href="../../10_空間データの統合・修正/空間データの統合・修正.html#ラスタをベクタへ">
+            
+                    
+                    ラスタをベクタへ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../../10_空間データの統合・修正/空間データの統合・修正.html">
+            
+                <a href="../../10_空間データの統合・修正/空間データの統合・修正.html#新規ベクタの作成">
+            
+                    
+                    新規ベクタの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../../10_空間データの統合・修正/空間データの統合・修正.html">
+            
+                <a href="../../10_空間データの統合・修正/空間データの統合・修正.html#ベクタの修正">
+            
+                    
+                    ベクタの修正
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../../10_空間データの統合・修正/空間データの統合・修正.html">
+            
+                <a href="../../10_空間データの統合・修正/空間データの統合・修正.html#ベクタをラスタへ">
+            
+                    
+                    ベクタをラスタへ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../11_基本的な空間解析/基本的な空間解析.html">
+            
+                <a href="../../11_基本的な空間解析/基本的な空間解析.html">
+            
+                    
+                    基本的な空間解析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../11_基本的な空間解析/基本的な空間解析.html">
+            
+                <a href="../../11_基本的な空間解析/基本的な空間解析.html#基本量の測定と空間オブジェクトの選択">
+            
+                    
+                    基本量の測定と空間オブジェクトの選択
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../11_基本的な空間解析/基本的な空間解析.html">
+            
+                <a href="../../11_基本的な空間解析/基本的な空間解析.html#その他の空間データの操作">
+            
+                    
+                    その他の空間データの操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../11_基本的な空間解析/基本的な空間解析.html">
+            
+                <a href="../../11_基本的な空間解析/基本的な空間解析.html#オーバーレイ分析">
+            
+                    
+                    オーバーレイ分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../12_ネットワーク分析/ネットワーク分析.html">
+            
+                <a href="../../12_ネットワーク分析/ネットワーク分析.html">
+            
+                    
+                    ネットワーク分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../12_ネットワーク分析/ネットワーク分析.html">
+            
+                <a href="../../12_ネットワーク分析/ネットワーク分析.html#ネットワーク分析とは?">
+            
+                    
+                    ネットワーク分析とは?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../12_ネットワーク分析/ネットワーク分析.html">
+            
+                <a href="../../12_ネットワーク分析/ネットワーク分析.html#最短距離検索">
+            
+                    
+                    最短距離検索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../12_ネットワーク分析/ネットワーク分析.html">
+            
+                <a href="../../12_ネットワーク分析/ネットワーク分析.html#ネットの分割">
+            
+                    
+                    ネットの分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../../12_ネットワーク分析/ネットワーク分析.html">
+            
+                <a href="../../12_ネットワーク分析/ネットワーク分析.html#NetworkAnalystToolを用いた分析">
+            
+                    
+                    NetworkAnalystToolを用いた分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../13_領域分析/領域分析.html">
+            
+                <a href="../../13_領域分析/領域分析.html">
+            
+                    
+                    領域分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../13_領域分析/領域分析.html">
+            
+                <a href="../../13_領域分析/領域分析.html#バッファによる領域分析">
+            
+                    
+                    バッファによる領域分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../../13_領域分析/領域分析.html">
+            
+                <a href="../../13_領域分析/領域分析.html#ボロノイ分割による領域分析">
+            
+                    
+                    ボロノイ分割による領域分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../../13_領域分析/領域分析.html">
+            
+                <a href="../../13_領域分析/領域分析.html#ドローネ三角形">
+            
+                    
+                    ドローネ三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../14_点データの分析/点データの分析.html">
+            
+                <a href="../../14_点データの分析/点データの分析.html">
+            
+                    
+                    点データの分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../14_点データの分析/点データの分析.html">
+            
+                <a href="../../14_点データの分析/点データの分析.html#点の分布密度">
+            
+                    
+                    点の分布密度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../../14_点データの分析/点データの分析.html">
+            
+                <a href="../../14_点データの分析/点データの分析.html#メッシュによる点密度の表示">
+            
+                    
+                    メッシュによる点密度の表示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../../14_点データの分析/点データの分析.html">
+            
+                <a href="../../14_点データの分析/点データの分析.html#行政区内の点密度">
+            
+                    
+                    行政区内の点密度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../../14_点データの分析/点データの分析.html">
+            
+                <a href="../../14_点データの分析/点データの分析.html#カーネル密度推計">
+            
+                    
+                    カーネル密度推計
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="../../14_点データの分析/点データの分析.html">
+            
+                <a href="../../14_点データの分析/点データの分析.html#CrimeStatのインストール">
+            
+                    
+                    CrimeStatのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="../../14_点データの分析/点データの分析.html">
+            
+                <a href="../../14_点データの分析/点データの分析.html#平均最近隣距離法">
+            
+                    
+                    平均最近隣距離法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7" data-path="../../14_点データの分析/点データの分析.html">
+            
+                <a href="../../14_点データの分析/点データの分析.html#K-関数法">
+            
+                    
+                    K-関数法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.8" data-path="../../14_点データの分析/点データの分析.html">
+            
+                <a href="../../14_点データの分析/点データの分析.html#標準偏差距離と標準偏差楕円">
+            
+                    
+                    標準偏差距離と標準偏差楕円
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                    
+                    ラスタデータの分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../../15_ラスタデータの分析/ラスタデータの分析.html#数値標高モデルの変換">
+            
+                    
+                    数値標高モデルの変換
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../../15_ラスタデータの分析/ラスタデータの分析.html#数値標高モデルの視覚的分析">
+            
+                    
+                    数値標高モデルの視覚的分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../../15_ラスタデータの分析/ラスタデータの分析.html#基本的な統計量の確認">
+            
+                    
+                    基本的な統計量の確認
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../../15_ラスタデータの分析/ラスタデータの分析.html#ベクタの処理とラスタの集計の組み合わせ分析">
+            
+                    
+                    ベクタの処理とラスタの集計の組み合わせ分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../../15_ラスタデータの分析/ラスタデータの分析.html#フィルタリング">
+            
+                    
+                    フィルタリング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="../../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../../15_ラスタデータの分析/ラスタデータの分析.html#ラスタ演算">
+            
+                    
+                    ラスタ演算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7" data-path="../../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../../15_ラスタデータの分析/ラスタデータの分析.html#流域解析">
+            
+                    
+                    流域解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.8" data-path="../../15_ラスタデータの分析/ラスタデータの分析.html">
+            
+                <a href="../../15_ラスタデータの分析/ラスタデータの分析.html#コストパス解析">
+            
+                    
+                    コストパス解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../../16_傾向面分析/傾向面分析.html">
+            
+                <a href="../../16_傾向面分析/傾向面分析.html">
+            
+                    
+                    傾向面分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../../16_傾向面分析/傾向面分析.html">
+            
+                <a href="../../16_傾向面分析/傾向面分析.html#SAMのインストール">
+            
+                    
+                    SAMのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../../16_傾向面分析/傾向面分析.html">
+            
+                <a href="../../16_傾向面分析/傾向面分析.html#第1次傾向面分析">
+            
+                    
+                    第1次傾向面分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../../16_傾向面分析/傾向面分析.html">
+            
+                <a href="../../16_傾向面分析/傾向面分析.html#第2次傾向面分析">
+            
+                    
+                    第2次傾向面分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../../17_空間的自己相関/空間的自己相関.html">
+            
+                <a href="../../17_空間的自己相関/空間的自己相関.html">
+            
+                    
+                    空間的自己相関
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../../17_空間的自己相関/空間的自己相関.html">
+            
+                <a href="../../17_空間的自己相関/空間的自己相関.html#CrimeStatのインストール">
+            
+                    
+                    CrimeStatのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../../17_空間的自己相関/空間的自己相関.html">
+            
+                <a href="../../17_空間的自己相関/空間的自己相関.html#Moran’s_I統計量">
+            
+                    
+                    Moran’s_I統計量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../../17_空間的自己相関/空間的自己相関.html">
+            
+                <a href="../../17_空間的自己相関/空間的自己相関.html#Geary's_C統計量">
+            
+                    
+                    Geary's_C統計量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="../../17_空間的自己相関/空間的自己相関.html">
+            
+                <a href="../../17_空間的自己相関/空間的自己相関.html#Join_count統計量">
+            
+                    
+                    Join_count統計量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../../18_空間補間/空間補間.html">
+            
+                <a href="../../18_空間補間/空間補間.html">
+            
+                    
+                    空間補間
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../../18_空間補間/空間補間.html">
+            
+                <a href="../../18_空間補間/空間補間.html#不整三角網">
+            
+                    
+                    不整三角網
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../../18_空間補間/空間補間.html">
+            
+                <a href="../../18_空間補間/空間補間.html#逆距離加重法">
+            
+                    
+                    逆距離加重法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../../18_空間補間/空間補間.html">
+            
+                <a href="../../18_空間補間/空間補間.html#スプライン補間">
+            
+                    
+                    スプライン補間
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../../18_空間補間/空間補間.html">
+            
+                <a href="../../18_空間補間/空間補間.html#クリギング">
+            
+                    
+                    クリギング
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../../19_空間相関分析/空間相関分析.html">
+            
+                <a href="../../19_空間相関分析/空間相関分析.html">
+            
+                    
+                    空間相関分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../../19_空間相関分析/空間相関分析.html">
+            
+                <a href="../../19_空間相関分析/空間相関分析.html#Rのインストールと基礎操作">
+            
+                    
+                    Rのインストールと基礎操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../../19_空間相関分析/空間相関分析.html">
+            
+                <a href="../../19_空間相関分析/空間相関分析.html#空間的自己回帰モデル">
+            
+                    
+                    空間的自己回帰モデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../../19_空間相関分析/空間相関分析.html">
+            
+                <a href="../../19_空間相関分析/空間相関分析.html#基本的な統計量の確認">
+            
+                    
+                    基本的な統計量の確認
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../../19_空間相関分析/空間相関分析.html">
+            
+                <a href="../../19_空間相関分析/空間相関分析.html#空間的誤差自己回帰モデル">
+            
+                    
+                    空間的誤差自己回帰モデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" data-path="../../19_空間相関分析/空間相関分析.html">
+            
+                <a href="../../19_空間相関分析/空間相関分析.html#地理的加重回帰（GWR）">
+            
+                    
+                    地理的加重回帰（GWR）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../../20_空間分析におけるスケール/空間分析におけるスケール.html">
+            
+                <a href="../../20_空間分析におけるスケール/空間分析におけるスケール.html">
+            
+                    
+                    空間分析におけるスケール
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../../20_空間分析におけるスケール/空間分析におけるスケール.html">
+            
+                <a href="../../20_空間分析におけるスケール/空間分析におけるスケール.html#GeoDaのインストール">
+            
+                    
+                    GeoDaのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../../20_空間分析におけるスケール/空間分析におけるスケール.html">
+            
+                <a href="../../20_空間分析におけるスケール/空間分析におけるスケール.html#local_moran’s_Iの算出">
+            
+                    
+                    local_moran’s_Iの算出
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../../21_視覚的伝達/視覚的伝達.html">
+            
+                <a href="../../21_視覚的伝達/視覚的伝達.html">
+            
+                    
+                    視覚的伝達
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../../21_視覚的伝達/視覚的伝達.html">
+            
+                <a href="../../21_視覚的伝達/視覚的伝達.html#属性データの視覚化">
+            
+                    
+                    属性データの視覚化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../../21_視覚的伝達/視覚的伝達.html">
+            
+                <a href="../../21_視覚的伝達/視覚的伝達.html#カルトグラムの作成">
+            
+                    
+                    カルトグラムの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                <a href="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                    
+                    参加型GISと社会貢献
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                <a href="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html#OpenStreetMapとは？">
+            
+                    
+                    OpenStreetMapとは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                <a href="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html#基本操作">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                <a href="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html#編集のルール">
+            
+                    
+                    編集のルール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.4" data-path="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                <a href="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html#アカウントの取得">
+            
+                    
+                    アカウントの取得
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.5" data-path="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                <a href="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html#OSMの編集">
+            
+                    
+                    OSMの編集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.6" data-path="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                <a href="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html#ローカル編集">
+            
+                    
+                    ローカル編集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.7" data-path="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                <a href="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html#データを利用する">
+            
+                    
+                    データを利用する
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.8" data-path="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                <a href="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html#OpenStreetMapと社会貢献">
+            
+                    
+                    OpenStreetMapと社会貢献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.9" data-path="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                <a href="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html#クライシスマッピングとは？">
+            
+                    
+                    クライシスマッピングとは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.10" data-path="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                <a href="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html#クライシスマッピングの歴史">
+            
+                    
+                    クライシスマッピングの歴史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.11" data-path="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html">
+            
+                <a href="../../26_参加型GISと社会貢献/参加型GISと社会貢献.html#OSMを利用したクライシスマッピング">
+            
+                    
+                    OSMを利用したクライシスマッピング
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../../python初級/python初級.html">
+            
+                <a href="../../python初級/python初級.html">
+            
+                    
+                    python初級
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    インターネットの活用に関する教材
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../Carto/Carto.html">
+            
+                <a href="../Carto/Carto.html">
+            
+                    
+                    Carto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../Cesium/Cesium.html">
+            
+                <a href="../Cesium/Cesium.html">
+            
+                    
+                    Cesium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../Googleマイマップ/Googleマイマップ.html">
+            
+                <a href="../Googleマイマップ/Googleマイマップ.html">
+            
+                    
+                    Googleマイマップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../Leaflet/Leaflet.html">
+            
+                <a href="../Leaflet/Leaflet.html">
+            
+                    
+                    Leaflet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.5" data-path="arcgisapi4js.html">
+            
+                <a href="arcgisapi4js.html">
+            
+                    
+                    ArcGIS API for JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../OpenLayers/OpenLayers.html">
+            
+                <a href="../OpenLayers/OpenLayers.html">
+            
+                    
+                    OpenLayers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../地理院地図/地理院地図.html">
+            
+                <a href="../地理院地図/地理院地図.html">
+            
+                    
+                    地理院地図
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../D3.js/D3.js.html">
+            
+                <a href="../D3.js/D3.js.html">
+            
+                    
+                    D3.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.html">
+            
+                <a href="../GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.html">
+            
+                    
+                    GitHubビギナーズマニュアル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../CZML/CZML.html">
+            
+                <a href="../CZML/CZML.html">
+            
+                    
+                    CZML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../KML/KML.html">
+            
+                <a href="../KML/KML.html">
+            
+                    
+                    KML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../GeoJSON/GeoJSON.html">
+            
+                <a href="../GeoJSON/GeoJSON.html">
+            
+                    
+                    GeoJSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../rastertile/rastertile.html">
+            
+                <a href="../rastertile/rastertile.html">
+            
+                    
+                    地図タイル（ラスタ）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../課題/">
+            
+                <a href="../../課題/">
+            
+                    
+                    課題ページ（全14回）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../課題/1day実習コース/1day実習コース.html">
+            
+                <a href="../../課題/1day実習コース/1day実習コース.html">
+            
+                    
+                    地形環境分析のためのQGIS入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../課題/課題_GIS入門.html">
+            
+                <a href="../../課題/課題_GIS入門.html">
+            
+                    
+                    第1回・GIS入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../課題/課題_既存データの地図データと属性データ.html">
+            
+                <a href="../../課題/課題_既存データの地図データと属性データ.html">
+            
+                    
+                    第2回・既存データの地図データと属性データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../../課題/課題_空間データ.html">
+            
+                <a href="../../課題/課題_空間データ.html">
+            
+                    
+                    第3回・空間データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../../課題/課題_空間データの統合・修正.html">
+            
+                <a href="../../課題/課題_空間データの統合・修正.html">
+            
+                    
+                    第4回・空間データの統合・修正
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../../課題/課題_視覚的伝達.html">
+            
+                <a href="../../課題/課題_視覚的伝達.html">
+            
+                    
+                    第5回・視覚的伝達
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../../課題/課題_基本的な空間解析.html">
+            
+                <a href="../../課題/課題_基本的な空間解析.html">
+            
+                    
+                    第6回・基本的な空間解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../../課題/課題_ネットワーク分析.html">
+            
+                <a href="../../課題/課題_ネットワーク分析.html">
+            
+                    
+                    第7回・ネットワーク分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../../課題/課題_領域分析.html">
+            
+                <a href="../../課題/課題_領域分析.html">
+            
+                    
+                    第8回・領域分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../../課題/課題_点データの分析.html">
+            
+                <a href="../../課題/課題_点データの分析.html">
+            
+                    
+                    第9回・点データの分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../../課題/課題_空間データベース.html">
+            
+                <a href="../../課題/課題_空間データベース.html">
+            
+                    
+                    第10回・空間データベース
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../../課題/課題_ラスタデータの分析.html">
+            
+                <a href="../../課題/課題_ラスタデータの分析.html">
+            
+                    
+                    第11回・ラスタデータの分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../../課題/課題_空間補間.html">
+            
+                <a href="../../課題/課題_空間補間.html">
+            
+                    
+                    第12回・空間補間
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../../課題/課題_リモートセンシングとその解析.html">
+            
+                <a href="../../課題/課題_リモートセンシングとその解析.html">
+            
+                    
+                    第13回・リモートセンシングとその解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../../課題/課題_参加型GISと社会貢献.html">
+            
+                <a href="../../課題/課題_参加型GISと社会貢献.html">
+            
+                    
+                    第14回・参加型GISと社会貢献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../機材の活用/">
+            
+                <a href="../../機材の活用/">
+            
+                    
+                    GISと関連した機材の活用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../機材の活用/UAV/uav.html">
+            
+                <a href="../../機材の活用/UAV/uav.html">
+            
+                    
+                    UAV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../../機材の活用/3Dプリンタ/3Dプリンタ.html">
+            
+                <a href="../../機材の活用/3Dプリンタ/3Dプリンタ.html">
+            
+                    
+                    3Dプリンタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../既存資料/">
+            
+                <a href="../../既存資料/">
+            
+                    
+                    講義用教材
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../../本プロジェクトについて.html">
+            
+                <a href="../../../本プロジェクトについて.html">
+            
+                    
+                    本プロジェクトについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../../利用規約.html">
+            
+                <a href="../../../利用規約.html">
+            
+                    
+                    利用規約
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../教材編集について.html">
+            
+                <a href="../../教材編集について.html">
+            
+                    
+                    教材編集について
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../../その他のライセンスについて.html">
+            
+                <a href="../../その他のライセンスについて.html">
+            
+                    
+                    その他のライセンスについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../../よくある質問とエラー/よくある質問とエラー.html">
+            
+                <a href="../../よくある質問とエラー/よくある質問とエラー.html">
+            
+                    
+                    よくある質問とエラー
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../../用語集/用語集.html">
+            
+                <a href="../../用語集/用語集.html">
+            
+                    
+                    用語集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >ArcGIS API for JavaScript</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="arcgis-api-for-javascript&#x5165;&#x9580;&#x4F5C;&#x6210;&#x4E2D;">ArcGIS API for JavaScript&#x5165;&#x9580;(&#x4F5C;&#x6210;&#x4E2D;)</h1>
+<p>&#x672C;&#x6559;&#x6750;&#x306F;&#x3001;<a href="https://www.esrij.com/products/arcgis-api-for-javascript/" target="_blank">ArcGIS API for JavaScript</a>&#x3092;&#x7528;&#x3044;&#x3066;&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x3067;&#x516C;&#x958B;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x306E;&#x6559;&#x6750;&#x3092;&#x53C2;&#x8003;&#x306B;<a href="https://yamauchi-inochu.github.io/arcgis_api/sample.html" target="_blank">&#x5B8C;&#x6210;&#x4F8B;</a>&#x306E;&#x3088;&#x3046;&#x306A;&#x5730;&#x56F3;&#x304C;&#x4F5C;&#x6210;&#x3067;&#x304D;&#x308C;&#x3070;&#x5B9F;&#x7FD2;&#x5B8C;&#x4E86;&#x3068;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x5B9F;&#x7FD2;&#x3067;&#x306F;&#x3001;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x5730;&#x56F3;&#x306E;&#x516C;&#x958B;&#x306B;GitHub&#x306E;gh-pages&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x5229;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x672C;&#x6559;&#x6750;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x969B;&#x306F;&#x3001;<a href="../../../../../master/&#x5229;&#x7528;&#x898F;&#x7D04;.md">&#x5229;&#x7528;&#x898F;&#x7D04;</a>&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x3044;&#x305F;&#x3060;&#x304D;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x6761;&#x4EF6;&#x306B;&#x540C;&#x610F;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x306E;&#x307F;&#x3054;&#x5229;&#x7528;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
+<h2 id="menu"><strong>Menu</strong></h2>
+<ul>
+<li><a href="#ArcGIS_API_for_JavaScript&#x3068;&#x306F;">ArcGIS API for JavaScript&#x3068;&#x306F;&#xFF1F;</a></li>
+<li><a href="#&#x5730;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">&#x5730;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</a></li>
+</ul>
+<p><strong>&#x4F7F;&#x7528;&#x30C7;&#x30FC;&#x30BF;</strong></p>
+<ul>
+<li><p><a href="https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/flood_assumed_area.kml" target="_blank">&#x8D8A;&#x524D;&#x5E02;&#x60F3;&#x5B9A;&#x6D78;&#x6C34;&#x533A;&#x57DF;</a></p>
+</li>
+<li><p><a href="https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/refuge.kml" target="_blank">&#x8D8A;&#x524D;&#x5E02;&#x907F;&#x96E3;&#x6240;</a></p>
+</li>
+</ul>
+<blockquote>
+<p><a href="http://www.city.echizen.lg.jp/office/010/021/open-data-echizen.html" target="_blank">&#x8D8A;&#x524D;&#x5E02;&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x30C7;&#x30FC;&#x30BF;</a> &#x8D8A;&#x524D;&#x5E02;&#x9632;&#x707D;&#x5B89;&#x5168;&#x8AB2;&#x3000;&#x4E00;&#x6B21;&#x907F;&#x96E3;&#x5834;&#x6240;&#xFF08;&#x98A8;&#x6C34;&#x5BB3;&#xFF09;&#x3001;&#x6D78;&#x6C34;&#x60F3;&#x5B9A;&#x533A;&#x57DF;&#xFF08;&#x98A8;&#x6C34;&#x5BB3;&#xFF09;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x52A0;&#x5DE5;&#x3057;&#x3001;&#x5229;&#x7528;&#x3002;</p>
+</blockquote>
+<p><strong>&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#x6559;&#x6750;</strong></p>
+<p>&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x306F;<a href="../../../../../raw/master/GIS&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x6559;&#x6750;/&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x306E;&#x6D3B;&#x7528;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6559;&#x6750;/arcgisapi4js/arcgisapi4js.pptx">&#x3053;&#x3061;&#x3089;</a></p>
+<hr>
+<h2 id="a-namearcgisapiforjavascript&#x3068;&#x306F;arcgis-api-for-javascript&#x3068;&#x306F;&#xFF1F;a">&lt;a name=&quot;ArcGIS_API_for_JavaScript&#x3068;&#x306F;&gt;ArcGIS API for JavaScript&#x3068;&#x306F;&#xFF1F;&lt;/a&gt;)</h2>
+<p>&#x3000;ArcGIS API for JavaScript&#x3068;&#x306F;&#x3001;ESRI&#x793E;&#x304C;&#x958B;&#x767A;&#x8005;&#x5411;&#x3051;&#x306B;&#x3001;ArcGIS&#x306E;&#x6A5F;&#x80FD;&#x3092;JavaScript&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x63D0;&#x4F9B;&#x3059;&#x308B;&#x3082;&#x306E;&#x3067;&#x3042;&#x308B;&#x3002;ArcGIS API for JavaScript&#x306E;&#x8A73;&#x7D30;&#x306F;&#x3001;<a href="https://www.esrij.com/products/arcgis-api-for-javascript/" target="_blank">ESRI&#x30B8;&#x30E3;&#x30D1;&#x30F3;&#x306E;ArcGIS API for JavaScript </a>&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p><a href="arcgisapi4js.html#menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="&#x5730;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">&#x5730;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h2>
+<p>&#x3000;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;ArcGIS API for JavaScript&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x65B9;&#x6CD5;&#x3084;&#x7E2E;&#x5C3A;&#x7B49;&#x306E;&#x30A2;&#x30A4;&#x30C6;&#x30E0;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;&#x89E3;&#x8AAC;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x5185;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<blockquote>
+<p>&#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x306F;&#x3001;&#x521D;&#x5FC3;&#x8005;&#x7528;&#x306B;ArcGIS API for JavaScript&#x306E;&#x4F7F;&#x3044;&#x65B9;&#x3092;&#x304F;&#x308F;&#x3057;&#x304F;&#x89E3;&#x8AAC;&#x3057;&#x305F;<a href="https://community.esri.com/docs/DOC-11394" target="_blank">EsriJapan GitHub &#x306F;&#x3058;&#x3081;&#x3066;&#x306E; Web &#x30DE;&#x30C3;&#x30D4;&#x30F3;&#x30B0;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x958B;&#x767A;&#xFF1A;&#x5730;&#x56F3;&#x8868;&#x793A;&#x7DE8;</a>&#x3084;[EsriJapan&#x306E;GitHub :arcgis-samples-4.0-js]&#x3092;(<a href="https://github.com/EsriJapan/arcgis-samples-4.0-js)&#x3092;&#x53C2;&#x8003;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;" target="_blank">https://github.com/EsriJapan/arcgis-samples-4.0-js)&#x3092;&#x53C2;&#x8003;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</a></p>
+</blockquote>
+<h3 id="&#x30D9;&#x30FC;&#x30B9;&#x30DE;&#x30C3;&#x30D7;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">&#x30D9;&#x30FC;&#x30B9;&#x30DE;&#x30C3;&#x30D7;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h3>
+<p>ArcGIS API for JavaScript&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;&#x305F;&#x3081;&#x3001;&#x4EE5;&#x4E0B;&#x306E;2&#x884C;&#x3092;<head>&#x5185;&#x306B;&#x8FFD;&#x52A0;&#x3057;&#x305F;HTML&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</head></p>
+<ul>
+<li><link rel="stylesheet" href="https://js.arcgis.com/4.7/esri/css/main.css"></li>
+<li><script src="https://js.arcgis.com/4.7/"></script>
+
+</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;initial-scale=1,maximum-scale=1,user-scalable=no&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+    <span class="hljs-selector-tag">html</span>,
+    <span class="hljs-selector-tag">body</span>,
+    <span class="hljs-selector-id">#viewDiv</span> {
+      <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    }
+    <span class="hljs-selector-id">#layerToggle</span> {
+      <span class="hljs-attribute">bottom</span>: <span class="hljs-number">60px</span>;
+      <span class="hljs-attribute">right</span>: <span class="hljs-number">10px</span>;
+      <span class="hljs-attribute">position</span>: absolute;
+      <span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
+      <span class="hljs-attribute">background-color</span>: white;
+      <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">8px</span>;
+      <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+      <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.75</span>;
+    }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://js.arcgis.com/4.7/esri/css/main.css&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://js.arcgis.com/4.7/&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  &#x3000;<span class="hljs-comment">//&#x6A5F;&#x80FD;&#x306E;&#x547C;&#x3073;&#x51FA;&#x3057;</span>
+    <span class="hljs-built_in">require</span>([
+      <span class="hljs-string">&quot;esri/Map&quot;</span>,
+      <span class="hljs-string">&quot;esri/views/MapView&quot;</span>,
+      <span class="hljs-string">&quot;dojo/domReady!&quot;</span>
+
+    ], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">
+      Map,
+      MapView,
+    </span>) </span>{
+      <span class="hljs-comment">//&#x30D9;&#x30FC;&#x30B9;&#x5730;&#x56F3;&#x306E;&#x547C;&#x3073;&#x51FA;&#x3057;</span>
+      <span class="hljs-keyword">const</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>({
+        basemap: <span class="hljs-string">&quot;streets&quot;</span>
+      });
+      <span class="hljs-comment">//&#x8868;&#x793A;&#x7BC4;&#x56F2;&#x306E;&#x6307;&#x5B9A;</span>
+      <span class="hljs-keyword">const</span> view = <span class="hljs-keyword">new</span> MapView({
+        container: <span class="hljs-string">&quot;viewDiv&quot;</span>,
+        map: map,
+        center: [<span class="hljs-number">136.570</span>, <span class="hljs-number">36.479</span>],
+        zoom: <span class="hljs-number">11</span>
+      });
+});
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;viewDiv&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="&#x8868;&#x793A;&#x4F4D;&#x7F6E;&#x3092;&#x8D8A;&#x524D;&#x5E02;&#x5468;&#x8FBA;&#x306B;&#x5909;&#x66F4;&#x3059;&#x308B;">&#x8868;&#x793A;&#x4F4D;&#x7F6E;&#x3092;&#x8D8A;&#x524D;&#x5E02;&#x5468;&#x8FBA;&#x306B;&#x5909;&#x66F4;&#x3059;&#x308B;</h3>
+<pre><code class="lang-JavaScript">
+<span class="hljs-keyword">const</span> view = <span class="hljs-keyword">new</span> MapView({
+  container: <span class="hljs-string">&quot;viewDiv&quot;</span>,
+  map: map,
+  center: [<span class="hljs-number">136.1688</span>, <span class="hljs-number">35.9032</span>],
+  zoom: <span class="hljs-number">11</span>
+});
+</code></pre>
+<h3 id="&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;">&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</h3>
+<pre><code class="lang-JavaScript">&#x3000;<span class="hljs-comment">//require&#x306B;&quot;esri/widgets/ScaleBar&quot;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3001;fuction&#x306B;ScaleBar&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</span>
+  <span class="hljs-built_in">require</span>([
+    <span class="hljs-string">&quot;esri/Map&quot;</span>,
+    <span class="hljs-string">&quot;esri/views/MapView&quot;</span>,
+    <span class="hljs-string">&quot;esri/widgets/ScaleBar&quot;</span>
+    <span class="hljs-string">&quot;dojo/domReady!&quot;</span>,
+
+  ], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">
+    Map,
+    MapView,
+    ScaleBar
+  </span>) </span>{
+    <span class="hljs-keyword">const</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>({
+      basemap: <span class="hljs-string">&quot;streets&quot;</span>
+    });
+
+    <span class="hljs-keyword">const</span> view = <span class="hljs-keyword">new</span> MapView({
+      container: <span class="hljs-string">&quot;viewDiv&quot;</span>,
+      map: map,
+      center: [<span class="hljs-number">136.1688</span>, <span class="hljs-number">35.9032</span>],
+      zoom: <span class="hljs-number">11</span>
+    });
+
+  <span class="hljs-comment">//&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x306E;&#x8FFD;&#x52A0;</span>
+  <span class="hljs-keyword">const</span> scalebar = <span class="hljs-keyword">new</span> ScaleBar({
+    view: view,
+    unit: <span class="hljs-string">&quot;dual&quot;</span>
+  });
+
+  <span class="hljs-comment">//&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x30D0;&#x30FC;&#x306E;&#x8A2D;&#x5B9A;</span>
+  view.ui.add(scalebar, <span class="hljs-string">&quot;bottom-left&quot;</span>);
+
+});
+</code></pre>
+<h3 id="&#x65B9;&#x4F4D;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;">&#x65B9;&#x4F4D;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</h3>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">//require&#x306B;&quot;esri/widgets/ScaleBar&quot;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3001;fuction&#x306B;ScaleBar&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</span>
+
+<span class="hljs-built_in">require</span>([
+  <span class="hljs-string">&quot;esri/Map&quot;</span>,
+  <span class="hljs-string">&quot;esri/views/MapView&quot;</span>,
+  <span class="hljs-string">&quot;esri/widgets/ScaleBar&quot;</span>,
+  <span class="hljs-string">&quot;esri/widgets/Compass&quot;</span>,
+  <span class="hljs-string">&quot;dojo/domReady!&quot;</span>
+
+], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">
+  Map,
+  MapView,
+  ScaleBar,
+  Compass
+</span>) </span>{
+  <span class="hljs-keyword">const</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>({
+    basemap: <span class="hljs-string">&quot;streets&quot;</span>
+  });
+
+  <span class="hljs-keyword">const</span> view = <span class="hljs-keyword">new</span> MapView({
+    container: <span class="hljs-string">&quot;viewDiv&quot;</span>,
+    map: map,
+    center: [<span class="hljs-number">136.1688</span>, <span class="hljs-number">35.9032</span>],
+    zoom: <span class="hljs-number">11</span>
+  });
+
+<span class="hljs-keyword">const</span> scalebar = <span class="hljs-keyword">new</span> ScaleBar({
+  view: view,
+  unit: <span class="hljs-string">&quot;dual&quot;</span>
+});
+
+view.ui.add(scalebar, <span class="hljs-string">&quot;bottom-left&quot;</span>);
+
+<span class="hljs-keyword">const</span> compass = <span class="hljs-keyword">new</span> Compass({
+  view: view,
+});
+
+view.ui.add(compass, <span class="hljs-string">&quot;up-left&quot;</span>);
+
+});
+</code></pre>
+<h3 id="&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;">&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</h3>
+<p>&#x3053;&#x3053;&#x3067;&#x306F;&#x8868;&#x793A;&#x4F8B;&#x7528;&#x30EC;&#x30A4;&#x30E4;&#x3068;&#x3057;&#x3066;&#x3001;&#x4E8B;&#x524D;&#x306B;&#x4F5C;&#x6210;&#x3057;GitHub&#x3067;&#x516C;&#x958B;&#x3057;&#x3066;&#x3044;&#x308B;&#x4EE5;&#x4E0B;&#x306E;KML&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x307E;&#x3059;&#x3002;</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/flood_assumed_area.kml" target="_blank">https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/flood_assumed_area.kml</a></li>
+<li><a href="https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/refuge.kml" target="_blank">https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/refuge.kml</a></li>
+</ul>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">//require&#x306B;&quot;esri/layers/KMLLayer&quot;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3001;fuction&#x306B;KMLLayer&quot;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</span>
+
+<span class="hljs-built_in">require</span>([
+  <span class="hljs-string">&quot;esri/Map&quot;</span>,
+  <span class="hljs-string">&quot;esri/views/MapView&quot;</span>,
+  <span class="hljs-string">&quot;esri/widgets/ScaleBar&quot;</span>,
+  <span class="hljs-string">&quot;esri/widgets/Compass&quot;</span>,
+  <span class="hljs-string">&quot;esri/layers/KMLLayer&quot;</span>,
+
+  <span class="hljs-string">&quot;dojo/domReady!&quot;</span>
+
+], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">
+  Map,
+  MapView,
+  ScaleBar,
+  Compass,
+  KMLLayer
+</span>) </span>{
+
+  <span class="hljs-comment">//KML&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</span>
+  <span class="hljs-keyword">const</span> area = <span class="hljs-keyword">new</span> KMLLayer({
+        url:<span class="hljs-string">&quot;https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/flood_assumed_area.kml&quot;</span>,
+        id:<span class="hljs-string">&quot;area&quot;</span>
+      });
+  <span class="hljs-comment">//KML&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</span>
+  <span class="hljs-keyword">const</span> refuge = <span class="hljs-keyword">new</span> KMLLayer({
+        url:<span class="hljs-string">&quot;https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/refuge.kml&quot;</span>,
+        id:<span class="hljs-string">&quot;refuge&quot;</span>
+          });
+  <span class="hljs-comment">//KML&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</span>
+  <span class="hljs-keyword">const</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>({
+    basemap: <span class="hljs-string">&quot;streets&quot;</span>,
+    layers: [area,refuge]
+
+  });
+
+  <span class="hljs-keyword">const</span> view = <span class="hljs-keyword">new</span> MapView({
+    container: <span class="hljs-string">&quot;viewDiv&quot;</span>,
+    map: map,
+    center: [<span class="hljs-number">136.1688</span>, <span class="hljs-number">35.9032</span>],
+    zoom: <span class="hljs-number">11</span>
+  });
+
+<span class="hljs-keyword">const</span> scalebar = <span class="hljs-keyword">new</span> ScaleBar({
+  view: view,
+  unit: <span class="hljs-string">&quot;dual&quot;</span>
+});
+
+view.ui.add(scalebar, <span class="hljs-string">&quot;bottom-left&quot;</span>);
+
+<span class="hljs-keyword">const</span> compass = <span class="hljs-keyword">new</span> Compass({
+  view: view,
+});
+
+view.ui.add(compass, <span class="hljs-string">&quot;up-left&quot;</span>);
+
+});
+</code></pre>
+<h3 id="&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x9078;&#x629E;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;">&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x9078;&#x629E;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</h3>
+<p><body>&#x5185;&#x306B;&#x4EE5;&#x4E0B;&#x3092;&#x8A18;&#x8FF0;&#x3059;&#x308B;</body></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;viewDiv&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;layerToggle&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x30EC;&#x30A4;&#x30E4;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;refuge&quot;</span> <span class="hljs-attr">checked</span> /&gt;</span> &#x4E00;&#x6B21;&#x907F;&#x96E3;&#x6240;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;area&quot;</span> <span class="hljs-attr">checked</span> /&gt;</span> &#x60F3;&#x5B9A;&#x6D78;&#x6C34;&#x533A;&#x57DF;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x51E1;&#x4F8B;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://yamauchi-inochu.github.io/arcgis_api/img/legend_e.png&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x3053;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x8D8A;&#x524D;&#x5E02;&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x52A0;&#x5DE5;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+<p>&#x6B21;&#x306B;<script>内を以下のようにする。</p>
+<pre><code class="lang-JavaScript">//requireに&quot;dojo/onを追加し、fuctionにon&quot;を追加する
+
+require([
+  &quot;esri/Map&quot;,
+  &quot;esri/views/MapView&quot;,
+  &quot;esri/widgets/ScaleBar&quot;,
+  &quot;esri/widgets/Compass&quot;,
+  &quot;esri/layers/KMLLayer&quot;,
+  &quot;dojo/on&quot;,
+  &quot;dojo/domReady!&quot;
+
+], function(
+  Map,
+  MapView,
+  ScaleBar,
+  Compass,
+  KMLLayer,
+  on
+) {
+
+  const area = new KMLLayer({
+        url:&quot;https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/flood_assumed_area.kml&quot;,
+        id:&quot;area&quot;
+      });
+
+  const refuge = new KMLLayer({
+        url:&quot;https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/refuge.kml&quot;,
+        id:&quot;refuge&quot;
+      });
+
+  const map = new Map({
+    basemap: &quot;streets&quot;,
+    layers: [area,refuge]
+
+  });
+
+  const view = new MapView({
+    container: &quot;viewDiv&quot;,
+    map: map,
+    center: [136.1688, 35.9032],
+    zoom: 11
+  });
+
+const scalebar = new ScaleBar({
+  view: view,
+  unit: &quot;dual&quot;
+});
+
+view.ui.add(scalebar, &quot;bottom-left&quot;);
+
+const compass = new Compass({
+  view: view,
+});
+
+view.ui.add(compass, &quot;up-left&quot;);
+
+//レイヤのオン、オフを指定する
+const areaToggle = document.getElementById(&quot;area&quot;);
+const refugeToggle = document.getElementById(&quot;refuge&quot;);
+
+on(areaToggle, &quot;change&quot;, function() {
+      area.visible = areaToggle.checked;
+  });
+on(refugeToggle, &quot;change&quot;, function() {
+      refuge.visible = refugeToggle.checked;
+  });
+
+});
+</code></pre>
+<p><a href="arcgisapi4js.md#menu">▲メニューへもどる</a></p>
+<h4>ライセンスに関する注意事項</h4>
+<p>本教材で利用しているキャプチャ画像の出典やクレジットについては、<a href="../../その他のライセンスについて.md">その他のライセンスについて</a>よりご確認ください。</p>
+</script></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Leaflet/Leaflet.html" class="navigation navigation-prev " aria-label="Previous page: Leaflet">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../OpenLayers/OpenLayers.html" class="navigation navigation-next " aria-label="Next page: OpenLayers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ArcGIS API for JavaScript","level":"2.1.5","depth":2,"next":{"title":"OpenLayers","level":"2.1.6","depth":2,"path":"GISオープン教材/インターネットの活用/OpenLayers/OpenLayers.md","ref":"GISオープン教材/インターネットの活用/OpenLayers/OpenLayers.md","articles":[]},"previous":{"title":"Leaflet","level":"2.1.4","depth":2,"path":"GISオープン教材/インターネットの活用/Leaflet/Leaflet.md","ref":"GISオープン教材/インターネットの活用/Leaflet/Leaflet.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","collapsible-menu","creativecommons","favicon","ga"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG, CC BY-SA 4.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","gitbook":">= 3.0.0"},"file":{"path":"GISオープン教材/インターネットの活用/arcgisapi4js/arcgisapi4js.md","mtime":"2018-07-18T14:06:42.065Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-08-10T09:46:44.167Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
