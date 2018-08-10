@@ -2795,7 +2795,7 @@
 <p><strong>&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#x6559;&#x6750;</strong></p>
 <p>&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x306F;<a href="../../../../../raw/master/GIS&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x6559;&#x6750;/&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x306E;&#x6D3B;&#x7528;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6559;&#x6750;/arcgisapi4js/arcgisapi4js.pptx">&#x3053;&#x3061;&#x3089;</a></p>
 <hr>
-<h2 id="a-namearcgisapiforjavascript&#x3068;&#x306F;arcgis-api-for-javascript&#x3068;&#x306F;&#xFF1F;a">&lt;a name=&quot;ArcGIS_API_for_JavaScript&#x3068;&#x306F;&gt;ArcGIS API for JavaScript&#x3068;&#x306F;&#xFF1F;&lt;/a&gt;)</h2>
+<h2 id="arcgis-api-for-javascript&#x3068;&#x306F;&#xFF1F;"><a name="ArcGIS_API_for_JavaScript&#x3068;&#x306F;">ArcGIS API for JavaScript&#x3068;&#x306F;&#xFF1F;</a></h2>
 <p>&#x3000;ArcGIS API for JavaScript&#x3068;&#x306F;&#x3001;ESRI&#x793E;&#x304C;&#x958B;&#x767A;&#x8005;&#x5411;&#x3051;&#x306B;&#x3001;ArcGIS&#x306E;&#x6A5F;&#x80FD;&#x3092;JavaScript&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x63D0;&#x4F9B;&#x3059;&#x308B;&#x3082;&#x306E;&#x3067;&#x3042;&#x308B;&#x3002;ArcGIS API for JavaScript&#x306E;&#x8A73;&#x7D30;&#x306F;&#x3001;<a href="https://www.esrij.com/products/arcgis-api-for-javascript/" target="_blank">ESRI&#x30B8;&#x30E3;&#x30D1;&#x30F3;&#x306E;ArcGIS API for JavaScript </a>&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
 <p><a href="arcgisapi4js.html#menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
 <h2 id="&#x5730;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">&#x5730;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h2>
@@ -2806,10 +2806,8 @@
 <h3 id="&#x30D9;&#x30FC;&#x30B9;&#x30DE;&#x30C3;&#x30D7;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">&#x30D9;&#x30FC;&#x30B9;&#x30DE;&#x30C3;&#x30D7;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h3>
 <p>ArcGIS API for JavaScript&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;&#x305F;&#x3081;&#x3001;&#x4EE5;&#x4E0B;&#x306E;2&#x884C;&#x3092;<head>&#x5185;&#x306B;&#x8FFD;&#x52A0;&#x3057;&#x305F;HTML&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</head></p>
 <ul>
-<li><link rel="stylesheet" href="https://js.arcgis.com/4.7/esri/css/main.css"></li>
-<li><script src="https://js.arcgis.com/4.7/"></script>
-
-</li>
+<li><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://js.arcgis.com/4.7/esri/css/main.css&quot;&gt;</code></li>
+<li><code>&lt;script src=&quot;https://js.arcgis.com/4.7/&quot;&gt;&lt;/script&gt;</code></li>
 </ul>
 <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
@@ -3038,80 +3036,80 @@ view.ui.add(compass, <span class="hljs-string">&quot;up-left&quot;</span>);
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x3053;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x8D8A;&#x524D;&#x5E02;&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x52A0;&#x5DE5;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 </code></pre>
-<p>&#x6B21;&#x306B;<script>内を以下のようにする。</p>
-<pre><code class="lang-JavaScript">//requireに&quot;dojo/onを追加し、fuctionにon&quot;を追加する
+<p>&#x6B21;&#x306B;<code>&lt;script&gt;</code>&#x5185;&#x3092;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#x3002;</p>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">//require&#x306B;&quot;dojo/on&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3001;fuction&#x306B;on&quot;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</span>
 
-require([
-  &quot;esri/Map&quot;,
-  &quot;esri/views/MapView&quot;,
-  &quot;esri/widgets/ScaleBar&quot;,
-  &quot;esri/widgets/Compass&quot;,
-  &quot;esri/layers/KMLLayer&quot;,
-  &quot;dojo/on&quot;,
-  &quot;dojo/domReady!&quot;
+<span class="hljs-built_in">require</span>([
+  <span class="hljs-string">&quot;esri/Map&quot;</span>,
+  <span class="hljs-string">&quot;esri/views/MapView&quot;</span>,
+  <span class="hljs-string">&quot;esri/widgets/ScaleBar&quot;</span>,
+  <span class="hljs-string">&quot;esri/widgets/Compass&quot;</span>,
+  <span class="hljs-string">&quot;esri/layers/KMLLayer&quot;</span>,
+  <span class="hljs-string">&quot;dojo/on&quot;</span>,
+  <span class="hljs-string">&quot;dojo/domReady!&quot;</span>
 
-], function(
+], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">
   Map,
   MapView,
   ScaleBar,
   Compass,
   KMLLayer,
   on
-) {
+</span>) </span>{
 
-  const area = new KMLLayer({
-        url:&quot;https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/flood_assumed_area.kml&quot;,
-        id:&quot;area&quot;
+  <span class="hljs-keyword">const</span> area = <span class="hljs-keyword">new</span> KMLLayer({
+        url:<span class="hljs-string">&quot;https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/flood_assumed_area.kml&quot;</span>,
+        id:<span class="hljs-string">&quot;area&quot;</span>
       });
 
-  const refuge = new KMLLayer({
-        url:&quot;https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/refuge.kml&quot;,
-        id:&quot;refuge&quot;
+  <span class="hljs-keyword">const</span> refuge = <span class="hljs-keyword">new</span> KMLLayer({
+        url:<span class="hljs-string">&quot;https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/refuge.kml&quot;</span>,
+        id:<span class="hljs-string">&quot;refuge&quot;</span>
       });
 
-  const map = new Map({
-    basemap: &quot;streets&quot;,
+  <span class="hljs-keyword">const</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>({
+    basemap: <span class="hljs-string">&quot;streets&quot;</span>,
     layers: [area,refuge]
 
   });
 
-  const view = new MapView({
-    container: &quot;viewDiv&quot;,
+  <span class="hljs-keyword">const</span> view = <span class="hljs-keyword">new</span> MapView({
+    container: <span class="hljs-string">&quot;viewDiv&quot;</span>,
     map: map,
-    center: [136.1688, 35.9032],
-    zoom: 11
+    center: [<span class="hljs-number">136.1688</span>, <span class="hljs-number">35.9032</span>],
+    zoom: <span class="hljs-number">11</span>
   });
 
-const scalebar = new ScaleBar({
+<span class="hljs-keyword">const</span> scalebar = <span class="hljs-keyword">new</span> ScaleBar({
   view: view,
-  unit: &quot;dual&quot;
+  unit: <span class="hljs-string">&quot;dual&quot;</span>
 });
 
-view.ui.add(scalebar, &quot;bottom-left&quot;);
+view.ui.add(scalebar, <span class="hljs-string">&quot;bottom-left&quot;</span>);
 
-const compass = new Compass({
+<span class="hljs-keyword">const</span> compass = <span class="hljs-keyword">new</span> Compass({
   view: view,
 });
 
-view.ui.add(compass, &quot;up-left&quot;);
+view.ui.add(compass, <span class="hljs-string">&quot;up-left&quot;</span>);
 
-//レイヤのオン、オフを指定する
-const areaToggle = document.getElementById(&quot;area&quot;);
-const refugeToggle = document.getElementById(&quot;refuge&quot;);
+<span class="hljs-comment">//&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x30AA;&#x30F3;&#x3001;&#x30AA;&#x30D5;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</span>
+<span class="hljs-keyword">const</span> areaToggle = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;area&quot;</span>);
+<span class="hljs-keyword">const</span> refugeToggle = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;refuge&quot;</span>);
 
-on(areaToggle, &quot;change&quot;, function() {
+on(areaToggle, <span class="hljs-string">&quot;change&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
       area.visible = areaToggle.checked;
   });
-on(refugeToggle, &quot;change&quot;, function() {
+on(refugeToggle, <span class="hljs-string">&quot;change&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
       refuge.visible = refugeToggle.checked;
   });
 
 });
 </code></pre>
-<p><a href="arcgisapi4js.md#menu">▲メニューへもどる</a></p>
-<h4>ライセンスに関する注意事項</h4>
-<p>本教材で利用しているキャプチャ画像の出典やクレジットについては、<a href="../../その他のライセンスについて.md">その他のライセンスについて</a>よりご確認ください。</p>
-</script></p>
+<p><a href="arcgisapi4js.html#menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h4 id="&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;">&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;</h4>
+<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x30AD;&#x30E3;&#x30D7;&#x30C1;&#x30E3;&#x753B;&#x50CF;&#x306E;&#x51FA;&#x5178;&#x3084;&#x30AF;&#x30EC;&#x30B8;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../../&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;.html">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;</a>&#x3088;&#x308A;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+
                                 
                                 </section>
                             
@@ -3154,7 +3152,7 @@ on(refugeToggle, &quot;change&quot;, function() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ArcGIS API for JavaScript","level":"2.1.5","depth":2,"next":{"title":"OpenLayers","level":"2.1.6","depth":2,"path":"GISオープン教材/インターネットの活用/OpenLayers/OpenLayers.md","ref":"GISオープン教材/インターネットの活用/OpenLayers/OpenLayers.md","articles":[]},"previous":{"title":"Leaflet","level":"2.1.4","depth":2,"path":"GISオープン教材/インターネットの活用/Leaflet/Leaflet.md","ref":"GISオープン教材/インターネットの活用/Leaflet/Leaflet.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","collapsible-menu","creativecommons","favicon","ga"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG, CC BY-SA 4.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","gitbook":">= 3.0.0"},"file":{"path":"GISオープン教材/インターネットの活用/arcgisapi4js/arcgisapi4js.md","mtime":"2018-07-18T14:06:42.065Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-08-10T09:46:44.167Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ArcGIS API for JavaScript","level":"2.1.5","depth":2,"next":{"title":"OpenLayers","level":"2.1.6","depth":2,"path":"GISオープン教材/インターネットの活用/OpenLayers/OpenLayers.md","ref":"GISオープン教材/インターネットの活用/OpenLayers/OpenLayers.md","articles":[]},"previous":{"title":"Leaflet","level":"2.1.4","depth":2,"path":"GISオープン教材/インターネットの活用/Leaflet/Leaflet.md","ref":"GISオープン教材/インターネットの活用/Leaflet/Leaflet.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","collapsible-menu","creativecommons","favicon","ga"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG, CC BY-SA 4.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","gitbook":">= 3.0.0"},"file":{"path":"GISオープン教材/インターネットの活用/arcgisapi4js/arcgisapi4js.md","mtime":"2018-08-10T10:06:43.705Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-08-10T10:06:49.404Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
