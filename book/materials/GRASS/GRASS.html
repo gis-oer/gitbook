@@ -1,0 +1,3490 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>GRASSビギナーズマニュアル · GIS実習オープン教材</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="GIS-Open Educational Resources WG, CC BY-SA 4.0">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="GRASS.html" />
+    
+    
+    <link rel="prev" href="../QGIS/QGIS_3.4.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]};
+    </script>
+
+    
+        <link rel="shortcut icon" href='../../img/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../img/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../img/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon.ico">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    GIS実習オープン教材とは
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    基礎教材一覧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../#gis初学者コース">
+            
+                    
+                    初学者コース
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../00/00.html">
+            
+                <a href="../00/00.html">
+            
+                    
+                    GISの基本概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../00/00.html">
+            
+                <a href="../00/00.html#地理情報システムとは">
+            
+                    
+                    地理情報システムとは
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../00/00.html">
+            
+                <a href="../00/00.html#ソフトウェア">
+            
+                    
+                    ソフトウェア
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../00/00.html">
+            
+                <a href="../00/00.html#地理情報データ">
+            
+                    
+                    地理情報データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../00/00.html">
+            
+                <a href="../00/00.html#ベクトルデータ">
+            
+                    
+                    ベクトルデータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../00/00.html">
+            
+                <a href="../00/00.html#ラスタデータ">
+            
+                    
+                    ラスタデータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../00/00.html">
+            
+                <a href="../00/00.html#地物とレイヤ構造">
+            
+                    
+                    地物とレイヤ構造
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../00/00.html">
+            
+                <a href="../00/00.html#測地系と座標系">
+            
+                    
+                    測地系と座標系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../00/00.html">
+            
+                <a href="../00/00.html#ウェブと地理情報システム">
+            
+                    
+                    ウェブと地理情報システム
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html">
+            
+                    
+                    QGISビギナーズマニュアル(2系)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#QGISとは？">
+            
+                    
+                    QGISとは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#インストールする">
+            
+                    
+                    インストールする
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#起動する">
+            
+                    
+                    起動する
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#ウインドウの確認">
+            
+                    
+                    ウインドウの確認
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#各種ボタンについて">
+            
+                    
+                    各種ボタンについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#データの読み込み">
+            
+                    
+                    データの読み込み
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#機能説明">
+            
+                    
+                    機能説明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#属性テーブル">
+            
+                    
+                    属性テーブル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#プロパティ">
+            
+                    
+                    プロパティ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#python入門">
+            
+                    
+                    Python入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#データの保存形式">
+            
+                    
+                    データの保存形式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#プラグイン">
+            
+                    
+                    プラグイン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#地図のレイアウト">
+            
+                    
+                    地図のレイアウト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../QGIS/QGIS.html">
+            
+                <a href="../QGIS/QGIS.html#参考ページの紹介">
+            
+                    
+                    参考ページの紹介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html">
+            
+                    
+                    QGISビギナーズマニュアル(3系)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#QGISとは？">
+            
+                    
+                    QGISとは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#インストール">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#起動">
+            
+                    
+                    起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#ウインドウ">
+            
+                    
+                    ウインドウ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#各種ボタン">
+            
+                    
+                    各種ボタン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#データの読み込み">
+            
+                    
+                    データの読み込み
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#機能説明">
+            
+                    
+                    機能説明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#属性テーブル">
+            
+                    
+                    属性テーブル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#プロパティ">
+            
+                    
+                    プロパティ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#XYZタイルの読み込み">
+            
+                    
+                    XYZタイルの読み込み
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#地図のレイアウト">
+            
+                    
+                    地図のレイアウト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#作業ファイルの保存">
+            
+                    
+                    作業ファイルの保存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#プラグイン">
+            
+                    
+                    プラグイン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#python入門">
+            
+                    
+                    Python入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#データの保存形式">
+            
+                    
+                    データの保存形式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../QGIS/QGIS_3.4.html">
+            
+                <a href="../QGIS/QGIS_3.4.html#参考ページ等">
+            
+                    
+                    参考ページ等
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="GRASS.html">
+            
+                <a href="GRASS.html">
+            
+                    
+                    GRASSビギナーズマニュアル
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.1" data-path="GRASS.html">
+            
+                <a href="GRASS.html">
+            
+                    
+                    GRASS GISとは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="GRASS.html">
+            
+                <a href="GRASS.html#インストール">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="GRASS.html">
+            
+                <a href="GRASS.html#ファイル形式について">
+            
+                    
+                    ファイル形式について
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="GRASS.html">
+            
+                <a href="GRASS.html#QGISでマップセットの作成">
+            
+                    
+                    QGISでマップセットの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="GRASS.html">
+            
+                <a href="GRASS.html#データの読み込み">
+            
+                    
+                    データの読み込み
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="GRASS.html">
+            
+                <a href="GRASS.html#マップセットをGRASSで表示する">
+            
+                    
+                    マップセットをGRASSで表示する
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="GRASS.html">
+            
+                <a href="GRASS.html#GRASSにデータを追加する">
+            
+                    
+                    GRASSにデータを追加する
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="GRASS.html">
+            
+                <a href="GRASS.html#機能説明">
+            
+                    
+                    機能説明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="GRASS.html">
+            
+                <a href="GRASS.html#コマンドコンソールとモジュールツリー">
+            
+                    
+                    コマンドコンソールとモジュールツリー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="GRASS.html">
+            
+                <a href="GRASS.html#レイヤの色分け">
+            
+                    
+                    レイヤの色分け
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="GRASS.html">
+            
+                <a href="GRASS.html#3Dビュー">
+            
+                    
+                    3Dビュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="GRASS.html">
+            
+                <a href="GRASS.html#属性テーブル">
+            
+                    
+                    属性テーブル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="GRASS.html">
+            
+                <a href="GRASS.html#フィールド演算">
+            
+                    
+                    フィールド演算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="GRASS.html">
+            
+                <a href="GRASS.html#レイアウト">
+            
+                    
+                    レイアウト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="GRASS.html">
+            
+                <a href="GRASS.html#参考ページの紹介">
+            
+                    
+                    参考ページの紹介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../06/06.html">
+            
+                <a href="../06/06.html">
+            
+                    
+                    リモートセンシングとその解析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../06/06.html">
+            
+                <a href="../06/06.html#衛星画像データのダウンロード">
+            
+                    
+                    衛星画像データのダウンロード
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../06/06.html">
+            
+                <a href="../06/06.html#MultiSpecのインストール">
+            
+                    
+                    MultiSpecのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../06/06.html">
+            
+                <a href="../06/06.html#MultiSpecの起動">
+            
+                    
+                    MultiSpecの起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../06/06.html">
+            
+                <a href="../06/06.html#RGB合成">
+            
+                    
+                    RGB合成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../06/06.html">
+            
+                <a href="../06/06.html#NDVI">
+            
+                    
+                    NDVI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../06/06.html">
+            
+                <a href="../06/06.html#教師なし分類と教師つき分類">
+            
+                    
+                    教師なし分類と教師つき分類
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../07/07.html">
+            
+                <a href="../07/07.html">
+            
+                    
+                    既存データの地図データと属性データ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../07/07.html">
+            
+                <a href="../07/07.html#国土交通省のGISデータ基盤地図情報(国土地理院">
+            
+                    
+                    国土交通省のGISデータ基盤地図情報(国土地理院)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../07/07.html">
+            
+                <a href="../07/07.html#国土交通省のGISデータ国土数値情報">
+            
+                    
+                    国土交通省のGISデータ国土数値情報
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../07/07.html">
+            
+                <a href="../07/07.html#環境省のGISデータ">
+            
+                    
+                    環境省のGISデータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../07/07.html">
+            
+                <a href="../07/07.html#総務省のGISデータ">
+            
+                    
+                    総務省のGISデータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../07/07.html">
+            
+                <a href="../07/07.html#その他のGISデータ">
+            
+                    
+                    その他のGISデータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../07/07.html">
+            
+                <a href="../07/07.html#オープンデータ">
+            
+                    
+                    オープンデータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../08/08.html">
+            
+                <a href="../08/08.html">
+            
+                    
+                    空間データ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../08/08.html">
+            
+                <a href="../08/08.html#空間座標の変換(測地系変換、投影変換">
+            
+                    
+                    空間座標の変換(測地系変換、投影変換)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../08/08.html">
+            
+                <a href="../08/08.html#ジオリファレンス">
+            
+                    
+                    ジオリファレンス
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../08/08.html">
+            
+                <a href="../08/08.html#ジオコーディング">
+            
+                    
+                    ジオコーディング
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../09/09.html">
+            
+                <a href="../09/09.html">
+            
+                    
+                    空間データベース
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../09/09.html">
+            
+                <a href="../09/09.html#PostGISとは？">
+            
+                    
+                    PostGISとは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../09/09.html">
+            
+                <a href="../09/09.html#pgAdmin_IIIの起動">
+            
+                    
+                    pgAdmin_IIIの起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../09/09.html">
+            
+                <a href="../09/09.html#データベースの作成とテーブルの表示">
+            
+                    
+                    データベースの作成とテーブルの表示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../09/09.html">
+            
+                <a href="../09/09.html#よく使うSQL文">
+            
+                    
+                    よく使うSQL文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../09/09.html">
+            
+                <a href="../09/09.html#属性検索">
+            
+                    
+                    属性検索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../09/09.html">
+            
+                <a href="../09/09.html#空間検索">
+            
+                    
+                    空間検索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../09/09.html">
+            
+                <a href="../09/09.html#空間結合">
+            
+                    
+                    空間結合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../09/09.html">
+            
+                <a href="../09/09.html#23区の駅密度を計算しQGISで表示">
+            
+                    
+                    23区の駅密度を計算しQGISで表示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../10/10.html">
+            
+                <a href="../10/10.html">
+            
+                    
+                    空間データの統合・修正
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../10/10.html">
+            
+                <a href="../10/10.html#ラスタのモザイクとクリップ">
+            
+                    
+                    ラスタのモザイクとクリップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../10/10.html">
+            
+                <a href="../10/10.html#等高線の抽出">
+            
+                    
+                    等高線の抽出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../10/10.html">
+            
+                <a href="../10/10.html#ラスタをベクタへ">
+            
+                    
+                    ラスタをベクタへ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../10/10.html">
+            
+                <a href="../10/10.html#新規ベクタの作成">
+            
+                    
+                    新規ベクタの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../10/10.html">
+            
+                <a href="../10/10.html#ベクタの修正">
+            
+                    
+                    ベクタの修正
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../10/10.html">
+            
+                <a href="../10/10.html#ベクタをラスタへ">
+            
+                    
+                    ベクタをラスタへ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../11/11.html">
+            
+                <a href="../11/11.html">
+            
+                    
+                    基本的な空間解析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../11/11.html">
+            
+                <a href="../11/11.html#基本量の測定と空間オブジェクトの選択">
+            
+                    
+                    基本量の測定と空間オブジェクトの選択
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../11/11.html">
+            
+                <a href="../11/11.html#その他の空間データの操作">
+            
+                    
+                    その他の空間データの操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../11/11.html">
+            
+                <a href="../11/11.html#オーバーレイ分析">
+            
+                    
+                    オーバーレイ分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../12/12.html">
+            
+                <a href="../12/12.html">
+            
+                    
+                    ネットワーク分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../12/12.html">
+            
+                <a href="../12/12.html#ネットワーク分析とは?">
+            
+                    
+                    ネットワーク分析とは?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../12/12.html">
+            
+                <a href="../12/12.html#最短距離検索">
+            
+                    
+                    最短距離検索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../12/12.html">
+            
+                <a href="../12/12.html#ネットの分割">
+            
+                    
+                    ネットの分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../12/12.html">
+            
+                <a href="../12/12.html#NetworkAnalystToolを用いた分析">
+            
+                    
+                    NetworkAnalystToolを用いた分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../13/13.html">
+            
+                <a href="../13/13.html">
+            
+                    
+                    領域分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../13/13.html">
+            
+                <a href="../13/13.html#バッファによる領域分析">
+            
+                    
+                    バッファによる領域分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../13/13.html">
+            
+                <a href="../13/13.html#ボロノイ分割による領域分析">
+            
+                    
+                    ボロノイ分割による領域分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../13/13.html">
+            
+                <a href="../13/13.html#ドローネ三角形">
+            
+                    
+                    ドローネ三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../14/14.html">
+            
+                <a href="../14/14.html">
+            
+                    
+                    点データの分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../14/14.html">
+            
+                <a href="../14/14.html#点の分布密度">
+            
+                    
+                    点の分布密度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../14/14.html">
+            
+                <a href="../14/14.html#メッシュによる点密度の表示">
+            
+                    
+                    メッシュによる点密度の表示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../14/14.html">
+            
+                <a href="../14/14.html#行政区内の点密度">
+            
+                    
+                    行政区内の点密度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../14/14.html">
+            
+                <a href="../14/14.html#カーネル密度推計">
+            
+                    
+                    カーネル密度推計
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5" data-path="../14/14.html">
+            
+                <a href="../14/14.html#CrimeStatのインストール">
+            
+                    
+                    CrimeStatのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.6" data-path="../14/14.html">
+            
+                <a href="../14/14.html#平均最近隣距離法">
+            
+                    
+                    平均最近隣距離法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.7" data-path="../14/14.html">
+            
+                <a href="../14/14.html#K-関数法">
+            
+                    
+                    K-関数法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.8" data-path="../14/14.html">
+            
+                <a href="../14/14.html#標準偏差距離と標準偏差楕円">
+            
+                    
+                    標準偏差距離と標準偏差楕円
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../15/15.html">
+            
+                <a href="../15/15.html">
+            
+                    
+                    ラスタデータの分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../15/15.html">
+            
+                <a href="../15/15.html#数値標高モデルの変換">
+            
+                    
+                    数値標高モデルの変換
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../15/15.html">
+            
+                <a href="../15/15.html#数値標高モデルの視覚的分析">
+            
+                    
+                    数値標高モデルの視覚的分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../15/15.html">
+            
+                <a href="../15/15.html#基本的な統計量の確認">
+            
+                    
+                    基本的な統計量の確認
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="../15/15.html">
+            
+                <a href="../15/15.html#ベクタの処理とラスタの集計の組み合わせ分析">
+            
+                    
+                    ベクタの処理とラスタの集計の組み合わせ分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.5" data-path="../15/15.html">
+            
+                <a href="../15/15.html#フィルタリング">
+            
+                    
+                    フィルタリング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.6" data-path="../15/15.html">
+            
+                <a href="../15/15.html#ラスタ演算">
+            
+                    
+                    ラスタ演算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.7" data-path="../15/15.html">
+            
+                <a href="../15/15.html#流域解析">
+            
+                    
+                    流域解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.8" data-path="../15/15.html">
+            
+                <a href="../15/15.html#コストパス解析">
+            
+                    
+                    コストパス解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../16/16.html">
+            
+                <a href="../16/16.html">
+            
+                    
+                    傾向面分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../16/16.html">
+            
+                <a href="../16/16.html#SAMのインストール">
+            
+                    
+                    SAMのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../16/16.html">
+            
+                <a href="../16/16.html#第1次傾向面分析">
+            
+                    
+                    第1次傾向面分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../16/16.html">
+            
+                <a href="../16/16.html#第2次傾向面分析">
+            
+                    
+                    第2次傾向面分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../17/17.html">
+            
+                <a href="../17/17.html">
+            
+                    
+                    空間的自己相関
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../17/17.html">
+            
+                <a href="../17/17.html#CrimeStatのインストール">
+            
+                    
+                    CrimeStatのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../17/17.html">
+            
+                <a href="../17/17.html#Moran’s_I統計量">
+            
+                    
+                    Moran’s_I統計量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../17/17.html">
+            
+                <a href="../17/17.html#Geary's_C統計量">
+            
+                    
+                    Geary's_C統計量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../17/17.html">
+            
+                <a href="../17/17.html#Join_count統計量">
+            
+                    
+                    Join_count統計量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../18/18.html">
+            
+                <a href="../18/18.html">
+            
+                    
+                    空間補間
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../18/18.html">
+            
+                <a href="../18/18.html#不整三角網">
+            
+                    
+                    不整三角網
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../18/18.html">
+            
+                <a href="../18/18.html#逆距離加重法">
+            
+                    
+                    逆距離加重法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="../18/18.html">
+            
+                <a href="../18/18.html#スプライン補間">
+            
+                    
+                    スプライン補間
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.4" data-path="../18/18.html">
+            
+                <a href="../18/18.html#クリギング">
+            
+                    
+                    クリギング
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../19/19.html">
+            
+                <a href="../19/19.html">
+            
+                    
+                    空間相関分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../19/19.html">
+            
+                <a href="../19/19.html#Rのインストールと基礎操作">
+            
+                    
+                    Rのインストールと基礎操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../19/19.html">
+            
+                <a href="../19/19.html#空間的自己回帰モデル">
+            
+                    
+                    空間的自己回帰モデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../19/19.html">
+            
+                <a href="../19/19.html#基本的な統計量の確認">
+            
+                    
+                    基本的な統計量の確認
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.4" data-path="../19/19.html">
+            
+                <a href="../19/19.html#空間的誤差自己回帰モデル">
+            
+                    
+                    空間的誤差自己回帰モデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.5" data-path="../19/19.html">
+            
+                <a href="../19/19.html#地理的加重回帰（GWR）">
+            
+                    
+                    地理的加重回帰（GWR）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../20/20.html">
+            
+                <a href="../20/20.html">
+            
+                    
+                    空間分析におけるスケール
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../20/20.html">
+            
+                <a href="../20/20.html#GeoDaのインストール">
+            
+                    
+                    GeoDaのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../20/20.html">
+            
+                <a href="../20/20.html#local_moran’s_Iの算出">
+            
+                    
+                    local_moran’s_Iの算出
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../21/21.html">
+            
+                <a href="../21/21.html">
+            
+                    
+                    視覚的伝達
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../21/21.html">
+            
+                <a href="../21/21.html#属性データの視覚化">
+            
+                    
+                    属性データの視覚化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../21/21.html">
+            
+                <a href="../21/21.html#カルトグラムの作成">
+            
+                    
+                    カルトグラムの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../26/26.html">
+            
+                <a href="../26/26.html">
+            
+                    
+                    参加型GISと社会貢献
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../26/26.html">
+            
+                <a href="../26/26.html#OpenStreetMapとは？">
+            
+                    
+                    OpenStreetMapとは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="../26/26.html">
+            
+                <a href="../26/26.html#基本操作">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.3" data-path="../26/26.html">
+            
+                <a href="../26/26.html#編集のルール">
+            
+                    
+                    編集のルール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.4" data-path="../26/26.html">
+            
+                <a href="../26/26.html#アカウントの取得">
+            
+                    
+                    アカウントの取得
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.5" data-path="../26/26.html">
+            
+                <a href="../26/26.html#OSMの編集">
+            
+                    
+                    OSMの編集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.6" data-path="../26/26.html">
+            
+                <a href="../26/26.html#ローカル編集">
+            
+                    
+                    ローカル編集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.7" data-path="../26/26.html">
+            
+                <a href="../26/26.html#データを利用する">
+            
+                    
+                    データを利用する
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.8" data-path="../26/26.html">
+            
+                <a href="../26/26.html#OpenStreetMapと社会貢献">
+            
+                    
+                    OpenStreetMapと社会貢献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.9" data-path="../26/26.html">
+            
+                <a href="../26/26.html#クライシスマッピングとは？">
+            
+                    
+                    クライシスマッピングとは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.10" data-path="../26/26.html">
+            
+                <a href="../26/26.html#クライシスマッピングの歴史">
+            
+                    
+                    クライシスマッピングの歴史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.11" data-path="../26/26.html">
+            
+                <a href="../26/26.html#OSMを利用したクライシスマッピング">
+            
+                    
+                    OSMを利用したクライシスマッピング
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../python/python.html">
+            
+                <a href="../python/python.html">
+            
+                    
+                    python初級
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../web_gis/">
+            
+                <a href="../web_gis/">
+            
+                    
+                    インターネットの活用に関する教材
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../web_gis/Carto/Carto.html">
+            
+                <a href="../web_gis/Carto/Carto.html">
+            
+                    
+                    Carto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../web_gis/Cesium/Cesium.html">
+            
+                <a href="../web_gis/Cesium/Cesium.html">
+            
+                    
+                    Cesium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../web_gis/Google_mymap/Google_mymap.html">
+            
+                <a href="../web_gis/Google_mymap/Google_mymap.html">
+            
+                    
+                    Googleマイマップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../web_gis/Leaflet/Leaflet.html">
+            
+                <a href="../web_gis/Leaflet/Leaflet.html">
+            
+                    
+                    Leaflet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../web_gis/arcgisapi4js/arcgisapi4js.html">
+            
+                <a href="../web_gis/arcgisapi4js/arcgisapi4js.html">
+            
+                    
+                    ArcGIS API for JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../web_gis/OpenLayers/OpenLayers.html">
+            
+                <a href="../web_gis/OpenLayers/OpenLayers.html">
+            
+                    
+                    OpenLayers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../web_gis/gsimap/gsimap.html">
+            
+                <a href="../web_gis/gsimap/gsimap.html">
+            
+                    
+                    地理院地図
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../web_gis/D3js/D3js.html">
+            
+                <a href="../web_gis/D3js/D3js.html">
+            
+                    
+                    D3.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../web_gis/GitHub/GitHub.html">
+            
+                <a href="../web_gis/GitHub/GitHub.html">
+            
+                    
+                    GitHubビギナーズマニュアル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../web_gis/CZML/CZML.html">
+            
+                <a href="../web_gis/CZML/CZML.html">
+            
+                    
+                    CZML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../web_gis/KML/KML.html">
+            
+                <a href="../web_gis/KML/KML.html">
+            
+                    
+                    KML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../web_gis/GeoJSON/GeoJSON.html">
+            
+                <a href="../web_gis/GeoJSON/GeoJSON.html">
+            
+                    
+                    GeoJSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../web_gis/rastertile/rastertile.html">
+            
+                <a href="../web_gis/rastertile/rastertile.html">
+            
+                    
+                    地図タイル（ラスタ）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../equipments/">
+            
+                <a href="../equipments/">
+            
+                    
+                    GISと関連した機材の活用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../equipments/uav/uav.html">
+            
+                <a href="../equipments/uav/uav.html">
+            
+                    
+                    UAVの操作法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../equipments/3Dprinter/3Dprinter.html">
+            
+                <a href="../equipments/3Dprinter/3Dprinter.html">
+            
+                    
+                    3Dプリンタで地形模型の製作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../equipments/mobile/mobile.html">
+            
+                <a href="../equipments/mobile/mobile.html">
+            
+                    
+                    スマートフォンで野外調査
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../equipments/tablet/tablet.html">
+            
+                <a href="../equipments/tablet/tablet.html">
+            
+                    
+                    タブレットでトレース
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../tasks/">
+            
+                <a href="../tasks/">
+            
+                    
+                    課題ページ（全14回）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../tasks/1day/1day.html">
+            
+                <a href="../tasks/1day/1day.html">
+            
+                    
+                    地形環境分析のためのQGIS入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../tasks/t_qgis_entry.html">
+            
+                <a href="../tasks/t_qgis_entry.html">
+            
+                    
+                    第1回・QGIS入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../tasks/t_grass_entry.html">
+            
+                <a href="../tasks/t_grass_entry.html">
+            
+                    
+                    (第1回・GRASS GIS入門)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../tasks/t_07.html">
+            
+                <a href="../tasks/t_07.html">
+            
+                    
+                    第2回・既存データの地図データと属性データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../tasks/t_08.html">
+            
+                <a href="../tasks/t_08.html">
+            
+                    
+                    第3回・空間データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../tasks/t_10.html">
+            
+                <a href="../tasks/t_10.html">
+            
+                    
+                    第4回・空間データの統合・修正
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../tasks/t_21.html">
+            
+                <a href="../tasks/t_21.html">
+            
+                    
+                    第5回・視覚的伝達
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../tasks/t_11.html">
+            
+                <a href="../tasks/t_11.html">
+            
+                    
+                    第6回・基本的な空間解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../tasks/t_12.html">
+            
+                <a href="../tasks/t_12.html">
+            
+                    
+                    第7回・ネットワーク分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../tasks/t_13.html">
+            
+                <a href="../tasks/t_13.html">
+            
+                    
+                    第8回・領域分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="../tasks/t_14.html">
+            
+                <a href="../tasks/t_14.html">
+            
+                    
+                    第9回・点データの分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="../tasks/t_09.html">
+            
+                <a href="../tasks/t_09.html">
+            
+                    
+                    第10回・空間データベース
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.13" data-path="../tasks/t_15.html">
+            
+                <a href="../tasks/t_15.html">
+            
+                    
+                    第11回・ラスタデータの分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.14" data-path="../tasks/t_18.html">
+            
+                <a href="../tasks/t_18.html">
+            
+                    
+                    第12回・空間補間
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.15" data-path="../tasks/t_06.html">
+            
+                <a href="../tasks/t_06.html">
+            
+                    
+                    第13回・リモートセンシングとその解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.16" data-path="../tasks/t_26.html">
+            
+                <a href="../tasks/t_26.html">
+            
+                    
+                    第14回・参加型GISと社会貢献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../high_school/">
+            
+                <a href="../high_school/">
+            
+                    
+                    高校教員向け教材
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../high_school/statistics.html">
+            
+                <a href="../high_school/statistics.html">
+            
+                    
+                    日本と世界の統計情報の可視化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../high_school/kyodofan.html">
+            
+                <a href="../high_school/kyodofan.html">
+            
+                    
+                    地形と土地利用のオーバーレイ分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../high_school/aralsea.html">
+            
+                <a href="../high_school/aralsea.html">
+            
+                    
+                    衛星画像を用いた環境変化地図の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../high_school/fieldwork.html">
+            
+                <a href="../high_school/fieldwork.html">
+            
+                    
+                    身近な地域の調査のためのフィールドワーク
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../high_school/webmap.html">
+            
+                <a href="../high_school/webmap.html">
+            
+                    
+                    防災教育で利活用可能な簡易Web地図の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../lecture/">
+            
+                <a href="../lecture/">
+            
+                    
+                    講義用教材
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../about.html">
+            
+                <a href="../../about.html">
+            
+                    
+                    本プロジェクトについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../policy.html">
+            
+                <a href="../../policy.html">
+            
+                    
+                    利用規約
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../modification_rule.html">
+            
+                <a href="../modification_rule.html">
+            
+                    
+                    教材編集について
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../license.html">
+            
+                <a href="../license.html">
+            
+                    
+                    その他のライセンスについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../questions/questions.html">
+            
+                <a href="../questions/questions.html">
+            
+                    
+                    よくある質問とエラー
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../dictionary/dictionary.html">
+            
+                <a href="../dictionary/dictionary.html">
+            
+                    
+                    用語集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >GRASSビギナーズマニュアル</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="grass&#x30D3;&#x30AE;&#x30CA;&#x30FC;&#x30BA;&#x30DE;&#x30CB;&#x30E5;&#x30A2;&#x30EB;">GRASS&#x30D3;&#x30AE;&#x30CA;&#x30FC;&#x30BA;&#x30DE;&#x30CB;&#x30E5;&#x30A2;&#x30EB;</h1>
+<p>&#x3000;&#x672C;&#x6559;&#x6750;&#x306F;&#x3001;GRASS GIS&#x5165;&#x9580;&#x8005;&#x5411;&#x3051;&#x306E;&#x5B9F;&#x7FD2;&#x7528;&#x6559;&#x6750;&#x3067;&#x3059;&#x3002;GRASS&#x306E;&#x6A5F;&#x80FD;&#x3084;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x306A;&#x3069;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x3000;&#x8AB2;&#x984C;&#x5F62;&#x5F0F;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x672C;&#x6559;&#x6750;&#x3092;&#x4E00;&#x8AAD;&#x3057;&#x305F;&#x5F8C;&#x3001;&#x8AB2;&#x984C;&#x30DA;&#x30FC;&#x30B8;&#x3078;&#x304A;&#x9032;&#x307F;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;GIS&#x521D;&#x5B66;&#x8005;&#x306F;&#x3001;&#x672C;&#x6559;&#x6750;&#x3092;&#x9032;&#x3081;&#x308B;&#x524D;&#x306B;<a href="../00/00.html">GIS&#x306E;&#x57FA;&#x672C;&#x6982;&#x5FF5;</a>&#x306E;&#x6559;&#x6750;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304A;&#x3044;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x672C;&#x6559;&#x6750;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x969B;&#x306F;&#x3001;<a href="../../policy.html">&#x5229;&#x7528;&#x898F;&#x7D04;</a>&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x3044;&#x305F;&#x3060;&#x304D;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x6761;&#x4EF6;&#x306B;&#x540C;&#x610F;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x306E;&#x307F;&#x3054;&#x5229;&#x7528;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
+<h2 id="menu"><strong>Menu</strong></h2>
+<ul>
+<li><a href="#GRASSGIS">GRASS GIS&#x3068;&#x306F;&#xFF1F;</a></li>
+<li><a href="#&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</a></li>
+<li><a href="#&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5F62;&#x5F0F;&#x306B;&#x3064;&#x3044;&#x3066;">&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5F62;&#x5F0F;&#x306B;&#x3064;&#x3044;&#x3066;</a></li>
+<li><a href="#QGIS&#x3067;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;">QGIS&#x3067;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;</a></li>
+<li><a href="#&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;">&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</a></li>
+<li><a href="#&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;GRASS&#x3067;&#x8868;&#x793A;&#x3059;&#x308B;">&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;GRASS&#x3067;&#x8868;&#x793A;&#x3059;&#x308B;</a></li>
+<li><a href="#GRASS&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;">GRASS&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</a></li>
+<li><a href="#&#x6A5F;&#x80FD;&#x8AAC;&#x660E;">&#x6A5F;&#x80FD;&#x8AAC;&#x660E;</a></li>
+<li><a href="#&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3068;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;">&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3068;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;</a></li>
+<li><a href="#&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x8272;&#x5206;&#x3051;">&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x8272;&#x5206;&#x3051;</a></li>
+<li><a href="#3D&#x30D3;&#x30E5;&#x30FC;">3D&#x30D3;&#x30E5;&#x30FC;</a></li>
+<li><a href="#&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;">&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;</a></li>
+<li><a href="#&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x6F14;&#x7B97;">&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x6F14;&#x7B97;</a></li>
+<li><a href="#&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;">&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;</a></li>
+<li><a href="#&#x53C2;&#x8003;&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x7D39;&#x4ECB;">&#x53C2;&#x8003;&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x7D39;&#x4ECB;</a></li>
+</ul>
+<p><strong>&#x4F7F;&#x7528;&#x30C7;&#x30FC;&#x30BF;</strong>
+ &#x5B9F;&#x7FD2;&#x3092;&#x306F;&#x3058;&#x3081;&#x308B;&#x524D;&#x306B;&#x4EE5;&#x4E0B;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<ul>
+<li><p>&#x56FD;&#x571F;&#x5730;&#x7406;&#x9662;&#x300C; &#x57FA;&#x76E4;&#x5730;&#x56F3;&#x60C5;&#x5831;&#x3000;&#x6570;&#x5024;&#x6A19;&#x9AD8;&#x30E2;&#x30C7;&#x30EB;&#x3000;5&#xFF4D;&#x30E1;&#x30C3;&#x30B7;&#x30E5;&#x3000;&#x9AD8;&#x677E;&#x5468;&#x8FBA;&#xFF08;513440&#xFF09;&#x300D;</p>
+<blockquote>
+<p>&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x3001;&#x9999;&#x5DDD;&#x770C;&#x9AD8;&#x677E;&#x5E02;&#x5468;&#x8FBA;&#x306E;5&#xFF4D;DEM&#x3092;&#x30A8;&#x30B3;&#x30EA;&#x30B9;&#x306E;&#x30C4;&#x30FC;&#x30EB;&#x3092;&#x7528;&#x3044;&#x3066;&#x5909;&#x63DB;&#x3057;&#x3001;&#x9AD8;&#x677E;&#x5E02;&#x5317;&#x90E8;&#x5468;&#x8FBA;&#x3092;&#x30C8;&#x30EA;&#x30DF;&#x30F3;&#x30B0;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;&#x3053;&#x306E;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../15/15.html">&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;</a>&#x306E;&#x6559;&#x6750;&#x3092;&#x3054;&#x53C2;&#x7167;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5EA7;&#x6A19;&#x7CFB;&#x306F;&#x3001;&#x4E16;&#x754C;&#x6E2C;&#x5730;&#x7CFB;&#x306E;&#x5E73;&#x9762;&#x76F4;&#x89D2;&#x5EA7;&#x6A19;&#x2163;&#x7CFB;&#x306B;&#x8A2D;&#x5B9A;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+</blockquote>
+</li>
+<li><p>&#x56FD;&#x571F;&#x4EA4;&#x901A;&#x7701;&#x56FD;&#x571F;&#x653F;&#x7B56;&#x5C40;&#x300C;<a href="http://nlftp.mlit.go.jp/ksj/gmlold/index.html" target="_blank">&#x56FD;&#x571F;&#x6570;&#x5024;&#x60C5;&#x5831;</a>&#xFF08;&#x9999;&#x5DDD;&#x770C;&#x3000;&#x9053;&#x8DEF;&#x30C7;&#x30FC;&#x30BF;&#xFF09;&#xFF1A;&#x65E7; &#x7D71;&#x4E00;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x5F62;&#x5F0F;&#x304B;&#x3089;&#x5165;&#x624B;&#x3059;&#x308B;&#x300D;</p>
+<blockquote>
+<p>&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5EA7;&#x6A19;&#x7CFB;&#x306F;&#x3001;&#x4E16;&#x754C;&#x6E2C;&#x5730;&#x7CFB;&#x306E;&#x5E73;&#x9762;&#x76F4;&#x89D2;&#x5EA7;&#x6A19;&#x2163;&#x7CFB;&#x306B;&#x8A2D;&#x5B9A;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x5909;&#x63DB;&#x624B;&#x6CD5;&#x306F;&#x3001;<a href="../08/08.html">&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;</a>&#x306E;&#x6559;&#x6750;&#x306B;&#x307E;&#x3068;&#x3081;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#x6559;&#x6750;</strong>  </p>
+<p> &#x672C;&#x6559;&#x6750;&#x306F;&#x3001;&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#x5F62;&#x5F0F;([&#x30B9;&#x30E9;&#x30A4;&#x30C9;_GRASS])&#x3068;&#x3057;&#x3066;&#x3082;&#x3001;&#x3054;&#x5229;&#x7528;&#x3044;&#x305F;&#x3060;&#x3051;&#x307E;&#x3059;&#x3002;</p>
+<hr>
+<h2 id="grass-gis&#x3068;&#x306F;&#xFF1F;"><a name="GRASS GIS&#x3068;&#x306F;&#xFF1F;"></a>GRASS GIS&#x3068;&#x306F;&#xFF1F;</h2>
+<p>&#x3000;GRASS GIS&#x306F;&#x3001;&#x7121;&#x511F;&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x30BD;&#x30FC;&#x30B9;GIS&#x3067;&#x3059;&#x3002;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3084;&#x30D9;&#x30AF;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306B;&#x95A2;&#x9023;&#x3059;&#x308B;&#x51E6;&#x7406;&#x306E;&#x6A5F;&#x80FD;&#x304C;&#x5145;&#x5B9F;&#x3057;&#x3066;&#x304A;&#x308A;&#x3001;&#x5730;&#x5F62;&#x89E3;&#x6790;&#x3084;&#x753B;&#x50CF;&#x5206;&#x985E;&#x7B49;&#x3067;&#x6D3B;&#x7528;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x672C;&#x6559;&#x6750;&#x306E;&#x4E2D;&#x5FC3;&#x3068;&#x306A;&#x3063;&#x3066;&#x3044;&#x308B;QGIS&#x3067;&#x306F;&#x3001;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x304B;&#x3089;GRASS GIS&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x306E;&#x6559;&#x6750;&#x306F;&#x3001;GRASS GIS&#x306E;&#x5165;&#x9580;&#x6559;&#x6750;&#x3068;&#x3057;&#x3066;&#x3001;&#x57FA;&#x672C;&#x6A5F;&#x80FD;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;GRASS GIS&#x306E;&#x5B9F;&#x8DF5;&#x7684;&#x306A;&#x5229;&#x7528;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x77E5;&#x308A;&#x305F;&#x3044;&#x65B9;&#x306F;&#x3001;<a href="../15/15.html">&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;</a>&#x306E;&#x6559;&#x6750;&#x7B49;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;  </p>
+<p> <a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a>  </p>
+<h2 id="&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h2>
+<p>&#x3000;<a href="https://grass.osgeo.org/" target="_blank">GRASS GIS&#x306E;&#x516C;&#x5F0F;&#x30DA;&#x30FC;&#x30B8;</a> &#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3057;&#x3066;&#x3001;GRASS GIS &#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3059;&#x308B;&#x3002;&#x89E3;&#x51CD;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30AC;&#x30A4;&#x30C9;&#x306B;&#x5F93;&#x3063;&#x3066;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3092;&#x884C;&#x3046;&#x3002;
+&#x203B;QGIS&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3059;&#x308B;&#x3068;&#x4E00;&#x7DD2;&#x306B;GRASS6.4&#x3082;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x308B;&#x304C;&#x3001;&#x3053;&#x306E;&#x6559;&#x6750;&#x3067;&#x306F;GRASS7&#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_1.png" alt="&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;"></p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5F62;&#x5F0F;&#x306B;&#x3064;&#x3044;&#x3066;">&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5F62;&#x5F0F;&#x306B;&#x3064;&#x3044;&#x3066;</h2>
+<p><img src="pic/grasspic_2.png" alt="&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;"></p>
+<h2 id="qgis&#x3067;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;"><a name="QGIS&#x3067;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;"></a>QGIS&#x3067;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;</h2>
+<p>&#x3000;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;GRASS GIS&#x3067;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x6271;&#x3046;&#x305F;&#x3081;&#x306B;&#x5FC5;&#x8981;&#x306A;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>QGIS2.8&#x306E;&#x5834;&#x5408;&#x306F;&#x3001;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x3067;GRASS&#x306E;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x304C;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;&#x3002;&#x4E00;&#x65B9;&#x3001;QGIS2.10&#x4EE5;&#x964D;&#x306E;&#x5834;&#x5408;&#x306F;&#x3001;QGIS Desktop2.10.1 with&#x3000;GRASS&#x3092;&#x8D77;&#x52D5;&#x3057;&#x3001;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x2192;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x7BA1;&#x7406;&#x3068;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x304B;&#x3089;GRASS 6&#x3092;&#x691C;&#x7D22;&#x3057;&#x3001;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x3002;&#x305D;&#x306E;&#x305F;&#x3081;&#x3001;&#x672C;&#x6559;&#x6750;&#x3067;&#x306F;QGIS2.10&#x3092;&#x7528;&#x3044;&#x3066;&#x3044;&#x308B;&#x3082;&#x306E;&#x304C;&#x6DF7;&#x5728;&#x3057;&#x3066;&#x3044;&#x308B;&#x3002;&#x3057;&#x304B;&#x3057;&#x3001;&#x8D77;&#x52D5;&#x4EE5;&#x5916;&#x306E;&#x64CD;&#x4F5C;&#x306B;&#x304A;&#x3044;&#x3066;&#x306F;&#x3001;2.8&#x3068;2.10&#x306E;&#x9593;&#x306B;&#x5927;&#x304D;&#x306A;&#x9055;&#x3044;&#x306F;&#x306A;&#x3044;&#x3002;
+<img src="pic/grasspic_3.png" alt="&#x8D77;&#x52D5;&#x3059;&#x308B;"></p>
+<p>QGIS&#x3067;&#x30E9;&#x30B9;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;&#x53F3;&#x4E0B;&#x304B;&#x3089;&#x5EA7;&#x6A19;&#x7CFB;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3001;&#x300C;&#x30AA;&#x30F3;&#x30B6;&#x30D5;&#x30E9;&#x30A4;CRS&#x5909;&#x63DB;&#x6709;&#x52B9;&#x306B;&#x3059;&#x308B;&#x300D;&#x306E;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;ON&#x306B;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_4.png" alt="&#x753B;&#x50CF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;"></p>
+<p>&#x65B0;&#x898F;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x540D;&#x306A;&#x3069;&#x5FC5;&#x8981;&#x9805;&#x76EE;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_5.png" alt="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x8FFD;&#x52A0;"></p>
+<p>GRASS&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4FDD;&#x5B58;&#x3059;&#x308B;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3002;&#x65B0;&#x3057;&#x3044;&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x540D;&#x3092;&#x4EFB;&#x610F;&#x3067;&#x5165;&#x529B;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_6.png" alt="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x8A2D;&#x5B9A;a"></p>
+<p>&#x30C7;&#x30FC;&#x30BF;&#x5EA7;&#x6A19;&#x7CFB;&#x306B;&#x3042;&#x308F;&#x305B;&#x3066;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7BC4;&#x56F2;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3002;&#x65B0;&#x3057;&#x3044;&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x540D;&#x3092;&#x4EFB;&#x610F;&#x3067;&#x5165;&#x529B;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_7.png" alt="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x8A2D;&#x5B9A;b"></p>
+<p>&#x65B0;&#x898F;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306B;&#x540D;&#x524D;&#x3092;&#x3064;&#x3051;&#x3001;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;&#x3092;&#x5B8C;&#x4E86;&#x3055;&#x305B;&#x308B;&#x3002;
+<img src="pic/grasspic_8.png" alt="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x8A2D;&#x5B9A;c"></p>
+<h3 id="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x8FFD;&#x52A0;-&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;">&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x8FFD;&#x52A0; (&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;)</h3>
+<p>&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;&#x4FDD;&#x5B58;&#x3057;&#x305F;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x30FC;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3001;&#x4F4D;&#x7F6E;&#x3068;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_9.png" alt="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x8FFD;&#x52A0;"></p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;">&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</h2>
+<p>&#x3000;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;QGIS&#x304B;&#x3089;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h3 id="&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;">&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</h3>
+<p>QGIS&#x306B;&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;GRASS&#x3067;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;
+GRASS Tool&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30EA;&#x30B9;&#x30C8;&#x3092;&#x958B;&#x304D;&#x3001;<code>r.in gdal.qgis</code>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3002;
+&#x203B;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;&#x3068;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30EA;&#x30B9;&#x30C8;&#x306F;&#x9023;&#x52D5;&#x3057;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x3001;&#x540C;&#x69D8;&#x306E;&#x51E6;&#x7406;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x53EF;&#x80FD;&#x3002;QGIS&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x306B;&#x3088;&#x3063;&#x3066;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;&#x7B49;&#x306E;&#x914D;&#x7F6E;&#x304C;&#x7570;&#x306A;&#x308B;&#x70B9;&#x306B;&#x6CE8;&#x610F;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_10.png" alt="&#x30E9;&#x30B9;&#x30BF;&#x8AAD;&#x307F;&#x8FBC;&#x307F;a"></p>
+<p>&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x305F;&#x30EC;&#x30A4;&#x30E4;&#xFF08;QGIS&#x3067;&#x8AAD;&#x307F;&#x8FBC;&#x3093;&#x3067;&#x3044;&#x308B;&#x30EC;&#x30A4;&#x30E4;&#xFF09;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x51FA;&#x529B;&#x30E9;&#x30B9;&#x30BF;&#x540D;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x3002;&#x300C;&#x5B9F;&#x884C;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;&#x51E6;&#x7406;&#x304C;&#x6210;&#x529F;&#x3057;&#x305F;&#x3089;&#x300C;&#x51FA;&#x529B;&#x3092;&#x898B;&#x308B;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_11.png" alt="&#x30E9;&#x30B9;&#x30BF;&#x8AAD;&#x307F;&#x8FBC;&#x307F;b"></p>
+<p>&#x4E0B;&#x306E;&#x56F3;&#x306E;&#x3088;&#x3046;&#x306B;&#x3001;GRASS&#x30C7;&#x30FC;&#x30BF;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x4E2D;&#x306B;&#x3001;QGIS&#x3067;&#x8868;&#x793A;&#x3057;&#x3066;&#x3044;&#x308B;&#x30E9;&#x30B9;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x305F;&#xFF08;GRASS&#x3067;&#x51E6;&#x7406;&#x3067;&#x304D;&#x308B;&#x6E96;&#x5099;&#x304C;&#x3067;&#x304D;&#x305F;&#xFF09;&#x3002;
+<img src="pic/grasspic_12.png" alt="&#x30E9;&#x30B9;&#x30BF;&#x8AAD;&#x307F;&#x8FBC;&#x307F;c"></p>
+<h3 id="&#x30D9;&#x30AF;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;">&#x30D9;&#x30AF;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</h3>
+<p>QGIS&#x306B;&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30D9;&#x30AF;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;GRASS&#x3067;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;
+&#x30D9;&#x30AF;&#x30BF;&#x3092;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;QGIS&#x3067;&#x30D9;&#x30AF;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3093;&#x3067;&#x304A;&#x304D;&#x3001;<code>v.in ogr.qgis</code>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3002;</p>
+<p>&#x203B;<strong>GRASS6.4&#x3067;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x3057;&#x305F;&#x30D9;&#x30AF;&#x30BF;&#x306F;&#x3001;GRASS7&#x3067;&#x306F;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x3053;&#x3068;&#x304C;&#x3042;&#x308B;&#x306E;&#x3067;&#x6CE8;&#x610F;&#x3059;&#x308B;&#x3002;</strong>
+<img src="pic/grasspic_13.png" alt="&#x30D9;&#x30AF;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;a"></p>
+<p>&#x51E6;&#x7406;&#x304C;&#x5B8C;&#x4E86;&#x3057;&#x305F;&#x3089;&#x3001;&#x300C;&#x51FA;&#x529B;&#x3092;&#x898B;&#x308B;&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x30C7;&#x30FC;&#x30BF;&#x304C;QGIS&#x3067;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3002;
+<img src="pic/grasspic_14.png" alt="&#x30D9;&#x30AF;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;b"></p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;grass&#x3067;&#x8868;&#x793A;&#x3059;&#x308B;"><a name="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;GRASS&#x3067;&#x8868;&#x793A;&#x3059;&#x308B;"></a>&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;GRASS&#x3067;&#x8868;&#x793A;&#x3059;&#x308B;</h2>
+<p>&#x3000;QGIS&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;GRASS GIS&#x3067;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3001;&#x8868;&#x793A;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;GRASS 7.0.1&#x3092;&#x5229;&#x7528;&#x3057;&#x3001;&#x305D;&#x306E;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>GRASS GIS&#x3092;&#x8D77;&#x52D5;&#x3057;&#x3001;&#x53C2;&#x7167;&#x304B;&#x3089;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x4FDD;&#x5B58;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#xFF08;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#xFF09;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3002;&#x4ECA;&#x56DE;&#x306F;&#x3001;&#x3059;&#x3067;&#x306B;QGIS&#x3067;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x3001;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x304C;&#x5C55;&#x958B;&#x3059;&#x308B;&#xFF08;&#x65B0;&#x898F;&#x306B;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;New&#x304B;&#x3089;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF09;&#x3002;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x300C; Start GRASS session &#x300D;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_15.png" alt="&#x30D9;&#x30AF;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;b"></p>
+<h3 id="&#x753B;&#x9762;&#x8AAC;&#x660E;">&#x753B;&#x9762;&#x8AAC;&#x660E;</h3>
+<p>GRASS GIS&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3068;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306A;&#x753B;&#x9762;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3002;
+<img src="pic/grasspic_16.png" alt="&#x753B;&#x9762;&#x8AAC;&#x660E;"></p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="grass&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;"><a name="GRASS&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;"></a>GRASS&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</h2>
+<p>&#x3000;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;QGIS&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x304B;&#x3089;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8868;&#x793A;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h3 id="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x304B;&#x3089;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;">&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x304B;&#x3089;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</h3>
+<p>&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#x30DE;&#x30C3;&#x30D7;&#x306E;&#x8FFD;&#x52A0;&#x304B;&#x3089;&#x3001;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x30E9;&#x30B9;&#x30BF;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;
+<img src="pic/grasspic_17.png" alt="GRASS&#x30E9;&#x30B9;&#x30BF;&#x8AAD;&#x307F;&#x8FBC;&#x307F;"></p>
+<h3 id="&#x5916;&#x90E8;&#x304B;&#x3089;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;">&#x5916;&#x90E8;&#x304B;&#x3089;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</h3>
+<p>&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x5916;&#x90E8;&#x304B;&#x3089;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x51E6;&#x7406;&#x306F;&#x3001;QGIS&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x304B;&#x3089;&#x30C7;&#x30FC;&#x30BF;&#x304C;&#x8AAD;&#x307F;&#x8FBC;&#x3081;&#x306A;&#x3044;&#x5834;&#x5408;&#x306A;&#x3069;&#x306B;&#x6709;&#x52B9;&#x3067;&#x3059;&#x3002;</p>
+<p>&#x30D9;&#x30AF;&#x30C8;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x304B;&#x3089;&#x3001;.shp&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3001;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_18.png" alt="GRASS&#x30D9;&#x30AF;&#x30BF;&#x8AAD;&#x307F;&#x8FBC;&#x307F;a"></p>
+<p>&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x30D9;&#x30AF;&#x30C8;&#x30EB;&#x30EC;&#x30A4;&#x30E4;&#x304C;&#x3001;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306B;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x308B;&#x3002;
+<img src="pic/grasspic_19.png" alt="GRASS&#x30D9;&#x30AF;&#x30BF;&#x8AAD;&#x307F;&#x8FBC;&#x307F;b"></p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="&#x6A5F;&#x80FD;&#x8AAC;&#x660E;">&#x6A5F;&#x80FD;&#x8AAC;&#x660E;</h2>
+<p>&#x3000;GRASS GIS&#x306B;&#x306F;&#x3001;QGIS&#x306E;&#x3088;&#x3046;&#x306B;&#x5730;&#x56F3;&#x306E;&#x8868;&#x793A;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;&#x3001;&#x5206;&#x6790;&#x3068;&#x3044;&#x3063;&#x305F;&#x6A5F;&#x80FD;&#x304C;&#x7528;&#x610F;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x305D;&#x308C;&#x3089;&#x306E;&#x6A5F;&#x80FD;&#x306B;&#x3064;&#x3044;&#x3066;&#x7C21;&#x5358;&#x306B;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="pic/grasspic_20.png" alt="&#x6A5F;&#x80FD;&#x8AAC;&#x660E;a"></p>
+<ol>
+<li>&#x65B0;&#x898F;&#x30DE;&#x30C3;&#x30D7;&#x8868;&#x793A;</li>
+<li>&#x65B0;&#x898F;&#x30EF;&#x30FC;&#x30AF;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x4F5C;&#x6210;</li>
+<li>&#x30EF;&#x30FC;&#x30AF;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3068;&#x66F8;&#x304D;&#x51FA;&#x3057;</li>
+<li>&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x5185;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#xFF08;4.&#x306E;&#x53F3;&#x5074;&#x306E;&#x30DC;&#x30BF;&#x30F3;&#x306F;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5F62;&#x5F0F;&#x306B;&#x3088;&#x3063;&#x3066;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF09;</li>
+<li>&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7DE8;&#x96C6;</li>
+<li>&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x8868;&#x793A;</li>
+<li>&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;</li>
+<li>&#x30E9;&#x30B9;&#x30BF;&#x8A08;&#x7B97;&#x6A5F;</li>
+<li>&#x5E7E;&#x4F55;&#x88DC;&#x6B63;</li>
+</ol>
+<p><img src="pic/grasspic_21.png" alt="&#x6A5F;&#x80FD;&#x8AAC;&#x660E;b">
+&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#xFF1A;&#x30EF;&#x30FC;&#x30AF;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x30A8;&#x30AF;&#x30B9;&#x30DD;&#x30FC;&#x30C8;&#x306A;&#x3069;</p>
+<p>&#x8A2D;&#x5B9A;&#xFF1A;&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3001;&#x4F5C;&#x696D;&#x74B0;&#x5883;&#x306E;&#x8A2D;&#x5B9A;&#x306A;&#x3069;</p>
+<p><img src="pic/grasspic_22.png" alt="&#x6A5F;&#x80FD;&#x8AAC;&#x660E;c">
+&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#xFF1A;&#x30E9;&#x30B9;&#x30BF;&#x51E6;&#x7406;&#xFF08;&#x5730;&#x5F62;&#x89E3;&#x6790;&#x3001;&#x6C34;&#x6587;&#x89E3;&#x6790;&#x306A;&#x3069;&#xFF09;</p>
+<p>&#x30D9;&#x30AF;&#x30C8;&#x30EB;&#xFF1A;&#x30D9;&#x30AF;&#x30BF;&#x51E6;&#x7406;&#xFF08;&#x30D0;&#x30C3;&#x30D5;&#x30A1;&#x3001;&#x30CD;&#x30C3;&#x30C8;&#x30EF;&#x30FC;&#x30AF;&#x5206;&#x6790;&#x306A;&#x3069;&#xFF09;</p>
+<p><img src="pic/grasspic_23.png" alt="&#x6A5F;&#x80FD;&#x8AAC;&#x660E;d">
+&#x753B;&#x50CF;&#xFF1A;&#x753B;&#x50CF;&#x306E;&#x51E6;&#x7406;&#xFF08;&#x8272;&#x5206;&#x3051;&#x3084;&#xFF32;&#xFF27;&#xFF22;&#x5408;&#x6210;&#x306A;&#x3069;&#xFF09;</p>
+<p>3D raster&#xFF1A;3D&#x8868;&#x793A;&#x306B;&#x95A2;&#x3059;&#x308B;&#x51E6;&#x7406;&#xFF08;&#x65AD;&#x9762;&#x56F3;&#x306A;&#x3069;&#xFF09;</p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3068;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;">&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3068;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;</h2>
+<p>&#x3000;GRASS GIS&#x3067;&#x51E6;&#x7406;&#x3067;&#x306F;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3084;&#x305D;&#x308C;&#x3092;&#x30C4;&#x30EA;&#x30FC;&#x4E0A;&#x306B;&#x307E;&#x3068;&#x3081;&#x305F;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;&#x304C;&#x5229;&#x7528;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x30C7;&#x30FC;&#x30BF;&#x5206;&#x6790;&#x7B49;&#x3067;&#x306E;&#x4F7F;&#x7528;&#x4F8B;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../15/15.html">&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;</a>&#x3084;<a href="../12/12.html">&#x30CD;&#x30C3;&#x30C8;&#x30EF;&#x30FC;&#x30AF;&#x5206;&#x6790;</a>&#x306E;&#x6559;&#x6750;&#x3067;&#x8A73;&#x3057;&#x304F;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x3001;&#x3053;&#x3061;&#x3089;&#x3067;&#x306F;&#x8AAC;&#x660E;&#x3057;&#x3066;&#x3044;&#x307E;&#x305B;&#x3093;&#x3002;</p>
+<p>&#x203B;&#x3000;&#x30EC;&#x30A4;&#x30E4;&#x30C4;&#x30EA;&#x30FC;&#xFF08;&#x30EC;&#x30A4;&#x30E4;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x30A6;&#x30A4;&#x30F3;&#x30C9;&#x30A6;&#x306E;&#x4E0B;&#x306B;&#x5207;&#x308A;&#x66FF;&#x3048;&#x304C;&#x3042;&#x308B;&#xFF09;</p>
+<p><img src="pic/grasspic_24.png" alt="&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3068;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;a">
+&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;:&#x8D64;&#x67A0;&#x5185;&#x306B;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x3068;&#x51E6;&#x7406;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;&#x3002;&#x5165;&#x529B;&#x9014;&#x4E2D;&#x3067;&#x3001;&#x8A72;&#x5F53;&#x3059;&#x308B;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5148;&#x8AAD;&#x307F;&#x3059;&#x308B;&#x3002;</p>
+<p>&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;&#xFF1A;&#x8D64;&#x67A0;&#x5185;&#x306E;&#x30C4;&#x30EA;&#x30FC;&#x304B;&#x3089;&#x3001;&#x51E6;&#x7406;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3002;
++&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x304A;&#x3059;&#x3068;&#x51E6;&#x7406;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3002;</p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x8272;&#x5206;&#x3051;">&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x8272;&#x5206;&#x3051;</h2>
+<p> GRASS GIS&#x3067;&#x306F;&#x3001;QGIS&#x3068;&#x540C;&#x69D8;&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5024;&#x306B;&#x5408;&#x308F;&#x305B;&#x305F;&#x914D;&#x8272;&#x304C;&#x53EF;&#x80FD;&#x3067;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x305D;&#x306E;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h3 id="&#x30D9;&#x30AF;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8272;&#x5206;&#x3051;">&#x30D9;&#x30AF;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8272;&#x5206;&#x3051;</h3>
+<p>&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x8272;&#x3092;&#x9ED2;&#x304B;&#x3089;&#x8D64;&#x3078;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_25.png" alt="&#x8272;&#x5206;&#x3051;a"></p>
+<p>&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x3001;&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x8272;&#x304C;&#x9ED2;&#x304B;&#x3089;&#x8D64;&#x306B;&#x5909;&#x66F4;&#x3055;&#x308C;&#x308B;&#x3002;
+<img src="pic/grasspic_26.png" alt="&#x8272;&#x5206;&#x3051;b"></p>
+<h3 id="&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8272;&#x5206;&#x3051;">&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8272;&#x5206;&#x3051;</h3>
+<p>&#x30E9;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x306B;&#x5FDC;&#x3058;&#x3066;&#x8272;&#x5206;&#x3051;&#x3092;&#x884C;&#x3046;&#x305F;&#x3081;&#x3001;&#x300C;Manage color rules Interactively&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#x30DE;&#x30C3;&#x30D7;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x5206;&#x985E;&#x6570;&#x3068;&#x5024;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_27.png" alt="&#x8272;&#x5206;&#x3051;c"></p>
+<p>&#x5DE6;&#x306E;&#x56F3;&#x306E;&#x3088;&#x3046;&#x306B;&#x3001;&#x7528;&#x610F;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x914D;&#x8272;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x308B;&#x3002;&#x307E;&#x305F;&#x3001;&#x53F3;&#x306E;&#x56F3;&#x306E;&#x3088;&#x3046;&#x306B;&#x3001;&#x4EFB;&#x610F;&#x3067;&#x5024;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x308B;&#x3002;
+<img src="pic/grasspic_28.png" alt="&#x8272;&#x5206;&#x3051;d"></p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="3d&#x30D3;&#x30E5;&#x30FC;"><a name="3D&#x30D3;&#x30E5;&#x30FC;"></a>3D&#x30D3;&#x30E5;&#x30FC;</h2>
+<p>&#x3000;GARSS&#x3067;&#x306F;&#x3001;&#x6A19;&#x9AD8;&#x5024;&#x306A;&#x3069;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x3082;&#x3064;&#x30E9;&#x30B9;&#x30BF;&#x3092;&#x7ACB;&#x4F53;&#x7684;&#x306B;&#x8868;&#x73FE;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x305D;&#x306E;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x203B; &#x4F7F;&#x3063;&#x3066;&#x3044;&#x308B;PC&#x306E;&#x5B9F;&#x884C;&#x74B0;&#x5883;&#x7B49;&#x306B;&#x3088;&#x308A;&#x3001;3D&#x8868;&#x793A;&#x304C;&#x3067;&#x304D;&#x306A;&#x3044;&#x3053;&#x3068;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x4FDD;&#x6301;&#x3057;&#x3066;&#x3044;&#x308B;&#x5024;&#xFF08;&#x4ECA;&#x56DE;&#x306E;&#x5834;&#x5408;&#x306F;&#x3001;&#x6A19;&#x9AD8;&#x5024;&#xFF09;&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;3D&#x8868;&#x793A;&#x3092;&#x884C;&#x3046;&#x305F;&#x3081;&#x3001;2D&#x30D3;&#x30E5;&#x30FC;&#x3092;3D&#x30D3;&#x30E5;&#x30FC;&#x306B;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_29.png" alt="3&#xFF24;&#x30D3;&#x30E5;&#x30FC;a"></p>
+<p>3D&#x30D3;&#x30E5;&#x30FC;&#x3067;&#x306F;&#x3001;&#x5024;&#x306A;&#x3069;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3053;&#x3068;&#x3084;&#x5730;&#x56F3;&#x306E;&#x8996;&#x70B9;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x3002;Z&#x925B;&#x76F4;&#x306E;&#x5024;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3068;&#x3001;&#x5730;&#x5F62;&#x306E;&#x8A87;&#x5F35;&#x306E;&#x5F37;&#x5F31;&#x304C;&#x5909;&#x66F4;&#x3067;&#x304D;&#x308B;&#x3002;
+<img src="pic/grasspic_30.png" alt="3&#xFF24;&#x30D3;&#x30E5;&#x30FC;b"></p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;">&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;</h2>
+<p>&#x3000;GRASS GIS&#x3067;&#x3082;QGIS&#x3068;&#x540C;&#x69D8;&#x306B;&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x8868;&#x793A;&#x3084;&#x7DE8;&#x96C6;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x305D;&#x306E;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x9078;&#x629E;&#x3057;&#x305F;&#x72B6;&#x614B;&#x3067;&#x3001;&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x8868;&#x793A;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x3001;&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x304C;&#x8868;&#x793A;&#x3067;&#x304D;&#x308B;&#x3002;
+<img src="pic/grasspic_31.png" alt="&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;"></p>
+<h3 id="&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306E;&#x8FFD;&#x52A0;">&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306E;&#x8FFD;&#x52A0;</h3>
+<p>&#x5217;&#x540D;&#x3092;&#x5165;&#x529B;&#x3057;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x578B;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x52A0;&#x7B97;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x304C;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x308B;&#x3002;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x65B0;&#x898F;&#x306B;length(&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x9577;&#x3055;)&#x306E;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x3044;&#x308B;&#xFF08;&#x3053;&#x306E;&#x6642;&#x70B9;&#x3067;&#x306F;&#x3001;length&#x3068;&#x3044;&#x3046;&#x540D;&#x524D;&#x306E;&#x7A7A;&#x306E;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x304C;&#x3067;&#x304D;&#x3066;&#x3044;&#x308B;&#x72B6;&#x614B;&#xFF09;&#x3002;
+<img src="pic/grasspic_32.png" alt="&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306E;&#x8FFD;&#x52A0;"></p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x6F14;&#x7B97;">&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x6F14;&#x7B97;</h2>
+<p>&#x3000;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306E;&#x8FFD;&#x52A0;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x65B0;&#x898F;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306B;&#x3001;&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x9577;&#x3055;&#x3092;&#x8A08;&#x7B97;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x306E;&#x89E3;&#x8AAC;&#x3092;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x65B0;&#x898F;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306E;&#x4E0A;&#x3067;&#x53F3;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;&#x300C;&#x8A08;&#x7B97;&#x300D;&#x304B;&#x3089;&#x300C;&#x30E9;&#x30A4;&#x30F3;&#x9577;&#x300D;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_33.png" alt="&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x6F14;&#x7B97;a"></p>
+<p>&#x5404;&#x8DEF;&#x7DDA;&#x306E;&#x30E9;&#x30A4;&#x30F3;&#x9577;&#x304C;&#x8A08;&#x7B97;&#x3067;&#x304D;&#x305F;&#xFF08;&#x7D71;&#x5408;&#x3057;&#x3066;&#x3044;&#x306A;&#x3044;&#x305F;&#x3081;&#x3001;&#x3076;&#x3064;&#x5207;&#x308A;&#x306E;&#x8DEF;&#x7DDA;&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x308B;&#xFF09;&#x3002;
+<img src="pic/grasspic_34.png" alt="&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x6F14;&#x7B97;b"></p>
+<h3 id="&#x5024;&#x3092;&#x7528;&#x3044;&#x305F;&#x914D;&#x8272;">&#x5024;&#x3092;&#x7528;&#x3044;&#x305F;&#x914D;&#x8272;</h3>
+<p>&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306E;&#x5024;&#x3092;&#x7528;&#x3044;&#x3066;&#x8272;&#x5206;&#x3051;&#x3092;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>color &#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#xFF08;&#x6587;&#x5B57;&#x578B;&#xFF1A;varchar&#xFF09; &#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_35.png" alt="&#x30AB;&#x30E9;&#x30FC;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;a"></p>
+<p>&#x53F3;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3067;&#x3001;Field calculator&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x3001;&#x56FD;&#x9053;&#x3068;&#x305D;&#x308C;&#x4EE5;&#x5916;&#x3067;&#x8272;&#x5206;&#x3051;&#x3092;&#x884C;&#x3046;&#x3002;
+<img src="pic/grasspic_36.png" alt="&#x30AB;&#x30E9;&#x30FC;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;b"></p>
+<p>&#x8272;&#x5206;&#x3051;&#x7528;&#x306B;&#x3001;&#x5206;&#x985E;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_37.png" alt="&#x5206;&#x985E;">
+<strong>UPDATE &#x30C7;&#x30FC;&#x30BF;&#x540D; SET &#x8A08;&#x7B97;&#x3057;&#x305F;&#x3044;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x540D;
+ = &#x5165;&#x529B;&#x3057;&#x305F;&#x3044;&#x5024; WHERE &#x5206;&#x985E;&#x306B;&#x7528;&#x3044;&#x308B;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9; = &#x5206;&#x985E;&#x306B;&#x57FA;&#x3065;&#x304F;&#x5024;</strong></p>
+<p>&#x30D9;&#x30AF;&#x30C8;&#x30EB;&#x304B;&#x3089;&#x30AB;&#x30E9;&#x30FC;&#x8ABF;&#x6574;&#x3001;&#x300C;Manage color rules Interactively&#x300D;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3002;
+ <img src="pic/grasspic_38.png" alt="&#x5206;&#x985E;&#x8868;&#x793A;"></p>
+<p> &#x5C5E;&#x6027;&#x5217;&#x3092;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3057;&#x3001;&#x30AB;&#x30E9;&#x30FC;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3068;&#x3001;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3002;
+<img src="pic/grasspic_39.png" alt="&#x5C5E;&#x6027;&#x5206;&#x985E;a"></p>
+<p>&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x958B;&#x304F;&#x3068;&#x3001;GRASSRGB&#x306E;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x304C;&#x3067;&#x304D;&#x3066;&#x3044;&#x308B;&#x3002;
+&#x3053;&#x306E;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306B;color&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_40.png" alt="&#x5C5E;&#x6027;&#x5206;&#x985E;b"></p>
+<p>GRASSRGB&#x306E;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x5217;&#x3092;&#x8FFD;&#x52A0;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x3067;&#x308B;&#x304C;&#x8272;&#x5206;&#x3051;&#x304C;&#x3067;&#x304D;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x3001;OK&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_41.png" alt="&#x5C5E;&#x6027;&#x5206;&#x985E;c"></p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;">&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;</h2>
+<p>&#x3000;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;GRASS GIS&#x3067;&#x306E;&#x30DE;&#x30C3;&#x30D7;&#x306E;&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304B;&#x3089;&#x3001;&#x30AB;&#x30FC;&#x30C8;&#x30B0;&#x30E9;&#x30D5;&#x30A3;&#x30C3;&#x30AF;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30B6;&#x30FC;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_42.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;a"></p>
+<p>&#x30AB;&#x30FC;&#x30C8;&#x30B0;&#x30E9;&#x30D5;&#x30A3;&#x30C3;&#x30AF;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30B6;&#x30FC;&#x3092;&#x8D77;&#x52D5;&#x3057;&#x3001;&#x5730;&#x56F3;&#x3084;&#x51E1;&#x4F8B;&#x306A;&#x3069;&#x3092;&#x633F;&#x5165;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_43.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;b"></p>
+<ol>
+<li>&#x5730;&#x56F3;&#x306E;&#x7BC4;&#x56F2;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF08;&#x4E00;&#x756A;&#x6700;&#x521D;&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#xFF09;&#x3002;</li>
+<li>&#x30E9;&#x30B9;&#x30BF;&#x30DE;&#x30C3;&#x30D7;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;</li>
+<li>&#x30D9;&#x30AF;&#x30BF;&#x30DE;&#x30C3;&#x30D7;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;</li>
+<li>&#x51E1;&#x4F8B;&#x3001;&#x65B9;&#x4F4D;&#x3001;&#x7E2E;&#x5C3A;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;</li>
+<li>&#x5730;&#x56F3;&#x306E;&#x66F8;&#x304D;&#x51FA;&#x3057;&#xFF08;PDF&#xFF09;&#x3092;&#x3059;&#x308B;&#x3002;</li>
+</ol>
+<p>&#x5730;&#x56F3;&#x306E;&#x7BC4;&#x56F2;&#x3092;&#x30C9;&#x30E9;&#x30C3;&#x30B0;&#x3057;&#x3066;&#x8A2D;&#x5B9A;&#x3057;&#x3001;&#x30E9;&#x30B9;&#x30BF;&#x30DE;&#x30C3;&#x30D7;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_44.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;c"></p>
+<p>&#x30E9;&#x30B9;&#x30BF;&#x30DE;&#x30C3;&#x30D7;&#x304C;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x305F;&#x306E;&#x3067;&#x3001;&#x30D9;&#x30AF;&#x30BF;&#x30E9;&#x30A4;&#x30F3;&#x3082;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x304B;&#x3089;&#x3001;&#x9053;&#x8DEF;&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x52A0;&#x7B97;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_45.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;d"></p>
+<p>&#x30E9;&#x30B9;&#x30BF;&#x30DE;&#x30C3;&#x30D7;&#x3068;&#x30D9;&#x30AF;&#x30BF;&#x30DE;&#x30C3;&#x30D7;&#x306E;&#x51E1;&#x4F8B;&#x3092;&#x6574;&#x3048;&#x308B;&#x3002;
+&#x30D9;&#x30AF;&#x30BF;&#x30DE;&#x30C3;&#x30D7;&#x306E;&#x51E1;&#x4F8B;&#x306E;&#x8868;&#x793A;&#x540D;&#x306F;&#x3001;&#x30E9;&#x30D9;&#x30EB;&#x306E;&#x8FFD;&#x52A0;&#x304B;&#x3089;&#x53EF;&#x80FD;&#x3002;
+&#x8FFD;&#x52A0;&#x3067;&#x304D;&#x305F;&#x3089;&#x3001;&#x8FFD;&#x52A0;&#x30A2;&#x30A4;&#x30C6;&#x30E0;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x914D;&#x7F6E;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_46.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;e"></p>
+<p>&#x9577;&#x3055;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x3001;&#x5358;&#x4F4D;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF08;&#x4ECA;&#x56DE;&#x306F;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x3092;&#x4F7F;&#x7528;&#xFF09;&#x3002;
+&#x7E2E;&#x5C3A;&#x30D0;&#x30FC;&#x306E;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;OK&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x305F;&#x3089;&#x3001;&#x8FFD;&#x52A0;&#x30A2;&#x30A4;&#x30C6;&#x30E0;&#x306E;&#x914D;&#x7F6E;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_47.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;f"></p>
+<p>&#x65B9;&#x4F4D;&#x8A18;&#x53F7;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;
+&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3067;&#x30B5;&#x30A4;&#x30BA;&#x3092;&#x6574;&#x3048;&#x308B;&#x3002;
+&#x8FFD;&#x52A0;&#x3067;&#x304D;&#x305F;&#x3089;&#x3001;&#x8FFD;&#x52A0;&#x30A2;&#x30A4;&#x30C6;&#x30E0;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x914D;&#x7F6E;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3002;
+<img src="pic/grasspic_48.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;g"></p>
+<p>&#x914D;&#x7F6E;&#x304C;&#x5B8C;&#x4E86;&#x3057;&#x305F;&#x306E;&#x3067;&#x3001;PDF&#x3067;&#x66F8;&#x304D;&#x51FA;&#x3059;&#xFF08;&#x30D7;&#x30EC;&#x30D3;&#x30E5;&#x30FC;&#x306F;&#x3001;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;&#x304C;&#x3042;&#x308B;&#xFF09;&#x3002;
+<img src="pic/grasspic_49.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;h"></p>
+<p>&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x3001;PDF&#x3067;&#x30DE;&#x30C3;&#x30D7;&#x304C;&#x8868;&#x793A;&#x3067;&#x304D;&#x308B;&#x3002;
+<img src="pic/grasspic_50.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;i"></p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h2 id="&#x53C2;&#x8003;&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x7D39;&#x4ECB;">&#x53C2;&#x8003;&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x7D39;&#x4ECB;</h2>
+<p><img src="pic/grasspic_51.png" alt="&#x53C2;&#x8003;">
+1.<a href="https://grass.osgeo.org/" target="_blank">https://grass.osgeo.org/</a>
+2.<a href="https://www.osgeo.jp/projects/foss4g-mext" target="_blank">https://www.osgeo.jp/projects/foss4g-mext</a></p>
+<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<h4 id="&#x3053;&#x306E;&#x6559;&#x6750;&#x306E;&#x8AB2;&#x984C;&#x30DA;&#x30FC;&#x30B8;grass&#x3078;&#x9032;&#x3080;">&#x3053;&#x306E;&#x6559;&#x6750;&#x306E;[&#x8AB2;&#x984C;&#x30DA;&#x30FC;&#x30B8;_GRASS]&#x3078;&#x9032;&#x3080;</h4>
+<h4 id="&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;">&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;</h4>
+<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x30AD;&#x30E3;&#x30D7;&#x30C1;&#x30E3;&#x753B;&#x50CF;&#x306E;&#x51FA;&#x5178;&#x3084;&#x30AF;&#x30EC;&#x30B8;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../license.html">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;</a>&#x3088;&#x308A;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p></p><h2 style="background-color:#F8F5FD;text-align:center;" id="&#x6559;&#x6750;&#x306E;&#x5229;&#x7528;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;">&#x6559;&#x6750;&#x306E;&#x5229;&#x7528;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;</h2>&#x3000;&#x672C;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3067;&#x306F;&#x3001;&#x6559;&#x6750;&#x306E;&#x6539;&#x826F;&#x3092;&#x76EE;&#x7684;&#x3068;&#x3057;&#x305F;&#x4EFB;&#x610F;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;&#x3092;&#x5B9F;&#x65BD;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3054;&#x5354;&#x529B;&#x3044;&#x305F;&#x3060;&#x3051;&#x308B;&#x65B9;&#x306F;&#x3001;<a href="https://customform.jp/form/input/14328/" target="_blank">&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;</a>&#x306B;&#x304A;&#x9032;&#x307F;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x3054;&#x5354;&#x529B;&#x306E;&#x307B;&#x3069;&#x3088;&#x308D;&#x3057;&#x304F;&#x304A;&#x9858;&#x3044;&#x3044;&#x305F;&#x3057;&#x307E;&#x3059;&#x3002;<br><br>&#x203B; &#x672C;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;&#x306E;&#x6210;&#x679C;&#x306F;&#x3001;&#x6559;&#x6750;&#x306E;&#x6539;&#x826F;&#x306E;&#x307B;&#x304B;&#x3001;&#x5B66;&#x4F1A;&#x3067;&#x306E;&#x767A;&#x8868;&#x7B49;&#x306E;&#x7814;&#x7A76;&#x76EE;&#x7684;&#x3067;&#x3082;&#x5229;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;&#x307E;&#x305F;&#x3001;&#x672C;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;&#x3067;&#x306F;&#x3001;&#x500B;&#x4EBA;&#x304C;&#x7279;&#x5B9A;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306A;&#x8CEA;&#x554F;&#x306F;&#x8A2D;&#x3051;&#x3066;&#x304A;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;<p></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../QGIS/QGIS_3.4.html#参考ページ等" class="navigation navigation-prev " aria-label="Previous page: 参考ページ等">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="GRASS.html" class="navigation navigation-next " aria-label="Next page: GRASS GISとは？">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GRASSビギナーズマニュアル","level":"1.7","depth":1,"next":{"title":"GRASS GISとは？","level":"1.7.1","depth":2,"path":"materials/GRASS/GRASS.md","ref":"./materials/GRASS/GRASS.md","articles":[]},"previous":{"title":"参考ページ等","level":"1.6.16","depth":2,"anchor":"#参考ページ等","path":"materials/QGIS/QGIS_3.4.md","ref":"./materials/QGIS/QGIS_3.4.md#参考ページ等","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG, CC BY-SA 4.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","gitbook":">= 3.0.0"},"file":{"path":"materials/GRASS/GRASS.md","mtime":"2019-01-15T02:12:28.644Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-01-15T03:35:55.504Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
