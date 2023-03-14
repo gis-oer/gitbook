@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>ラスターデータの読み込み · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,39 +3273,39 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;">&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</h1>
-<p>&#x753B;&#x50CF;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x51FA;&#x308B;&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x65B9;&#x3092;&#x5B66;&#x3073;&#x307E;&#x3059;&#x3002;
-&#x307E;&#x305F;&#x3001;&#x8AAD;&#x307F;&#x8FBC;&#x3093;&#x3060;&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x914D;&#x5217;&#x306B;&#x5909;&#x63DB;&#x3057;&#x3001;&#x7C21;&#x5358;&#x306A;&#x914D;&#x5217;&#x540C;&#x58EB;&#x306E;&#x8A08;&#x7B97;&#x3092;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+                                <h1 id="ラスターデータの読み込み">ラスターデータの読み込み</h1>
+<p>画像のデータ出るラスターデータの読み込み方を学びます。
+また、読み込んだラスターデータを配列に変換し、簡単な配列同士の計算をします。</p>
 <h2 id="menu"><strong>Menu</strong></h2>
 <ul>
-<li><a href="#&#x30D0;&#x30F3;&#x30C9;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3068;&#x914D;&#x5217;&#x5316;">&#x30D0;&#x30F3;&#x30C9;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3068;&#x914D;&#x5217;&#x5316;</a></li>
-<li><a href="#&#x914D;&#x5217;&#x306E;&#x7D50;&#x5408;">&#x914D;&#x5217;&#x306E;&#x7D50;&#x5408;</a></li>
-<li><a href="#&#x753B;&#x50CF;&#x306E;&#x4F5C;&#x6210;">&#x753B;&#x50CF;&#x306E;&#x4F5C;&#x6210;</a></li>
+<li><a href="#バンドの読み込みと配列化">バンドの読み込みと配列化</a></li>
+<li><a href="#配列の結合">配列の結合</a></li>
+<li><a href="#画像の作成">画像の作成</a></li>
 </ul>
-<h2 id="&#x30D0;&#x30F3;&#x30C9;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3068;&#x914D;&#x5217;&#x5316;"><a name="&#x30D0;&#x30F3;&#x30C9;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3068;&#x914D;&#x5217;&#x5316;"></a>&#x30D0;&#x30F3;&#x30C9;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3068;&#x914D;&#x5217;&#x5316;</h2>
-<p>&#x753B;&#x50CF;&#x306E;&#x30D0;&#x30F3;&#x30C9;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x3001;<code>ndarray</code>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306B;&#x3057;&#x307E;&#x3059;&#x3002;
-&#x6700;&#x521D;&#x306B;&#x753B;&#x50CF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x305F;&#x3081;&#x306E;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3001;gdal&#x3092;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<h2 id="バンドの読み込みと配列化"><a name="バンドの読み込みと配列化"></a>バンドの読み込みと配列化</h2>
+<p>画像のバンドを取得し、<code>ndarray</code>オブジェクトにします。
+最初に画像を読み込むためのライブラリ、gdalをインポートしましょう。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;<span class="hljs-keyword">from</span> osgeo <span class="hljs-keyword">import</span> gdal
 </code></pre>
-<p>&#x203B;&#x524D;&#x56DE;&#xFF08;NumPy&#x306B;&#x3064;&#x3044;&#x3066;&#xFF09;&#x306E;&#x7D9A;&#x304D;&#x3067;&#x5B66;&#x7FD2;&#x3057;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;<code>import numpy as np</code>&#x3082;&#x884C;&#x3046;&#x3002;</p>
-<p>QGIS&#x3067;<code>sample_image.tif</code>&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x6DF7;&#x3093;&#x3060;&#x3089;&#x3001;&#x30EC;&#x30A4;&#x30E4;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3092;&#x958B;&#x3044;&#x3066;&#x3001;&#x60C5;&#x5831;&#x3092;&#x307F;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x30D1;&#x30B9;&#x3084;&#x3001;CRS&#x3001;4&#x30D0;&#x30F3;&#x30C9;&#x3042;&#x308B;&#x3053;&#x3068;&#x304C;&#x308F;&#x304B;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>※前回（NumPyについて）の続きで学習していない場合は、<code>import numpy as np</code>も行う。</p>
+<p>QGISで<code>sample_image.tif</code>を読み込み混んだら、レイヤプロパティを開いて、情報をみておきましょう。パスや、CRS、4バンドあることがわかります。</p>
 <p><img src="pic/7pic-1.png" alt="sample_image"></p>
 <p><img src="pic/7pic-2.png" alt="sample_image"></p>
-<p>&#x3055;&#x3066;&#x3001;&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#x3082;&#x30D9;&#x30AF;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x540C;&#x69D8;<code>iface</code>&#x3092;&#x4F7F;&#x3063;&#x3066;&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;&#x30C7;&#x30FC;&#x30BF;&#x306E;URI&#x3082;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>さて、ラスターもベクターデータ同様<code>iface</code>を使ってレイヤを取得します。データのURIも取得しましょう。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;layer = iface.activeLayer()
 &gt;&gt;&gt;uri = layer.dataProvider().dataSourceUri()
 &gt;&gt;&gt;uri
 <span class="hljs-string">&apos;C:/work/sample_image.tif&apos;</span>
 </code></pre>
-<p>&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x5C02;&#x7528;&#x3067;&#x958B;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>データを読み込み専用で開きます。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;src = gdal.Open(uri, gdal.GA_ReadOnly)
 &gt;&gt;&gt;src
-&lt;osgeo.gdal.Dataset; proxy of &lt;Swig Object of type <span class="hljs-string">&apos;GDALDatasetShadow *&apos;</span> at <span class="hljs-number">0x000002517233A330</span>&gt; &gt;
+&lt;osgeo.gdal.Dataset; proxy of &lt;Swig Object of <span class="hljs-built_in">type</span> <span class="hljs-string">&apos;GDALDatasetShadow *&apos;</span> at <span class="hljs-number">0x000002517233A330</span>&gt; &gt;
 </code></pre>
-<p>&#x30D0;&#x30F3;&#x30C9;1&#x3092;&#x53D6;&#x5F97;&#x3057;&#x914D;&#x5217;&#x5316;&#x3057;&#x307E;&#x3059;&#x3002;&#x30D0;&#x30F3;&#x30C9;1&#x306F;&#x8D64;&#x8272;&#x306E;&#x6210;&#x5206;&#x306A;&#x306E;&#x3067;<code>red</code>&#x3068;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p>バンド1を取得し配列化します。バンド1は赤色の成分なので<code>red</code>とします。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;red = src.GetRasterBand(<span class="hljs-number">1</span>)
 &gt;&gt;&gt;red
-&lt;osgeo.gdal.Band; proxy of &lt;Swig Object of type <span class="hljs-string">&apos;GDALRasterBandShadow *&apos;</span> at <span class="hljs-number">0x000002517277B7B0</span>&gt; &gt;
+&lt;osgeo.gdal.Band; proxy of &lt;Swig Object of <span class="hljs-built_in">type</span> <span class="hljs-string">&apos;GDALRasterBandShadow *&apos;</span> at <span class="hljs-number">0x000002517277B7B0</span>&gt; &gt;
 &gt;&gt;&gt;red_a = red.ReadAsArray()
 &gt;&gt;&gt;red_a
 array([[<span class="hljs-number">10099</span>,  <span class="hljs-number">9860</span>, <span class="hljs-number">10110</span>, ..., <span class="hljs-number">10043</span>,  <span class="hljs-number">9929</span>,  <span class="hljs-number">9943</span>],
@@ -3317,7 +3316,7 @@ array([[<span class="hljs-number">10099</span>,  <span class="hljs-number">9860<
        [<span class="hljs-number">11912</span>, <span class="hljs-number">11917</span>, <span class="hljs-number">11973</span>, ..., <span class="hljs-number">22082</span>, <span class="hljs-number">22389</span>, <span class="hljs-number">22389</span>],
        [<span class="hljs-number">11932</span>, <span class="hljs-number">11921</span>, <span class="hljs-number">11938</span>, ..., <span class="hljs-number">22064</span>, <span class="hljs-number">22448</span>, <span class="hljs-number">22448</span>]], dtype=uint16)
 </code></pre>
-<p>&#x540C;&#x69D8;&#x306B;&#x30D0;&#x30F3;&#x30C9;2&#x304B;&#x3089;4&#x3001;&#x7DD1;&#x3001;&#x9752;&#x3001;&#x8FD1;&#x8D64;&#x5916;&#x306E;&#x30D0;&#x30F3;&#x30C9;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x3001;&#x914D;&#x5217;&#x5316;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p>同様にバンド2から4、緑、青、近赤外のバンドを取得し、配列化します。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;green = src.GetRasterBand(<span class="hljs-number">2</span>)
 &gt;&gt;&gt;green_a = green.ReadAsArray()
 &gt;&gt;&gt;blue = src.GetRasterBand(<span class="hljs-number">3</span>)
@@ -3325,9 +3324,9 @@ array([[<span class="hljs-number">10099</span>,  <span class="hljs-number">9860<
 &gt;&gt;&gt;near_red = src.GetRasterBand(<span class="hljs-number">4</span>)
 &gt;&gt;&gt;near_red_a = near_red.ReadAsArray()
 </code></pre>
-<h2 id="&#x914D;&#x5217;&#x306E;&#x57FA;&#x672C;&#x60C5;&#x5831;&#x306E;&#x53D6;&#x5F97;"><a name="&#x914D;&#x5217;&#x306E;&#x57FA;&#x672C;&#x60C5;&#x5831;&#x306E;&#x53D6;&#x5F97;"></a>&#x914D;&#x5217;&#x306E;&#x57FA;&#x672C;&#x60C5;&#x5831;&#x306E;&#x53D6;&#x5F97;</h2>
-<p>&#x914D;&#x5217;&#x306E;&#x5927;&#x304D;&#x3055;&#x3084;&#x6B21;&#x5143;&#x6570;&#x306A;&#x3069;&#x57FA;&#x672C;&#x60C5;&#x5831;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-&#x914D;&#x5217;&#x306E;&#x5927;&#x304D;&#x3055;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="配列の基本情報の取得"><a name="配列の基本情報の取得"></a>配列の基本情報の取得</h2>
+<p>配列の大きさや次元数など基本情報を取得してみましょう。
+配列の大きさを取得します。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;width = red_a.shape[<span class="hljs-number">1</span>]
 &gt;&gt;&gt;width
 <span class="hljs-number">1483</span>
@@ -3335,15 +3334,15 @@ array([[<span class="hljs-number">10099</span>,  <span class="hljs-number">9860<
 &gt;&gt;&gt;height
 <span class="hljs-number">1282</span>
 </code></pre>
-<p>&#x914D;&#x5217;&#x306E;&#x6B21;&#x5143;&#x6570;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p>配列の次元数を取得します。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;dim = red_a.ndim
 <span class="hljs-number">2</span>
 </code></pre>
-<p>&#x914D;&#x5217;&#x306E;&#x5168;&#x8981;&#x7D20;&#x6570;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p>配列の全要素数を取得します。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;size = red_a.size
 </code></pre>
-<h2 id="&#x914D;&#x5217;&#x306E;&#x7D50;&#x5408;"><a name="&#x914D;&#x5217;&#x306E;&#x7D50;&#x5408;"></a>&#x914D;&#x5217;&#x306E;&#x7D50;&#x5408;</h2>
-<p>&#x914D;&#x5217;&#x3092;&#xFF11;&#x3064;&#x306B;&#x307E;&#x3068;&#x3081;&#x3066;3&#x6B21;&#x5143;&#x306E;&#x914D;&#x5217;&#x306B;&#x3057;&#x3066;&#x307F;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="配列の結合"><a name="配列の結合"></a>配列の結合</h2>
+<p>配列を１つにまとめて3次元の配列にしてみます。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;array = np.stack([red_a, green_a, blue_a, near_red_a], axis = <span class="hljs-number">1</span>)
 &gt;&gt;&gt;array
 array([[[<span class="hljs-number">10099</span>,  <span class="hljs-number">9860</span>, <span class="hljs-number">10110</span>, ..., <span class="hljs-number">10043</span>,  <span class="hljs-number">9929</span>,  <span class="hljs-number">9943</span>],
@@ -3378,41 +3377,41 @@ array([[[<span class="hljs-number">10099</span>,  <span class="hljs-number">9860
         [ <span class="hljs-number">9989</span>, <span class="hljs-number">10056</span>, <span class="hljs-number">10081</span>, ..., <span class="hljs-number">20767</span>, <span class="hljs-number">21037</span>, <span class="hljs-number">21037</span>],
         [ <span class="hljs-number">9551</span>,  <span class="hljs-number">9588</span>,  <span class="hljs-number">9658</span>, ..., <span class="hljs-number">21183</span>, <span class="hljs-number">21474</span>, <span class="hljs-number">21474</span>]]], dtype=uint16)
 </code></pre>
-<h2 id="&#x753B;&#x50CF;&#x306E;&#x4F5C;&#x6210;"><a name="&#x753B;&#x50CF;&#x306E;&#x4F5C;&#x6210;"></a>&#x753B;&#x50CF;&#x306E;&#x4F5C;&#x6210;</h2>
-<p>&#x8D64;&#x8272;&#x306E;&#x30D0;&#x30F3;&#x30C9;&#x306E;&#x753B;&#x50CF;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<p><code>GetGeoTransform()</code>&#x3067;&#x5404;&#x7A2E;&#x5EA7;&#x6A19;&#x5024;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;
-&#x53D6;&#x5F97;&#x3067;&#x304D;&#x308B;&#x5024;&#x306F;(&#x5DE6;&#x4E0A;&#x7AEF;&#x306E;X&#x5EA7;&#x6A19;, &#x30D4;&#x30AF;&#x30BB;&#x30EB;&#x5E45;, &#x56DE;&#x8EE2;&#x89D2;, &#x5DE6;&#x4E0A;&#x7AEF;&#x306E;Y&#x5EA7;&#x6A19;, &#x56DE;&#x8EE2;&#x89D2;, &#x30D4;&#x30AF;&#x30BB;&#x30EB;&#x9AD8;&#x3055;)&#x3067;&#x3059;&#x3002;</p>
+<h2 id="画像の作成"><a name="画像の作成"></a>画像の作成</h2>
+<p>赤色のバンドの画像を作成します。</p>
+<p><code>GetGeoTransform()</code>で各種座標値を取得します。
+取得できる値は(左上端のX座標, ピクセル幅, 回転角, 左上端のY座標, 回転角, ピクセル高さ)です。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;geotransform = src.GetGeoTransform()
 &gt;&gt;&gt;geotransform
-(<span class="hljs-number">139.305155736</span>, <span class="hljs-number">0.00032506128186109986</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">35.646111217</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">-0.00027471445475818956</span>)
+(<span class="hljs-number">139.305155736</span>, <span class="hljs-number">0.00032506128186109986</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">35.646111217</span>, <span class="hljs-number">0.0</span>, -<span class="hljs-number">0.00027471445475818956</span>)
 </code></pre>
-<p>&#x53D6;&#x5F97;&#x3057;&#x305F;&#x5404;&#x7A2E;&#x5EA7;&#x6A19;&#x5024;&#x3092;&#x5909;&#x6570;&#x306B;&#x4EE3;&#x5165;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p>取得した各種座標値を変数に代入します。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;originY = geotransform[<span class="hljs-number">3</span>]
 &gt;&gt;&gt;originX = geotransform[<span class="hljs-number">0</span>]
 &gt;&gt;&gt;pixelWidth = geotransform[<span class="hljs-number">1</span>]
 &gt;&gt;&gt;pixelHeight = geotransform[<span class="hljs-number">5</span>]
 </code></pre>
-<p>&#x3053;&#x3053;&#x3067;&#x53D6;&#x5F97;&#x3057;&#x305F;&#x914D;&#x5217;&#x306E;&#x5927;&#x304D;&#x3055;&#x3092;&#x5143;&#x306B;&#x753B;&#x50CF;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x753B;&#x50CF;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x3068;&#x5F62;&#x5F0F;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>ここで取得した配列の大きさを元に画像を作成します。作成する画像のファイル名と形式を指定しておきます。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;dst = <span class="hljs-string">&quot;C:/work/red_image.tif&quot;</span>
 &gt;&gt;&gt;driver = gdal.GetDriverByName(<span class="hljs-string">&apos;GTiff&apos;</span>)
 &gt;&gt;&gt;dst_raster = driver.Create(dst, width, height, <span class="hljs-number">1</span>, gdal.GDT_UInt16)
 </code></pre>
-<p>&#x5404;&#x7A2E;&#x5C5E;&#x6027;&#x5024;&#x3092;&#x753B;&#x50CF;&#x306B;&#x6E21;&#x3057;&#x3001;&#x5EA7;&#x6A19;&#x5024;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p>各種属性値を画像に渡し、座標値を設定します。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;dst_raster.SetGeoTransform((originX, pixelWidth, <span class="hljs-number">0</span>, originY, <span class="hljs-number">0</span>, pixelHeight))
 <span class="hljs-number">0</span>
 </code></pre>
-<p>&#x4F5C;&#x6210;&#x3057;&#x305F;&#x753B;&#x50CF;&#x306E;&#x30D0;&#x30F3;&#x30C9;&#x306B;&#x8D64;&#x8272;&#x306E;&#x914D;&#x5217;&#x3092;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x307E;&#x3059;&#x3002;</p>
+<p>作成した画像のバンドに赤色の配列を書き込みます。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;dst_band = dst_raster.GetRasterBand(<span class="hljs-number">1</span>)
 &gt;&gt;&gt;dst_band.WriteArray(red_a)
 <span class="hljs-number">0</span>
 </code></pre>
-<p>&#x6700;&#x5F8C;&#x306B;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x9589;&#x3058;&#x3066;&#x7D42;&#x4E86;&#x3067;&#x3059;&#x3002;</p>
+<p>最後にファイルを閉じて終了です。</p>
 <pre><code class="lang-Python">&gt;&gt;&gt;dst_band.FlushCache()
-&gt;&gt;&gt;dst_raster = <span class="hljs-keyword">None</span>
+&gt;&gt;&gt;dst_raster = <span class="hljs-literal">None</span>
 </code></pre>
-<p>&#x4F5C;&#x6210;&#x3057;&#x305F;&#x753B;&#x50CF;&#x3092;QGIS&#x3067;&#x958B;&#x3044;&#x3066;&#x8868;&#x793A;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>作成した画像をQGISで開いて表示を確認しましょう。</p>
 <p><img src="pic/7pic-3.png" alt="red_image"></p>
-<p></p><h2 style="background-color:#F8F5FD;text-align:center;" id="&#x6559;&#x6750;&#x306E;&#x5229;&#x7528;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;">&#x6559;&#x6750;&#x306E;&#x5229;&#x7528;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;</h2>&#x3000;&#x672C;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3067;&#x306F;&#x3001;&#x6559;&#x6750;&#x306E;&#x6539;&#x826F;&#x3092;&#x76EE;&#x7684;&#x3068;&#x3057;&#x305F;&#x4EFB;&#x610F;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;&#x3092;&#x5B9F;&#x65BD;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3054;&#x5354;&#x529B;&#x3044;&#x305F;&#x3060;&#x3051;&#x308B;&#x65B9;&#x306F;&#x3001;<a href="https://docs.google.com/forms/d/1r8RTFK3CPo4xNM6SdOEsAtdA0CrChD6KPVVU9kRxWRs/" target="_blank">&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;</a>&#x306B;&#x304A;&#x9032;&#x307F;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x3054;&#x5354;&#x529B;&#x306E;&#x307B;&#x3069;&#x3088;&#x308D;&#x3057;&#x304F;&#x304A;&#x9858;&#x3044;&#x3044;&#x305F;&#x3057;&#x307E;&#x3059;&#x3002;<br><br>&#x203B; &#x672C;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;&#x306E;&#x6210;&#x679C;&#x306F;&#x3001;&#x6559;&#x6750;&#x306E;&#x6539;&#x826F;&#x306E;&#x307B;&#x304B;&#x3001;&#x5B66;&#x4F1A;&#x3067;&#x306E;&#x767A;&#x8868;&#x7B49;&#x306E;&#x7814;&#x7A76;&#x76EE;&#x7684;&#x3067;&#x3082;&#x5229;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;<p></p>
+<p></p><h2 style="background-color:#F8F5FD;text-align:center;" id="教材の利用に関するアンケート">教材の利用に関するアンケート</h2>　本プロジェクトでは、教材の改良を目的とした任意アンケートを実施しています。ご協力いただける方は、<a href="https://docs.google.com/forms/d/1r8RTFK3CPo4xNM6SdOEsAtdA0CrChD6KPVVU9kRxWRs/" target="_blank">アンケート</a>にお進みください。ご協力のほどよろしくお願いいたします。<br><br>※ 本アンケートの成果は、教材の改良のほか、学会での発表等の研究目的でも利用します。<p></p>
 
                                 
                                 </section>
@@ -3456,12 +3455,56 @@ array([[[<span class="hljs-number">10099</span>,  <span class="hljs-number">9860
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ラスターデータの読み込み","level":"2.1.8","depth":2,"next":{"title":"プロセッシング入門","level":"2.1.9","depth":2,"path":"materials/python/08/08.md","ref":"./materials/python/08/08.md","articles":[]},"previous":{"title":"NumPyについて","level":"2.1.7","depth":2,"path":"materials/python/06/06.md","ref":"./materials/python/06/06.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/python/07/07.md","mtime":"2019-04-18T06:08:44.654Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ラスターデータの読み込み","level":"2.1.8","depth":2,"next":{"title":"プロセッシング入門","level":"2.1.9","depth":2,"path":"materials/python/08/08.md","ref":"./materials/python/08/08.md","articles":[]},"previous":{"title":"NumPyについて","level":"2.1.7","depth":2,"path":"materials/python/06/06.md","ref":"./materials/python/06/06.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/python/07/07.md","mtime":"2022-01-31T13:55:12.424Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../../gitbook/gitbook.js"></script>
     <script src="../../../gitbook/theme.js"></script>
     

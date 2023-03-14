@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>CZML · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,30 +3273,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="czml&#x5165;&#x9580;">CZML&#x5165;&#x9580;</h1>
-<p>&#x672C;&#x6559;&#x6750;&#x306F;&#x3001;Cesium&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;CZML&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;<a href="https://yamauchi-inochu.github.io/cesium-test/Apps/test_c.html" target="_blank">&#x5B8C;&#x6210;&#x4F8B;</a>&#x306E;&#x3088;&#x3046;&#x306A;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x4F5C;&#x6210;&#x3084;&#x30A2;&#x30CB;&#x30E1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x8868;&#x793A;&#x306A;&#x3069;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x6559;&#x6750;&#x306F;&#x3001;<a href="https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html" target="_blank">Cesium&#x306E;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30DA;&#x30FC;&#x30B8;</a>&#x3092;&#x53C2;&#x8003;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x3042;&#x308B;&#x3002;</p>
-<p>&#x672C;&#x6559;&#x6750;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x969B;&#x306F;&#x3001;<a href="../../../policy.html">&#x5229;&#x7528;&#x898F;&#x7D04;</a>&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x3044;&#x305F;&#x3060;&#x304D;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x6761;&#x4EF6;&#x306B;&#x540C;&#x610F;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x306E;&#x307F;&#x3054;&#x5229;&#x7528;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
+                                <h1 id="czml入門">CZML入門</h1>
+<p>本教材は、Cesiumで利用できるCZMLファイルの作成手法について解説したものです。<a href="https://yamauchi-inochu.github.io/cesium-test/Apps/test_c.html" target="_blank">完成例</a>のようなデータの作成やアニメーション表示などを行います。この教材は、<a href="https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html" target="_blank">Cesiumのサンプルページ</a>を参考に作成したものである。</p>
+<p>本教材を使用する際は、<a href="../../../policy.html">利用規約</a>をご確認いただき、これらの条件に同意された場合にのみご利用下さい。</p>
 <h2 id="menu"><strong>Menu</strong></h2>
 <ul>
-<li><a href="#czml&#x3068;&#x306F;&#xFF1F;">CZML&#x3068;&#x306F;?</a></li>
-<li><a href="#&#x70B9;&#x7DDA;&#x9762;&#x306E;&#x4F5C;&#x6210;">&#x70B9;&#x7DDA;&#x9762;&#x306E;&#x4F5C;&#x6210;</a></li>
-<li><a href="#&#x5B9F;&#x88C5;&#x3059;&#x308B;">&#x5B9F;&#x88C5;&#x3059;&#x308B;</a></li>
-<li><a href="#&#x30AA;&#x30EA;&#x30B8;&#x30CA;&#x30EB;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x306B;&#x3088;&#x308B;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x8868;&#x793A;">&#x30AA;&#x30EA;&#x30B8;&#x30CA;&#x30EB;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x306B;&#x3088;&#x308B;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x8868;&#x793A;</a></li>
-<li><a href="#&#x30A2;&#x30CB;&#x30E1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;">&#x30A2;&#x30CB;&#x30E1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;</a></li>
+<li><a href="#czmlとは？">CZMLとは?</a></li>
+<li><a href="#点線面の作成">点線面の作成</a></li>
+<li><a href="#実装する">実装する</a></li>
+<li><a href="#オリジナルのアイコンによるポイント表示">オリジナルのアイコンによるポイント表示</a></li>
+<li><a href="#アニメーション">アニメーション</a></li>
 </ul>
 <hr>
-<h2 id="czml&#x3068;&#x306F;&#xFF1F;">CZML&#x3068;&#x306F;&#xFF1F;</h2>
+<h2 id="czmlとは？">CZMLとは？</h2>
 <ul>
-<li>CZML&#x306F;&#x3001;Cesium&#x3067;&#x306E;&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8868;&#x73FE;&#x306B;&#x9069;&#x3057;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x5F62;&#x5F0F;</li>
-<li>JSON&#x5F62;&#x5F0F;&#x3092;&#x57FA;&#x672C;&#x3068;&#x3057;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x3001;&#x8EFD;&#x91CF;</li>
-<li>3&#x6B21;&#x5143;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3084;&#x6642;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8868;&#x73FE;&#x304C;&#x591A;&#x5F69;<blockquote>
-<p><a href="https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Guide" target="_blank">https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Guide</a> &#x3092;&#x53C2;&#x8003;&#x306B;&#x4F5C;&#x6210;</p>
+<li>CZMLは、Cesiumでの空間データの表現に適したデータ形式</li>
+<li>JSON形式を基本としているため、軽量</li>
+<li>3次元のデータや時間データの表現が多彩<blockquote>
+<p><a href="https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Guide" target="_blank">https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Guide</a> を参考に作成</p>
 </blockquote>
 </li>
 </ul>
-<h2 id="&#x70B9;&#x7DDA;&#x9762;&#x306E;&#x4F5C;&#x6210;">&gt;&#x70B9;&#x7DDA;&#x9762;&#x306E;&#x4F5C;&#x6210;</h2>
-<h3 id="&#x70B9;&#x306E;&#x4F5C;&#x6210;">&#x70B9;&#x306E;&#x4F5C;&#x6210;</h3>
-<p>&#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x3001;&#x62E1;&#x5F35;&#x5B50;&#x3092;.czml&#x3068;&#x3057;&#x305F;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;Cesium&#x306E;<a href="http://cesiumjs.org/Cesium/Build/Apps/CesiumViewer/index.html" target="_blank">&#x30D3;&#x30E5;&#x30FC;&#x30EF;&#x30FC;</a>&#x306B;&#x30C9;&#x30E9;&#x30C3;&#x30AF;&#x30A2;&#x30F3;&#x30C9;&#x30C9;&#x30ED;&#x30C3;&#x30D7;&#x3059;&#x308B;&#x3068;&#x30C7;&#x30FC;&#x30BF;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3002;</p>
+<h2 id="点線面の作成">&gt;点線面の作成</h2>
+<h3 id="点の作成">点の作成</h3>
+<p>以下のコードをコピーし、拡張子を.czmlとしたテキストファイルを作成する。作成したファイルをCesiumの<a href="http://cesiumjs.org/Cesium/Build/Apps/CesiumViewer/index.html" target="_blank">ビューワー</a>にドラックアンドドロップするとデータが表示される。</p>
 <pre><code>[{
   &quot;id&quot; : &quot;document&quot;,
   &quot;name&quot; : &quot;Nihon Sankei&quot;,
@@ -3305,7 +3304,7 @@
 }, {
   &quot;id&quot; : &quot;1&quot;,
   &quot;name&quot; : &quot;Matsusima&quot;,
-  &quot;description&quot; : &quot;&#x3053;&#x3053;&#x306F;&#x677E;&#x5CF6;&#x3067;&#x3059;&quot;,
+  &quot;description&quot; : &quot;ここは松島です&quot;,
   &quot;position&quot; : {
     &quot;cartographicDegrees&quot;: [141.064,38.366,100]
   },
@@ -3317,14 +3316,14 @@
    }
  }
 ]
-</code></pre><h4 id="&#x30DD;&#x30A4;&#x30F3;&#x30C8;">&#x30DD;&#x30A4;&#x30F3;&#x30C8;</h4>
+</code></pre><h4 id="ポイント">ポイント</h4>
 <ul>
-<li>&quot;description&quot; : &#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x3053;&#x3053;&#x306B;&#x8A18;&#x8F09;&#x3057;&#x305F;&#x3082;&#x306E;&#x304C;&#x8868;&#x793A;&#x3067;&#x304D;&#x308B;</li>
-<li>&quot;cartographicDegrees&quot;: [&#x7D4C;&#x5EA6;,&#x7DEF;&#x5EA6;,&#x9AD8;&#x3055;]&#x306E;&#x9806;&#x3067;&#x6307;&#x5B9A;&#x3059;&#x308B;</li>
-<li>&quot;point&quot;: &#x70B9;&#x306E;&#x8272;&#xFF08;[R, G, B, &#x900F;&#x904E;&#x5EA6;]&#xFF09;&#x3001;&#x5927;&#x304D;&#x3055;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</li>
+<li>&quot;description&quot; : ポイントをクリックするとここに記載したものが表示できる</li>
+<li>&quot;cartographicDegrees&quot;: [経度,緯度,高さ]の順で指定する</li>
+<li>&quot;point&quot;: 点の色（[R, G, B, 透過度]）、大きさを指定する</li>
 </ul>
-<h3 id="&#x8907;&#x6570;&#x70B9;&#x306E;&#x4F5C;&#x6210;">&#x8907;&#x6570;&#x70B9;&#x306E;&#x4F5C;&#x6210;</h3>
-<p>&#x8907;&#x6570;&#x70B9;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x3002;</p>
+<h3 id="複数点の作成">複数点の作成</h3>
+<p>複数点を作成する場合は、以下のように記述する。</p>
 <pre><code>[{
   &quot;id&quot; : &quot;document&quot;,
   &quot;name&quot; : &quot;Nihon Sankei&quot;,
@@ -3332,7 +3331,7 @@
 }, {
   &quot;id&quot; : &quot;1&quot;,
   &quot;name&quot; : &quot;Matsusima&quot;,
-  &quot;description&quot; : &quot;&#x3053;&#x3053;&#x306F;&#x677E;&#x5CF6;&#x3067;&#x3059;&quot;,
+  &quot;description&quot; : &quot;ここは松島です&quot;,
   &quot;position&quot; : {
     &quot;cartographicDegrees&quot;: [141.064,38.366,100]
   },
@@ -3345,7 +3344,7 @@
  },{
    &quot;id&quot; : &quot;2&quot;,
    &quot;name&quot; : &quot;Amanohashidate&quot;,
-   &quot;description&quot; : &quot;&#x3053;&#x3053;&#x306F;&#x5929;&#x6A4B;&#x7ACB;&#x3067;&#x3059;&quot;,
+   &quot;description&quot; : &quot;ここは天橋立です&quot;,
    &quot;position&quot; : {
      &quot;cartographicDegrees&quot;: [135.190,35.567,100]
    },
@@ -3358,7 +3357,7 @@
  },{
    &quot;id&quot; : &quot;3&quot;,
    &quot;name&quot; : &quot;Miyajima&quot;,
-   &quot;description&quot; : &quot;&#x3053;&#x3053;&#x306F;&#x5BAE;&#x5CF6;&#x3067;&#x3059;&quot;,
+   &quot;description&quot; : &quot;ここは宮島です&quot;,
    &quot;position&quot; : {
      &quot;cartographicDegrees&quot;: [132.318,34.297,100]
    },
@@ -3370,7 +3369,7 @@
     }
  }
 ]
-</code></pre><h3 id="&#x7DDA;&#x306E;&#x4F5C;&#x6210;">&#x7DDA;&#x306E;&#x4F5C;&#x6210;</h3>
+</code></pre><h3 id="線の作成">線の作成</h3>
 <pre><code>[{
   &quot;id&quot; : &quot;document&quot;,
   &quot;name&quot; : &quot;line&quot;,
@@ -3378,7 +3377,7 @@
 },{
   &quot;id&quot; : &quot;0&quot;,
   &quot;name&quot; : &quot;line&quot;,
-  &quot;description&quot; : &quot;&#x30E9;&#x30A4;&#x30F3;&quot;,
+  &quot;description&quot; : &quot;ライン&quot;,
   &quot;polyline&quot; : {
       &quot;positions&quot; : {
           &quot;cartographicDegrees&quot; : [
@@ -3398,7 +3397,7 @@
   }
 }
 ]
-</code></pre><h3 id="&#x9762;&#x306E;&#x4F5C;&#x6210;">&#x9762;&#x306E;&#x4F5C;&#x6210;</h3>
+</code></pre><h3 id="面の作成">面の作成</h3>
 <pre><code>[{
   &quot;id&quot; : &quot;document&quot;,
   &quot;name&quot; : &quot;polygon&quot;,
@@ -3406,7 +3405,7 @@
 },{
   &quot;id&quot; : &quot;1&quot;,
   &quot;name&quot; : &quot;Matsushima area&quot;,
-  &quot;description&quot; : &quot;&#x677E;&#x5CF6;&#x3068;&#x305D;&#x306E;&#x5468;&#x8FBA;&#x306E;&#x89B3;&#x5149;&#x5730;&quot;,
+  &quot;description&quot; : &quot;松島とその周辺の観光地&quot;,
   &quot;polygon&quot; : {
       &quot;positions&quot; : {
           &quot;cartographicDegrees&quot; : [
@@ -3427,7 +3426,7 @@
 },{
 &quot;id&quot; : &quot;2&quot;,
 &quot;name&quot; : &quot;Amanohashidate area&quot;,
-&quot;description&quot; : &quot;&#x5929;&#x6A4B;&#x7ACB;&#x3068;&#x305D;&#x306E;&#x5468;&#x8FBA;&#x306E;&#x89B3;&#x5149;&#x5730;&quot;,
+&quot;description&quot; : &quot;天橋立とその周辺の観光地&quot;,
 &quot;polygon&quot; : {
     &quot;positions&quot; : {
         &quot;cartographicDegrees&quot; : [
@@ -3444,7 +3443,7 @@
 },{
 &quot;id&quot; : &quot;3&quot;,
 &quot;name&quot; : &quot;Miyajima area&quot;,
-&quot;description&quot; : &quot;&#x5BAE;&#x5CF6;&#x3068;&#x305D;&#x306E;&#x5468;&#x8FBA;&#x306E;&#x89B3;&#x5149;&#x5730;&quot;,
+&quot;description&quot; : &quot;宮島とその周辺の観光地&quot;,
 &quot;polygon&quot; : {
     &quot;positions&quot; : {
         &quot;cartographicDegrees&quot; : [
@@ -3461,15 +3460,15 @@
 }
 
 ]
-</code></pre><h3 id="3d&#x30DD;&#x30EA;&#x30B4;&#x30F3;">3D&#x30DD;&#x30EA;&#x30B4;&#x30F3;</h3>
-<p>&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x3092;&#x7ACB;&#x4F53;&#x5316;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#x3002;</p>
+</code></pre><h3 id="3dポリゴン">3Dポリゴン</h3>
+<p>ポリゴンを立体化する場合は、以下のようにする。</p>
 <pre><code>&quot;extrudedHeight&quot; : {
 &quot;number&quot; : 500
 }
-</code></pre><h3 id="&#x305D;&#x306E;&#x4ED6;&#x306E;&#x8868;&#x73FE;">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x8868;&#x73FE;</h3>
-<p>&#x5186;&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x306E;&#x4F5C;&#x6210;&#x306A;&#x3069;&#x305D;&#x306E;&#x4ED6;&#x306E;&#x8868;&#x73FE;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html" target="_blank">Cesium&#x306E;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30DA;&#x30FC;&#x30B8;</a>&#x304C;&#x8A73;&#x3057;&#x3044;</p>
-<h2 id="&#x5B9F;&#x88C5;&#x3059;&#x308B;">&#x5B9F;&#x88C5;&#x3059;&#x308B;</h2>
-<p><img src="pic/czmlpic_3.png" alt="&#x8868;&#x793A;"></p>
+</code></pre><h3 id="その他の表現">その他の表現</h3>
+<p>円ポリゴンの作成などその他の表現については、<a href="https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html" target="_blank">Cesiumのサンプルページ</a>が詳しい</p>
+<h2 id="実装する">実装する</h2>
+<p><img src="pic/czmlpic_3.png" alt="表示"></p>
 <pre><code>var czml = [{
    &quot;id&quot; : &quot;document&quot;,
    &quot;name&quot; : &quot;CZML&quot;,
@@ -3505,8 +3504,8 @@
  }];
 var viewer = new Cesium.Viewer(&apos;cesiumContainer&apos;);
 viewer.dataSources.add(Cesium.CzmlDataSource.load(czml));
-</code></pre><h2 id="&#x30AA;&#x30EA;&#x30B8;&#x30CA;&#x30EB;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x306B;&#x3088;&#x308B;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x8868;&#x793A;">&#x30AA;&#x30EA;&#x30B8;&#x30CA;&#x30EB;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x306B;&#x3088;&#x308B;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x8868;&#x793A;</h2>
-<p>PowerPoint&#x3084;&#x30DA;&#x30A4;&#x30F3;&#x30C8;&#x306A;&#x3069;&#x3092;&#x5229;&#x7528;&#x3057;&#x3001;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF08;&#x62E1;&#x5F35;&#x5B50;&#x306F;<code>.png</code> or <code>.jpg</code>&#xFF09;&#x3002;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x753B;&#x50CF;&#x306F;&#x3001;GitHub&#x306A;&#x3069;&#x3067;web&#x306B;&#x3042;&#x3052;&#x3066;&#x304A;&#x304D;&#x3001;&#x753B;&#x50CF;&#x306E;url&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#x3002;billboard&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;&#x30AA;&#x30EA;&#x30B8;&#x30CA;&#x30EB;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;</p>
+</code></pre><h2 id="オリジナルのアイコンによるポイント表示">オリジナルのアイコンによるポイント表示</h2>
+<p>PowerPointやペイントなどを利用し、図を作成する（拡張子は<code>.png</code> or <code>.jpg</code>）。作成した画像は、GitHubなどでwebにあげておき、画像のurlを取得する。billboardを用いて、オリジナルのアイコンを読み込む。</p>
 <pre><code>[{
     &quot;id&quot; : &quot;document&quot;,
     &quot;name&quot; : &quot;marker&quot;,
@@ -3514,17 +3513,17 @@ viewer.dataSources.add(Cesium.CzmlDataSource.load(czml));
   }, {
     &quot;id&quot; : &quot;1&quot;,
     &quot;name&quot; : &quot;marker&quot;,
-    &quot;description&quot; : &quot;&#x30DE;&#x30FC;&#x30AB;&#x30FC;&#x306E;&#x7DF4;&#x7FD2;&#x3002;&quot;,
+    &quot;description&quot; : &quot;マーカーの練習。&quot;,
     &quot;billboard&quot; : {
-      &quot;image&quot; : &quot;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x305F;URL&#x3092;&#x8CBC;&#x308A;&#x4ED8;&#x3051;&#x308B;&quot;,
+      &quot;image&quot; : &quot;コピーしたURLを貼り付ける&quot;,
       &quot;scale&quot; : 0.2
     },
     &quot;position&quot; : {
       &quot;cartographicDegrees&quot;: [
         133.672028,33.544614,200
       ] }}]
-</code></pre><h3 id="&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;">&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</h3>
-<p>&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306B;&#x30E9;&#x30D9;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x969B;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#x3002;</p>
+</code></pre><h3 id="ラベルを追加する">ラベルを追加する</h3>
+<p>ポイントにラベルを追加する際は、以下のようにする。</p>
 <pre><code>&quot;label&quot; : {
   &quot;fillColor&quot; : {
     &quot;rgba&quot; : [0, 0, 0, 255]
@@ -3539,11 +3538,11 @@ viewer.dataSources.add(Cesium.CzmlDataSource.load(czml));
     &quot;cartesian2&quot; : [0, 25]
   },
   &quot;style&quot; : &quot;FILL_AND_OUTLINE&quot;,
-  &quot;text&quot; : &quot;&#x30C6;&#x30B9;&#x30C8;&quot;
+  &quot;text&quot; : &quot;テスト&quot;
 }
-</code></pre><p><img src="pic/czmlpic_5.png" alt="&#x8868;&#x793A;"></p>
-<h2 id="&#x30A2;&#x30CB;&#x30E1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;">&#x30A2;&#x30CB;&#x30E1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;</h2>
-<p>Cesium&#x3067;&#x306F;&#x3001;CZML&#x3067;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x6642;&#x9593;&#x306E;&#x5024;&#x3092;&#x4F7F;&#x3063;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x8868;&#x73FE;&#x304C;&#x53EF;&#x80FD;&#x3067;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&quot;availability&quot;&#x3068;&quot;epoch&quot;&#xFF08;&quot;position&quot;&#x5185;&#x306B;&#x3042;&#x308B;&#xFF09;&#x306B;&#x5024;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x3066;&#x3001;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30A2;&#x30CB;&#x30E1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3067;&#x8868;&#x73FE;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+</code></pre><p><img src="pic/czmlpic_5.png" alt="表示"></p>
+<h2 id="アニメーション">アニメーション</h2>
+<p>Cesiumでは、CZMLで設定した時間の値を使ったデータ表現が可能です。以下では、&quot;availability&quot;と&quot;epoch&quot;（&quot;position&quot;内にある）に値を設定して、アイコンをアニメーションで表現しています。</p>
 <pre><code>var animation =
 [{
   &quot;id&quot; : &quot;document&quot;,
@@ -3552,7 +3551,7 @@ viewer.dataSources.add(Cesium.CzmlDataSource.load(czml));
 },{
   &quot;id&quot; : &quot;1&quot;,
   &quot;name&quot; : &quot;animation&quot;,
-  &quot;description&quot; : &quot;&#x52D5;&#x304D;&#x307E;&#x3059;&quot;,
+  &quot;description&quot; : &quot;動きます&quot;,
   &quot;availability&quot;:&quot;2018-03-13T12:00:00Z/2018-03-13T12:01:00Z&quot;,
   &quot;billboard&quot; : {
     &quot;image&quot; : &quot;imageURL.png&quot;,
@@ -3576,24 +3575,24 @@ viewer.dataSources.add(Cesium.CzmlDataSource.load(czml));
   }
 }
 ];
-</code></pre><h4 id="&#x30DD;&#x30A4;&#x30F3;&#x30C8;">&#x30DD;&#x30A4;&#x30F3;&#x30C8;</h4>
+</code></pre><h4 id="ポイント">ポイント</h4>
 <ul>
-<li>&quot;availability&quot;:&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x30D0;&#x30FC;&#x306E;&#x958B;&#x59CB;&#x6642;&#x9593;&#x3068;&#x7D42;&#x4E86;&#x6642;&#x9593;</li>
-<li>&quot;epoch&quot;:&#x30C7;&#x30FC;&#x30BF;&#x8868;&#x793A;&#x306E;&#x958B;&#x59CB;&#x6642;&#x9593;</li>
-<li>&quot;cartographicDegrees&quot;: [&#x6642;&#x9593;,&#x7D4C;&#x5EA6;,&#x7DEF;&#x5EA6;,&#x9AD8;&#x3055;] &#xFF1D;&gt; &#x958B;&#x59CB;&#x304B;&#x3089;x&#x79D2;&#x306E;&#x3068;&#x304D;&#x306E;&#x7D4C;&#x7DEF;&#x5EA6;&#x3068;&#x6A19;&#x9AD8;</li>
+<li>&quot;availability&quot;:タイムスケールバーの開始時間と終了時間</li>
+<li>&quot;epoch&quot;:データ表示の開始時間</li>
+<li>&quot;cartographicDegrees&quot;: [時間,経度,緯度,高さ] ＝&gt; 開始からx秒のときの経緯度と標高</li>
 </ul>
-<h3 id="gpx&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x6D3B;&#x7528;">GPX&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x6D3B;&#x7528;</h3>
-<p>GPX&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x969B;&#x306B;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#x3068;&#x7C21;&#x5358;&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x3067;&#x304D;&#x308B;&#x3002;&#x307E;&#x305A;&#x3001;QGIS&#x306B;.gpx&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30C9;&#x30E9;&#x30C3;&#x30AF;&#x30A2;&#x30F3;&#x30C9;&#x30C9;&#x30ED;&#x30C3;&#x30D7;&#x3057;&#x3001;&#x300C;&#x30D9;&#x30AF;&#x30BF;&#x30EC;&#x30A4;&#x30E4;&#x306B;&#x540D;&#x524D;&#x3092;&#x3064;&#x3051;&#x3066;&#x4FDD;&#x5B58;&#x3059;&#x308B;&#x300D;&#x304B;&#x3089;&#x3001;CSV&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3067;&#x4FDD;&#x5B58;&#x3059;&#x308B;&#x3002;</p>
-<p><img src="pic/czmlpic_6.png" alt="&#x8868;&#x793A;"></p>
-<p>&#x6B21;&#x306B;&#x3001;&#x30A8;&#x30AF;&#x30BB;&#x30EB;&#x3092;&#x5229;&#x7528;&#x3057;&#x3001;&#x30AB;&#x30F3;&#x30DE;&#x306A;&#x3069;&#x306E;&#x914D;&#x5217;&#x3092;&#x6574;&#x3048;&#x3001;A&#x5217;&#x306B;&#x79D2;&#xFF08;&#x4F55;&#x79D2;&#x3067;&#x79FB;&#x52D5;&#x3059;&#x308B;&#x304B;&#xFF09;&#x3092;C&#x5217;&#x306B;&#x7D4C;&#x5EA6;&#x3001;E&#x5217;&#x306B;&#x7DEF;&#x5EA6;&#x3001;G&#x5217;&#x306B;&#x9AD8;&#x3055;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;&#x5168;&#x4F53;&#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3059;&#x308B;&#x3002;</p>
-<p><img src="pic/czmlpic_7.png" alt="&#x8868;&#x793A;"></p>
-<p>&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;&#x8868;&#x793A;&#x306B;&#x4F7F;&#x7528;&#x3057;&#x305F;czml&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x958B;&#x304D;&#x3001;&#x8D64;&#x67A0;&#x306E;&#x7B87;&#x6240;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;</p>
-<p><img src="pic/czmlpic_8.png" alt="&#x8868;&#x793A;"></p>
-<p>&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x78BA;&#x8A8D;&#x6642;&#x306B;&#x3001;&#x30BF;&#x30A4;&#x30DE;&#x30FC;&#x306E;&#x901F;&#x5EA6;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3068;&#x3001;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x306E;&#x52D5;&#x304F;&#x901F;&#x5EA6;&#x304C;&#x5909;&#x5316;&#x3059;&#x308B;&#x3002;</p>
-<p><img src="pic/czmlpic_9.png" alt="&#x8868;&#x793A;"></p>
-<p><a href="CZML.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h4 id="&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;">&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;</h4>
-<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x30AD;&#x30E3;&#x30D7;&#x30C1;&#x30E3;&#x753B;&#x50CF;&#x306E;&#x51FA;&#x5178;&#x3084;&#x30AF;&#x30EC;&#x30B8;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../../license.html">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;</a>&#x3088;&#x308A;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<h3 id="gpxファイルの活用">GPXファイルの活用</h3>
+<p>GPXファイルを利用する際に、以下のようにすると簡単にデータを作成できる。まず、QGISに.gpxファイルをドラックアンドドロップし、「ベクタレイヤに名前をつけて保存する」から、CSVファイルで保存する。</p>
+<p><img src="pic/czmlpic_6.png" alt="表示"></p>
+<p>次に、エクセルを利用し、カンマなどの配列を整え、A列に秒（何秒で移動するか）をC列に経度、E列に緯度、G列に高さを追加する。全体をコピーする。</p>
+<p><img src="pic/czmlpic_7.png" alt="表示"></p>
+<p>ポイントの表示に使用したczmlファイルを開き、赤枠の箇所を追加する。</p>
+<p><img src="pic/czmlpic_8.png" alt="表示"></p>
+<p>データの確認時に、タイマーの速度を変更すると、アイコンの動く速度が変化する。</p>
+<p><img src="pic/czmlpic_9.png" alt="表示"></p>
+<p><a href="CZML.html#Menu">▲メニューへもどる</a></p>
+<h4 id="ライセンスに関する注意事項">ライセンスに関する注意事項</h4>
+<p>本教材で利用しているキャプチャ画像の出典やクレジットについては、<a href="../../license.html">その他のライセンスについて</a>よりご確認ください。</p>
 
                                 
                                 </section>
@@ -3637,12 +3636,56 @@ viewer.dataSources.add(Cesium.CzmlDataSource.load(czml));
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CZML","level":"3.1.9","depth":2,"next":{"title":"KML","level":"3.1.10","depth":2,"path":"materials/web_gis/KML/KML.md","ref":"./materials/web_gis/KML/KML.md","articles":[]},"previous":{"title":"GitHubビギナーズマニュアル","level":"3.1.8","depth":2,"path":"materials/web_gis/GitHub/GitHub.md","ref":"./materials/web_gis/GitHub/GitHub.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/web_gis/CZML/CZML.md","mtime":"2019-11-26T08:06:54.108Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CZML","level":"3.1.9","depth":2,"next":{"title":"KML","level":"3.1.10","depth":2,"path":"materials/web_gis/KML/KML.md","ref":"./materials/web_gis/KML/KML.md","articles":[]},"previous":{"title":"GitHubビギナーズマニュアル","level":"3.1.8","depth":2,"path":"materials/web_gis/GitHub/GitHub.md","ref":"./materials/web_gis/GitHub/GitHub.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/web_gis/CZML/CZML.md","mtime":"2022-01-31T13:55:12.880Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../../gitbook/gitbook.js"></script>
     <script src="../../../gitbook/theme.js"></script>
     

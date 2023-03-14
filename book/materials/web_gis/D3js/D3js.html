@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>D3.js · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,56 +3273,56 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="d3js&#x5165;&#x9580;">D3.js&#x5165;&#x9580;</h1>
-<p>&#x3053;&#x306E;&#x6559;&#x6750;&#x306F;&#x3001;D3.js&#x3092;&#x7528;&#x3044;&#x3066;GIS&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x30D3;&#x30B8;&#x30E5;&#x30A2;&#x30E9;&#x30A4;&#x30BA;&#x3057;&#x3001;WEB&#x4E0A;&#x306B;&#x8868;&#x793A;&#x3059;&#x308B;&#x521D;&#x6B69;&#x7684;&#x306A;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;QGIS&#x3068;&#x9023;&#x643A;&#x3057;&#x3066;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x305F;&#x3081;&#x3001;QGIS&#x306E;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x3084;JavaScript&#x306B;&#x3064;&#x3044;&#x3066;&#x7406;&#x89E3;&#x306E;&#x3042;&#x308B;&#x65B9;&#x3092;&#x5BFE;&#x8C61;&#x3068;&#x3057;&#x307E;&#x3059;&#x3002;QGIS&#x3067;&#x7C21;&#x5358;&#x306B;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x51FA;&#x529B;&#x3057;&#x305F;&#x3044;&#x65B9;&#x306F;&#x3001;QGIS&#x3067;&#x4F5C;&#x6210;&#x306E;&#x9805;&#x76EE;&#x3092;&#x8AAD;&#x307F;&#x9032;&#x3081;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<p>&#x672C;&#x6559;&#x6750;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x969B;&#x306F;&#x3001;<a href="../../../policy.html">&#x5229;&#x7528;&#x898F;&#x7D04;</a>&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x3044;&#x305F;&#x3060;&#x304D;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x6761;&#x4EF6;&#x306B;&#x540C;&#x610F;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x306E;&#x307F;&#x3054;&#x5229;&#x7528;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
+                                <h1 id="d3js入門">D3.js入門</h1>
+<p>この教材は、D3.jsを用いてGISデータをビジュアライズし、WEB上に表示する初歩的な手法について解説しています。QGISと連携してデータを作成するため、QGISの基本操作やJavaScriptについて理解のある方を対象とします。QGISで簡単にファイルを出力したい方は、QGISで作成の項目を読み進めてください。</p>
+<p>本教材を使用する際は、<a href="../../../policy.html">利用規約</a>をご確認いただき、これらの条件に同意された場合にのみご利用下さい。</p>
 <h2 id="menu"><strong>Menu</strong></h2>
 <ul>
-<li><a href="#d3.js&#x3068;&#x306F;">D3.js&#x3068;&#x306F;</a></li>
-<li><a href="#&#x4EBA;&#x53E3;&#x8868;&#x793A;&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x4F5C;&#x6210;">&#x4EBA;&#x53E3;&#x8868;&#x793A;&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x4F5C;&#x6210;</a></li>
-<li><a href="#geojson&#x306E;&#x51FA;&#x529B;">GeoJSON&#x306E;&#x51FA;&#x529B;</a></li>
-<li><a href="#&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8A18;&#x8FF0;">&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8A18;&#x8FF0;</a></li>
-<li><a href="#QGIS&#x3067;&#x4F5C;&#x6210;">QGIS&#x3067;&#x4F5C;&#x6210;</a></li>
+<li><a href="#d3.jsとは">D3.jsとは</a></li>
+<li><a href="#人口表示アプリの作成">人口表示アプリの作成</a></li>
+<li><a href="#geojsonの出力">GeoJSONの出力</a></li>
+<li><a href="#コードの記述">コードの記述</a></li>
+<li><a href="#QGISで作成">QGISで作成</a></li>
 </ul>
-<h2 id="d3js&#x3068;&#x306F;">D3.js&#x3068;&#x306F;</h2>
-<p> <a href="https://d3js.org/" target="_blank">D3.js</a>(Data-Driven Documents)&#x306F;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x30D3;&#x30B8;&#x30E5;&#x30A2;&#x30E9;&#x30A4;&#x30BA;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;JavaScript&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3067;&#x3059;&#x3002;&#x69D8;&#x3005;&#x306A;&#x30B0;&#x30E9;&#x30D5;&#x306E;&#x4F5C;&#x6210;&#x3084;&#x30A2;&#x30CB;&#x30E1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x4ED8;&#x3051;&#x305F;&#x8868;&#x793A;&#x306A;&#x3069;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x307E;&#x305F;&#x3001;GIS&#x30C7;&#x30FC;&#x30BF;&#x306B;&#x3082;&#x5BFE;&#x5FDC;&#x3057;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x3001;&#x5730;&#x56F3;&#x306E;&#x30D3;&#x30B8;&#x30E5;&#x30A2;&#x30E9;&#x30A4;&#x30BA;&#x306B;&#x3082;&#x7528;&#x3044;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;D3.js&#x3067;&#x3069;&#x3093;&#x306A;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x304B;&#x3092;&#x77E5;&#x308A;&#x305F;&#x3044;&#x65B9;&#x306F;&#x3001;<a href="https://github.com/d3/d3/wiki/Gallery" target="_blank">D3.js&#x306E;Gallery</a>&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<p> <a href="D3js.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x4EBA;&#x53E3;&#x8868;&#x793A;&#x5730;&#x56F3;&#x306E;&#x4F5C;&#x6210;">&#x4EBA;&#x53E3;&#x8868;&#x793A;&#x5730;&#x56F3;&#x306E;&#x4F5C;&#x6210;</h2>
-<p>D3.js&#x306E;&#x5229;&#x7528;&#x65B9;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x3001;&#x4EBA;&#x53E3;&#x8868;&#x793A;&#x30A2;&#x30D7;&#x30EA;&#xFF08;<a href="https://yamauchi-inochu.github.io/d3js-sample/sample.html" target="_blank">&#x5B8C;&#x6210;&#x4F8B;</a>&#xFF09;&#x306E;&#x4F5C;&#x6210;&#x3092;&#x901A;&#x3058;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;&#x89E3;&#x8AAC;&#x3067;&#x306F;<a href="https://www.e-stat.go.jp/" target="_blank">e-stat</a>&#x304B;&#x3089;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x305F;&#x718A;&#x672C;&#x770C;&#x7403;&#x78E8;&#x90E1;&#x76F8;&#x826F;&#x6751;&#x306E;&#x4E16;&#x754C;&#x6E2C;&#x5730;&#x7CFB;&#x306E;&#x30B7;&#x30A7;&#x30FC;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;GeoJSON&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x52A0;&#x5DE5;&#x3057;&#x3066;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x524D;&#x534A;&#x3067;&#x306F;&#x5B9F;&#x969B;&#x306B;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8A18;&#x8F09;&#x65B9;&#x6CD5;&#x3092;&#x7D39;&#x4ECB;&#x3057;&#x3001;&#x5F8C;&#x534A;&#x3067;&#x306F;QGIS&#x306E;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3067;&#x5730;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3059;&#x308B;&#x65B9;&#x6CD5;&#x3092;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<p><a href="D3js.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="geojson&#x306E;&#x51FA;&#x529B;">GeoJSON&#x306E;&#x51FA;&#x529B;</h2>
-<p>GeoJSON&#x5F62;&#x5F0F;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;D3.js&#x3067;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x305F;&#x3081;&#x3001;QGIS&#x3067;&#x30C7;&#x30FC;&#x30BF;&#x5909;&#x63DB;&#x3092;&#x884C;&#x3046;&#x3002;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x305F;&#x76F8;&#x826F;&#x6751;&#x306E;&#x30B7;&#x30A7;&#x30FC;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3001;&#x540D;&#x524D;&#x3092;&#x4ED8;&#x3051;&#x3066;&#x4FDD;&#x5B58;&#x304B;&#x3089;GeoJSON&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x5730;&#x7406;&#x5EA7;&#x6A19;&#x7CFB;&#x3067;&#x51FA;&#x529B;&#x3059;&#x308B;&#x3002;</p>
-<p><a href="D3js.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x5730;&#x56F3;&#x306E;&#x8868;&#x793A;">&#x5730;&#x56F3;&#x306E;&#x8868;&#x793A;</h2>
-<p>index.html&#x3068;&#x540C;&#x3058;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;GeoJSON&#x3092;&#x914D;&#x7F6E;&#xFF08;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;<code>s3.geojson&#x3068;&#x8868;&#x8A18;</code>&#xFF09;&#x3059;&#x308B;&#x3002;&#x307E;&#x305F;&#x3001;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x74B0;&#x5883;&#x3067;&#x306E;index.html&#x306E;&#x8868;&#x793A;&#x306B;&#x306F;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x3092;&#x7ACB;&#x3061;&#x4E0A;&#x3052;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x305F;&#x3081;&#x3001;&#x4EFB;&#x610F;&#x306E;&#x3082;&#x306E;&#x3092;&#x6E96;&#x5099;&#x3059;&#x308B;&#x3002;</p>
-<h3 id="d3js&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x3068;web-page&#x306E;&#x8AAC;&#x660E;">D3.js&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x3068;Web page&#x306E;&#x8AAC;&#x660E;</h3>
-<p>&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;index.html&#x3092;&#x8A18;&#x8FF0;&#x3057;&#x3066;&#x3044;&#x304F;&#x3002;</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<h2 id="d3jsとは">D3.jsとは</h2>
+<p> <a href="https://d3js.org/" target="_blank">D3.js</a>(Data-Driven Documents)は、データをビジュアライズするためのJavaScriptライブラリです。様々なグラフの作成やアニメーションを付けた表示などができます。また、GISデータにも対応しているため、地図のビジュアライズにも用いることができます。D3.jsでどんなことができるかを知りたい方は、<a href="https://github.com/d3/d3/wiki/Gallery" target="_blank">D3.jsのGallery</a>を参照してください。</p>
+<p> <a href="D3js.html#Menu">▲メニューへもどる</a></p>
+<h2 id="人口表示地図の作成">人口表示地図の作成</h2>
+<p>D3.jsの利用方法について、人口表示アプリ（<a href="https://yamauchi-inochu.github.io/d3js-sample/sample.html" target="_blank">完成例</a>）の作成を通じて解説します。解説では<a href="https://www.e-stat.go.jp/" target="_blank">e-stat</a>からダウンロードした熊本県球磨郡相良村の世界測地系のシェープファイルをGeoJSONファイルに加工して使用しています。前半では実際にコードの記載方法を紹介し、後半ではQGISのプラグインで地図を作成するする方法を解説します。</p>
+<p><a href="D3js.html#Menu">▲メニューへもどる</a></p>
+<h2 id="geojsonの出力">GeoJSONの出力</h2>
+<p>GeoJSON形式のデータをD3.jsで読み込むため、QGISでデータ変換を行う。ダウンロードした相良村のシェープファイルを読み込み、名前を付けて保存からGeoJSONを選択し、地理座標系で出力する。</p>
+<p><a href="D3js.html#Menu">▲メニューへもどる</a></p>
+<h2 id="地図の表示">地図の表示</h2>
+<p>index.htmlと同じディレクトリにGeoJSONを配置（以下では、<code>s3.geojsonと表記</code>）する。また、ローカル環境でのindex.htmlの表示にはローカルサーバーを立ち上げる必要があるため、任意のものを準備する。</p>
+<h3 id="d3jsのインポートとweb-pageの説明">D3.jsのインポートとWeb pageの説明</h3>
+<p>以下のようにindex.htmlを記述していく。</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf8&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://d3js.org/d3.v6.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://d3js.org/d3.v6.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
-    <span class="hljs-selector-tag">svg</span>{<span class="hljs-attribute">width</span>:<span class="hljs-number">700px</span>; <span class="hljs-attribute">height</span>:<span class="hljs-number">700px</span>; <span class="hljs-attribute">border</span>:<span class="hljs-number">1px</span>; <span class="hljs-attribute">background-color</span>: white; <span class="hljs-attribute">text-align</span>: left;}
-    <span class="hljs-selector-tag">path</span>{<span class="hljs-attribute">fill</span>:white; <span class="hljs-attribute">stroke</span>:black; <span class="hljs-attribute">stroke-width</span>:<span class="hljs-number">0.25</span>;}
+    svg{<span class="hljs-attribute">width</span>:<span class="hljs-number">700px</span>; <span class="hljs-attribute">height</span>:<span class="hljs-number">700px</span>; <span class="hljs-attribute">border</span>:<span class="hljs-number">1px</span>; <span class="hljs-attribute">background-color</span>: white; <span class="hljs-attribute">text-align</span>: left;}
+    path{fill:white; stroke:black; stroke-<span class="hljs-attribute">width</span>:<span class="hljs-number">0.25</span>;}
     <span class="hljs-selector-tag">h1</span>,<span class="hljs-selector-tag">p</span> {<span class="hljs-attribute">text-align</span>: left;}
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 </code></pre>
-<p>&#x7D9A;&#x3051;&#x3066;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306A;&#x7D39;&#x4ECB;&#x6587;&#x3092;&#x8A18;&#x8F09;&#x3059;&#x308B;&#x3002;</p>
+<p>続けて以下のような紹介文を記載する。</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x718A;&#x672C;&#x770C;&#x7403;&#x78E8;&#x90E1;&#x76F8;&#x826F;&#x6751;&#x306E;&#x4EBA;&#x53E3;&#x30DE;&#x30C3;&#x30D7;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5730;&#x56F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x4EBA;&#x53E3;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>&#x203B;&#x6FC3;&#x3044;&#x7DD1;&#x306E;&#x5730;&#x57DF;&#x306B;&#x306F;&#x3001;&#x4EBA;&#x304C;&#x4F4F;&#x3093;&#x3067;&#x3044;&#x307E;&#x305B;&#x3093;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>熊本県球磨郡相良村の人口マップ<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>地図をクリックすると人口が表示されます。<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>※濃い緑の地域には、人が住んでいません。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-comment">&lt;!--
-&#x3053;&#x3053;&#x306B;&lt;script&gt;&lt;/script&gt;&#x304C;&#x8A18;&#x8F09;&#x3055;&#x308C;&#x308B;&#x3002;
+ここに&lt;script&gt;&lt;/script&gt;が記載される。
 --&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 </code></pre>
-<p>&#x6B21;&#x306B;&#x3001;&#x8868;&#x793A;&#x8A2D;&#x5B9A;(&#x63CF;&#x753B;&#x7BC4;&#x56F2;&#x3001;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x3001;&#x30D1;&#x30B9;)&#x3092;&#x8A18;&#x8F09;&#x3057;&#x3066;&#x3044;&#x304F;&#x3002;</p>
-<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<p>次に、表示設定(描画範囲、プロジェクション、パス)を記載していく。</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
   <span class="hljs-comment">//drawing area</span>
    <span class="hljs-keyword">var</span> width = <span class="hljs-number">500</span>;
    <span class="hljs-keyword">var</span> height = <span class="hljs-number">500</span>;
@@ -3341,7 +3340,7 @@
 
   </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
-<p>GeoJSON&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;&#x5730;&#x56F3;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x3002;</p>
+<p>GeoJSONファイルを用いて、地図を表示する。</p>
 <pre><code class="lang-Javascript">
 <span class="hljs-comment">// loarding geojson</span>
     d3.json(<span class="hljs-string">&quot;s3.geojson&quot;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">json</span>) </span>{
@@ -3351,19 +3350,19 @@
             .append(<span class="hljs-string">&quot;path&quot;</span>)
             .attr(<span class="hljs-string">&quot;d&quot;</span>, path)
 </code></pre>
-<p>&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3067;&#x8868;&#x793A;&#x3057;&#x3066;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x3002;
+<p>ブラウザで表示して以下のようになっていることを確認する。
 <img src="pic/d3_pic1.png" alt="d3"></p>
-<h3 id="&#x5358;&#x8272;&#x5857;&#x308A;&#x3068;&#x5024;&#x306B;&#x3088;&#x308B;&#x5857;&#x308A;&#x5206;&#x3051;">&#x5358;&#x8272;&#x5857;&#x308A;&#x3068;&#x5024;&#x306B;&#x3088;&#x308B;&#x5857;&#x308A;&#x5206;&#x3051;</h3>
+<h3 id="単色塗りと値による塗り分け">単色塗りと値による塗り分け</h3>
 <pre><code class="lang-JavaScript">d3.json(<span class="hljs-string">&quot;s3.geojson&quot;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">json</span>) </span>{
     svg.append(<span class="hljs-string">&quot;g&quot;</span>).selectAll(<span class="hljs-string">&quot;path&quot;</span>)
         .data(json.features)
         .enter()
         .append(<span class="hljs-string">&quot;path&quot;</span>)
         .attr(<span class="hljs-string">&quot;d&quot;</span>, path)
-        .style(<span class="hljs-string">&quot;fill&quot;</span>,<span class="hljs-string">&quot;red&quot;</span>) <span class="hljs-comment">//style&#x306E;&#x8A18;&#x8FF0;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x5358;&#x8272;&#x3067;&#x5730;&#x56F3;&#x3092;&#x5857;&#x308A;&#x3064;&#x3076;&#x3059;</span>
+        .style(<span class="hljs-string">&quot;fill&quot;</span>,<span class="hljs-string">&quot;red&quot;</span>) <span class="hljs-comment">//styleの記述を追加し単色で地図を塗りつぶす</span>
 });
 </code></pre>
-<p><code>.style</code>&#x306E;&#x8A18;&#x8FF0;&#x3092;&#x5909;&#x66F4;&#x3057;&#x3001;&#x4EBA;&#x53E3;&#x306E;&#x5024;&#x306B;&#x3088;&#x3063;&#x3066;&#x914D;&#x8272;&#x3092;&#x304B;&#x3048;&#x308B;&#x3002;&#x3053;&#x3053;&#x3067;&#x306F;&#x3001;&#x4EBA;&#x53E3;0&#x306E;&#x5834;&#x5408;&#x3092;&#x7DD1;&#x3068;&#x3057;&#x3001;&#x305D;&#x308C;&#x4EE5;&#x5916;&#x3092;&#x8584;&#x3044;&#x7DD1;&#x3068;&#x3059;&#x308B;&#x3002;&#x4EBA;&#x53E3;&#x306E;&#x5024;&#x306F;&#x3001;GeoJSON&#x306E;&#x5C5E;&#x6027;&#x5024;&#x3092;&#x53C2;&#x7167;&#x3059;&#x308B;&#x3002;</p>
+<p><code>.style</code>の記述を変更し、人口の値によって配色をかえる。ここでは、人口0の場合を緑とし、それ以外を薄い緑とする。人口の値は、GeoJSONの属性値を参照する。</p>
 <pre><code class="lang-JavaScript">.style(<span class="hljs-string">&quot;fill&quot;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d,i</span>)</span>{
       <span class="hljs-keyword">if</span>(d.properties.JINKO==<span class="hljs-string">&quot;0&quot;</span>){
         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;#298A08&quot;</span>;
@@ -3372,23 +3371,23 @@
       })
     });
 </code></pre>
-<p>&#x4E0A;&#x8A18;&#x306E;&#x3088;&#x3046;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x3068;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#x3002;
+<p>上記のように記述すると以下のようになる。
 <img src="pic/d3_pic2.png" alt="d3"></p>
-<h3 id="&#x4EBA;&#x53E3;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;">&#x4EBA;&#x53E3;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;</h3>
-<p>.style&#x306E;&#x4E0B;&#x306B;&#x4EE5;&#x4E0B;&#x3092;&#x8A18;&#x8FF0;&#x3057;&#x3001;alert&#x3067;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x305F;&#x5730;&#x70B9;&#x306E;&#x5927;&#x5B57;&#x540D;&#x3068;&#x4EBA;&#x53E3;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x3002;</p>
+<h3 id="人口を表示する機能を追加">人口を表示する機能を追加</h3>
+<p>.styleの下に以下を記述し、alertでクリックした地点の大字名と人口を表示する。</p>
 <pre><code class="lang-JavaScript">.on(<span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event,d</span>)</span>{
-            alert(d.properties.MOJI+<span class="hljs-string">&quot;&#x306E;&#x4EBA;&#x53E3;&#x306F;&quot;</span>+d.properties.JINKO+<span class="hljs-string">&quot;&#x4EBA;&#x3067;&#x3059;&#x3002;&quot;</span>)
+            alert(d.properties.MOJI+<span class="hljs-string">&quot;の人口は&quot;</span>+d.properties.JINKO+<span class="hljs-string">&quot;人です。&quot;</span>)
         })
 });
 </code></pre>
-<h3 id="&#x30DE;&#x30A6;&#x30B9;&#x30AA;&#x30FC;&#x30D0;&#x30FC;&#x3068;&#x30A2;&#x30A6;&#x30C8;&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;">&#x30DE;&#x30A6;&#x30B9;&#x30AA;&#x30FC;&#x30D0;&#x30FC;&#x3068;&#x30A2;&#x30A6;&#x30C8;&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;</h3>
-<p>&#x9078;&#x629E;&#x3059;&#x308B;&#x5834;&#x6240;&#x3092;&#x5206;&#x304B;&#x308A;&#x3084;&#x3059;&#x304F;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x3001;&#x30DE;&#x30A6;&#x30B9;&#x30AA;&#x30FC;&#x30D0;&#x30FC;&#x3068;&#x30A2;&#x30A6;&#x30C8;&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h3 id="マウスオーバーとアウトの機能を追加する。">マウスオーバーとアウトの機能を追加する。</h3>
+<p>選択する場所を分かりやすくするために、マウスオーバーとアウトの機能を追加します。</p>
 <pre><code class="lang-JavaScript">.on(<span class="hljs-string">&apos;mouseover&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
-  d3.select(<span class="hljs-keyword">this</span>)
+  d3.select(<span class="hljs-built_in">this</span>)
   .style(<span class="hljs-string">&quot;fill&quot;</span>,<span class="hljs-string">&quot;yellow&quot;</span>)
 })
 .on(<span class="hljs-string">&quot;mouseout&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d,i</span>)</span>{
-d3.select(<span class="hljs-keyword">this</span>)
+d3.select(<span class="hljs-built_in">this</span>)
   .style(<span class="hljs-string">&quot;fill&quot;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d,i</span>)</span>{
     <span class="hljs-keyword">if</span>(d.properties.JINKO==<span class="hljs-string">&quot;0&quot;</span>){
       <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;#298A08&quot;</span>;
@@ -3398,82 +3397,82 @@ d3.select(<span class="hljs-keyword">this</span>)
 })
 });
 </code></pre>
-<h3 id="&#x8868;&#x793A;&#x4F8B;&#x3068;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30B3;&#x30FC;&#x30C9;">&#x8868;&#x793A;&#x4F8B;&#x3068;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30B3;&#x30FC;&#x30C9;</h3>
-<p>&#x4E0A;&#x8A18;&#x306E;&#x3088;&#x3046;&#x306B;&#x8A18;&#x8FF0;&#x3057;&#x3066;&#x3044;&#x304F;&#x3068;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;index.html&#x3092;&#x8868;&#x793A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;
+<h3 id="表示例とサンプルコード">表示例とサンプルコード</h3>
+<p>上記のように記述していくと、以下のようにindex.htmlを表示できます。
 <img src="pic/d3_pic3.png" alt="d3"></p>
-<p><a href="https://github.com/yamauchi-inochu/d3js-sample/blob/main/sample.html" target="_blank">&#x30B3;&#x30FC;&#x30C9;&#x5168;&#x4F53;&#x3092;&#x8868;&#x793A;</a></p>
-<p><a href="D3js.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="qgis2&#x7CFB;&#x3067;&#x4F5C;&#x6210;">QGIS(2&#x7CFB;)&#x3067;&#x4F5C;&#x6210;</h2>
-<p>QGIS&#x306B;&#x306F;&#x3001;D3.js&#x3092;&#x4F7F;&#x3063;&#x3066;&#x7C21;&#x5358;&#x306B;&#x5730;&#x56F3;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3067;&#x304D;&#x308B;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;d3 Map Renderer&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;&#x30D9;&#x30FC;&#x30B9;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x51FA;&#x529B;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x3068;&#x51FA;&#x529B;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x7DE8;&#x96C6;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<h3 id="d3-map-renderer&#x3068;&#x30D9;&#x30FC;&#x30B9;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4F5C;&#x6210;">d3 Map Renderer&#x3068;&#x30D9;&#x30FC;&#x30B9;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4F5C;&#x6210;</h3>
-<p>&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x305F;&#x30B7;&#x30A7;&#x30FC;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3093;&#x3067;&#x3001;QGIS&#x3067;&#x8868;&#x793A;&#x3059;&#x308B;&#x3002;<code>&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#xFF1E;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x7BA1;&#x7406;&#x3068;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</code>&#x304B;&#x3089;&#x3001;<code>d3 Map Renderer</code>&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;&#xFF08;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;<code>&#x8A2D;&#x5B9A;&#xFF1E;&#x5B9F;&#x9A13;&#x7684;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3082;&#x8868;&#x793A;&#x3059;&#x308B;</code>&#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x3064;&#x3051;&#x308B;&#xFF09;&#x3002;
+<p><a href="https://github.com/yamauchi-inochu/d3js-sample/blob/main/sample.html" target="_blank">コード全体を表示</a></p>
+<p><a href="D3js.html#Menu">▲メニューへもどる</a></p>
+<h2 id="qgis2系で作成">QGIS(2系)で作成</h2>
+<p>QGISには、D3.jsを使って簡単に地図アプリケーションを作成できるプラグインがあります。以下では、d3 Map Rendererを用いて、ベースファイルを出力する手法と出力したファイルの編集手法について解説します。</p>
+<h3 id="d3-map-rendererとベースファイルの作成">d3 Map Rendererとベースファイルの作成</h3>
+<p>ダウンロードしたシェープファイルを読み込んで、QGISで表示する。<code>プラグイン＞プラグインの管理とインストール</code>から、<code>d3 Map Renderer</code>をインストールする（表示されない場合は、<code>設定＞実験的プラグインも表示する</code>にチェックをつける）。
 <img src="pic/d3_pic4.png" alt="d3"></p>
-<p><code>WEB(W)&#xFF1E;d3 Map</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3002;
+<p><code>WEB(W)＞d3 Map</code>をクリックし、パラメータを指定する。
 <img src="pic/d3_pic5.png" alt="d3"></p>
 <ol>
-<li>&#x4EFB;&#x610F;&#x306E;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x5165;&#x529B;&#x3057;&#x305F;&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3002;</li>
-<li>Projection&#x3092;Mercator&#x306B;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x51FA;&#x529B;&#x3059;&#x308B;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3002;</li>
-<li><p>&#x6B21;&#x306E;&#x30BF;&#x30D6;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+<li>任意のタイトルを入力する。</li>
+<li>入力したレイヤを指定する。</li>
+<li>ProjectionをMercatorにする。</li>
+<li>出力するフォルダを指定する。</li>
+<li><p>次のタブをクリックする。
 <img src="pic/d3_pic6.png" alt="d3"></p>
 </li>
-<li><p>Allow zoom and pan&#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x3059;&#x308B;&#x3002;</p>
+<li><p>Allow zoom and panにチェックをする。</p>
 </li>
-<li>Include a legend&#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x3059;&#x308B;&#x3002;</li>
-<li><p>&#x6B21;&#x306E;&#x30BF;&#x30D6;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+<li>Include a legendにチェックをする。</li>
+<li><p>次のタブをクリックする。
 <img src="pic/d3_pic7.png" alt="d3"></p>
 </li>
-<li><p>Include information popup &#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x3059;&#x308B;&#x3002;</p>
+<li><p>Include information popup にチェックをする。</p>
 </li>
-<li>&#x30DD;&#x30C3;&#x30D7;&#x30A2;&#x30C3;&#x30D7;&#x3067;&#x8868;&#x793A;&#x3057;&#x305F;&#x3044;&#x9805;&#x76EE;&#xFF08;&#x4EBA;&#x53E3;&#x3001;&#x9762;&#x7A4D;&#x3001;&#x5927;&#x5B57;&#x540D;&#x7B49;&#xFF09;&#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x3059;&#x308B;&#x3002;</li>
-<li>OK&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+<li>ポップアップで表示したい項目（人口、面積、大字名等）にチェックをする。</li>
+<li>OKをクリックする。
 <img src="pic/d3_pic8.png" alt="d3"></li>
 </ol>
-<p>&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x3092;&#x7ACB;&#x3061;&#x4E0A;&#x3052;&#x3001;&#x51FA;&#x529B;&#x3057;&#x305F;index.html&#x3092;&#x958B;&#x304F;&#x3068;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3002;
+<p>ローカルサーバーを立ち上げ、出力したindex.htmlを開くと作成したファイルが表示される。
 <img src="pic/d3_pic9.png" alt="d3"></p>
-<h3 id="&#x30D9;&#x30FC;&#x30B9;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x7DE8;&#x96C6;">&#x30D9;&#x30FC;&#x30B9;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x7DE8;&#x96C6;</h3>
-<p>&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x51FA;&#x529B;&#x3057;&#x305F;&#x30D9;&#x30FC;&#x30B9;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x7DE8;&#x96C6;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x3001;&#x4EBA;&#x53E3;&#x3067;&#x8868;&#x793A;&#x3092;&#x5909;&#x3048;&#x308B;&#x5834;&#x5408;&#x3092;&#x4F8B;&#x3068;&#x3057;&#x3066;&#x3001;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
-<h4 id="&#x5C5E;&#x6027;&#x5024;&#x3068;&#x5BFE;&#x5FDC;&#x3057;&#x305F;&#x914D;&#x8272;&#x306E;&#x5909;&#x66F4;">&#x5C5E;&#x6027;&#x5024;&#x3068;&#x5BFE;&#x5FDC;&#x3057;&#x305F;&#x914D;&#x8272;&#x306E;&#x5909;&#x66F4;</h4>
-<p>&#x51FA;&#x529B;&#x6642;&#x306B;&#x51E1;&#x4F8B;&#x3092;&#x6574;&#x3048;&#x3066;&#x51FA;&#x529B;&#x3057;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x3053;&#x306E;&#x9805;&#x76EE;&#x3092;&#x8AAD;&#x307F;&#x98DB;&#x3070;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x4ECA;&#x56DE;&#x306F;&#x4EBA;&#x53E3;&#x3042;&#x308A;&#x306E;&#x30A8;&#x30EA;&#x30A2;&#x3068;&#x306A;&#x3057;&#x306E;&#x30A8;&#x30EA;&#x30A2;&#x3067;&#x8272;&#x3092;&#x5909;&#x3048;&#x3066;&#x51FA;&#x529B;&#x3057;&#x307E;&#x3059;&#x3002;&#x4EBA;&#x53E3;&#x3042;&#x308A;&#x3068;&#x306A;&#x3057;&#x306E;&#x30A8;&#x30EA;&#x30A2;&#x306E;&#x8272;&#x3092;&#x3064;&#x3051;&#x308B;&#x305F;&#x3081;&#x3001;<code>css&gt;color.css</code>&#x3092;&#x958B;&#x304D;.10r1&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;</p>
+<h3 id="ベースファイルの編集">ベースファイルの編集</h3>
+<p>以下では、出力したベースファイルの編集手法について、人口で表示を変える場合を例として、解説しています。</p>
+<h4 id="属性値と対応した配色の変更">属性値と対応した配色の変更</h4>
+<p>出力時に凡例を整えて出力している場合は、この項目を読み飛ばしてください。今回は人口ありのエリアとなしのエリアで色を変えて出力します。人口ありとなしのエリアの色をつけるため、<code>css&gt;color.css</code>を開き.10r1を追加する。</p>
 <pre><code class="lang-css">
-<span class="hljs-selector-class">.l0r1</span> { <span class="hljs-attribute">stroke</span>: <span class="hljs-number">#000000</span>; <span class="hljs-attribute">stroke-width</span>: <span class="hljs-number">0.26</span>; <span class="hljs-attribute">stroke-opacity</span>: <span class="hljs-number">1.0</span>; <span class="hljs-attribute">stroke-dasharray</span>: ; <span class="hljs-attribute">fill</span>: <span class="hljs-number">#0094f6</span>; <span class="hljs-attribute">fill-opacity</span>: <span class="hljs-number">1.0</span>; }
+<span class="hljs-selector-class">.l0r1</span> { stroke: <span class="hljs-number">#000000</span>; stroke-<span class="hljs-attribute">width</span>: <span class="hljs-number">0.26</span>; stroke-<span class="hljs-attribute">opacity</span>: <span class="hljs-number">1.0</span>; stroke-dasharray: ; fill: <span class="hljs-number">#0094f6</span>; fill-<span class="hljs-attribute">opacity</span>: <span class="hljs-number">1.0</span>; }
 </code></pre>
-<p>JSON&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x958B;&#x304D;&#x3001;510001019&#x4EE5;&#x5916;&#x3092;10r0&#x304B;&#x3089;10r1&#x306B;&#x304B;&#x3048;&#x308B;&#x3002;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x3067;&#x3001;10r0&#x3092;10r1&#x306B;&#x7F6E;&#x63DB;&#x3057;&#x3066;&#x304B;&#x3089;&#x3001;510001019&#x3092;&#x691C;&#x7D22;&#x3057;10r1&#x304B;&#x3089;10r0&#x306B;&#x3059;&#x308B;&#x3002;</p>
+<p>JSONファイルを開き、510001019以外を10r0から10r1にかえる。テキストエディタで、10r0を10r1に置換してから、510001019を検索し10r1から10r0にする。</p>
 <pre><code class="lang-json">{ <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;Feature&quot;</span>, <span class="hljs-string">&quot;properties&quot;</span>: { <span class="hljs-string">&quot;KEYCODE1&quot;</span>: <span class="hljs-string">&quot;510003012&quot;</span>, <span class="hljs-string">&quot;d3Css&quot;</span>: <span class="hljs-string">&quot;l0r1&quot;</span> }, <span class="hljs-string">&quot;geometry&quot;</span>: { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;Polygon&quot;</span>, <span class="hljs-string">&quot;coordinates&quot;</span>: [ [ [ <span class="hljs-number">130.8038044790141</span>, <span class="hljs-number">32.233847444567672</span> ]]]}}
 
-<span class="hljs-comment">//&#x30B3;&#x30FC;&#x30C9;&#x306F;&#x7701;&#x7565;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</span>
+<span class="hljs-comment">//コードは省略しています。</span>
 </code></pre>
-<h4 id="&#x51E1;&#x4F8B;&#x306E;&#x4FEE;&#x6B63;">&#x51E1;&#x4F8B;&#x306E;&#x4FEE;&#x6B63;</h4>
-<p>&#x51E1;&#x4F8B;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;data&gt;legend.css&#x3092;&#x958B;&#x304D;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x7DE8;&#x96C6;&#x306B;&#x3059;&#x308B;&#x3002;</p>
+<h4 id="凡例の修正">凡例の修正</h4>
+<p>凡例が表示されない場合は、data&gt;legend.cssを開き以下のよう編集にする。</p>
 <pre><code class="lang-csv">Width,Height,Color,Text
-20,20,l0r0,&#x76F8;&#x826F;&#x6751;&#x4EBA;&#x53E3;&#x306A;&#x3057;&#x30A8;&#x30EA;&#x30A2;
-20,20,l0r1,&#x76F8;&#x826F;&#x6751;&#x4EBA;&#x53E3;&#x3042;&#x308A;&#x30A8;&#x30EA;&#x30A2;
+20,20,l0r0,相良村人口なしエリア
+20,20,l0r1,相良村人口ありエリア
 </code></pre>
-<h4 id="&#x5C5E;&#x6027;&#x3092;&#x65E5;&#x672C;&#x8A9E;&#x306B;&#x3059;&#x308B;">&#x5C5E;&#x6027;&#x3092;&#x65E5;&#x672C;&#x8A9E;&#x306B;&#x3059;&#x308B;</h4>
-<p>&#x5C5E;&#x6027;&#x540D;&#x304C;&#x65E5;&#x672C;&#x8A9E;&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x306A;&#x3044;&#x305F;&#x3081;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x7DE8;&#x96C6;&#x3057;&#x65E5;&#x672C;&#x8A9E;&#x306B;&#x3059;&#x308B;&#x3002;</p>
+<h4 id="属性を日本語にする">属性を日本語にする</h4>
+<p>属性名が日本語になっていないため、以下のように編集し日本語にする。</p>
 <pre><code class="lang-html">
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;template&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display: none&quot;</span>&gt;</span>
   <span class="hljs-comment">&lt;!--Tooltip template--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>&#x9762;&#x7A4D;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{AREA}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>&#x4EBA;&#x53E3;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{JINKO}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>&#x5E02;&#x753A;&#x6751;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{CSS_NAME}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>&#x5927;&#x5B57;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{MOJI}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>面積<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{AREA}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>人口<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{JINKO}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>市町村<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{CSS_NAME}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>大字<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{MOJI}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-<h4 id="&#x7DE8;&#x96C6;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x8868;&#x793A;">&#x7DE8;&#x96C6;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x8868;&#x793A;</h4>
-<p>&#x4E0A;&#x8A18;&#x306E;&#x7B87;&#x6240;&#x3092;&#x7DE8;&#x96C6;&#x3059;&#x308B;&#x3068;&#x4E0B;&#x8A18;&#x306E;&#x3088;&#x3046;&#x306B;&#x8868;&#x793A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;
+<h4 id="編集したファイルの表示">編集したファイルの表示</h4>
+<p>上記の箇所を編集すると下記のように表示できます。
 <img src="pic/d3_pic10.png" alt="d3"></p>
-<p><a href="D3js.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x53C2;&#x8003;&#x66F8;&#x7C4D;&#x30FB;&#x30DA;&#x30FC;&#x30B8;">&#x53C2;&#x8003;&#x66F8;&#x7C4D;&#x30FB;&#x30DA;&#x30FC;&#x30B8;</h2>
-<p>&#x672C;&#x6559;&#x6750;&#x306F;&#x3001;&#x516C;&#x5F0F;&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x4ED6;&#x306B;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x66F8;&#x7C4D;&#x3068;&#x30DA;&#x30FC;&#x30B8;&#x3092;&#x53C2;&#x8003;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;</p>
+<p><a href="D3js.html#Menu">▲メニューへもどる</a></p>
+<h2 id="参考書籍・ページ">参考書籍・ページ</h2>
+<p>本教材は、公式ページの他に、以下の書籍とページを参考に作成しました。</p>
 <ul>
-<li>&#x53E4;&#x7C4F;&#x4E00;&#x6D69;(2014)&#x300E;&#x30C7;&#x30FC;&#x30BF;&#x30D3;&#x30B8;&#x30E5;&#x30A2;&#x30E9;&#x30A4;&#x30BC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x305F;&#x3081;&#x306E;D3.js&#x5FB9;&#x5E95;&#x5165;&#x9580;&#x300F;SB&#x30AF;&#x30EA;&#x30A8;&#x30A4;&#x30C6;&#x30A3;&#x30D6;</li>
-<li><a href="https://qiita.com/napinoco/items/230737128f490f277247" target="_blank">d3.js (v5) &#x3092;&#x4F7F;&#x3063;&#x3066;&#x767D;&#x5730;&#x56F3;&#x3092;&#x63CF;&#x304F;</a></li>
+<li>古籏一浩(2014)『データビジュアライゼーションのためのD3.js徹底入門』SBクリエイティブ</li>
+<li><a href="https://qiita.com/napinoco/items/230737128f490f277247" target="_blank">d3.js (v5) を使って白地図を描く</a></li>
 </ul>
-<p><a href="D3js.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
+<p><a href="D3js.html#Menu">▲メニューへもどる</a></p>
 
                                 
                                 </section>
@@ -3517,12 +3516,56 @@ d3.select(<span class="hljs-keyword">this</span>)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"D3.js","level":"3.1.7","depth":2,"next":{"title":"GitHubビギナーズマニュアル","level":"3.1.8","depth":2,"path":"materials/web_gis/GitHub/GitHub.md","ref":"./materials/web_gis/GitHub/GitHub.md","articles":[]},"previous":{"title":"地理院地図","level":"3.1.6","depth":2,"path":"materials/web_gis/gsimap/gsimap.md","ref":"./materials/web_gis/gsimap/gsimap.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/web_gis/D3js/D3js.md","mtime":"2020-10-09T08:58:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"D3.js","level":"3.1.7","depth":2,"next":{"title":"GitHubビギナーズマニュアル","level":"3.1.8","depth":2,"path":"materials/web_gis/GitHub/GitHub.md","ref":"./materials/web_gis/GitHub/GitHub.md","articles":[]},"previous":{"title":"地理院地図","level":"3.1.6","depth":2,"path":"materials/web_gis/gsimap/gsimap.md","ref":"./materials/web_gis/gsimap/gsimap.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/web_gis/D3js/D3js.md","mtime":"2022-01-31T13:55:13.010Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../../gitbook/gitbook.js"></script>
     <script src="../../../gitbook/theme.js"></script>
     

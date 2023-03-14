@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>空間相関分析 · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -55,7 +54,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="19.html" />
+    <link rel="next" href="../20/20.html" />
     
     
     <link rel="prev" href="../18/18.html" />
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,148 +3273,148 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x7A7A;&#x9593;&#x76F8;&#x95A2;&#x5206;&#x6790;">&#x7A7A;&#x9593;&#x76F8;&#x95A2;&#x5206;&#x6790;</h1>
-<p>&#x3000;&#x672C;&#x6559;&#x6750;&#x306F;&#x3001;&#x300C;&#x7A7A;&#x9593;&#x76F8;&#x95A2;&#x5206;&#x6790;&#x300D;&#x306E;&#x5B9F;&#x7FD2;&#x7528;&#x6559;&#x6750;&#x3067;&#x3059;&#x3002;GIS&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x3092;&#x7528;&#x3044;&#x305F;&#x3001;&#x7A7A;&#x9593;&#x76F8;&#x95A2;&#x5206;&#x6790;&#x306E;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x306B;&#x306F;&#x3001;&#x7121;&#x511F;&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;R&#x3068;SAM&#x3092;&#x7528;&#x3044;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;R&#x306F;&#x30D1;&#x30BD;&#x30B3;&#x30F3;&#x521D;&#x5FC3;&#x8005;&#x304C;&#x5229;&#x7528;&#x3059;&#x308B;&#x306B;&#x306F;&#x3001;&#x6577;&#x5C45;&#x304C;&#x9AD8;&#x3044;&#x305F;&#x3081;&#x6559;&#x6750;&#x306E;&#x524D;&#x534A;&#x3067;&#x57FA;&#x672C;&#x7684;&#x306A;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x8B1B;&#x7FA9;&#x7528;&#x6559;&#x6750;&#x3068;&#x3057;&#x3066;&#x3001;<a href="(http:/curricula.csis.u-tokyo.ac.jp/slide/4.html)">&#x5730;&#x7406;&#x60C5;&#x5831;&#x79D1;&#x5B66;&#x6559;&#x80B2;&#x7528;&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#xFF08;GISc&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#xFF09;</a>&#x306E;4&#x7AE0;&#x304C;&#x53C2;&#x8003;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;&#x672C;&#x6559;&#x6750;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x969B;&#x306F;&#x3001;<a href="../../policy.html">&#x5229;&#x7528;&#x898F;&#x7D04;</a>&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x3044;&#x305F;&#x3060;&#x304D;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x6761;&#x4EF6;&#x306B;&#x540C;&#x610F;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x306E;&#x307F;&#x3054;&#x5229;&#x7528;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
+                                <h1 id="空間相関分析">空間相関分析</h1>
+<p>　本教材は、「空間相関分析」の実習用教材です。GISソフトウェアを用いた、空間相関分析の手法について解説しています。ソフトウェアには、無償で利用できるRとSAMを用いています。Rはパソコン初心者が利用するには、敷居が高いため教材の前半で基本的な解説しています。講義用教材として、<a href="(http:/curricula.csis.u-tokyo.ac.jp/slide/4.html)">地理情報科学教育用スライド（GIScスライド）</a>の4章が参考になります。本教材を使用する際は、<a href="../../policy.html">利用規約</a>をご確認いただき、これらの条件に同意された場合にのみご利用下さい。</p>
 <h2 id="menu"><strong>Menu</strong></h2>
 <ul>
-<li><a href="#r&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3068;&#x57FA;&#x790E;&#x64CD;&#x4F5C;">R&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3068;&#x57FA;&#x790E;&#x64CD;&#x4F5C;</a></li>
-<li><a href="#&#x7A7A;&#x9593;&#x7684;&#x81EA;&#x5DF1;&#x56DE;&#x5E30;&#x30E2;&#x30C7;&#x30EB;">&#x7A7A;&#x9593;&#x7684;&#x81EA;&#x5DF1;&#x56DE;&#x5E30;&#x30E2;&#x30C7;&#x30EB;</a></li>
-<li><a href="#&#x57FA;&#x672C;&#x7684;&#x306A;&#x7D71;&#x8A08;&#x91CF;&#x306E;&#x78BA;&#x8A8D;">&#x57FA;&#x672C;&#x7684;&#x306A;&#x7D71;&#x8A08;&#x91CF;&#x306E;&#x78BA;&#x8A8D;</a></li>
-<li><a href="#&#x7A7A;&#x9593;&#x7684;&#x8AA4;&#x5DEE;&#x81EA;&#x5DF1;&#x56DE;&#x5E30;&#x30E2;&#x30C7;&#x30EB;">&#x7A7A;&#x9593;&#x7684;&#x8AA4;&#x5DEE;&#x81EA;&#x5DF1;&#x56DE;&#x5E30;&#x30E2;&#x30C7;&#x30EB;</a></li>
-<li><a href="#&#x5730;&#x7406;&#x7684;&#x52A0;&#x91CD;&#x56DE;&#x5E30;&#xFF08;gwr&#xFF09;">&#x5730;&#x7406;&#x7684;&#x52A0;&#x91CD;&#x56DE;&#x5E30;&#xFF08;GWR&#xFF09;</a></li>
+<li><a href="#rのインストールと基礎操作">Rのインストールと基礎操作</a></li>
+<li><a href="#空間的自己回帰モデル">空間的自己回帰モデル</a></li>
+<li><a href="#基本的な統計量の確認">基本的な統計量の確認</a></li>
+<li><a href="#空間的誤差自己回帰モデル">空間的誤差自己回帰モデル</a></li>
+<li><a href="#地理的加重回帰（gwr）">地理的加重回帰（GWR）</a></li>
 </ul>
-<p><strong>&#x4F7F;&#x7528;&#x30C7;&#x30FC;&#x30BF;</strong></p>
+<p><strong>使用データ</strong></p>
 <ul>
-<li>R&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x300C;COL.OLD&#x300D;&#x3092;&#x4F7F;&#x7528;</li>
-<li><a href="https://spatial.uchicago.edu/sample-data" target="_blank">GeoDa sample data &#x300C;clumbs.shp&#x300D;&#x3092;&#x5229;&#x7528;&#x3000;&#x30B7;&#x30AB;&#x30B4;&#x5927;&#x5B66;</a></li>
-<li><a href="http://nlftp.mlit.go.jp/ksj/index.html" target="_blank">&#x56FD;&#x571F;&#x6570;&#x5024;&#x60C5;&#x5831;</a>&#x3000;&#x6771;&#x4EAC;&#x90FD;&#x884C;&#x653F;&#x533A;&#x3092;&#x52A0;&#x5DE5;&#x3057;&#x5229;&#x7528;</li>
+<li>Rサンプルデータ「COL.OLD」を使用</li>
+<li><a href="https://spatial.uchicago.edu/sample-data" target="_blank">GeoDa sample data 「clumbs.shp」を利用　シカゴ大学</a></li>
+<li><a href="http://nlftp.mlit.go.jp/ksj/index.html" target="_blank">国土数値情報</a>　東京都行政区を加工し利用</li>
 </ul>
 <hr>
-<h2 id="r&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3068;&#x57FA;&#x790E;&#x64CD;&#x4F5C;">R&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3068;&#x57FA;&#x790E;&#x64CD;&#x4F5C;</h2>
-<h3 id="r&#x3068;&#x306F;&#xFF1F;">R&#x3068;&#x306F;&#xFF1F;</h3>
+<h2 id="rのインストールと基礎操作">Rのインストールと基礎操作</h2>
+<h3 id="rとは？">Rとは？</h3>
 <ul>
-<li>&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x30BD;&#x30FC;&#x30B9;&#x3067;&#x958B;&#x767A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30D5;&#x30EA;&#x30FC;&#x30BD;&#x30D5;&#x30C8;</li>
-<li>&#x7D71;&#x8A08;&#x51E6;&#x7406;&#x306B;&#x512A;&#x308C;&#x3066;&#x304A;&#x308A;&#x3001;&#x8C4A;&#x5BCC;&#x306A;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x304C;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;</li>
-<li>&#x89E3;&#x8AAC;&#x66F8;&#x304C;&#x591A;&#x6570;&#x57F7;&#x7B46;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;</li>
-<li>&#x30B7;&#x30A7;&#x30FC;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x6271;&#x3046;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;</li>
+<li>オープンソースで開発されているフリーソフト</li>
+<li>統計処理に優れており、豊富なパッケージが利用できる</li>
+<li>解説書が多数執筆されている</li>
+<li>シェープファイルを扱うことができる</li>
 </ul>
-<h3 id="&#xFF52;&#x306B;&#x3088;&#x308B;&#x5730;&#x7406;&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x5206;&#x6790;&#x306E;&#x53C2;&#x8003;&#x66F8;">&#xFF32;&#x306B;&#x3088;&#x308B;&#x5730;&#x7406;&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x5206;&#x6790;&#x306E;&#x53C2;&#x8003;&#x66F8;</h3>
-<p>R&#x306B;&#x3088;&#x308B;&#x5730;&#x7406;&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x5206;&#x6790;&#x95A2;&#x3057;&#x3066;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306E;2&#x518A;&#x304C;&#x53C2;&#x8003;&#x66F8;&#x3068;&#x3057;&#x3066;&#x3042;&#x3052;&#x3089;&#x308C;&#x308B;</p>
+<h3 id="ｒによる地理空間データ分析の参考書">Ｒによる地理空間データ分析の参考書</h3>
+<p>Rによる地理空間データ分析関しては、以下の2冊が参考書としてあげられる</p>
 <ul>
-<li>&#x53E4;&#x8C37;&#x77E5;&#x4E4B; &#x8457;&#x3000;&#xFF08;2011&#xFF09;&#x3000;&#x300E;&#xFF32;&#x306B;&#x3088;&#x308B;&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7D71;&#x8A08;&#x5206;&#x6790; &#xFF08;&#x7D71;&#x8A08;&#x79D1;&#x5B66;&#x306E;&#x30D7;&#x30E9;&#x30AF;&#x30C6;&#x30A3;&#x30B9;&#xFF09;&#x300F; &#x671D;&#x5009;&#x66F8;&#x5E97; 184p.</li>
-<li>&#x91D1;&#x660E;&#x54F2; &#x7DE8;, &#x8C37;&#x6751;&#x664B; &#x8457;&#x3000;&#xFF08;2010&#xFF09; &#x300E;&#x5730;&#x7406;&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x5206;&#x6790; &#xFF08;R&#x3067;&#x5B66;&#x3076;&#x30C7;&#x30FC;&#x30BF;&#x30B5;&#x30A4;&#x30A8;&#x30F3;&#x30B9; 7&#xFF09;&#x300F; &#x5171;&#x7ACB;&#x51FA;&#x7248; 258p.</li>
+<li>古谷知之 著　（2011）　『Ｒによる空間データの統計分析 （統計科学のプラクティス）』 朝倉書店 184p.</li>
+<li>金明哲 編, 谷村晋 著　（2010） 『地理空間データ分析 （Rで学ぶデータサイエンス 7）』 共立出版 258p.</li>
 </ul>
-<p>&#x203B;&#x672C;&#x6559;&#x6750;&#x306F;&#x3001;&#x4E0A;&#x8A18;&#x306E;2&#x518A;&#x3092;&#x53C2;&#x8003;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x308B;&#x3002;</p>
-<h3 id="&#xFF52;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">&#xFF32;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h3>
-<p><a href="https://www.r-project.org/" target="_blank">&#xFF32;&#x306E;&#x516C;&#x5F0F;&#x30DA;&#x30FC;&#x30B8;</a>&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3057;&#x3001;&#xFF32;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x3002;
+<p>※本教材は、上記の2冊を参考に作成している。</p>
+<h3 id="ｒのインストール">Ｒのインストール</h3>
+<p><a href="https://www.r-project.org/" target="_blank">Ｒの公式ページ</a>にアクセスし、Ｒをインストールする。
 <img src="pic/19pic_1.png" alt="R"></p>
-<p>&#x4E0A;&#x8A18;&#x753B;&#x50CF;&#x3092;&#x53C2;&#x8003;&#x306B;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x4F5C;&#x696D;&#x3092;&#x884C;&#x3046;&#x3002;
+<p>上記画像を参考に、インストール作業を行う。
 <img src="pic/19pic_2.png" alt="R"></p>
-<h3 id="r&#x306E;&#x8D77;&#x52D5;">R&#x306E;&#x8D77;&#x52D5;</h3>
-<p>Windows&#x306E;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x304B;&#x3089;&#x3001;R&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;R&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3002;
+<h3 id="rの起動">Rの起動</h3>
+<p>Windowsのメニューから、Rのアイコンをクリックし、Rを起動する。
 <img src="pic/19pic_3.png" alt="R"></p>
-<h3 id="&#xFF52;&#x5909;&#x6570;&#x3068;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x578B;">&#xFF32;&#x5909;&#x6570;&#x3068;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x578B;</h3>
-<p>R&#x3067;&#x306F;&#x3001;&#x5909;&#x6570;&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4EE3;&#x5165;&#x3057;&#x51E6;&#x7406;&#x3092;&#x884C;&#x3046;&#x3002;&#x4E0A;&#x306E;&#x56F3;&#x306E;&#x5834;&#x5408;map&#x3068;&#x3044;&#x3046;&#x5909;&#x6570;&#x306B;100&#x3068;&#x3044;&#x3046;&#x6570;&#x5024;&#x3092;&#x4EE3;&#x5165;&#x3057;&#x305F;&#x3002;
-&#x305D;&#x306E;&#x305F;&#x3081;&#x3001;map+200(100+200)&#x3068;&#x3044;&#x3046;&#x3053;&#x3068;&#x306B;&#x306A;&#x308B;&#x306E;&#x3067;&#x3001;300&#x3068;&#x3044;&#x3046;&#x5024;&#x304C;&#x8FD4;&#x3055;&#x308C;&#x308B;&#x3002;</p>
-<p>&#x203B;&#x5909;&#x6570;&#x30FB;&#x30FB;&#x30FB;&#x30FB;&#x6570;&#x5024;&#x3001;&#x6587;&#x5B57;&#x5217;&#x3001;&#x884C;&#x5217;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x3001;&#x30EA;&#x30B9;&#x30C8;&#x306A;&#x3069;&#x304C;&#x6271;&#x3048;&#x308B;</p>
+<h3 id="ｒ変数とデータの型">Ｒ変数とデータの型</h3>
+<p>Rでは、変数にデータを代入し処理を行う。上の図の場合mapという変数に100という数値を代入した。
+そのため、map+200(100+200)ということになるので、300という値が返される。</p>
+<p>※変数・・・・数値、文字列、行列、データフレーム、リストなどが扱える</p>
 <p><img src="pic/19pic_4.png" alt="R"></p>
-<pre><code class="lang-R"><span class="hljs-comment">#&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x8A18;&#x5165;&#x3057;&#x3001;Enter&#x3092;&#x62BC;&#x3059;&#x3068;&#x51E6;&#x7406;&#x3055;&#x308C;&#x308B;</span>
-map &lt;- <span class="hljs-number">100</span>
+<pre><code class="lang-R"><span class="hljs-comment">#以下のように記入し、Enterを押すと処理される</span>
+map &lt;- 100
 </code></pre>
-<h3 id="&#x95A2;&#x6570;&#x306B;&#x3064;&#x3044;&#x3066;">&#x95A2;&#x6570;&#x306B;&#x3064;&#x3044;&#x3066;</h3>
-<p>R&#x3067;&#x306F;&#x3001;&#x7D71;&#x8A08;&#x51E6;&#x7406;&#x306B;&#x5FC5;&#x8981;&#x306A;&#x95A2;&#x6570;&#x304C;&#x8C4A;&#x5BCC;&#x306B;&#x7528;&#x610F;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x3001;&#x7528;&#x9014;&#x306B;&#x5408;&#x308F;&#x305B;&#x3066;&#x95A2;&#x6570;&#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x3002;
-&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x591A;&#x304F;&#x306E;&#x95A2;&#x6570;&#x3092;&#x6271;&#x3046;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x3002;</p>
-<p>data()&#x3067;R&#x306E;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x3067;&#x3042;&#x308B;iris&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;
-iris&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x3092;&#x5229;&#x7528;&#x3057;&#x3001;head()&#x95A2;&#x6570;&#x3067;&#x4E0A;&#x304B;&#x3089;6&#x884C;&#x3092;&#x8868;&#x793A;&#x3057;&#x305F;&#x3002;
-tail()&#x3067;&#x4E0B;&#x304B;&#x3089;6&#x884C;&#x3092;&#x8868;&#x793A;&#x3067;&#x304D;&#x308B;&#x3002;</p>
-<p>&#x203B;&#x3000;iris &#x306F;&#x3001;&#x3042;&#x3084;&#x3081;&#x306E;&#x304C;&#x304F;&#x306E;&#x9577;&#x3055;&#x3068;&#x5E45;&#x3001;&#x82B1;&#x5F01;&#x306E;&#x9577;&#x3055;&#x3068;&#x5E45;&#x3092;&#x793A;&#x3059;&#x30C7;&#x30FC;&#x30BF;</p>
+<h3 id="関数について">関数について</h3>
+<p>Rでは、統計処理に必要な関数が豊富に用意されているため、用途に合わせて関数を利用する。
+パッケージをインストールすることで多くの関数を扱うことができる。</p>
+<p>data()でRのサンプルデータであるirisを読み込む。
+irisのデータフレームを利用し、head()関数で上から6行を表示した。
+tail()で下から6行を表示できる。</p>
+<p>※　iris は、あやめのがくの長さと幅、花弁の長さと幅を示すデータ</p>
 <p><img src="pic/19pic_5.png" alt="R"></p>
-<h2 id="&#xFF52;&#x3067;&#x8A08;&#x7B97;">&#xFF32;&#x3067;&#x8A08;&#x7B97;</h2>
-<p>&#x3000;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;R&#x3067;&#x95A2;&#x6570;&#x3092;&#x7528;&#x3044;&#x305F;&#x8A08;&#x7B97;&#x306E;&#x7DF4;&#x7FD2;&#x3068;&#x3057;&#x3066;&#x3001;iris&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30BB;&#x30C3;&#x30C8;&#x3092;&#x5229;&#x7528;&#x3057;&#x3001;&#x304C;&#x304F;&#x306E;&#x9577;&#x3055;&#x306E;&#x5E73;&#x5747;&#x5024;&#x3001;&#x6700;&#x5C0F;&#x5024;&#x3001;&#x6700;&#x5927;&#x5024;&#x3001;&#x4E2D;&#x592E;&#x5024;&#x3092;&#x6C42;&#x3081;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#x3002;&#x8A08;&#x7B97;&#x304C;&#x3067;&#x304D;&#x305F;&#x3089;&#x3001;&#x9577;&#x3055;&#x306E;&#x30D2;&#x30B9;&#x30C8;&#x30B0;&#x30E9;&#x30E0;&#x3084;&#x6563;&#x5E03;&#x56F3;&#x306E;&#x4F5C;&#x6210;&#x306E;&#x7DF4;&#x7FD2;&#x3082;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="ｒで計算">Ｒで計算</h2>
+<p>　以下では、Rで関数を用いた計算の練習として、irisのデータセットを利用し、がくの長さの平均値、最小値、最大値、中央値を求めていきます。計算ができたら、長さのヒストグラムや散布図の作成の練習も行います。</p>
 <p><img src="pic/19pic_6.png" alt="R"></p>
-<pre><code class="lang-R"><span class="hljs-comment">#iris&#x306E;&#x30D8;&#x30C3;&#x30C0;&#x30FC;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x3002;</span>
+<pre><code class="lang-R"><span class="hljs-comment">#irisのヘッダーを確認する。</span>
 head(iris)
 
-<span class="hljs-comment">#iris&#x306E;&#x304C;&#x304F;&#x306E;&#x9577;&#x3055;&#x306E;&#x5E73;&#x5747;&#x5024;(min()&#x3067;&#x6700;&#x5C0F;&#x5024;, max()&#x3067;&#x6700;&#x5927;&#x5024;, median()&#x3067;&#x4E2D;&#x592E;&#x5024;)&#x3092;&#x6C42;&#x3081;&#x308B;&#x3002;</span>
+<span class="hljs-comment">#irisのがくの長さの平均値(min()で最小値, max()で最大値, median()で中央値)を求める。</span>
 mean(iris$Sepal.Length)
 
-<span class="hljs-comment">#&#x5168;&#x3066;&#x306E;&#x6700;&#x5C0F;&#x5024;&#x3001;&#x7B2C;&#x4E00;&#x56DB;&#x5206;&#x4F4D;&#x6570;&#x3001;&#x4E2D;&#x592E;&#x5024;&#x3001;&#x5E73;&#x5747;&#x5024;&#x3001;&#x7B2C;&#x4E09;&#x56DB;&#x5206;&#x4F4D;&#x6570;&#x3001;&#x6700;&#x5927;&#x5024;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;</span>
+<span class="hljs-comment">#全ての最小値、第一四分位数、中央値、平均値、第三四分位数、最大値を表示する</span>
 summary(iris)
 </code></pre>
-<h3 id="r&#x3067;&#x30B0;&#x30E9;&#x30D5;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">R&#x3067;&#x30B0;&#x30E9;&#x30D5;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h3>
+<h3 id="rでグラフを作成する">Rでグラフを作成する</h3>
 <p><img src="pic/19pic_7.png" alt="R"></p>
-<pre><code class="lang-R"><span class="hljs-comment">#&#x30D2;&#x30B9;&#x30C8;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x4F5C;&#x6210;</span>
+<pre><code class="lang-R"><span class="hljs-comment">#ヒストグラムを作成</span>
 hist(iris$Sepal.Length)
 </code></pre>
 <p><img src="pic/19pic_8.png" alt="R"></p>
-<pre><code class="lang-R"><span class="hljs-comment">#&#x4E00;&#x5909;&#x6570;&#x306E;&#x6563;&#x5E03;&#x56F3;</span>
+<pre><code class="lang-R"><span class="hljs-comment">#一変数の散布図</span>
 plot(iris$Sepal.Length)
 
-<span class="hljs-comment">#&#x4E8C;&#x5909;&#x6570;&#x306E;&#x6563;&#x5E03;&#x56F3;</span>
+<span class="hljs-comment">#二変数の散布図</span>
 plot(iris$Sepal.Length,iris$Sepal.Width)
 </code></pre>
-<h3 id="r&#x3067;csv&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;">R&#x3067;csv&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</h3>
-<p>&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x81EA;&#x4F5C;&#x3057;&#x305F;CSV&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x5229;&#x7528;&#x3057;&#x8A08;&#x7B97;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x308B;&#x3002;
-&#x203B;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x7528;&#x610F;&#x3057;&#x3066;&#x3044;&#x306A;&#x3044;&#x305F;&#x3081;&#x3001;&#x9069;&#x5F53;&#x306A;CSV&#x3092;&#x81EA;&#x4F5C;&#x3059;&#x308B;&#x3053;&#x3068;&#x3002;</p>
-<p>read.csv(&quot;C://Users/&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;/Desktop/test.csv&quot;)&#x3000;&#x203B;&#xFF08;&quot;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x540D;/&#x30C7;&#x30FC;&#x30BF;&#x540D;.csv&quot;, sep=&quot;,&quot;, header=TRUE)&#x3068;&#x3059;&#x308B;&#x3068;&#x3088;&#x308A;&#x826F;&#x3044;&#x3002;
+<h3 id="rでcsvを読み込む">Rでcsvを読み込む</h3>
+<p>以下では、自作したCSVデータを利用し計算する手法について解説している。
+※サンプルデータは用意していないため、適当なCSVを自作すること。</p>
+<p>read.csv(&quot;C://Users/ユーザー名/Desktop/test.csv&quot;)　※（&quot;ディレクトリ名/データ名.csv&quot;, sep=&quot;,&quot;, header=TRUE)とするとより良い。
 <img src="pic/19pic_9.png" alt="R">
-read.csv&#xFF08;&#x30D5;&#x30EB;&#x30D1;&#x30B9;&#xFF09;&#x3067;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;&#x304A;&#x3044;&#x305F;csv&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x3002;
-&#x30C7;&#x30FC;&#x30BF;&#x30BB;&#x30C3;&#x30C8;&#x3068;&#x3057;&#x3066;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x5834;&#x5408;&#x306F;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x30BB;&#x30C3;&#x30C8;&#x540D; &lt;- read.csv(&#x30D5;&#x30EB;&#x30D1;&#x30B9;)&#x3068;&#x3059;&#x308B;&#x3002;</p>
-<p>x&#x8EF8;&#x3068;y&#x8EF8;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x3066;&#x3001;plot&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3001;&#x6563;&#x5E03;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;
+read.csv（フルパス）でディレクトリにおいたcsvを読み込むことができる。
+データセットとして読み込む場合は、データセット名 &lt;- read.csv(フルパス)とする。</p>
+<p>x軸とy軸を指定して、plotを実行し、散布図を作成する。
 <img src="pic/19pic_10.png" alt="R"></p>
-<p>&#x70B9;&#x6570;&#x306E;&#x5408;&#x8A08;&#x3068;&#x5E73;&#x5747;&#x3092;&#x8A08;&#x7B97;&#x3059;&#x308B;&#x3002;
+<p>点数の合計と平均を計算する。
 <img src="pic/19pic_11.png" alt="R"></p>
-<p>min&#x3084;max&#x3067;&#x3001;&#x82F1;&#x8A9E;&#x306E;&#x6700;&#x9AD8;&#x70B9;&#x6570;&#x3084;&#x5408;&#x8A08;&#x306E;&#x6700;&#x4F4E;&#x70B9;&#x6570;&#x3092;&#x6C42;&#x3081;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x3002;
+<p>minやmaxで、英語の最高点数や合計の最低点数を求めることができる。
 <img src="pic/19pic_12.png" alt="R"></p>
-<p><a href="19.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#xFF52;&#x3067;&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x6271;&#x3046;">&#xFF32;&#x3067;&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x6271;&#x3046;</h2>
-<p>&#x4EE5;&#x4E0B;&#x306E;&#x6559;&#x6750;&#x3067;&#x306F;&#x3001;RStudio&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x3002;Rstudio&#x306F;&#x3001;<a href="https://www.rstudio.com/" target="_blank">Rstudio&#x306E;&#x516C;&#x5F0F;&#x30B5;&#x30A4;&#x30C8;</a>&#x304B;&#x3089;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3067;&#x304D;&#x308B;&#x3002;</p>
-<h3 id="&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h3>
-<p>&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x6271;&#x3046;&#x305F;&#x3081;&#x306B;&#x5FC5;&#x8981;&#x306A;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;
+<p><a href="19.html#Menu">▲メニューへもどる</a></p>
+<h2 id="ｒで空間データを扱う">Ｒで空間データを扱う</h2>
+<p>以下の教材では、RStudioを使用する。Rstudioは、<a href="https://www.rstudio.com/" target="_blank">Rstudioの公式サイト</a>からダウンロードできる。</p>
+<h3 id="パッケージのインストール">パッケージのインストール</h3>
+<p>空間データを扱うために必要なパッケージを読み込む
 <img src="pic/19pic_13.png" alt="R"></p>
-<pre><code class="lang-R"><span class="hljs-comment">#&#x30B7;&#x30A7;&#x30FC;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x6271;&#x3046;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;</span>
+<pre><code class="lang-R"><span class="hljs-comment">#シェープファイルを扱うパッケージをインストールする</span>
 install.packages(<span class="hljs-string">&quot;maptools&quot;</span>)
 </code></pre>
-<p>&#x203B;install.packages(&quot;maptools&quot; , dependencies =TRUE)&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3068;&#x3001;maptools&#x3068;&#x95A2;&#x9023;&#x3057;&#x305F;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3082;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;</p>
-<pre><code class="lang-R"><span class="hljs-comment">#&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x304B;&#x3089;&#x3001;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</span>
-<span class="hljs-keyword">library</span>(maptools)
+<p>※install.packages(&quot;maptools&quot; , dependencies =TRUE)を実行すると、maptoolsと関連したパッケージもインストールする</p>
+<pre><code class="lang-R"><span class="hljs-comment">#ライブラリから、パッケージを読み込む</span>
+library(maptools)
 </code></pre>
-<h3 id="&#x30B7;&#x30A7;&#x30FC;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x60C5;&#x5831;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;">&#x30B7;&#x30A7;&#x30FC;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x60C5;&#x5831;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;</h3>
-<pre><code class="lang-R">getinfo.shape(<span class="hljs-string">&quot;C://Users/&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x5834;&#x6240;/&#x30B7;&#x30A7;&#x30FC;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;.shp&quot;</span>)
+<h3 id="シェープファイルの情報を確認する">シェープファイルの情報を確認する</h3>
+<pre><code class="lang-R">getinfo.shape(<span class="hljs-string">&quot;C://Users/ファイルの場所/シェープファイル名.shp&quot;</span>)
 </code></pre>
-<h3 id="&#x30B7;&#x30A7;&#x30FC;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;">&#x30B7;&#x30A7;&#x30FC;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</h3>
-<pre><code class="lang-R"><span class="hljs-comment">#setwd()&#x3067;&#x4F5C;&#x696D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;</span>
+<h3 id="シェープファイルを読み込む">シェープファイルを読み込む</h3>
+<pre><code class="lang-R"><span class="hljs-comment">#setwd()で作業ディレクトリを設定する</span>
 setwd(<span class="hljs-string">&quot;C://Users/yamauchi/Desktop/data/hiroshima&quot;</span>)
 
-<span class="hljs-comment"># readShapePoints()&#x3067;Shape&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</span>
+<span class="hljs-comment"># readShapePoints()でShapeを読み込む</span>
 public_facility &lt;- readShapePoints(<span class="hljs-string">&quot;public_facility.shp&quot;</span>)
 </code></pre>
-<p>&#x203B;&#x3000;getwd()&#x3067;&#x4F5C;&#x696D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x308B;</p>
-<p>&#x4EE5;&#x4E0B;&#x3067;&#x3001;&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x3084;&#x30E9;&#x30A4;&#x30F3;&#x3082;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x3002;
-Plot()&#x95A2;&#x6570;&#x3067;&#x3001;&#x5730;&#x56F3;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x3002;</p>
-<pre><code class="lang-R"><span class="hljs-comment">#&#x30E9;&#x30A4;&#x30F3;&#x30C7;&#x30FC;&#x30BF;&#x3001;&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</span>
+<p>※　getwd()で作業ディレクトリを確認できる</p>
+<p>以下で、ポリゴンやラインも読み込むことができる。
+Plot()関数で、地図を表示することができる。</p>
+<pre><code class="lang-R"><span class="hljs-comment">#ラインデータ、ポリゴンデータの読み込み</span>
 river &lt;- readShapeLines(<span class="hljs-string">&quot;river.shp&quot;</span>)
 area &lt;- readShapeLines(<span class="hljs-string">&quot;admarea.shp&quot;</span>)
-<span class="hljs-comment">#&#x5730;&#x56F3;&#x306E;&#x8868;&#x793A;</span>
+<span class="hljs-comment">#地図の表示</span>
 plot(area)
 </code></pre>
-<p>&#x305D;&#x306E;&#x4ED6;&#x306B;&#x3001;R&#x3067;&#x306F;&#x4EBA;&#x53E3;&#x5BC6;&#x5EA6;&#x306E;&#x8A08;&#x7B97;&#x3084;&#x30AB;&#x30E9;&#x30FC;&#x30DE;&#x30C3;&#x30D7;&#x306E;&#x4F5C;&#x6210;&#x3001;&#x30B7;&#x30A7;&#x30FC;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x66F8;&#x304D;&#x51FA;&#x3057;&#x3082;&#x53EF;&#x80FD;&#x3002;
+<p>その他に、Rでは人口密度の計算やカラーマップの作成、シェープファイルの書き出しも可能。
 <img src="pic/19pic_14.png" alt="R"></p>
-<h2 id="&#x7A7A;&#x9593;&#x7684;&#x81EA;&#x5DF1;&#x56DE;&#x5E30;&#x30E2;&#x30C7;&#x30EB;">&#x7A7A;&#x9593;&#x7684;&#x81EA;&#x5DF1;&#x56DE;&#x5E30;&#x30E2;&#x30C7;&#x30EB;</h2>
-<p>R&#x306E;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x306E;OLD.COL&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;&#x7A7A;&#x9593;&#x7684;&#x81EA;&#x5DF1;&#x56DE;&#x5E30;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x7B97;&#x51FA;&#x3059;&#x308B;&#x3002;</p>
-<pre><code class="lang-R"><span class="hljs-comment">#spdep&#x306E;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x203B;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;install.packages(spdep)&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3002;</span>
-<span class="hljs-keyword">library</span>(spdep)
+<h2 id="空間的自己回帰モデル">空間的自己回帰モデル</h2>
+<p>RのサンプルデータのOLD.COLを用いて、空間的自己回帰モデルを算出する。</p>
+<pre><code class="lang-R"><span class="hljs-comment">#spdepのパッケージを読み込む※インストールしていない場合は、install.packages(spdep)を実行する。</span>
+library(spdep)
 
-<span class="hljs-comment">#&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x300C;OLD.COL&#x300D;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;&#x203B;&#x30AA;&#x30CF;&#x30A4;&#x30AA;&#x5DDE;&#x30B3;&#x30ED;&#x30F3;&#x30D0;&#x30B9;&#x5E02;&#x306E;&#x72AF;&#x7F6A;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x30BB;&#x30C3;&#x30C8;</span>
+<span class="hljs-comment">#サンプルデータ「OLD.COL」を読み込む。※オハイオ州コロンバス市の犯罪に関するデータセット</span>
 data(oldcol)
 
-<span class="hljs-comment">#&#x30C7;&#x30FC;&#x30BF;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x4E2D;&#x8EAB;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x3002;&#x4ECA;&#x56DE;&#x306F;&#x3001;&#x5F93;&#x5C5E;&#x5909;&#x6570;&#x3068;&#x3057;&#x3066;CRIME, &#x8AAC;&#x660E;&#x5909;&#x6570;&#x3068;&#x3057;&#x3066;HOVAL, INC&#x3092;&#x7528;&#x3044;&#x308B;&#x3002;</span>
-names(COL.OLD)
+<span class="hljs-comment">#データセットの中身を確認する。今回は、従属変数としてCRIME, 説明変数としてHOVAL, INCを用いる。</span>
+<span class="hljs-built_in">names</span>(COL.OLD)
 
-<span class="hljs-comment">#lagsarlm&#x95A2;&#x6570;&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;&#x7A7A;&#x9593;&#x7684;&#x81EA;&#x5DF1;&#x56DE;&#x5E30;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x7B97;&#x51FA;&#x3059;&#x308B;&#x3002;&#x7A7A;&#x9593;&#x91CD;&#x307F;&#x884C;&#x5217;&#x306B;&#x306F;&#x3001;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x306E;COL.nb&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x3002;</span>
+<span class="hljs-comment">#lagsarlm関数を用いて、空間的自己回帰モデルを算出する。空間重み行列には、サンプルデータのCOL.nbを使用している。</span>
 col.sar &lt;- lagsarlm(CRIME ~ INC + HOVAL, data = COL.OLD, nb2listw( COL.nb, style = <span class="hljs-string">&quot;W&quot;</span>), method = <span class="hljs-string">&quot;eigen&quot;</span>)
 
-<span class="hljs-comment">#summary(col.sar)&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3068;&#x7D50;&#x679C;&#x304C;&#x7B97;&#x51FA;&#x3055;&#x308C;&#x308B;&#x3002;</span>
+<span class="hljs-comment">#summary(col.sar)を実行すると結果が算出される。</span>
 summary(col.sar)
 
 Call:
@@ -3423,7 +3422,7 @@ lagsarlm(formula = CRIME ~ INC + HOVAL, data = COL.OLD, listw = nb2listw(COL.nb,
     style = <span class="hljs-string">&quot;W&quot;</span>), method = <span class="hljs-string">&quot;eigen&quot;</span>)
 
 Residuals:
-      Min        1Q    Median        3Q       Max
+      Min        <span class="hljs-number">1</span>Q    Median        <span class="hljs-number">3</span>Q       Max
 -<span class="hljs-number">37.68585</span>  -<span class="hljs-number">5.35636</span>   <span class="hljs-number">0.05421</span>   <span class="hljs-number">6.02013</span>  <span class="hljs-number">23.20555</span>
 
 Type: lag
@@ -3447,21 +3446,21 @@ LM test <span class="hljs-keyword">for</span> residual autocorrelation
 test value: <span class="hljs-number">0.31955</span>, p-value: <span class="hljs-number">0.57188</span>
 </code></pre>
 <ul>
-<li>CRIME&#xFF1A;1000&#x4E16;&#x5E2F;&#x3042;&#x305F;&#x308A;&#x306E;&#x4E0D;&#x6CD5;&#x4FB5;&#x5165;&#x304A;&#x3088;&#x3073;&#x81EA;&#x52D5;&#x8ECA;&#x7A83;&#x76D7;</li>
-<li>HOVAL&#xFF1A;&#x4F4F;&#x5B85;&#x306E;&#x8A55;&#x4FA1;&#x984D;&#xFF08;&#x5358;&#x4F4D;&#x306F;$1000&#xFF09;</li>
-<li>INC: &#x4E16;&#x5E2F;&#x53CE;&#x5165;<blockquote>
-<p>&#x91D1;&#x660E;&#x54F2; &#x7DE8;, &#x8C37;&#x6751;&#x664B; &#x8457;&#x3000;&#xFF08;2010&#xFF09;
-&#x300E;&#x5730;&#x7406;&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x5206;&#x6790; &#xFF08;R&#x3067;&#x5B66;&#x3076;&#x30C7;&#x30FC;&#x30BF;&#x30B5;&#x30A4;&#x30A8;&#x30F3;&#x30B9; 7&#xFF09;&#x300F;p141.&#x3092;&#x53C2;&#x8003;&#x306B;&#x4F5C;&#x6210;</p>
+<li>CRIME：1000世帯あたりの不法侵入および自動車窃盗</li>
+<li>HOVAL：住宅の評価額（単位は$1000）</li>
+<li>INC: 世帯収入<blockquote>
+<p>金明哲 編, 谷村晋 著　（2010）
+『地理空間データ分析 （Rで学ぶデータサイエンス 7）』p141.を参考に作成</p>
 </blockquote>
 </li>
 </ul>
-<p><a href="19.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x7A7A;&#x9593;&#x7684;&#x8AA4;&#x5DEE;&#x81EA;&#x5DF1;&#x56DE;&#x5E30;&#x30E2;&#x30C7;&#x30EB;">&#x7A7A;&#x9593;&#x7684;&#x8AA4;&#x5DEE;&#x81EA;&#x5DF1;&#x56DE;&#x5E30;&#x30E2;&#x30C7;&#x30EB;</h2>
-<p>R&#x306E;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x306E;OLD.COL&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;&#x7A7A;&#x9593;&#x7684;&#x8AA4;&#x5DEE;&#x81EA;&#x5DF1;&#x56DE;&#x5E30;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x7B97;&#x51FA;&#x3059;&#x308B;&#x3002;</p>
-<pre><code class="lang-R"><span class="hljs-comment">#errorsarlm&#x95A2;&#x6570;&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;&#x7A7A;&#x9593;&#x7684;&#x8AA4;&#x5DEE;&#x81EA;&#x5DF1;&#x56DE;&#x5E30;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x7B97;&#x51FA;&#x3059;&#x308B;&#x3002;</span>
+<p><a href="19.html#Menu">▲メニューへもどる</a></p>
+<h2 id="空間的誤差自己回帰モデル">空間的誤差自己回帰モデル</h2>
+<p>RのサンプルデータのOLD.COLを用いて、空間的誤差自己回帰モデルを算出する。</p>
+<pre><code class="lang-R"><span class="hljs-comment">#errorsarlm関数を用いて、空間的誤差自己回帰モデルを算出する。</span>
 col.err &lt;- errorsarlm(CRIME ~ INC + HOVAL, data = COL.OLD, nb2listw( COL.nb, style = <span class="hljs-string">&quot;W&quot;</span>))
 
-<span class="hljs-comment">#summary(col.err)&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3068;&#x7D50;&#x679C;&#x304C;&#x7B97;&#x51FA;&#x3055;&#x308C;&#x308B;&#x3002;</span>
+<span class="hljs-comment">#summary(col.err)を実行すると結果が算出される。</span>
 summary(col.err)
 
 Call:
@@ -3469,7 +3468,7 @@ errorsarlm(formula = CRIME ~ INC + HOVAL, data = COL.OLD, listw = nb2listw(COL.n
     style = <span class="hljs-string">&quot;W&quot;</span>))
 
 Residuals:
-      Min        1Q    Median        3Q       Max
+      Min        <span class="hljs-number">1</span>Q    Median        <span class="hljs-number">3</span>Q       Max
 -<span class="hljs-number">34.81174</span>  -<span class="hljs-number">6.44031</span>  -<span class="hljs-number">0.72142</span>   <span class="hljs-number">7.61476</span>  <span class="hljs-number">23.33626</span>
 
 Type: error
@@ -3490,20 +3489,20 @@ Number of observations: <span class="hljs-number">49</span>
 Number of parameters estimated: <span class="hljs-number">5</span>
 AIC: <span class="hljs-number">376.76</span>, (AIC <span class="hljs-keyword">for</span> lm: <span class="hljs-number">382.75</span>)
 </code></pre>
-<p><a href="19.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x5730;&#x7406;&#x7684;&#x52A0;&#x91CD;&#x56DE;&#x5E30;&#xFF08;gwr&#xFF09;">&#x5730;&#x7406;&#x7684;&#x52A0;&#x91CD;&#x56DE;&#x5E30;&#xFF08;GWR&#xFF09;</h2>
-<h4 id="gwr&#xFF1A;geographically-weight-regression">GWR&#xFF1A;Geographically Weight Regression</h4>
-<p>SAM&#x3067;&#x3001;GeoDa&#x306E;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x306E;columbus.shp&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;GWR&#x3092;&#x7B97;&#x51FA;&#x3059;&#x308B;&#x3002;
+<p><a href="19.html#Menu">▲メニューへもどる</a></p>
+<h2 id="地理的加重回帰（gwr）">地理的加重回帰（GWR）</h2>
+<h4 id="gwr：geographically-weight-regression">GWR：Geographically Weight Regression</h4>
+<p>SAMで、GeoDaのサンプルデータのcolumbus.shpを用いて、GWRを算出する。
 <img src="pic/19pic_15.png" alt="SAM">
-File&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;columbus.shp&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;
-Modeling&gt;Geographically Weight Regression&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;</p>
-<p>Response Variable&#x306B;&#x300C;CRIME&#x300D;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x3001;Available Variables&#x306B;&#x300C;HOVAL&#x300D;,&#x300C;INC&#x300D;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;Add&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
-&#x5024;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x3001;Compute&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x7D50;&#x679C;&#x304C;&#x7B97;&#x51FA;&#x3055;&#x308C;&#x308B;&#x3002;
+Fileアイコンをクリックし、columbus.shpを読み込む。
+Modeling&gt;Geographically Weight Regressionをクリックする。</p>
+<p>Response Variableに「CRIME」を指定し、Available Variablesに「HOVAL」,「INC」を選択し、Addをクリックする。
+値を設定し、Computeをクリックすると結果が算出される。
 <img src="pic/19pic_16.png" alt="SAM"></p>
-<p>&#x203B;Spatial Weighting Function &#x306F;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x306B;&#x3088;&#x3063;&#x3066;&#x8A2D;&#x5B9A;&#x304C;&#x5FC5;&#x8981;&#x3068;&#x306A;&#x308B;&#x3002;&#x4ECA;&#x56DE;&#x306F;&#x3001;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x306E;&#x8A2D;&#x5B9A;&#x3067;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x3002;</p>
-<p><a href="19.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h4 id="&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;">&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;</h4>
-<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x30AD;&#x30E3;&#x30D7;&#x30C1;&#x30E3;&#x753B;&#x50CF;&#x306E;&#x51FA;&#x5178;&#x3084;&#x30AF;&#x30EC;&#x30B8;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../license.html">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;</a>&#x3088;&#x308A;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p>※Spatial Weighting Function は、データによって設定が必要となる。今回は、デフォルトの設定で使用している。</p>
+<p><a href="19.html#Menu">▲メニューへもどる</a></p>
+<h4 id="ライセンスに関する注意事項">ライセンスに関する注意事項</h4>
+<p>本教材で利用しているキャプチャ画像の出典やクレジットについては、<a href="../license.html">その他のライセンスについて</a>よりご確認ください。</p>
 
                                 
                                 </section>
@@ -3531,12 +3530,12 @@ Modeling&gt;Geographically Weight Regression&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x3
 
             
                 
-                <a href="../18/18.html#クリギング" class="navigation navigation-prev " aria-label="Previous page: クリギング">
+                <a href="../18/18.html" class="navigation navigation-prev " aria-label="Previous page: 空間補間">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="19.html#rのインストールと基礎操作" class="navigation navigation-next " aria-label="Next page: Rのインストールと基礎操作">
+                <a href="../20/20.html" class="navigation navigation-next " aria-label="Next page: 空間分析におけるスケール">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -3547,12 +3546,56 @@ Modeling&gt;Geographically Weight Regression&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x3
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"空間相関分析","level":"1.20","depth":1,"next":{"title":"Rのインストールと基礎操作","level":"1.20.1","depth":2,"anchor":"#rのインストールと基礎操作","path":"materials/19/19.md","ref":"./materials/19/19.md#rのインストールと基礎操作","articles":[]},"previous":{"title":"クリギング","level":"1.19.4","depth":2,"anchor":"#クリギング","path":"materials/18/18.md","ref":"./materials/18/18.md#クリギング","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/19/19.md","mtime":"2019-09-25T08:06:09.725Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"空間相関分析","level":"1.20","depth":1,"next":{"title":"空間分析におけるスケール","level":"1.21","depth":1,"path":"materials/20/20.md","ref":"./materials/20/20.md","articles":[{"title":"GeoDaのインストール","level":"1.21.1","depth":2,"anchor":"#geodaのインストール","path":"materials/20/20.md","ref":"./materials/20/20.md#geodaのインストール","articles":[]},{"title":"local_moran’s_Iの算出","level":"1.21.2","depth":2,"anchor":"#local_moran’s_iの算出","path":"materials/20/20.md","ref":"./materials/20/20.md#local_moran’s_iの算出","articles":[]}]},"previous":{"title":"空間補間","level":"1.19","depth":1,"path":"materials/18/18.md","ref":"./materials/18/18.md","articles":[{"title":"不整三角網","level":"1.19.1","depth":2,"anchor":"#不整三角網","path":"materials/18/18.md","ref":"./materials/18/18.md#不整三角網","articles":[]},{"title":"逆距離加重法","level":"1.19.2","depth":2,"anchor":"#逆距離加重法","path":"materials/18/18.md","ref":"./materials/18/18.md#逆距離加重法","articles":[]},{"title":"スプライン補間","level":"1.19.3","depth":2,"anchor":"#スプライン補間","path":"materials/18/18.md","ref":"./materials/18/18.md#スプライン補間","articles":[]},{"title":"クリギング","level":"1.19.4","depth":2,"anchor":"#クリギング","path":"materials/18/18.md","ref":"./materials/18/18.md#クリギング","articles":[]}]},"articles":[{"title":"Rのインストールと基礎操作","level":"1.20.1","depth":2,"anchor":"#rのインストールと基礎操作","path":"materials/19/19.md","ref":"./materials/19/19.md#rのインストールと基礎操作","articles":[]},{"title":"空間的自己回帰モデル","level":"1.20.2","depth":2,"anchor":"#空間的自己回帰モデル","path":"materials/19/19.md","ref":"./materials/19/19.md#空間的自己回帰モデル","articles":[]},{"title":"基本的な統計量の確認","level":"1.20.3","depth":2,"anchor":"#基本的な統計量の確認","path":"materials/19/19.md","ref":"./materials/19/19.md#基本的な統計量の確認","articles":[]},{"title":"空間的誤差自己回帰モデル","level":"1.20.4","depth":2,"anchor":"#空間的誤差自己回帰モデル","path":"materials/19/19.md","ref":"./materials/19/19.md#空間的誤差自己回帰モデル","articles":[]},{"title":"地理的加重回帰（GWR）","level":"1.20.5","depth":2,"anchor":"#地理的加重回帰（gwr）","path":"materials/19/19.md","ref":"./materials/19/19.md#地理的加重回帰（gwr）","articles":[]}],"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/19/19.md","mtime":"2022-01-31T13:55:09.558Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
     

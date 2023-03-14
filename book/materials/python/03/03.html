@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>ベクターデータの属性情報に基づく処理 · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,69 +3273,69 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x30D9;&#x30AF;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306B;&#x57FA;&#x3065;&#x304F;&#x51E6;&#x7406;">&#x30D9;&#x30AF;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306B;&#x57FA;&#x3065;&#x304F;&#x51E6;&#x7406;</h1>
-<p>&#x30D9;&#x30AF;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x5404;&#x5730;&#x7269;&#x304C;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x3092;&#x3082;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x7AE0;&#x3067;&#x306F;&#x305D;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306B;&#x57FA;&#x3065;&#x304F;&#x51E6;&#x7406;&#x3092;&#x5B66;&#x3073;&#x307E;&#x3059;&#x3002;</p>
+                                <h1 id="ベクターデータの属性情報に基づく処理">ベクターデータの属性情報に基づく処理</h1>
+<p>ベクターデータは各地物が属性情報をもっています。この章ではその属性情報に基づく処理を学びます。</p>
 <h2 id="menu"><strong>Menu</strong></h2>
 <ul>
-<li><a href="#&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x540D;&#x306E;&#x53D6;&#x5F97;">&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x540D;&#x306E;&#x53D6;&#x5F97;</a></li>
-<li><a href="#&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306B;&#x57FA;&#x3065;&#x304F;&#x5730;&#x7269;&#x9078;&#x629E;">&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306B;&#x57FA;&#x3065;&#x304F;&#x5730;&#x7269;&#x9078;&#x629E;</a></li>
-<li><a href="#&#x5730;&#x7269;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306E;&#x7DE8;&#x96C6;">&#x5730;&#x7269;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306E;&#x7DE8;&#x96C6;</a></li>
-<li><a href="#&#x8907;&#x6570;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x3092;&#x4E00;&#x62EC;&#x3067;&#x7DE8;&#x96C6;">&#x8907;&#x6570;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x3092;&#x4E00;&#x62EC;&#x3067;&#x7DE8;&#x96C6;</a></li>
+<li><a href="#フィールド名の取得">フィールド名の取得</a></li>
+<li><a href="#属性情報に基づく地物選択">属性情報に基づく地物選択</a></li>
+<li><a href="#地物の属性情報の編集">地物の属性情報の編集</a></li>
+<li><a href="#複数の属性情報を一括で編集">複数の属性情報を一括で編集</a></li>
 </ul>
-<h2 id="&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x540D;&#x306E;&#x53D6;&#x5F97;"><a name="&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x540D;&#x306E;&#x53D6;&#x5F97;"> </a>&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x540D;&#x306E;&#x53D6;&#x5F97;</h2>
-<p>&#x3053;&#x3053;&#x3067;&#x4F7F;&#x3046;&#x30C7;&#x30FC;&#x30BF;&#x306F;<code>ne_50m_admin_0_countries.shp</code>&#x3067;&#x3059;&#x3002;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;&#x65B9;&#x6CD5;&#x306F;<a href="../">README</a>&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x307E;&#x305A;&#x306F;QGIS&#x3067;&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3093;&#x3067;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-&#x6B21;&#x306B;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x304B;&#x3089;<code>iface</code>&#x3092;&#x4F7F;&#x3063;&#x3066;&#x30A2;&#x30AF;&#x30C6;&#x30A3;&#x30D6;&#x306A;&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;
-&#x30A2;&#x30AF;&#x30C6;&#x30A3;&#x30D6;&#x306A;&#x30D9;&#x30AF;&#x30BF;&#x30FC;&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x5168;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x540D;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#x306B;&#x306F;<code>fields()</code>&#x3092;&#x4F7F;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="フィールド名の取得"><a name="フィールド名の取得"> </a>フィールド名の取得</h2>
+<p>ここで使うデータは<code>ne_50m_admin_0_countries.shp</code>です。データの取得方法は<a href="../">README</a>を参照してください。まずはQGISでレイヤを読み込んでおきましょう。
+次にコンソールから<code>iface</code>を使ってアクティブなレイヤを取得します。
+アクティブなベクターレイヤの全フィールド名を取得するには<code>fields()</code>を使います。</p>
 <pre><code class="lang-python">&gt;&gt;&gt;layer = iface.activeLayer()
 &gt;&gt;&gt;fields = layer.fields()
 &gt;&gt;&gt;<span class="hljs-keyword">for</span> field <span class="hljs-keyword">in</span> fields:
-<span class="hljs-meta">... </span>print(field.name())
+<span class="hljs-meta">... </span><span class="hljs-built_in">print</span>(field.name())
 SCALERANK
 NATSCALE
 LABELRANK
-(&#x4EE5;&#x4E0B;&#x7565;)
+(以下略)
 </code></pre>
-<h2 id="&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306B;&#x57FA;&#x3065;&#x304F;&#x5730;&#x7269;&#x9078;&#x629E;"><a name="&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x57FA;&#x3065;&#x304F;&#x5730;&#x7269;&#x9078;&#x629E;"></a>&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306B;&#x57FA;&#x3065;&#x304F;&#x5730;&#x7269;&#x9078;&#x629E;</h2>
-<p><code>attributes()</code>&#x306F;&#x5730;&#x7269;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x3092;&#x30EA;&#x30B9;&#x30C8;&#x3067;&#x8FD4;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<p>&#x307E;&#x305A;&#x306F;&#x5C5E;&#x6027;&quot;NAME&quot;&#x304C;&apos;Uganda&apos;&#x306E;&#x5730;&#x7269;&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<h2 id="属性情報に基づく地物選択"><a name="属性情報基づく地物選択"></a>属性情報に基づく地物選択</h2>
+<p><code>attributes()</code>は地物の属性情報をリストで返します。</p>
+<p>まずは属性&quot;NAME&quot;が&apos;Uganda&apos;の地物を選択してみましょう。</p>
 <pre><code class="lang-python">&gt;&gt;&gt;feature = [f <span class="hljs-keyword">for</span> f <span class="hljs-keyword">in</span> layer.getFeatures(QgsFeatureRequest().setFilterExpression(<span class="hljs-string">&apos;&quot;NAME&quot; = \&apos;Uganda\&apos;&apos;</span>))]
 </code></pre>
-<p>&apos;Uganda&apos;&#x306E;&#x5730;&#x7269;&#x304C;&#x30EA;&#x30B9;&#x30C8;&#x3067;&#x53D6;&#x5F97;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x3002;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>&apos;Uganda&apos;の地物がリストで取得されました。確認してみましょう。</p>
 <pre><code class="lang-python">&gt;&gt;&gt;feature
-[&lt;qgis._core.QgsFeature object at <span class="hljs-number">0x0000027872FFF798</span>&gt;]
+[&lt;qgis._core.QgsFeature <span class="hljs-built_in">object</span> at <span class="hljs-number">0x0000027872FFF798</span>&gt;]
 </code></pre>
-<p>&#x5730;&#x7269;&#x304C;&#x53D6;&#x5F97;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x305F;&#x3068;&#x3053;&#x308D;&#x3067;<code>attributes()</code>&#x3067;&#x5730;&#x7269;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x3092;&#x8868;&#x793A;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;</p>
+<p>地物が取得されていることを確認したところで<code>attributes()</code>で地物の属性情報を表示してみましょう</p>
 <pre><code class="lang-python">&gt;&gt;&gt;feature[0].attributes()
 [&apos;Admin-0 country&apos;, 1, 3, &apos;Uganda&apos;, &apos;UGA&apos;, 0, 2, &apos;Sovereign country&apos;, &apos;Uganda&apos;, &apos;UGA&apos;, 0, &apos;Uganda
-(&#x4EE5;&#x4E0B;&#x7565;)
+(以下略)
 </code></pre>
-<p>&#x5730;&#x7269;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x6642;&#x306B;&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x6301;&#x3064;&#x5730;&#x7269;&#x60C5;&#x5831;&#x306B;&#x542B;&#x307E;&#x308C;&#x306A;&#x3044;&#x5C5E;&#x6027;&#x5024;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3068;&#x7A7A;&#x306E;&#x30EA;&#x30B9;&#x30C8;&#x304C;&#x8FD4;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;&#x30A8;&#x30E9;&#x30FC;&#x306B;&#x306F;&#x306A;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;</p>
+<p>地物を選択する時にレイヤの持つ地物情報に含まれない属性値を指定すると空のリストが返されます。エラーにはなりません。</p>
 <pre><code class="lang-python">&gt;&gt;&gt;feature = [f <span class="hljs-keyword">for</span> f <span class="hljs-keyword">in</span> layer.getFeatures(QgsFeatureRequest().setFilterExpression(<span class="hljs-string">&apos;&quot;NAME&quot; = \&apos;Tokyo\&apos;&apos;</span>))]
 &gt;&gt;&gt;feature
 []
 </code></pre>
-<h2 id="&#x5730;&#x7269;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306E;&#x7DE8;&#x96C6;"><a name="&#x5730;&#x7269;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306E;&#x7DE8;&#x96C6;"></a>&#x5730;&#x7269;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306E;&#x7DE8;&#x96C6;</h2>
-<p>&#x4ECA;&#x5EA6;&#x306F;&#x5C5E;&#x6027;&quot;NAME&quot;&#x304C;&apos;Japan&apos;&#x306E;&#x5730;&#x7269;&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x3001;&#x5C5E;&#x6027;&#x5024;&#x3092;&#x7DE8;&#x96C6;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
-<p>&#x5C5E;&#x6027;&#x5024;&#x3092;&#x66F4;&#x65B0;&#x3059;&#x308B;&#x5730;&#x7269;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="地物の属性情報の編集"><a name="地物の属性情報の編集"></a>地物の属性情報の編集</h2>
+<p>今度は属性&quot;NAME&quot;が&apos;Japan&apos;の地物を選択して、属性値を編集してみましょう。</p>
+<p>属性値を更新する地物を選択します。</p>
 <pre><code class="lang-python">&gt;&gt;&gt;feature = [f <span class="hljs-keyword">for</span> f <span class="hljs-keyword">in</span> layer.getFeatures(QgsFeatureRequest().setFilterExpression(<span class="hljs-string">&apos;&quot;NAME&quot; = \&apos;Japan\&apos;&apos;</span>))]
 &gt;&gt;&gt;feature
-[&lt;qgis._core.QgsFeature object at <span class="hljs-number">0x0000027872FFFAF8</span>&gt;]
+[&lt;qgis._core.QgsFeature <span class="hljs-built_in">object</span> at <span class="hljs-number">0x0000027872FFFAF8</span>&gt;]
 &gt;&gt;&gt;feature[<span class="hljs-number">0</span>].attributes()
 [<span class="hljs-string">&apos;Admin-0 country&apos;</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-string">&apos;Japan&apos;</span>, <span class="hljs-string">&apos;JPN&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-string">&apos;Sovereign country&apos;</span>, <span class="hljs-string">&apos;Japan&apos;</span>, <span class="hljs-string">&apos;JPN&apos;</span>, <span class="hljs-number">0</span>, <span class="hljs-string">&apos;Japan&apos;</span>
-(&#x4EE5;&#x4E0B;&#x7565;)
+(以下略)
 </code></pre>
-<p>&#x65B0;&#x3057;&#x3044;&#x5C5E;&#x6027;&#x5024;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x8F9E;&#x66F8;&#x578B;&#x3067;&#x4F5C;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>新しい属性値のオブジェクトを辞書型で作ります。</p>
 <pre><code class="lang-python">&gt;&gt;&gt;my_country= {feature[<span class="hljs-number">0</span>].fieldNameIndex(<span class="hljs-string">&quot;NAME&quot;</span>): <span class="hljs-string">&quot;My Country&quot;</span>}
 </code></pre>
-<p>&#x5C5E;&#x6027;&#x5024;&#x3092;&#x66F4;&#x65B0;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<pre><code class="lang-python">&gt;&gt;&gt;layer.dataProvider().changeAttributeValues({ feature[<span class="hljs-number">0</span>].id(): my_country})
-<span class="hljs-keyword">True</span>
+<p>属性値を更新します。</p>
+<pre><code class="lang-python">&gt;&gt;&gt;layer.dataProvider().changeAttributeValues({ feature[<span class="hljs-number">0</span>].<span class="hljs-built_in">id</span>(): my_country})
+<span class="hljs-literal">True</span>
 </code></pre>
-<p>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#x304B;&#x3089;&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3001;&#x5C5E;&#x6027;&quot;NAME&quot;&apos;&#x306B;&apos;My Country&apos;&#x304C;&#x3042;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>ユーザーインターフェースから属性テーブルを確認し、属性&quot;NAME&quot;&apos;に&apos;My Country&apos;があることを確認しましょう。</p>
 <p><img src="pic/3pic-1.png" alt="attribute_table"></p>
-<h2 id="&#x8907;&#x6570;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x3092;&#x4E00;&#x62EC;&#x3067;&#x7DE8;&#x96C6;"><a name="&#x8907;&#x6570;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x3092;&#x4E00;&#x62EC;&#x3067;&#x7DE8;&#x96C6;"></a>&#x8907;&#x6570;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x3092;&#x4E00;&#x62EC;&#x3067;&#x7DE8;&#x96C6;</h2>
-<p>&#x5730;&#x7269;&#x306E;&#x8907;&#x6570;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x3092;&#x4E00;&#x62EC;&#x3067;&#x7DE8;&#x96C6;&#x3057;&#x307E;&#x3059;&#x3002;
-&#x4ECA;&#x5EA6;&#x306F;<code>ne_50m_populated_places.shp</code>&#x306E;&#x5730;&#x7269;&#x3092;&#x7DE8;&#x96C6;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x307E;&#x305A;&#x306F;&quot;NAME&quot;&#x304C;&apos;Tokyo&apos;&#x306E;&#x5730;&#x7269;&#x3092;&#x7DE8;&#x96C6;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="複数の属性情報を一括で編集"><a name="複数の属性情報を一括で編集"></a>複数の属性情報を一括で編集</h2>
+<p>地物の複数の属性情報を一括で編集します。
+今度は<code>ne_50m_populated_places.shp</code>の地物を編集してみましょう。まずは&quot;NAME&quot;が&apos;Tokyo&apos;の地物を編集します。</p>
 <pre><code class="lang-python">&gt;&gt;&gt;layer = iface.activeLayer()
 &gt;&gt;&gt;provider = layer.dataProvider()
 &gt;&gt;&gt;feature = [f <span class="hljs-keyword">for</span> f <span class="hljs-keyword">in</span> layer.getFeatures(QgsFeatureRequest().setFilterExpression(<span class="hljs-string">&apos;&quot;NAME&quot; = \&apos;Tokyo\&apos;&apos;</span>))]
@@ -3346,17 +3345,17 @@ LABELRANK
 &gt;&gt;&gt;attributes = {field_map[key]: feature[<span class="hljs-number">0</span>][key] <span class="hljs-keyword">for</span> key <span class="hljs-keyword">in</span> field_map}
 &gt;&gt;&gt;attributes
 {<span class="hljs-number">9</span>: <span class="hljs-number">1.0</span>, <span class="hljs-number">15</span>: <span class="hljs-string">&apos;My Home Country&apos;</span>, <span class="hljs-number">16</span>: <span class="hljs-string">&apos;JPN&apos;</span>,
-(&#x4E2D;&#x7565;)
+(中略)
 <span class="hljs-number">521.0</span>, <span class="hljs-number">4</span>: <span class="hljs-string">&apos;My Home Town&apos;</span>, <span class="hljs-number">6</span>: NULL,
-(&#x4EE5;&#x4E0B;&#x7565;)
+(以下略)
 </code></pre>
-<p>&#x5C5E;&#x6027;&#x5024;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x66F4;&#x65B0;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
-<pre><code class="lang-python">&gt;&gt;&gt;layer.dataProvider().changeAttributeValues({feature[<span class="hljs-number">0</span>].id(): attributes})
-<span class="hljs-keyword">True</span>
+<p>属性値ファイルに書き込み更新しましょう。</p>
+<pre><code class="lang-python">&gt;&gt;&gt;layer.dataProvider().changeAttributeValues({feature[<span class="hljs-number">0</span>].<span class="hljs-built_in">id</span>(): attributes})
+<span class="hljs-literal">True</span>
 </code></pre>
-<p>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#x304B;&#x3089;&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x3068;&#x3001;&#x5C5E;&#x6027;&#x5024;&#x304C;&#x5909;&#x66F4;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x304C;&#x308F;&#x304B;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>ユーザーインターフェースから属性テーブルを確認すると、属性値が変更されていることがわかります。</p>
 <p><img src="pic/3pic-2.png" alt="attribute_table"></p>
-<p></p><h2 style="background-color:#F8F5FD;text-align:center;" id="&#x6559;&#x6750;&#x306E;&#x5229;&#x7528;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;">&#x6559;&#x6750;&#x306E;&#x5229;&#x7528;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;</h2>&#x3000;&#x672C;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3067;&#x306F;&#x3001;&#x6559;&#x6750;&#x306E;&#x6539;&#x826F;&#x3092;&#x76EE;&#x7684;&#x3068;&#x3057;&#x305F;&#x4EFB;&#x610F;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;&#x3092;&#x5B9F;&#x65BD;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3054;&#x5354;&#x529B;&#x3044;&#x305F;&#x3060;&#x3051;&#x308B;&#x65B9;&#x306F;&#x3001;<a href="https://docs.google.com/forms/d/1r8RTFK3CPo4xNM6SdOEsAtdA0CrChD6KPVVU9kRxWRs/" target="_blank">&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;</a>&#x306B;&#x304A;&#x9032;&#x307F;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x3054;&#x5354;&#x529B;&#x306E;&#x307B;&#x3069;&#x3088;&#x308D;&#x3057;&#x304F;&#x304A;&#x9858;&#x3044;&#x3044;&#x305F;&#x3057;&#x307E;&#x3059;&#x3002;<br><br>&#x203B; &#x672C;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;&#x306E;&#x6210;&#x679C;&#x306F;&#x3001;&#x6559;&#x6750;&#x306E;&#x6539;&#x826F;&#x306E;&#x307B;&#x304B;&#x3001;&#x5B66;&#x4F1A;&#x3067;&#x306E;&#x767A;&#x8868;&#x7B49;&#x306E;&#x7814;&#x7A76;&#x76EE;&#x7684;&#x3067;&#x3082;&#x5229;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;<p></p>
+<p></p><h2 style="background-color:#F8F5FD;text-align:center;" id="教材の利用に関するアンケート">教材の利用に関するアンケート</h2>　本プロジェクトでは、教材の改良を目的とした任意アンケートを実施しています。ご協力いただける方は、<a href="https://docs.google.com/forms/d/1r8RTFK3CPo4xNM6SdOEsAtdA0CrChD6KPVVU9kRxWRs/" target="_blank">アンケート</a>にお進みください。ご協力のほどよろしくお願いいたします。<br><br>※ 本アンケートの成果は、教材の改良のほか、学会での発表等の研究目的でも利用します。<p></p>
 
                                 
                                 </section>
@@ -3400,12 +3399,56 @@ LABELRANK
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ベクターデータの属性情報に基づく処理","level":"2.1.4","depth":2,"next":{"title":"ベクターデータの座標変換・計測","level":"2.1.5","depth":2,"path":"materials/python/04/04.md","ref":"./materials/python/04/04.md","articles":[]},"previous":{"title":"ベクターデータの読み込みと図形へのアクセス","level":"2.1.3","depth":2,"path":"materials/python/02/02.md","ref":"./materials/python/02/02.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/python/03/03.md","mtime":"2019-04-18T06:08:44.627Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ベクターデータの属性情報に基づく処理","level":"2.1.4","depth":2,"next":{"title":"ベクターデータの座標変換・計測","level":"2.1.5","depth":2,"path":"materials/python/04/04.md","ref":"./materials/python/04/04.md","articles":[]},"previous":{"title":"ベクターデータの読み込みと図形へのアクセス","level":"2.1.3","depth":2,"path":"materials/python/02/02.md","ref":"./materials/python/02/02.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/python/03/03.md","mtime":"2022-01-31T13:55:12.419Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../../gitbook/gitbook.js"></script>
     <script src="../../../gitbook/theme.js"></script>
     

@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>GPSログの活用 · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,53 +3273,53 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="gps&#x30ED;&#x30B0;&#x306E;&#x6D3B;&#x7528;">GPS&#x30ED;&#x30B0;&#x306E;&#x6D3B;&#x7528;</h1>
-<p>&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;GPS&#x306E;&#x6982;&#x8981;&#x3068;&#x30B9;&#x30DE;&#x30FC;&#x30C8;&#x30D5;&#x30A9;&#x30F3;&#x7B49;&#x3067;&#x53D6;&#x5F97;&#x3057;&#x305F;GPS&#x30ED;&#x30B0;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;&#x672C;&#x5B9F;&#x7FD2;&#x3067;&#x306F;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8868;&#x793A;&#x7B49;&#x306B;QGIS(3&#x7CFB;)&#x3092;&#x5229;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;QGIS&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;<a href="../../QGIS/QGIS.html">QGIS&#x30D3;&#x30AE;&#x30CA;&#x30FC;&#x30BA;&#x30DE;&#x30CB;&#x30E5;&#x30A2;&#x30EB;</a>&#x3092;&#x53C2;&#x8003;&#x306B;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<p>&#x672C;&#x6559;&#x6750;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x969B;&#x306F;&#x3001;<a href="../../../policy.html">&#x5229;&#x7528;&#x898F;&#x7D04;</a>&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x3044;&#x305F;&#x3060;&#x304D;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x6761;&#x4EF6;&#x306B;&#x540C;&#x610F;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x306E;&#x307F;&#x3054;&#x5229;&#x7528;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
+                                <h1 id="gpsログの活用">GPSログの活用</h1>
+<p>以下では、GPSの概要とスマートフォン等で取得したGPSログを表示する手法について解説します。本実習では、データの表示等にQGIS(3系)を利用します。QGISをインストールしていない場合は、<a href="../../QGIS/QGIS.html">QGISビギナーズマニュアル</a>を参考にインストールしてください。</p>
+<p>本教材を使用する際は、<a href="../../../policy.html">利用規約</a>をご確認いただき、これらの条件に同意された場合にのみご利用下さい。</p>
 <p><strong>Menu</strong></p>
 <ul>
-<li><a href="#gps&#x3068;&#x306F;">GPS&#x3068;&#x306F;</a></li>
-<li><a href="#&#x30ED;&#x30B0;&#x306E;&#x8868;&#x793A;">&#x30ED;&#x30B0;&#x306E;&#x8868;&#x793A;</a></li>
-<li><a href="#&#x6A19;&#x9AD8;&#x30B0;&#x30E9;&#x30D5;&#x306E;&#x4F5C;&#x6210;">&#x6A19;&#x9AD8;&#x30B0;&#x30E9;&#x30D5;&#x306E;&#x4F5C;&#x6210;</a></li>
+<li><a href="#gpsとは">GPSとは</a></li>
+<li><a href="#ログの表示">ログの表示</a></li>
+<li><a href="#標高グラフの作成">標高グラフの作成</a></li>
 </ul>
-<h2 id="gps&#x3068;&#x306F;">GPS&#x3068;&#x306F;</h2>
-<p>&#x3000;GPS&#xFF08;Global Positioning System&#xFF09;&#x306F;&#x3001;&#x30A2;&#x30E1;&#x30EA;&#x30AB;&#x306E;&#x4EBA;&#x5DE5;&#x885B;&#x661F;&#x3092;&#x7528;&#x3044;&#x305F;&#x5168;&#x5730;&#x7403;&#x6E2C;&#x4F4D;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x3092;&#x6307;&#x3057;&#x307E;&#x3059;&#x3002;4&#x3064;&#x4EE5;&#x4E0A;&#x306E;GPS&#x885B;&#x661F;&#x306E;&#x4FE1;&#x53F7;&#x3092;&#x53D7;&#x4FE1;&#x3057;&#x3001;&#x5730;&#x7403;&#x4E0A;&#x306E;&#x73FE;&#x5728;&#x4F4D;&#x7F6E;&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x5404;&#x56FD;&#x306E;&#x885B;&#x661F;&#x6E2C;&#x4F4D;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#xFF08;GNSS&#xFF09;&#x3068;&#x3057;&#x3066;&#x3001;QZSS&#xFF08;&#x65E5;&#x672C;&#xFF09;&#x3001;GLONASS&#xFF08;&#x30ED;&#x30B7;&#x30A2;&#xFF09;&#x3001;GALILEO&#xFF08;EU&#xFF09;&#x3001;&#x5317;&#x6597;&#xFF08;&#x4E2D;&#x56FD;&#xFF09;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;GPS&#x306E;&#x4ED5;&#x7D44;&#x307F;&#x3084;&#x5FDC;&#x7528;&#x4F8B;&#x306F;&#x3001;<a href="https://www.youtube.com/watch?v=3oYW8iyQtgc" target="_blank">GPS&#x306E;&#x4ED5;&#x7D44;&#x307F; &#xA9;&#x9996;&#x90FD;&#x5927;Channel</a>&#x3084;<a href="https://www.youtube.com/watch?v=oBQMV1D2eKA" target="_blank">&#x3010;&#x4ED5;&#x69D8;&#x3011;GPS&#x3068;&#x306F;&#xFF1F; &#xA9;Garmin Japan</a>&#x304C;&#x8A73;&#x3057;&#x3044;&#x306E;&#x3067;&#x3001;&#x305D;&#x3061;&#x3089;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<p><a href="gps.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h3 id="&#x30B9;&#x30DE;&#x30FC;&#x30C8;&#x30D5;&#x30A9;&#x30F3;&#x3067;&#x306E;gps&#x30ED;&#x30B0;&#x306E;&#x53D6;&#x5F97;">&#x30B9;&#x30DE;&#x30FC;&#x30C8;&#x30D5;&#x30A9;&#x30F3;&#x3067;&#x306E;GPS&#x30ED;&#x30B0;&#x306E;&#x53D6;&#x5F97;</h3>
-<p>&#x3000;&#x30B9;&#x30DE;&#x30FC;&#x30C8;&#x30D5;&#x30A9;&#x30F3;&#x306E;&#x591A;&#x304F;&#x306F;&#x3001;GPS&#x6A5F;&#x80FD;&#x304C;&#x3042;&#x308A;&#x3001;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x4F4D;&#x7F6E;&#x60C5;&#x5831;&#xFF08;&#x5730;&#x70B9;&#x3084;&#x79FB;&#x52D5;&#x7D4C;&#x8DEF;&#xFF09;&#x3092;&#x53CE;&#x96C6;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;GPS&#x30ED;&#x30B0;&#x3092;&#x53CE;&#x96C6;&#x3067;&#x304D;&#x308B;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x3057;&#x3066;&#x3001;Android&#x3067;&#x306F;&#x3001;Geopaparazzi&#x3001;Open GPS Tracker&#x3001;iOS&#x3067;&#x306F;&#x3001;Open GPX Tracker&#x7B49;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;Geopaparazzi&#x306E;&#x4F7F;&#x7528;&#x6CD5;&#x306F;&#x3001;&#x672C;&#x6559;&#x6750;&#x306E;<a href="../mobile/mobile.html">&#x30B9;&#x30DE;&#x30FC;&#x30D5;&#x30A9;&#x30F3;&#x3092;&#x7528;&#x3044;&#x305F;&#x91CE;&#x5916;&#x8ABF;&#x67FB;</a>&#x3067;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
-<p><a href="gps.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x30ED;&#x30B0;&#x306E;&#x8868;&#x793A;">&#x30ED;&#x30B0;&#x306E;&#x8868;&#x793A;</h2>
-<p>&#x3000;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x5B9F;&#x969B;&#x306B;&#x30B9;&#x30DE;&#x30FC;&#x30C8;&#x30D5;&#x30A9;&#x30F3;&#x3067;&#x53D6;&#x5F97;&#x3057;&#x305F;GPS&#x30C7;&#x30FC;&#x30BF;&#xFF08;.gpx&#xFF09;&#x3092;QGIS&#x3067;&#x8868;&#x793A;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;&#x5B9F;&#x7FD2;&#x3092;&#x59CB;&#x3081;&#x308B;&#x524D;&#x306B;&#x3001;<a href="http://www.merlos.org/iOS-Open-GPX-Tracker/" target="_blank">Open GPX Tracker</a>&#x3067;&#x53D6;&#x5F97;&#x3057;&#x305F;<a href="https://github.com/gis-oer/datasets/raw/master/track.zip" target="_blank">&#x5B9F;&#x7FD2;&#x7528;GPS&#x30ED;&#x30B0;</a>&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3001;.zip&#x3092;&#x5C55;&#x958B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x7528;&#x610F;&#x3067;&#x304D;&#x305F;&#x3089;&#x3001;QGIS&#x3092;&#x8D77;&#x52D5;&#x3057;&#x3001;<code>track.gpx</code>&#x3092;&#x30C9;&#x30E9;&#x30C3;&#x30AF;&#x30A2;&#x30F3;&#x30C9;&#x30C9;&#x30ED;&#x30C3;&#x30D7;&#x3059;&#x308B;&#x3002;<code>&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x30D9;&#x30AF;&#x30BF;&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x9078;&#x629E;</code>&#x306E;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x305F;&#x3081;&#x3001;&#x5730;&#x7269;&#x6570;&#x304C;&#x8A18;&#x9332;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;track_points&#x3068;tracks&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;OK&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+<h2 id="gpsとは">GPSとは</h2>
+<p>　GPS（Global Positioning System）は、アメリカの人工衛星を用いた全地球測位システムを指します。4つ以上のGPS衛星の信号を受信し、地球上の現在位置を取得できます。各国の衛星測位システム（GNSS）として、QZSS（日本）、GLONASS（ロシア）、GALILEO（EU）、北斗（中国）があります。GPSの仕組みや応用例は、<a href="https://www.youtube.com/watch?v=3oYW8iyQtgc" target="_blank">GPSの仕組み ©首都大Channel</a>や<a href="https://www.youtube.com/watch?v=oBQMV1D2eKA" target="_blank">【仕様】GPSとは？ ©Garmin Japan</a>が詳しいので、そちらを参照してください。</p>
+<p><a href="gps.html#Menu">▲メニューへもどる</a></p>
+<h3 id="スマートフォンでのgpsログの取得">スマートフォンでのGPSログの取得</h3>
+<p>　スマートフォンの多くは、GPS機能があり、アプリケーションを利用して位置情報（地点や移動経路）を収集することができます。GPSログを収集できるアプリケーションとして、Androidでは、Geopaparazzi、Open GPS Tracker、iOSでは、Open GPX Tracker等があります。Geopaparazziの使用法は、本教材の<a href="../mobile/mobile.html">スマーフォンを用いた野外調査</a>で解説しています。</p>
+<p><a href="gps.html#Menu">▲メニューへもどる</a></p>
+<h2 id="ログの表示">ログの表示</h2>
+<p>　以下では、実際にスマートフォンで取得したGPSデータ（.gpx）をQGISで表示する手法について解説します。実習を始める前に、<a href="http://www.merlos.org/iOS-Open-GPX-Tracker/" target="_blank">Open GPX Tracker</a>で取得した<a href="https://github.com/gis-oer/datasets/raw/master/track.zip" target="_blank">実習用GPSログ</a>をダウンロードし、.zipを展開してください。</p>
+<p>ファイルが用意できたら、QGISを起動し、<code>track.gpx</code>をドラックアンドドロップする。<code>追加するベクタレイヤを選択</code>のウィンドウが表示されるため、地物数が記録されているtrack_pointsとtracksを選択し、OKをクリックする。
 <img src="pic/gps_pic1.png" alt="gps"></p>
-<p>&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x304C;&#x5B8C;&#x4E86;&#x3059;&#x308B;&#x3068;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x30C7;&#x30FC;&#x30BF;&#x3068;&#x30E9;&#x30A4;&#x30F3;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7D4C;&#x8DEF;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3002;&#x305D;&#x308C;&#x305E;&#x308C;&#x306E;&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x958B;&#x304D;&#x3001;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x30C7;&#x30FC;&#x30BF;&#x306B;&#x306F;&#x6A19;&#x9AD8;&#x7B49;&#x304C;&#x8A18;&#x9332;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3001;&#x30E9;&#x30A4;&#x30F3;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x304C;&#x306A;&#x3044;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x3002;
+<p>読み込みが完了すると、以下のようにポイントデータとラインデータの経路が表示される。それぞれの属性テーブルを開き、ポイントデータには標高等が記録されていること、ラインデータは属性情報がないことを確認する。
 <img src="pic/gps_pic2.png" alt="gps"></p>
-<p><a href="../../QGIS/QGIS.html">QGIS&#x30D3;&#x30AE;&#x30CA;&#x30FC;&#x30BA;&#x30DE;&#x30CB;&#x30E5;&#x30A2;&#x30EB;</a>&#x3092;&#x53C2;&#x8003;&#x306B;&#x3001;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x30D1;&#x30CD;&#x30EB;&#x304B;&#x3089;&#x80CC;&#x666F;&#x5730;&#x56F3;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3001;&#x76EE;&#x8996;&#x3067;&#x4F4D;&#x7F6E;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x3002;
+<p><a href="../../QGIS/QGIS.html">QGISビギナーズマニュアル</a>を参考に、ブラウザパネルから背景地図を読み込み、目視で位置を確認する。
 <img src="pic/gps_pic3.png" alt="gps"></p>
-<p>&#x9577;&#x3055;&#x3092;&#x6C42;&#x3081;&#x308B;&#x7B49;&#x306E;&#x89E3;&#x6790;&#x304C;&#x5FC5;&#x8981;&#x306A;&#x5834;&#x5408;&#x306F;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x5730;&#x7406;&#x5EA7;&#x6A19;&#x7CFB;&#x304B;&#x3089;&#x6295;&#x5F71;&#x5EA7;&#x6A19;&#x7CFB;&#x306B;&#x5909;&#x63DB;&#x3059;&#x308B;&#x3002;&#x3053;&#x3053;&#x3067;&#x306F;&#x3001;&#x6B21;&#x306E;&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x305F;&#x3081;&#x3001;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x30C7;&#x30FC;&#x30BF;&#x3068;&#x30E9;&#x30A4;&#x30F3;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x3001;JGD2011 / Japan Plane Rectangular CS IX&#x3078;&#x5909;&#x63DB;&#x3059;&#x308B;&#x3002;&#x7A7A;&#x9593;&#x5EA7;&#x6A19;&#x306E;&#x5909;&#x63DB;&#x306E;&#x8A73;&#x7D30;&#x306F;&#x3001;<a href="../../08/08.html">&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;</a>&#x3092;&#x53C2;&#x7167;&#x3059;&#x308B;&#x3002;
+<p>長さを求める等の解析が必要な場合は、データを地理座標系から投影座標系に変換する。ここでは、次の実習用データを作成するため、ポイントデータとラインデータを、JGD2011 / Japan Plane Rectangular CS IXへ変換する。空間座標の変換の詳細は、<a href="../../08/08.html">空間データ</a>を参照する。
 <img src="pic/gps_pic4.png" alt="gps"></p>
-<p>&#x7A7A;&#x9593;&#x5EA7;&#x6A19;&#x306E;&#x5909;&#x63DB;&#x304C;&#x7D42;&#x4E86;&#x3057;&#x305F;&#x3089;&#x3001;&#x5909;&#x63DB;&#x524D;&#x306E;2&#x3064;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x524A;&#x9664;&#x3057;&#x3001;&#x53F3;&#x4E0B;&#x306E;EPSG&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;JGD2011 / Japan Plane Rectangular CS IX&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3002;
+<p>空間座標の変換が終了したら、変換前の2つのデータを削除し、右下のEPSGボタンをクリックし、JGD2011 / Japan Plane Rectangular CS IXを選択する。
 <img src="pic/gps_pic5.png" alt="gps"></p>
-<p><a href="gps.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x6A19;&#x9AD8;&#x30B0;&#x30E9;&#x30D5;&#x306E;&#x4F5C;&#x6210;">&#x6A19;&#x9AD8;&#x30B0;&#x30E9;&#x30D5;&#x306E;&#x4F5C;&#x6210;</h2>
-<p>&#x3000;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;GPS&#x30ED;&#x30B0;&#x3092;&#x6D3B;&#x7528;&#x3057;&#x3001;&#x79FB;&#x52D5;&#x7D4C;&#x8DEF;&#xFF08;5&#xFF4D;&#x3054;&#x3068;&#xFF09;&#x306B;&#x5FDC;&#x3058;&#x305F;&#x6A19;&#x9AD8;&#x60C5;&#x5831;&#x3092;&#x30B0;&#x30E9;&#x30D5;&#x306B;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x3092;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x306F;&#x3001;&#x4E2D;&#x7D1A;&#x8005;&#x5411;&#x3051;&#x306B;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x3001;&#x89E3;&#x8AAC;&#x7528;&#x753B;&#x50CF;&#x3092;&#x4E00;&#x90E8;&#x7701;&#x7565;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x9069;&#x5B9C;&#x3001;&#x5FC5;&#x8981;&#x306A;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x5165;&#x624B;&#x3084;&#x30C7;&#x30FC;&#x30BF;&#x51E6;&#x7406;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<p>&#x307E;&#x305A;&#x3001;QGIS&#x306E;<code>Locate points along lines</code>&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3092;&#x5165;&#x624B;&#x3057;&#x3001;&#x30E9;&#x30A4;&#x30F3;&#x304B;&#x3089;5&#xFF4D;&#x3054;&#x3068;&#x306E;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;<code>&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#xFF1E;Locate points along lines&#xFF1E;Locate points along lines</code>&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3001;&#x5165;&#x529B;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30E9;&#x30A4;&#x30F3;&#x3068;&#x3057;&#x3001;&#x51FA;&#x529B;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x3001;Add endpoints &#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x3064;&#x3051;&#x308B;&#x3002;Interval&#x3092;5&#x3068;&#x3057;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3002;
+<p><a href="gps.html#Menu">▲メニューへもどる</a></p>
+<h2 id="標高グラフの作成">標高グラフの作成</h2>
+<p>　以下では、GPSログを活用し、移動経路（5ｍごと）に応じた標高情報をグラフにする手法を解説します。以下は、中級者向けに解説しているため、解説用画像を一部省略しています。適宜、必要なプラグインの入手やデータ処理を実行してください。</p>
+<p>まず、QGISの<code>Locate points along lines</code>プラグインを入手し、ラインから5ｍごとのポイントを作成する。<code>プラグイン＞Locate points along lines＞Locate points along lines</code>を実行し、入力ファイルをラインとし、出力ファイル名を指定し、Add endpoints にチェックをつける。Intervalを5とし実行する。
 <img src="pic/gps_pic6.png" alt="gps"></p>
-<p>&#x3053;&#x3053;&#x304B;&#x3089;&#x3001;GPS&#x30ED;&#x30B0;&#x306E;&#x6A19;&#x9AD8;&#x5024;&#x3092;&#x51FA;&#x529B;&#x3057;&#x305F;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#xFF08;5&#xFF4D;&#x3054;&#x3068;&#xFF09;&#x306E;&#x5C5E;&#x6027;&#x5024;&#x3068;&#x3057;&#x3066;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x3044;&#x304F;&#xFF08;&#x6700;&#x8FD1;&#x96A3;&#x306E;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;&#x6A19;&#x9AD8;&#x5024;&#x3092;&#x8FFD;&#x52A0;&#xFF09;&#x3002;&#x51FA;&#x529B;&#x3057;&#x305F;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x958B;&#x304D;&#x3001;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x8A08;&#x7B97;&#x6A5F;&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;org_id&#x3092;&#x66F4;&#x65B0;&#x3059;&#x308B;&#x3002;
+<p>ここから、GPSログの標高値を出力したポイント（5ｍごと）の属性値として追加していく（最近隣のポイントの標高値を追加）。出力したポイントの属性テーブルを開き、フィールド計算機を用いて、org_idを更新する。
 <img src="pic/gps_pic7.png" alt="gps"></p>
-<p><code>&#x30D7;&#x30ED;&#x30BB;&#x30C3;&#x30B7;&#x30F3;&#x30B0;&#xFF1E;&#x30C4;&#x30FC;&#x30EB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;</code>&#x304B;&#x3089;&#x3001;<code>&#x8DDD;&#x96E2;&#x30DE;&#x30C8;&#x30EA;&#x30C3;&#x30AF;&#x30B9;</code>&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3002;1.&#x51FA;&#x529B;&#x3057;&#x305F;5m&#x3054;&#x3068;&#x306E;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3002;2.&#x65B0;&#x898F;&#x306B;&#x51FA;&#x529B;&#x3057;&#x305F;org_fid&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3002;3.GPS&#x30ED;&#x30B0;&#xFF08;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#xFF09;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3002;4.&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3001;id&#x306E;&#x3042;&#x308B;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3002;5.&#x6700;&#x8FD1;&#x96A3;&#x306E;&#x5024;&#x306E;&#x307F;&#x5FC5;&#x8981;&#x306A;&#x305F;&#x3081;&#x3001;1&#x3068;&#x5165;&#x529B;&#x3059;&#x308B;&#x3002;6.&#x5B9F;&#x884C;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+<p><code>プロセッシング＞ツールボックス</code>から、<code>距離マトリックス</code>を選択する。1.出力した5mごとのポイントを指定する。2.新規に出力したorg_fidを指定する。3.GPSログ（ポイント）を選択する。4.属性テーブルを確認し、idのあるフィールドを指定する。5.最近隣の値のみ必要なため、1と入力する。6.実行をクリックする。
 <img src="pic/gps_pic8.png" alt="gps"></p>
-<p>5m&#x3054;&#x3068;&#x306E;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;<code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#xFF1E;&#x7D50;&#x5408;</code>&#x304B;&#x3089;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x8DDD;&#x96E2;&#x30DE;&#x30C8;&#x30EA;&#x30C3;&#x30AF;&#x30B9;&#x3067;&#x51FA;&#x529B;&#x3057;&#x305F;ID&#x3092;&#x7D50;&#x5408;&#x3059;&#x308B;&#x3002;&#x6B21;&#x306B;&#x3001;&#x5143;&#x306E;GPS&#x30ED;&#x30B0;&#x306E;ID&#x3092;&#x7D50;&#x5408;&#x3059;&#x308B;&#x3002;
+<p>5mごとのポイントの<code>プロパティ＞結合</code>から、以下のように距離マトリックスで出力したIDを結合する。次に、元のGPSログのIDを結合する。
 <img src="pic/gps_pic9.png" alt="gps"></p>
-<p>&#x7D50;&#x5408;&#x304C;&#x5B8C;&#x4E86;&#x3057;&#x305F;&#x3089;&#x3001;&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x958B;&#x304D;&#x3001;&#x6A19;&#x9AD8;&#x304C;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x3002;
+<p>結合が完了したら、属性テーブルを開き、標高が追加されていることを確認する。
 <img src="pic/gps_pic10.png" alt="gps"></p>
-<p>&#x7D50;&#x5408;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;<code>&#x30A8;&#x30AF;&#x30B9;&#x30DD;&#x30FC;&#x30C8;&#xFF1E;&#x5730;&#x7269;&#x306E;&#x4FDD;&#x5B58;</code>&#x3067;&#x51FA;&#x529B;&#x3059;&#x308B;&#x3002;&#x6B21;&#x306B;&#x3001;&#x51FA;&#x529B;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8868;&#x8A08;&#x7B97;&#x30BD;&#x30D5;&#x30C8;&#x7528;&#x306B;&#x3001;.csv&#x3067;&#x66F8;&#x304D;&#x51FA;&#x3059;&#x3002;
+<p>結合したファイルを<code>エクスポート＞地物の保存</code>で出力する。次に、出力したファイルを表計算ソフト用に、.csvで書き出す。
 <img src="pic/gps_pic11.png" alt="gps"></p>
-<p>&#x6700;&#x5F8C;&#x306B;&#x3001;&#x8868;&#x8A08;&#x7B97;&#x30BD;&#x30D5;&#x30C8;&#x3067;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306A;&#x30B0;&#x30E9;&#x30D5;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;&#x3053;&#x306E;&#x7A2E;&#x306E;&#x30B0;&#x30E9;&#x30D5;&#x306E;&#x4F5C;&#x6210;&#x6642;&#x306B;&#x306F;&#x3001;X&#x8EF8;&#x3068;Y&#x8EF8;&#x306E;&#x8A2D;&#x5B9A;&#x306B;&#x3088;&#x3063;&#x3066;&#x3001;&#x5B9F;&#x969B;&#x306E;&#x5730;&#x5F62;&#x3068;&#x50BE;&#x659C;&#x7B49;&#x304C;&#x7570;&#x306A;&#x308B;&#x70B9;&#x306B;&#x6CE8;&#x610F;&#x3059;&#x308B;&#x3002;
+<p>最後に、表計算ソフトで以下のようなグラフを作成する。この種のグラフの作成時には、X軸とY軸の設定によって、実際の地形と傾斜等が異なる点に注意する。
 <img src="pic/gps_pic12.png" alt="gps"></p>
-<p><a href="gps.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h4 id="&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;">&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;</h4>
-<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x30AD;&#x30E3;&#x30D7;&#x30C1;&#x30E3;&#x753B;&#x50CF;&#x306E;&#x51FA;&#x5178;&#x3084;&#x30AF;&#x30EC;&#x30B8;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../../license.html">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;</a>&#x3088;&#x308A;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p><a href="gps.html#Menu">▲メニューへもどる</a></p>
+<h4 id="ライセンスに関する注意事項">ライセンスに関する注意事項</h4>
+<p>本教材で利用しているキャプチャ画像の出典やクレジットについては、<a href="../../license.html">その他のライセンスについて</a>よりご確認ください。</p>
 
                                 
                                 </section>
@@ -3364,12 +3363,56 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GPSログの活用","level":"4.1.6","depth":2,"next":{"title":"地理情報を用いたVRアプリ開発入門","level":"5.1","depth":1,"path":"materials/vr/README.md","ref":"./materials/vr/README.md","articles":[{"title":"Unityのインストールと初期設定","level":"5.1.1","depth":2,"path":"materials/vr/vr1.md","ref":"./materials/vr/vr1.md","articles":[]},{"title":"Unityの基本画面と操作方法","level":"5.1.2","depth":2,"path":"materials/vr/vr2.md","ref":"./materials/vr/vr2.md","articles":[]},{"title":"地理情報の取り込みと表示設定","level":"5.1.3","depth":2,"path":"materials/vr/vr3.md","ref":"./materials/vr/vr3.md","articles":[]},{"title":"アセットの利用とアプリの調整","level":"5.1.4","depth":2,"path":"materials/vr/vr4.md","ref":"./materials/vr/vr4.md","articles":[]},{"title":"テストとビルド","level":"5.1.5","depth":2,"path":"materials/vr/vr5.md","ref":"./materials/vr/vr5.md","articles":[]},{"title":"VR開発の概要とMeta Quest 2の設定","level":"5.1.6","depth":2,"path":"materials/vr/vr6.md","ref":"./materials/vr/vr6.md","articles":[]},{"title":"Meta Quest 2向けのUnityの初期設定","level":"5.1.7","depth":2,"path":"materials/vr/vr7.md","ref":"./materials/vr/vr7.md","articles":[]},{"title":"歩行機能のプログラミング","level":"5.1.8","depth":2,"path":"materials/vr/vr8.md","ref":"./materials/vr/vr8.md","articles":[]},{"title":"Meta Quest 2への転送と動作確認","level":"5.1.9","depth":2,"path":"materials/vr/vr9.md","ref":"./materials/vr/vr9.md","articles":[]}]},"previous":{"title":"位置情報付き写真の地図表示","level":"4.1.5","depth":2,"path":"materials/equipment/camera/camera.md","ref":"./materials/equipment/camera/camera.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/equipment/gps/gps.md","mtime":"2020-01-28T04:25:51.486Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GPSログの活用","level":"4.1.6","depth":2,"next":{"title":"地理情報を用いたVRアプリ開発入門","level":"5.1","depth":1,"path":"materials/vr/README.md","ref":"./materials/vr/README.md","articles":[{"title":"Unityのインストールと初期設定","level":"5.1.1","depth":2,"path":"materials/vr/vr1.md","ref":"./materials/vr/vr1.md","articles":[]},{"title":"Unityの基本画面と操作方法","level":"5.1.2","depth":2,"path":"materials/vr/vr2.md","ref":"./materials/vr/vr2.md","articles":[]},{"title":"地理情報の取り込みと表示設定","level":"5.1.3","depth":2,"path":"materials/vr/vr3.md","ref":"./materials/vr/vr3.md","articles":[]},{"title":"アセットの利用とアプリの調整","level":"5.1.4","depth":2,"path":"materials/vr/vr4.md","ref":"./materials/vr/vr4.md","articles":[]},{"title":"テストとビルド","level":"5.1.5","depth":2,"path":"materials/vr/vr5.md","ref":"./materials/vr/vr5.md","articles":[]},{"title":"VR開発の概要とMeta Quest 2の設定","level":"5.1.6","depth":2,"path":"materials/vr/vr6.md","ref":"./materials/vr/vr6.md","articles":[]},{"title":"Meta Quest 2向けのUnityの初期設定","level":"5.1.7","depth":2,"path":"materials/vr/vr7.md","ref":"./materials/vr/vr7.md","articles":[]},{"title":"歩行機能のプログラミング","level":"5.1.8","depth":2,"path":"materials/vr/vr8.md","ref":"./materials/vr/vr8.md","articles":[]},{"title":"Meta Quest 2への転送と動作確認","level":"5.1.9","depth":2,"path":"materials/vr/vr9.md","ref":"./materials/vr/vr9.md","articles":[]}]},"previous":{"title":"位置情報付き写真の地図表示","level":"4.1.5","depth":2,"path":"materials/equipment/camera/camera.md","ref":"./materials/equipment/camera/camera.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/equipment/gps/gps.md","mtime":"2022-01-31T13:55:12.242Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../../gitbook/gitbook.js"></script>
     <script src="../../../gitbook/theme.js"></script>
     

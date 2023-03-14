@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>第4回・空間データの統合・修正 · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,28 +3273,28 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8AB2;&#x984C;&#xFF1A;&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7D71;&#x5408;&#x30FB;&#x4FEE;&#x6B63;">&#x8AB2;&#x984C;&#xFF1A;&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7D71;&#x5408;&#x30FB;&#x4FEE;&#x6B63;</h1>
-<p>&#x3000;&#x3053;&#x306E;&#x5B9F;&#x7FD2;&#x306F;&#x3001;&#x65E2;&#x5B58;&#x306E;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7D50;&#x5408;&#x306B;&#x3088;&#x308B;&#x65B0;&#x898F;&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;&#x3068;&#x80CC;&#x666F;&#x5730;&#x56F3;&#x3092;&#x30C8;&#x30EC;&#x30FC;&#x30B9;&#x3057;&#x305F;&#x65B0;&#x898F;&#x30D9;&#x30AF;&#x30C8;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;&#x3092;&#x884C;&#x3046;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;&#x5B9F;&#x7FD2;&#x3067;&#x4F7F;&#x308F;&#x308C;&#x308B;&#x7528;&#x8A9E;&#x3084;&#x6982;&#x5FF5;&#x306F;&#x3001;&#x5730;&#x7406;&#x60C5;&#x5831;&#x79D1;&#x5B66;&#x6559;&#x80B2;&#x7528;&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#xFF08;GISc&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#xFF09;&#x306E;4&#x7AE0;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x4EE5;&#x4E0B;&#x306E;&#x624B;&#x9806;&#x3068;<a href="../../10/10.md">&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7D71;&#x5408;&#x30FB;&#x4FEE;&#x6B63;</a>&#x306E;&#x6559;&#x6750;&#x3092;&#x53C2;&#x8003;&#x306B;&#x3001;&#x5B8C;&#x6210;&#x4F8B;&#x306E;&#x3088;&#x3046;&#x306A;&#x5730;&#x56F3;&#x304C;&#x4F5C;&#x6210;&#x3067;&#x304D;&#x308C;&#x3070;&#x3001;&#x5B9F;&#x7FD2;&#x5B8C;&#x4E86;&#x3068;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;GIS&#x521D;&#x5B66;&#x8005;&#x306F;&#x3001;&#x672C;&#x6559;&#x6750;&#x3092;&#x9032;&#x3081;&#x308B;&#x524D;&#x306B;<a href="../../00/00.md">GIS&#x306E;&#x57FA;&#x672C;&#x6982;&#x5FF5;</a>&#x306E;&#x6559;&#x6750;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304A;&#x3044;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<h3 id="&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;">&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;</h3>
-<p>&#x672C;&#x5B9F;&#x7FD2;&#x3092;&#x59CB;&#x3081;&#x308B;&#x524D;&#x306B;&#x3001;<a href="https://github.com/gis-oer/datasets/raw/master/tokyo.zip" target="_blank">tokyo</a>&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x672C;&#x5B9F;&#x7FD2;&#x3067;&#x306F;&#x3001;tokyo_srtm.tiff&#x306E;&#x307F;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<h2 id="&#x8AB2;&#x984C;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30AF;&#x30EA;&#x30C3;&#x30D7;&#x3068;&#x65B0;&#x898F;&#x30D9;&#x30AF;&#x30C8;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x4F5C;&#x6210;">&#x8AB2;&#x984C;_&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30AF;&#x30EA;&#x30C3;&#x30D7;&#x3068;&#x65B0;&#x898F;&#x30D9;&#x30AF;&#x30C8;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x4F5C;&#x6210;</h2>
-<p>&#x3000;&#x3053;&#x306E;&#x5B9F;&#x7FD2;&#x3067;&#x306F;&#x3001;&#x524D;&#x534A;&#x3067;&#x3001;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4EFB;&#x610F;&#x306E;&#x7BC4;&#x56F2;&#x3067;&#x5207;&#x308A;&#x629C;&#x304F;&#x51E6;&#x7406;&#x3068;&#x3001;&#x5BFE;&#x8C61;&#x7BC4;&#x56F2;&#x5185;&#x306E;&#x7B49;&#x9AD8;&#x7DDA;&#x62BD;&#x51FA;&#x304A;&#x3088;&#x3073;&#x6A19;&#x9AD8;&#x5024;&#x306E;&#x53D6;&#x5F97;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;&#x5F8C;&#x534A;&#x3067;&#x306F;&#x3001;&#x30D9;&#x30AF;&#x30C8;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x4F5C;&#x6210;&#x306E;&#x7DF4;&#x7FD2;&#x3068;&#x3057;&#x3066;&#x3001;&#x5B8C;&#x6210;&#x4F8B;&#x306E;&#x3088;&#x3046;&#x306A;&#x5730;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x306E;&#x624B;&#x9806;&#x3068;<a href="../../10/10.md">&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7D71;&#x5408;&#x30FB;&#x4FEE;&#x6B63;</a>&#x6559;&#x6750;&#x3092;&#x53C2;&#x8003;&#x306B;&#x5B9F;&#x7FD2;&#x3092;&#x9032;&#x3081;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<h3 id="&#x5B8C;&#x6210;&#x4F8B;">&#x5B8C;&#x6210;&#x4F8B;</h3>
+                                <h1 id="課題：空間データの統合・修正">課題：空間データの統合・修正</h1>
+<p>　この実習は、既存のラスタデータの結合による新規ラスターデータ作成と背景地図をトレースした新規ベクトルデータ作成を行うものです。実習で使われる用語や概念は、地理情報科学教育用スライド（GIScスライド）の4章を参照してください。以下の手順と<a href="../../10/10.md">空間データの統合・修正</a>の教材を参考に、完成例のような地図が作成できれば、実習完了となります。GIS初学者は、本教材を進める前に<a href="../../00/00.md">GISの基本概念</a>の教材を確認しておいてください。</p>
+<h3 id="実習用データ">実習用データ</h3>
+<p>本実習を始める前に、<a href="https://github.com/gis-oer/datasets/raw/master/tokyo.zip" target="_blank">tokyo</a>をダウンロードしてください。本実習では、tokyo_srtm.tiffのみを使用します。</p>
+<h2 id="課題ラスタデータのクリップと新規ベクトルデータの作成">課題_ラスタデータのクリップと新規ベクトルデータの作成</h2>
+<p>　この実習では、前半で、ラスタデータを任意の範囲で切り抜く処理と、対象範囲内の等高線抽出および標高値の取得を行います。後半では、ベクトルデータの作成の練習として、完成例のような地図を作成します。以下の手順と<a href="../../10/10.md">空間データの統合・修正</a>教材を参考に実習を進めてください。</p>
+<h3 id="完成例">完成例</h3>
 <p><img src="pic/t10.png" alt="kadai"></p>
-<h3 id="&#x624B;&#x9806;">&#x624B;&#x9806;</h3>
+<h3 id="手順">手順</h3>
 <ol>
-<li>tokyo_srtm.tiff&#x3092;QGIS&#x306B;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</li>
-<li><a href="../../QGIS/QGIS.md">QGIS&#x30D3;&#x30AE;&#x30CA;&#x30FC;&#x30BA;&#x30DE;&#x30CB;&#x30E5;&#x30A2;&#x30EB;</a>&#x3092;&#x53C2;&#x8003;&#x306B;&#x3001;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x30D1;&#x30CD;&#x30EB;&#x304B;&#x3089;&#x5730;&#x7406;&#x9662;&#x30BF;&#x30A4;&#x30EB;&#xFF08;&#x7A7A;&#x4E2D;&#x5199;&#x771F;&#x307E;&#x305F;&#x306F;&#x6A19;&#x6E96;&#x5730;&#x56F3;&#xFF09;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;</li>
-<li>&#x5730;&#x7406;&#x9662;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x53C2;&#x8003;&#x306B;&#x3001;&#x4E0D;&#x5FCD;&#x6C60;&#x3001;JR&#x4E0A;&#x91CE;&#x99C5;&#x5468;&#x8FBA;&#x306E;&#x7BC4;&#x56F2;&#x3067;&#x3001;tokyo_srtm.tiff&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30D7;&#x3057;&#x3001;&#x65B0;&#x898F;&#x30E9;&#x30B9;&#x30BF;&#x306E;&#x914D;&#x8272;&#x3092;<code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#xFF1E;&#x30B7;&#x30F3;&#x30DC;&#x30ED;&#x30B8;&#x30FC;</code>&#x3067;5&#x6BB5;&#x968E;&#x306B;&#x8ABF;&#x6574;&#x3059;&#x308B;&#x3002;  </li>
-<li>&#x30AF;&#x30EA;&#x30C3;&#x30D7;&#x3057;&#x305F;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;5m&#x9593;&#x9694;&#x3067;&#x7B49;&#x9AD8;&#x7DDA;&#x3092;&#x62BD;&#x51FA;&#x3059;&#x308B;&#x3002;&#x62BD;&#x51FA;&#x3057;&#x305F;&#x7B49;&#x9AD8;&#x7DDA;&#x306E;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x6574;&#x3048;&#x308B;&#x3002;</li>
-<li>&#x5B8C;&#x6210;&#x4F8B;&#x3092;&#x53C2;&#x8003;&#x306B;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;&#x4F5C;&#x6210;&#x6642;&#x306E;&#x5C5E;&#x6027;&#x60C5;&#x5831;&#x306F;&#x3001;id(Integer,&#x5E45;2)&#x3001;NAME(String,&#x5E45;20)&#x3001;&#x3068;&#x3057;&#x3001;Id(&#x901A;&#x3057;&#x756A;&#x53F7;)&#x3001;NAME(&#x5EFA;&#x7269;&#x540D;&#xFF09;&#x3092;&#x8A18;&#x5165;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x5730;&#x7406;&#x9662;&#x30BF;&#x30A4;&#x30EB;&#xFF08;&#x7A7A;&#x4E2D;&#x5199;&#x771F;&#xFF09;&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x3001;&#x4E0D;&#x5FCD;&#x6C60;&#x306E;&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF08;&#x304A;&#x304A;&#x307E;&#x304B;&#x3067;&#x3088;&#x3044;&#xFF09;&#x3002;&#x5C5E;&#x6027;&#x306F;&#x3001;id(Integer,&#x5E45;10)&#x306E;&#x307F;&#x3068;&#x3059;&#x308B;&#x3002;&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x306E;&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x306F;&#x3001;&#x4F5C;&#x6210;&#x5F8C;&#x53F3;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3067;&#x65B0;&#x898F;&#x30EC;&#x30A4;&#x30E4;&#x3068;&#x3057;&#x3066;&#x53CD;&#x6620;&#x3055;&#x308C;&#x308B;&#x70B9;&#x306B;&#x6CE8;&#x610F;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x5730;&#x7406;&#x9662;&#x30BF;&#x30A4;&#x30EB;&#xFF08;&#x7A7A;&#x4E2D;&#x5199;&#x771F;&#xFF09;&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x3001;JR&#x4E0A;&#x91CE;&#x99C5;&#x304B;&#x3089;&#x4E0D;&#x5FCD;&#x6C60;&#x307E;&#x3067;&#x306E;&#x30EB;&#x30FC;&#x30C8;&#x3092;&#x30E9;&#x30A4;&#x30F3;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF08;&#x304A;&#x304A;&#x307E;&#x304B;&#x3067;&#x3088;&#x3044;&#xFF09;&#x3002;</li>
-<li>&#x5B8C;&#x6210;&#x4F8B;&#x306E;&#x3088;&#x3046;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x6574;&#x3048;&#x308B;&#x3002;&#x6B21;&#x3001;&#x30E9;&#x30D9;&#x30EB;&#x306E;&#x8A2D;&#x5B9A;&#x3092;&#x3059;&#x308B;&#x3002;&#x30E9;&#x30D9;&#x30EB;&#x306F;&#x3001;<code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#xFF1E;&#x30E9;&#x30D9;&#x30EB;</code>&#x304B;&#x3089;<code>&#x30E9;&#x30D9;&#x30EB;&#x306A;&#x3057;&#x2192;&#x5358;&#x4E00;&#x306E;&#x30E9;&#x30D9;&#x30EB;</code>&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x30E9;&#x30D9;&#x30EB;&#x306B;&#x3059;&#x308B;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3002;&#x4ECA;&#x56DE;&#x306F;&#x3001;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x3092;NAME&#x3001;&#x30E9;&#x30A4;&#x30F3;&#x3092;ELEV&#x3067;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x80CC;&#x666F;&#x5730;&#x56F3;&#x3092;&#x30AA;&#x30D5;&#x306B;&#x3057;&#x3001;&#x30D7;&#x30EA;&#x30F3;&#x30C8;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30B6;&#x304B;&#x3089;&#x3001;&#x5730;&#x56F3;&#x3092;&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;&#x3059;&#x308B;&#x3002;</li>
+<li>tokyo_srtm.tiffをQGISに読み込む</li>
+<li><a href="../../QGIS/QGIS.md">QGISビギナーズマニュアル</a>を参考に、ブラウザパネルから地理院タイル（空中写真または標準地図）を読み込む。</li>
+<li>地理院タイルを参考に、不忍池、JR上野駅周辺の範囲で、tokyo_srtm.tiffをクリップし、新規ラスタの配色を<code>プロパティ＞シンボロジー</code>で5段階に調整する。  </li>
+<li>クリップしたラスタデータを用いて、5m間隔で等高線を抽出する。抽出した等高線のスタイルを整える。</li>
+<li>完成例を参考にポイントデータを作成する。ポイントの作成時の属性情報は、id(Integer,幅2)、NAME(String,幅20)、とし、Id(通し番号)、NAME(建物名）を記入する。</li>
+<li>地理院タイル（空中写真）を利用して、不忍池のポリゴンを作成する（おおまかでよい）。属性は、id(Integer,幅10)のみとする。ポリゴンの新規作成は、作成後右クリックで新規レイヤとして反映される点に注意する。</li>
+<li>地理院タイル（空中写真）を利用して、JR上野駅から不忍池までのルートをラインデータを作成する（おおまかでよい）。</li>
+<li>完成例のように作成したレイヤのスタイルを整える。次、ラベルの設定をする。ラベルは、<code>プロパティ＞ラベル</code>から<code>ラベルなし→単一のラベル</code>を選択し、ラベルにするフィールドを指定する。今回は、ポイントをNAME、ラインをELEVで設定する。</li>
+<li>背景地図をオフにし、プリントコンポーザから、地図をレイアウトする。</li>
 </ol>
-<h4 id="&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30BD;&#x30FC;&#x30B9;">&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30BD;&#x30FC;&#x30B9;</h4>
-<p>&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x3001;&#x7121;&#x511F;&#x3067;&#x5229;&#x7528;&#x53EF;&#x80FD;&#x306A;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x52A0;&#x5DE5;&#x3057;&#x3066;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30BD;&#x30FC;&#x30B9;&#x306F;&#x3001;&#x5404;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;README.md&#x306B;&#x307E;&#x3068;&#x3081;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h4 id="実習用データのソース">実習用データのソース</h4>
+<p>実習用データは、無償で利用可能なデータを加工して作成したものです。データのソースは、各ファイルのREADME.mdにまとめています。</p>
 
                                 
                                 </section>
@@ -3339,12 +3338,56 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第4回・空間データの統合・修正","level":"6.1.7","depth":2,"next":{"title":"第5回・視覚的伝達","level":"6.1.8","depth":2,"path":"materials/tasks/t_21.md","ref":"./materials/tasks/t_21.md","articles":[]},"previous":{"title":"第3回・空間データ","level":"6.1.6","depth":2,"path":"materials/tasks/t_08.md","ref":"./materials/tasks/t_08.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/tasks/t_10.md","mtime":"2020-01-24T01:38:29.990Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第4回・空間データの統合・修正","level":"6.1.7","depth":2,"next":{"title":"第5回・視覚的伝達","level":"6.1.8","depth":2,"path":"materials/tasks/t_21.md","ref":"./materials/tasks/t_21.md","articles":[]},"previous":{"title":"第3回・空間データ","level":"6.1.6","depth":2,"path":"materials/tasks/t_08.md","ref":"./materials/tasks/t_08.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/tasks/t_10.md","mtime":"2022-01-31T13:55:12.801Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
     

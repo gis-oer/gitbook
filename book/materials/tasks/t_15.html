@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>第11回・ラスタデータの分析 · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,60 +3273,60 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8AB2;&#x984C;&#xFF1A;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;">&#x8AB2;&#x984C;&#xFF1A;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;</h1>
-<p>&#x3000;&#x3053;&#x306E;&#x5B9F;&#x7FD2;&#x3067;&#x306F;&#x3001;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x7528;&#x3044;&#x305F;&#x5730;&#x5F62;&#x60C5;&#x5831;&#x306E;&#x53EF;&#x8996;&#x5316;&#x3084;&#x5206;&#x6790;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x30D9;&#x30AF;&#x30C8;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x3068;&#x7570;&#x306A;&#x308A;&#x3001;&#x30D4;&#x30AF;&#x30BB;&#x30EB;&#x3054;&#x3068;&#x306B;&#x5165;&#x529B;&#x3055;&#x308C;&#x305F;&#x5024;&#x304C;&#x5206;&#x6790;&#x306B;&#x7528;&#x3044;&#x3089;&#x308C;&#x307E;&#x3059;&#x3002;&#x5B9F;&#x7FD2;&#x3067;&#x4F7F;&#x308F;&#x308C;&#x308B;&#x7528;&#x8A9E;&#x3084;&#x6982;&#x5FF5;&#x306F;&#x3001;&#x5730;&#x7406;&#x60C5;&#x5831;&#x79D1;&#x5B66;&#x6559;&#x80B2;&#x7528;&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#xFF08;GISc&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#xFF09;&#x306E;4&#x7AE0;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<p>&#x3000;&#x624B;&#x9806;&#x3068;GIS&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x6559;&#x6750;&#x306E;<a href="../../15/15.md">&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;</a>&#x306E;&#x6559;&#x6750;&#x3092;&#x53C2;&#x8003;&#x306B;&#x3001;&#x5B8C;&#x6210;&#x4F8B;&#x306E;&#x3088;&#x3046;&#x306A;&#x5730;&#x56F3;&#x304C;&#x4F5C;&#x6210;&#x3067;&#x304D;&#x308C;&#x3070;&#x3001;&#x5B8C;&#x4E86;&#x3068;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;GIS&#x521D;&#x5B66;&#x8005;&#x306F;&#x3001;&#x672C;&#x6559;&#x6750;&#x3092;&#x9032;&#x3081;&#x308B;&#x524D;&#x306B;<a href="../../00/00.md">GIS&#x306E;&#x57FA;&#x672C;&#x6982;&#x5FF5;</a>&#x306E;&#x6559;&#x6750;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304A;&#x3044;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<h3 id="&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;">&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;</h3>
-<p>&#x672C;&#x5B9F;&#x7FD2;&#x3092;&#x306F;&#x3058;&#x3081;&#x308B;&#x524D;&#x306B;&#x3001;<a href="https://github.com/gis-oer/datasets/raw/master/tasks/fuji_task.zip" target="_blank">Fuji_task</a>&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+                                <h1 id="課題：ラスタデータの分析">課題：ラスタデータの分析</h1>
+<p>　この実習では、ラスタデータを用いた地形情報の可視化や分析を行います。ラスターデータはベクトルデータと異なり、ピクセルごとに入力された値が分析に用いられます。実習で使われる用語や概念は、地理情報科学教育用スライド（GIScスライド）の4章を参照してください。</p>
+<p>　手順とGISオープン教材の<a href="../../15/15.md">ラスタデータの分析</a>の教材を参考に、完成例のような地図が作成できれば、完了となります。GIS初学者は、本教材を進める前に<a href="../../00/00.md">GISの基本概念</a>の教材を確認しておいてください。</p>
+<h3 id="実習用データ">実習用データ</h3>
+<p>本実習をはじめる前に、<a href="https://github.com/gis-oer/datasets/raw/master/tasks/fuji_task.zip" target="_blank">Fuji_task</a>をダウンロードしてください。</p>
 <h2 id="menu"><strong>Menu</strong></h2>
 <ul>
-<li><a href="#&#x8AB2;&#x984C;1_&#x6570;&#x5024;&#x6A19;&#x9AD8;&#x30E2;&#x30C7;&#x30EB;&#x306E;&#x8996;&#x899A;&#x7684;&#x5206;&#x6790;">&#x8AB2;&#x984C;1_&#x6570;&#x5024;&#x6A19;&#x9AD8;&#x30E2;&#x30C7;&#x30EB;&#x306E;&#x8996;&#x899A;&#x7684;&#x5206;&#x6790;</a></li>
-<li><a href="#&#x8AB2;&#x984C;2_&#x5730;&#x5F62;&#x65AD;&#x9762;&#x56F3;">&#x8AB2;&#x984C;2_&#x5730;&#x5F62;&#x65AD;&#x9762;&#x56F3;</a></li>
-<li><a href="#&#x8AB2;&#x984C;3_&#x30E9;&#x30B9;&#x30BF;&#x6F14;&#x7B97;">&#x8AB2;&#x984C;3_&#x30E9;&#x30B9;&#x30BF;&#x6F14;&#x7B97;</a></li>
-<li><a href="#&#x8AB2;&#x984C;4_&#x6D41;&#x57DF;&#x89E3;&#x6790;">&#x8AB2;&#x984C;4_&#x6D41;&#x57DF;&#x89E3;&#x6790;</a></li>
+<li><a href="#課題1_数値標高モデルの視覚的分析">課題1_数値標高モデルの視覚的分析</a></li>
+<li><a href="#課題2_地形断面図">課題2_地形断面図</a></li>
+<li><a href="#課題3_ラスタ演算">課題3_ラスタ演算</a></li>
+<li><a href="#課題4_流域解析">課題4_流域解析</a></li>
 </ul>
-<h2 id="&#x8AB2;&#x984C;1&#x6570;&#x5024;&#x6A19;&#x9AD8;&#x30E2;&#x30C7;&#x30EB;&#x306E;&#x8996;&#x899A;&#x7684;&#x5206;&#x6790;">&#x8AB2;&#x984C;1_&#x6570;&#x5024;&#x6A19;&#x9AD8;&#x30E2;&#x30C7;&#x30EB;&#x306E;&#x8996;&#x899A;&#x7684;&#x5206;&#x6790;</h2>
-<p>&#x3000;&#x5BCC;&#x58EB;&#x5C71;&#x5468;&#x8FBA;&#x306E;DEM&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;&#x6A19;&#x9AD8;&#x533A;&#x5206;&#x56F3;&#x3001;&#x50BE;&#x659C;&#x533A;&#x5206;&#x56F3;&#x3001;&#x50BE;&#x659C;&#x65B9;&#x4F4D;&#x56F3;&#x3001;&#x9670;&#x5F71;&#x56F3;&#x3001;3D&#x5730;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3001;&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x307E;&#x305F;&#x3001;&#x5BCC;&#x58EB;&#x5C71;&#x306E;&#x5730;&#x5F62;&#x306E;&#x7279;&#x5FB4;&#x3092;&#x6574;&#x7406;&#x3057;&#x3001;400&#x5B57;&#x7A0B;&#x5EA6;&#x3067;&#x307E;&#x3068;&#x3081;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<h3 id="&#x5B8C;&#x6210;&#x4F8B;">&#x5B8C;&#x6210;&#x4F8B;</h3>
+<h2 id="課題1数値標高モデルの視覚的分析">課題1_数値標高モデルの視覚的分析</h2>
+<p>　富士山周辺のDEMデータを用いて、標高区分図、傾斜区分図、傾斜方位図、陰影図、3D地図を作成し、レイアウトしてください。また、富士山の地形の特徴を整理し、400字程度でまとめてください。</p>
+<h3 id="完成例">完成例</h3>
 <p><img src="pic/t15-1.png" alt="kadai">
-&#x203B;&#x3000;&#x4E0A;&#x6BB5;&#xFF1A;&#x5DE6;&#x304B;&#x3089;&#x3001;&#x6A19;&#x9AD8;&#x533A;&#x5206;&#x56F3;&#xFF08;&#x6BB5;&#x5F69;&#x56F3;&#xFF09;&#x3001;&#x50BE;&#x659C;&#x533A;&#x5206;&#x56F3;&#x3001;&#x50BE;&#x659C;&#x65B9;&#x4F4D;&#x56F3;&#x3001;&#x9670;&#x5F71;&#x56F3;&#x3000;&#x4E0B;&#x6BB5;&#xFF1A;3D&#x5730;&#x56F3;&#xFF08;&#x80CC;&#x666F;&#x5730;&#x56F3;&#x3068;&#x3057;&#x3066;&#x5730;&#x7406;&#x9662;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x4F7F;&#x7528;&#xFF09;</p>
-<h3 id="&#x624B;&#x9806;">&#x624B;&#x9806;</h3>
+※　上段：左から、標高区分図（段彩図）、傾斜区分図、傾斜方位図、陰影図　下段：3D地図（背景地図として地理院タイルを使用）</p>
+<h3 id="手順">手順</h3>
 <ol>
-<li>&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x305F;&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x3092;QGIS&#x3067;&#x8AAD;&#x307F;&#x3001;<a href="../../10/10.md">&#x7A7A;&#x9593;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7D71;&#x5408;&#x30FB;&#x4FEE;&#x6B63;</a>&#x306E;&#x6559;&#x6750;&#x3092;&#x53C2;&#x8003;&#x306B;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x7D50;&#x5408;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x30E9;&#x30B9;&#x30BF;&#xFF1E;&#x89E3;&#x6790;&#x304B;&#x3089;&#x50BE;&#x659C;&#x3001;&#x50BE;&#x659C;&#x65B9;&#x4F4D;&#x3001;&#x9670;&#x5F71;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x6A19;&#x9AD8;&#x5024;&#x3001;&#x50BE;&#x659C;&#x89D2;&#x3001;&#x659C;&#x9762;&#x65B9;&#x4F4D;&#xFF08;0&#xB0;-360&#xB0;&#xFF09;&#x306A;&#x3069;&#x3001;&#x305D;&#x308C;&#x305E;&#x308C;&#x306E;&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5024;&#x306B;&#x5FDC;&#x3058;&#x3066;&#x8272;&#x5206;&#x3051;&#x3092;&#x884C;&#x3044;&#x3001;&#x6A19;&#x9AD8;&#x533A;&#x5206;&#x56F3;&#x3001;&#x50BE;&#x659C;&#x533A;&#x5206;&#x56F3;&#x3001;&#x50BE;&#x659C;&#x65B9;&#x4F4D;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x5E73;&#x9762;&#x3067;&#x306F;&#x3001;&#x78BA;&#x8A8D;&#x3057;&#x306B;&#x304F;&#x3044;&#x7B87;&#x6240;&#x3082;&#x3042;&#x308B;&#x305F;&#x3081;&#x3001;3D&#x5730;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x4F5C;&#x6210;&#x3057;&#x305F;&#x6A19;&#x9AD8;&#x533A;&#x5206;&#x56F3;&#x3001;&#x50BE;&#x659C;&#x533A;&#x5206;&#x56F3;&#x3001;&#x50BE;&#x659C;&#x65B9;&#x4F4D;&#x56F3;&#x3001;&#x9670;&#x5F71;&#x56F3;&#x3001;3D&#x5730;&#x56F3;&#x3092;&#x8996;&#x899A;&#x7684;&#x306B;&#x5206;&#x6790;&#x3057;&#x3001;&#x5BCC;&#x58EB;&#x5C71;&#x306E;&#x5730;&#x5F62;&#x7684;&#x306A;&#x7279;&#x5FB4;&#x3092;&#x7C21;&#x5358;&#x306B;&#x307E;&#x3068;&#x3081;&#x308B;&#x3002;</li>
+<li>ダウンロードしたラスターデータをQGISで読み、<a href="../../10/10.md">空間データの統合・修正</a>の教材を参考にラスタデータを結合する。</li>
+<li>ラスタ＞解析から傾斜、傾斜方位、陰影図を作成する。</li>
+<li>標高値、傾斜角、斜面方位（0°-360°）など、それぞれのラスターデータの値に応じて色分けを行い、標高区分図、傾斜区分図、傾斜方位図を作成する。</li>
+<li>平面では、確認しにくい箇所もあるため、3D地図を作成する。</li>
+<li>作成した標高区分図、傾斜区分図、傾斜方位図、陰影図、3D地図を視覚的に分析し、富士山の地形的な特徴を簡単にまとめる。</li>
 </ol>
-<h2 id="&#x8AB2;&#x984C;2&#x5730;&#x5F62;&#x65AD;&#x9762;&#x56F3;&#x306E;&#x4F5C;&#x6210;">&#x8AB2;&#x984C;2_&#x5730;&#x5F62;&#x65AD;&#x9762;&#x56F3;&#x306E;&#x4F5C;&#x6210;</h2>
-<p>&#x3000;&#x3053;&#x306E;&#x8AB2;&#x984C;&#x3067;&#x306F;&#x3001;&#x5404;&#x30BB;&#x30EB;&#x306E;&#x5024;&#x3092;&#x5229;&#x7528;&#x3057;&#x3001;&#x6771;&#x897F;&#x306B;&#x5C71;&#x9802;&#x3092;&#x901A;&#x308B;&#x5730;&#x5F62;&#x65AD;&#x9762;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x307E;&#x305F;&#x3001;&#x5730;&#x5F62;&#x65AD;&#x9762;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x5F8C;&#x3001;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x5730;&#x5F62;&#x65AD;&#x9762;&#x56F3;&#x304B;&#x3089;&#x8AAD;&#x307F;&#x53D6;&#x308C;&#x308B;&#x5730;&#x5F62;&#x306E;&#x7279;&#x5FB4;&#x306B;&#x3064;&#x3044;&#x3066;&#x3001;400&#x5B57;&#x7A0B;&#x5EA6;&#x3067;&#x307E;&#x3068;&#x3081;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<h3 id="&#x624B;&#x9806;">&#x624B;&#x9806;</h3>
+<h2 id="課題2地形断面図の作成">課題2_地形断面図の作成</h2>
+<p>　この課題では、各セルの値を利用し、東西に山頂を通る地形断面図を作成してください。また、地形断面図を作成した後、作成した地形断面図から読み取れる地形の特徴について、400字程度でまとめてください。</p>
+<h3 id="手順">手順</h3>
 <ol>
-<li>&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x7BA1;&#x7406;&#x3068;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x304B;&#x3089;&#x3001;<code>VoGIS Profile tool</code>&#x3092;&#x691C;&#x7D22;&#x3057;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x3002;</li>
-<li><a href="../../15/15.md">&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;</a>&#x306E;&#x6559;&#x6750;&#x3092;&#x53C2;&#x8003;&#x306B;&#x3001;&#x5730;&#x5F62;&#x65AD;&#x9762;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x5730;&#x5F62;&#x65AD;&#x9762;&#x56F3;&#x304B;&#x3089;&#x8AAD;&#x307F;&#x53D6;&#x308C;&#x308B;&#x5730;&#x5F62;&#x60C5;&#x5831;&#x306B;&#x3064;&#x3044;&#x3066;&#x3001;400&#x5B57;&#x7A0B;&#x5EA6;&#x3067;&#x307E;&#x3068;&#x3081;&#x308B;&#x3002;</li>
+<li>プラグインの管理とインストールから、<code>VoGIS Profile tool</code>を検索し、インストールする。</li>
+<li><a href="../../15/15.md">ラスタデータの分析</a>の教材を参考に、地形断面図を作成する。</li>
+<li>地形断面図から読み取れる地形情報について、400字程度でまとめる。</li>
 </ol>
-<h2 id="&#x8AB2;&#x984C;3&#x30E9;&#x30B9;&#x30BF;&#x6F14;&#x7B97;">&#x8AB2;&#x984C;3_&#x30E9;&#x30B9;&#x30BF;&#x6F14;&#x7B97;</h2>
-<p>&#x3000;&#x3053;&#x306E;&#x8AB2;&#x984C;&#x3067;&#x306F;&#x3001;&#x8907;&#x6570;&#x306E;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7BC4;&#x56F2;&#x3068;&#x5024;&#x3092;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3066;&#x3001;&#x30E9;&#x30B9;&#x30BF;&#x6F14;&#x7B97;&#x3092;&#x3057;&#x307E;&#x3059;&#x3002;&#x5BCC;&#x58EB;&#x5C71;&#x5468;&#x8FBA;&#x306E;&#x6A19;&#x9AD8;&#x30C7;&#x30FC;&#x30BF;&#x3068;&#x6570;&#x5024;&#x6A19;&#x9AD8;&#x30E2;&#x30C7;&#x30EB;&#x306E;&#x8996;&#x899A;&#x7684;&#x5206;&#x6790;&#x306E;&#x8AB2;&#x984C;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x50BE;&#x659C;&#x306E;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;&#x30E9;&#x30B9;&#x30BF;&#x8A08;&#x7B97;&#x6A5F;&#x3067;&#x6A19;&#x9AD8;2000m&#x4EE5;&#x4E0A;&#x304B;&#x3064;&#x50BE;&#x659C;15&#xB0;&#x4EE5;&#x4E0B;&#x306E;&#x30A8;&#x30EA;&#x30A2;&#x3092;&#x62BD;&#x51FA;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<h3 id="&#x624B;&#x9806;">&#x624B;&#x9806;</h3>
+<h2 id="課題3ラスタ演算">課題3_ラスタ演算</h2>
+<p>　この課題では、複数のラスタデータの範囲と値を組み合わせて、ラスタ演算をします。富士山周辺の標高データと数値標高モデルの視覚的分析の課題で作成した傾斜のラスタデータを用いて、ラスタ計算機で標高2000m以上かつ傾斜15°以下のエリアを抽出してください。</p>
+<h3 id="手順">手順</h3>
 <ol>
-<li>&#x6A19;&#x9AD8;&#x3068;&#x50BE;&#x659C;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;QGIS&#x3067;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x30E9;&#x30B9;&#x30BF;&#x304B;&#x3089;&#x30E9;&#x30B9;&#x30BF;&#x8A08;&#x7B97;&#x6A5F;&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x51FA;&#x529B;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x3001;<a href="../../15/15.md">&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;</a>&#x6559;&#x6750;&#x3092;&#x53C2;&#x8003;&#x306B;&#x5F0F;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x3002;</li>
-<li><code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#xFF1E;&#x30B7;&#x30F3;&#x30DC;&#x30ED;&#x30B8;&#x30FC;&#xFF1E;&#x5358;&#x30D0;&#x30F3;&#x30C9;&#x7591;&#x4F3C;&#x30AB;&#x30E9;&#x30FC;</code>&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x30E2;&#x30FC;&#x30C9;&#x3092;&#x7B49;&#x9593;&#x9694;&#x3001;&#x5206;&#x985E;&#x6570;&#x3092;2&#x3068;&#x3057;&#x3001;&#x6700;&#x5C0F;&#x3092;0&#x3001;&#x6700;&#x5927;&#x3092;1&#x3068;&#x3057;&#x5206;&#x985E;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;0&#x306E;&#x5024;&#x306E;&#x8272;&#x306E;&#x4E0D;&#x900F;&#x660E;&#x5EA6;&#x3092;0&#xFF05;&#x306B;&#x3059;&#x308B;&#x3068;&#x307F;&#x3084;&#x3059;&#x3044;&#x3002;</li>
+<li>標高と傾斜のデータをQGISで読み込みラスタからラスタ計算機を起動する。</li>
+<li>出力ファイルを設定し、<a href="../../15/15.md">ラスタデータの分析</a>教材を参考に式を入力する。</li>
+<li><code>プロパティ＞シンボロジー＞単バンド疑似カラー</code>を選択し、モードを等間隔、分類数を2とし、最小を0、最大を1とし分類をクリックする。0の値の色の不透明度を0％にするとみやすい。</li>
 </ol>
-<h2 id="&#x8AB2;&#x984C;&#x6D41;&#x57DF;&#x89E3;&#x6790;">&#x8AB2;&#x984C;_&#x6D41;&#x57DF;&#x89E3;&#x6790;</h2>
-<p>&#x3000;&#x3053;&#x306E;&#x8AB2;&#x984C;&#x3067;&#x306F;DEM&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x7528;&#x3044;&#x305F;&#x3001;&#x6D41;&#x57DF;&#x89E3;&#x6790;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x306E;&#x624B;&#x9806;&#x3092;&#x53C2;&#x8003;&#x306B;&#x3001;&#x5B8C;&#x6210;&#x4F8B;&#x306E;&#x3088;&#x3046;&#x306A;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<h3 id="&#x5B8C;&#x6210;&#x4F8B;">&#x5B8C;&#x6210;&#x4F8B;</h3>
+<h2 id="課題流域解析">課題_流域解析</h2>
+<p>　この課題ではDEMデータを用いた、流域解析を行います。以下の手順を参考に、完成例のような図を作成してください。</p>
+<h3 id="完成例">完成例</h3>
 <p><img src="pic/t15-2.png" alt="kadai"></p>
-<h3 id="&#x624B;&#x9806;">&#x624B;&#x9806;</h3>
+<h3 id="手順">手順</h3>
 <ol>
-<li><a href="../../15/15.md">&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;</a>&#x6559;&#x6750;&#x3092;&#x53C2;&#x8003;&#x306B;&#x3001;&#x6D41;&#x57DF;&#x89E3;&#x6790;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x6D41;&#x57DF;&#x306E;&#x6700;&#x5C0F;&#x30BB;&#x30EB;&#x30B5;&#x30A4;&#x30BA;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;(&#x3053;&#x3053;&#x3067;&#x306F;&#x3001;3000&#x3068;&#x3059;&#x308B;)&#x3002;</li>
-<li>&#x6D41;&#x57DF;&#x3068;&#x6CB3;&#x5DDD;&#x306E;&#x30E9;&#x30B9;&#x30BF;&#x3092;&#x30D9;&#x30AF;&#x30C8;&#x30EB;&#x306B;&#x5909;&#x63DB;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x540D;&#x524D;&#x3092;&#x4ED8;&#x3051;&#x3066;&#x4FDD;&#x5B58;&#x3067;&#x30D9;&#x30AF;&#x30C8;&#x30EB;&#x30EC;&#x30A4;&#x30E4;&#x3068;&#x3057;&#x3066;&#x4FDD;&#x5B58;&#x3059;&#x308B;</li>
-<li>&#x5730;&#x56F3;&#x3092;&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;&#x3059;&#x308B;</li>
+<li><a href="../../15/15.md">ラスタデータの分析</a>教材を参考に、流域解析を選択し、流域の最小セルサイズを設定する(ここでは、3000とする)。</li>
+<li>流域と河川のラスタをベクトルに変換する。</li>
+<li>名前を付けて保存でベクトルレイヤとして保存する</li>
+<li>地図をレイアウトする</li>
 </ol>
-<h4 id="&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30BD;&#x30FC;&#x30B9;">&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30BD;&#x30FC;&#x30B9;</h4>
-<p>&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x3001;&#x7121;&#x511F;&#x3067;&#x5229;&#x7528;&#x53EF;&#x80FD;&#x306A;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x52A0;&#x5DE5;&#x3057;&#x3066;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30BD;&#x30FC;&#x30B9;&#x306F;&#x3001;&#x5404;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;README.md&#x306B;&#x307E;&#x3068;&#x3081;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h4 id="実習用データのソース">実習用データのソース</h4>
+<p>実習用データは、無償で利用可能なデータを加工して作成したものです。データのソースは、各ファイルのREADME.mdにまとめています。</p>
 
                                 
                                 </section>
@@ -3371,12 +3370,56 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第11回・ラスタデータの分析","level":"6.1.14","depth":2,"next":{"title":"第12回・空間補間","level":"6.1.15","depth":2,"path":"materials/tasks/t_18.md","ref":"./materials/tasks/t_18.md","articles":[]},"previous":{"title":"第10回・空間データベース","level":"6.1.13","depth":2,"path":"materials/tasks/t_09.md","ref":"./materials/tasks/t_09.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/tasks/t_15.md","mtime":"2020-01-24T01:38:29.995Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第11回・ラスタデータの分析","level":"6.1.14","depth":2,"next":{"title":"第12回・空間補間","level":"6.1.15","depth":2,"path":"materials/tasks/t_18.md","ref":"./materials/tasks/t_18.md","articles":[]},"previous":{"title":"第10回・空間データベース","level":"6.1.13","depth":2,"path":"materials/tasks/t_09.md","ref":"./materials/tasks/t_09.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/tasks/t_15.md","mtime":"2022-01-31T13:55:12.801Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
     

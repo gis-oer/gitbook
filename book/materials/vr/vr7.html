@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Meta Quest 2向けのUnityの初期設定 · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,21 +3273,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="meta-quest-2&#x5411;&#x3051;&#x306E;unity&#x306E;&#x521D;&#x671F;&#x8A2D;&#x5B9A;">Meta Quest 2&#x5411;&#x3051;&#x306E;Unity&#x306E;&#x521D;&#x671F;&#x8A2D;&#x5B9A;</h1>
-<h2 id="vr&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x4F5C;&#x6210;&#x6E96;&#x5099;">VR&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x4F5C;&#x6210;&#x6E96;&#x5099;</h2>
-<p>&#x3053;&#x308C;&#x307E;&#x3067;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x97EE;&#x5C71;&#x53CD;&#x5C04;&#x7089;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x3001;VR&#x30C7;&#x30D0;&#x30A4;&#x30B9;&#x306E;Meta Quest 2&#x3067;&#x52D5;&#x4F5C;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;Unity&#x3067;&#x521D;&#x671F;&#x8A2D;&#x5B9A;&#x306E;&#x4F5C;&#x696D;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<h2 id="unity&#x306E;vr&#x8A2D;&#x5B9A;&#xFF08;xr&#xFF09;">Unity&#x306E;VR&#x8A2D;&#x5B9A;&#xFF08;XR&#xFF09;</h2>
-<p>&#x8FD1;&#x5E74;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x958B;&#x767A;&#x3067;&#x306F;&#x3001;VR&#x3001;AR&#x3001;MR&#x306A;&#x3069;&#x306E;&#x9700;&#x8981;&#x304C;&#x5897;&#x3048;&#x3066;&#x304A;&#x308A;&#x3001;Unity&#x3067;&#x306F;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x958B;&#x767A;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x6A5F;&#x80FD;&#x304C;&#x5099;&#x308F;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;Unity&#x3067;&#x3001;VR&#x5411;&#x3051;&#x306E;&#x958B;&#x767A;&#x6A5F;&#x80FD;&#x6709;&#x52B9;&#x3057;&#x3001;Meta Quest 2&#x3067;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x52D5;&#x4F5C;&#x3055;&#x305B;&#x308B;&#x305F;&#x3081;&#x306E;&#x4E0B;&#x6E96;&#x5099;&#x3092;&#x3057;&#x307E;&#x3059;&#x3002;&#x307E;&#x305A;&#x3001;&#x97EE;&#x5C71;&#x53CD;&#x5C04;&#x7089;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x958B;&#x3044;&#x305F;&#x72B6;&#x614B;&#x3067;&#x3001;Unity&#x306E;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x306E;<code>Windows&#xFF1E;Package Manager</code>&#x3092;&#x8868;&#x793A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<p><img src="img/vr7-1.png" alt=""></p>
-<p><code>Package Manager</code>&#x306F;&#x3001;Unity&#x306B;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3055;&#x307E;&#x3056;&#x307E;&#x306A;&#x6A5F;&#x80FD;&#x3084;&#x30A2;&#x30BB;&#x30C3;&#x30C8;&#x3092;&#x3001;&#x6709;&#x52B9;&#x306B;&#x3059;&#x308B;&#x304B;&#x7121;&#x52B9;&#x306B;&#x3059;&#x308B;&#x304B;&#x306A;&#x3069;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#x30EA;&#x30B9;&#x30C8;&#x306E;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x3067;&#x3059;&#x3002;&#x3053;&#x3053;&#x3067;&#x306F;&#x3001;VR&#x958B;&#x767A;&#x306E;&#x305F;&#x3081;&#x306B;<code>XR Plugin Management</code>&#x3092;&#x5C0E;&#x5165;&#x3057;&#x307E;&#x3059;&#x3002;<code>Package Manager</code>&#x3067;<code>Packeges: Unity Registry</code>&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x30EA;&#x30B9;&#x30C8;&#x304B;&#x3089;<code>XR Plugin Management</code>&#x3092;&#x8868;&#x793A;&#x3057;&#x3066;&#x3001;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x30FB;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3092;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;&#x8907;&#x6570;&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x304C;&#x3042;&#x308B;&#x3053;&#x3068;&#x3082;&#x3042;&#x308A;&#x307E;&#x3059;&#x304C;&#x3001;&#x5B89;&#x5B9A;&#x7248;&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3092;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x3092;&#x304A;&#x52E7;&#x3081;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<p>&#x6B21;&#x306B;&#x3001;<code>XR Plugin Management</code>&#x306E;&#x8A2D;&#x5B9A;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;Unity&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x304B;&#x3089;<code>Edit&#xFF1E;Project Settings</code>&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;&#x305D;&#x3057;&#x3066;&#x3001;&#x30EA;&#x30B9;&#x30C8;&#x304B;&#x3089;<code>XR Plug-in Management</code>&#x3092;&#x8868;&#x793A;&#x3057;&#x3001;&#x5DE6;&#x5074;&#x306E;&#x30BF;&#x30D6;&#x304B;&#x3089;Android&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;Android&#x306E;&#x9805;&#x76EE;&#x3092;&#x9078;&#x3073;&#x307E;&#x3059;&#x3002;<code>Plug-in Providers</code>&#x304B;&#x3089;<code>Oculus</code>&#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x5165;&#x308C;&#x3066;&#x6709;&#x52B9;&#x306B;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;&#x3053;&#x306E;&#x64CD;&#x4F5C;&#x3067;&#x3001;<code>Oculus XP Plugin</code>&#x304C;&#x5C0E;&#x5165;&#x3055;&#x308C;&#x307E;&#x3059;&#xFF08;<code>Package Manager</code>&#x3067;&#x78BA;&#x8A8D;&#x53EF;&#xFF09;&#x3002;</p>
-<h2 id="oculus-integration&#x306B;&#x3064;&#x3044;&#x3066;">Oculus Integration&#x306B;&#x3064;&#x3044;&#x3066;</h2>
-<p>WebGL&#x3067;&#x306F;&#x3001;&#x30DE;&#x30A6;&#x30B9;&#x3068;&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x3067;&#x64CD;&#x4F5C;&#x3059;&#x308B;&#x97EE;&#x5C71;&#x53CD;&#x5C04;&#x7089;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x4F5C;&#x308A;&#x307E;&#x3057;&#x305F;&#x3002;Meta Quest 2&#x3067;&#x306F;&#x3001;&#x4E21;&#x624B;&#x3067;&#x6301;&#x3064;&#x5C02;&#x7528;&#x306E;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x3092;&#x4F7F;&#x3046;&#x305F;&#x3081;&#x3001;&#x30DE;&#x30A6;&#x30B9;&#x3068;&#x30AD;&#x30FC;&#x30DC;&#x30FC;&#x30C9;&#x3092;&#x524D;&#x63D0;&#x3068;&#x3057;&#x305F;Unity&#x306E;<code>Standard Assets</code>&#x3067;&#x306F;&#x64CD;&#x4F5C;&#x304C;&#x3067;&#x304D;&#x307E;&#x305B;&#x3093;&#x3002;&#x3053;&#x306E;&#x305F;&#x3081;&#x3001;Facebook&#x793E;&#x304C;&#x914D;&#x5E03;&#x3057;&#x3066;&#x3044;&#x308B;&#x7121;&#x6599;&#x306E;Oculus&#x5411;&#x3051;&#x306E;&#x516C;&#x5F0F;&#x30A2;&#x30BB;&#x30C3;&#x30C8;<code>Oculus Integration</code>&#x3092;&#x5C0E;&#x5165;&#x3057;&#x307E;&#x3059;&#x3002;Oculus Integration&#x306B;&#x306F;&#x3001;Oculus&#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x4FBF;&#x5229;&#x306A;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306A;&#x3069;&#x304C;&#x53CE;&#x9332;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x30A2;&#x30BB;&#x30C3;&#x30C8;&#x3092;&#x5C0E;&#x5165;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x3001;Meta Quest 2&#x5411;&#x3051;&#x306E;&#x30AB;&#x30E1;&#x30E9;&#x3084;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x3092;&#x7C21;&#x5358;&#x306B;&#x5229;&#x7528;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
-<h2 id="oculus-integration&#x306E;&#x5C0E;&#x5165;&#x65B9;&#x6CD5;">Oculus Integration&#x306E;&#x5C0E;&#x5165;&#x65B9;&#x6CD5;</h2>
-<p>&#x30A6;&#x30A7;&#x30D6;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x304B;&#x3089;&#x3001;Unity&#x30A2;&#x30BB;&#x30C3;&#x30C8;&#x30B9;&#x30C8;&#x30A2;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3057;&#x3001;&#x30A2;&#x30BB;&#x30C3;&#x30C8;&#x30B9;&#x30C8;&#x30A2;&#x306E;&#x691C;&#x7D22;&#x304B;&#x3089;<code>Oculus Integration</code>&#x3092;&#x63A2;&#x3057;&#x307E;&#x3059;&#xFF08;&#x30D1;&#x30D6;&#x30EA;&#x30C3;&#x30B7;&#x30E3;&#x30FC;&#x540D;:Oculus&#xFF09;&#x3002;&#x30A2;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x5165;&#x624B;&#x30FB;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3068;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<code>Standard Assets</code>&#x306E;&#x5C0E;&#x5165;&#x3067;&#x89E3;&#x8AAC;&#x3057;&#x305F;&#x5185;&#x5BB9;&#x3068;&#x540C;&#x69D8;&#x306B;&#x3001;Unity&#x306E;<code>Package Manager</code>&#x306E;<code>Packages: MyAssets</code>&#x304B;&#x3089;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3068;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x306B;&#x306F;&#x6642;&#x9593;&#x304C;&#x304B;&#x304B;&#x308A;&#x307E;&#x3059;&#x306E;&#x3067;&#x3001;&#x3057;&#x3070;&#x3089;&#x304F;&#x304A;&#x5F85;&#x3061;&#x4E0B;&#x3055;&#x3044;&#x3002;Oculus Integration&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3068;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x304C;&#x6210;&#x529F;&#x3059;&#x308B;&#x3068;&#x3001;<code>Project</code>&#x30D3;&#x30E5;&#x30FC;&#x3092;&#x898B;&#x308B;&#x3053;&#x3068;&#x3067;&#x3001;Assets&#x5098;&#x4E0B;&#x306B;<code>Oculus Integration</code>&#x304C;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x305F;&#x3053;&#x3068;&#x304C;&#x308F;&#x304B;&#x308A;&#x307E;&#x3059;&#x3002;</p>
-<h2 id="android&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x306E;&#x8FFD;&#x52A0;">Android&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x306E;&#x8FFD;&#x52A0;</h2>
-<p>&#x306A;&#x304A;&#x3001;Meta Quest 2&#x306E;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x306F;&#x3001;Android&#x304C;&#x30D9;&#x30FC;&#x30B9;&#x3068;&#x306A;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x305F;&#x3081;&#x3001;Unity&#x3067;Meta Quest 2&#x5411;&#x3051;&#x306B;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x30D3;&#x30EB;&#x30C9;&#x3057;&#x3066;&#x52D5;&#x4F5C;&#x3055;&#x305B;&#x308B;&#x305F;&#x3081;&#x306B;&#x306F;&#x3001;Unity&#x306E;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x306B;Android Build Support&#xFF08;Android SDK&amp;NDK Tools&#x304A;&#x3088;&#x3073;OpenJDK&#xFF09;&#x304C;&#x5C0E;&#x5165;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x3089;&#x304C;&#x3001;Unity&#x306B;&#x5C0E;&#x5165;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x3001;Unity Hub&#x3092;&#x8D77;&#x52D5;&#x3057;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x9805;&#x76EE;&#x304B;&#x3089;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;&#x3053;&#x306E;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x3067;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x305F;Unity&#x306E;&#x8868;&#x793A;&#x7B87;&#x6240;&#x306E;<code>&#xFE19;</code>&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x304B;&#x3089;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x306A;&#x304A;&#x3001;&#x6700;&#x521D;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x6642;&#x306A;&#x3069;&#x306B;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x3092;&#x5C0E;&#x5165;&#x6E08;&#x307F;&#x306E;&#x5834;&#x5408;&#x306F;&#x3001;&#x6539;&#x3081;&#x3066;&#x306E;&#x3053;&#x306E;&#x64CD;&#x4F5C;&#x306F;&#x4E0D;&#x8981;&#x3067;&#x3059;&#x3002;</p>
-<p><img src="img/vr7-2.png" alt=""></p>
+                                <h1 id="meta-quest-2向けのunityの初期設定">Meta Quest 2向けのUnityの初期設定</h1>
+<h2 id="vrアプリの作成準備">VRアプリの作成準備</h2>
+<p>これまでに作成した韮山反射炉のアプリを、VRデバイスのMeta Quest 2で動作するようにUnityで初期設定の作業します。</p>
+<h2 id="unityのvr設定（xr）">UnityのVR設定（XR）</h2>
+<p>近年のアプリ開発では、VR、AR、MRなどの需要が増えており、Unityでは、これらのアプリを開発するための機能が備わっています。Unityで、VR向けの開発機能有効し、Meta Quest 2でアプリを動作させるための下準備をします。まず、韮山反射炉のアプリのプロジェクトを開いた状態で、Unityのメニューの<code>Windows＞Package Manager</code>を表示します。</p>
+<p><img src="img/vr7-1.png" alt></p>
+<p><code>Package Manager</code>は、Unityに追加するさまざまな機能やアセットを、有効にするか無効にするかなどを設定できるリストのウィンドウです。ここでは、VR開発のために<code>XR Plugin Management</code>を導入します。<code>Package Manager</code>で<code>Packeges: Unity Registry</code>を選択し、リストから<code>XR Plugin Management</code>を表示して、ダウンロード・インストールをして下さい。複数のバージョンがあることもありますが、安定版のバージョンを使うことをお勧めします。</p>
+<p>次に、<code>XR Plugin Management</code>の設定を行います。Unityメニューから<code>Edit＞Project Settings</code>を選択して下さい。そして、リストから<code>XR Plug-in Management</code>を表示し、左側のタブからAndroidアイコンをクリックし、Androidの項目を選びます。<code>Plug-in Providers</code>から<code>Oculus</code>にチェックを入れて有効にして下さい。この操作で、<code>Oculus XP Plugin</code>が導入されます（<code>Package Manager</code>で確認可）。</p>
+<h2 id="oculus-integrationについて">Oculus Integrationについて</h2>
+<p>WebGLでは、マウスとキーボードで操作する韮山反射炉のアプリを作りました。Meta Quest 2では、両手で持つ専用のコントローラを使うため、マウスとキーボードを前提としたUnityの<code>Standard Assets</code>では操作ができません。このため、Facebook社が配布している無料のOculus向けの公式アセット<code>Oculus Integration</code>を導入します。Oculus Integrationには、Oculusを利用するために便利なプログラムなどが収録されています。このアセットを導入することで、Meta Quest 2向けのカメラやコントローラを簡単に利用できます。</p>
+<h2 id="oculus-integrationの導入方法">Oculus Integrationの導入方法</h2>
+<p>ウェブブラウザから、Unityアセットストアにアクセスし、アセットストアの検索から<code>Oculus Integration</code>を探します（パブリッシャー名:Oculus）。アセットの入手・ダウンロードとインポートについては、<code>Standard Assets</code>の導入で解説した内容と同様に、Unityの<code>Package Manager</code>の<code>Packages: MyAssets</code>から行います。ダウンロードとインポートには時間がかかりますので、しばらくお待ち下さい。Oculus Integrationのダウンロードとインポートが成功すると、<code>Project</code>ビューを見ることで、Assets傘下に<code>Oculus Integration</code>が追加されたことがわかります。</p>
+<h2 id="androidモジュールの追加">Androidモジュールの追加</h2>
+<p>なお、Meta Quest 2のシステムは、Androidがベースとなっています。このため、UnityでMeta Quest 2向けにアプリをビルドして動作させるためには、UnityのモジュールにAndroid Build Support（Android SDK&amp;NDK ToolsおよびOpenJDK）が導入されている必要があります。これらが、Unityに導入されていない場合、Unity Hubを起動し、インストール項目からモジュールを追加して下さい。このウィンドウでのインストールしたUnityの表示箇所の<code>︙</code>アイコンからモジュールを追加できます。なお、最初のインストール時などに、これらのモジュールを導入済みの場合は、改めてのこの操作は不要です。</p>
+<p><img src="img/vr7-2.png" alt></p>
 
                                 
                                 </section>
@@ -3332,12 +3331,56 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Meta Quest 2向けのUnityの初期設定","level":"5.1.7","depth":2,"next":{"title":"歩行機能のプログラミング","level":"5.1.8","depth":2,"path":"materials/vr/vr8.md","ref":"./materials/vr/vr8.md","articles":[]},"previous":{"title":"VR開発の概要とMeta Quest 2の設定","level":"5.1.6","depth":2,"path":"materials/vr/vr6.md","ref":"./materials/vr/vr6.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/vr/vr7.md","mtime":"2022-06-16T17:11:11.655Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Meta Quest 2向けのUnityの初期設定","level":"5.1.7","depth":2,"next":{"title":"歩行機能のプログラミング","level":"5.1.8","depth":2,"path":"materials/vr/vr8.md","ref":"./materials/vr/vr8.md","articles":[]},"previous":{"title":"VR開発の概要とMeta Quest 2の設定","level":"5.1.6","depth":2,"path":"materials/vr/vr6.md","ref":"./materials/vr/vr6.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/vr/vr7.md","mtime":"2022-06-16T17:50:54.529Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
     

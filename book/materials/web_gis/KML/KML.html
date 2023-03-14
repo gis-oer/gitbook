@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>KML · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,54 +3273,54 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="kml&#x5165;&#x9580;">KML&#x5165;&#x9580;</h1>
-<p>&#x3000;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x4E3B;&#x306B;Google Earth&#x3084;Cesium&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;KML&#x30C7;&#x30FC;&#x30BF;&#xFF08;&#x70B9;&#x3001;&#x7DDA;&#x3001;&#x9762;&#xFF09;&#x306E;&#x4F5C;&#x6210;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;GoogleEarh&#x306E;&#x57FA;&#x672C;&#x7684;&#x306A;&#x64CD;&#x4F5C;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x3001;&#x3042;&#x308B;&#x7A0B;&#x5EA6;&#x306E;&#x7406;&#x89E3;&#x306E;&#x3042;&#x308B;&#x65B9;&#x304C;&#x5BFE;&#x8C61;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
-<p>&#x672C;&#x6559;&#x6750;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x969B;&#x306F;&#x3001;<a href="../../../policy.html">&#x5229;&#x7528;&#x898F;&#x7D04;</a>&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x3044;&#x305F;&#x3060;&#x304D;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x6761;&#x4EF6;&#x306B;&#x540C;&#x610F;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x306E;&#x307F;&#x3054;&#x5229;&#x7528;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
+                                <h1 id="kml入門">KML入門</h1>
+<p>　以下では、主にGoogle EarthやCesiumで利用できるKMLデータ（点、線、面）の作成手法について解説します。GoogleEarhの基本的な操作法について、ある程度の理解のある方が対象になります。</p>
+<p>本教材を使用する際は、<a href="../../../policy.html">利用規約</a>をご確認いただき、これらの条件に同意された場合にのみご利用下さい。</p>
 <h2 id="menu"><strong>Menu</strong></h2>
 <ul>
-<li><a href="#kml&#x3068;&#x306F;">KML&#x3068;&#x306F;</a></li>
-<li><a href="#&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;&#x4F5C;&#x6210;">&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;&#x4F5C;&#x6210;</a></li>
-<li><a href="#&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x4F5C;&#x6210;">&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x4F5C;&#x6210;</a></li>
-<li><a href="#&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x306E;&#x4F5C;&#x6210;">&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x306E;&#x4F5C;&#x6210;</a></li>
+<li><a href="#kmlとは">KMLとは</a></li>
+<li><a href="#ポイントの作成">ポイントの作成</a></li>
+<li><a href="#ラインの作成">ラインの作成</a></li>
+<li><a href="#ポリゴンの作成">ポリゴンの作成</a></li>
 </ul>
-<h2 id="kml&#x3068;&#x306F;">KML&#x3068;&#x306F;</h2>
-<p> KML(keyhole Markup language)&#x306F;&#x3001;3&#x6B21;&#x5143;&#x306E;&#x5730;&#x7406;&#x7A7A;&#x9593;&#x60C5;&#x5831;&#x3092;&#x4F5C;&#x6210;&#x3001;&#x8868;&#x793A;&#x3059;&#x308B;&#x969B;&#x306B;&#x7528;&#x3044;&#x3089;&#x308C;&#x307E;&#x3059;&#x3002;Google Earth&#xFF08;&#x65E7;&#x540D; Keyhole&#xFF09;&#x306A;&#x3069;&#x3067;&#x3001;&#x5730;&#x7406;&#x7A7A;&#x9593;&#x60C5;&#x5831;&#x306E;&#x591A;&#x5F69;&#x306A;&#x8868;&#x73FE;&#x304C;&#x53EF;&#x80FD;&#x3067;&#x3059;&#x3002;XML&#x3067;&#x8A18;&#x8FF0;&#x3057;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x62E1;&#x5F35;&#x5B50;&#x306F;&#x3001;.kml&#x3068;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;&#x307E;&#x305F;&#x3001;ZIP&#x5F62;&#x5F0F;&#x3067;&#x5727;&#x7E2E;&#x3057;&#x305F;.kmz(doc.kml&#x3068;&#x305D;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x95A2;&#x9023;&#x3059;&#x308B;&#x30C7;&#x30FC;&#x30BF;)&#x3068;&#x3044;&#x3046;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p>
-<p><a href="KML.html#menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;&#x4F5C;&#x6210;">&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;&#x4F5C;&#x6210;</h2>
-<p>&#x4EE5;&#x4E0B;&#x306F;&#x3001;&#x6771;&#x4EAC;&#x30B9;&#x30AB;&#x30A4;&#x30C4;&#x30EA;&#x30FC;&#x3068;&#x6771;&#x4EAC;&#x30BF;&#x30EF;&#x30FC;&#x306E;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3092;&#x4FDD;&#x5B58;(&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3057;.kml&#x3067;&#x4FDD;&#x5B58;)&#x3057;Google Earth&#x3084;Cesium&#x3067;&#x8868;&#x793A;&#x3059;&#x308B;&#x3068;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x898B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x3092;&#x53C2;&#x8003;&#x306B;&#x30AA;&#x30EA;&#x30B8;&#x30CA;&#x30EB;&#x306E;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x306B;&#x6311;&#x6226;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<h2 id="kmlとは">KMLとは</h2>
+<p> KML(keyhole Markup language)は、3次元の地理空間情報を作成、表示する際に用いられます。Google Earth（旧名 Keyhole）などで、地理空間情報の多彩な表現が可能です。XMLで記述し作成されたファイルの拡張子は、.kmlとなります。また、ZIP形式で圧縮した.kmz(doc.kmlとそのファイルに関連するデータ)というファイルがあります。</p>
+<p><a href="KML.html#menu">▲メニューへもどる</a></p>
+<h2 id="ポイントの作成">ポイントの作成</h2>
+<p>以下は、東京スカイツリーと東京タワーのポイント作成したものです。以下のテキストを保存(テキストをコピーし.kmlで保存)しGoogle EarthやCesiumで表示するとデータを見ることができます。以下を参考にオリジナルのポイントデータを作成に挑戦してください。</p>
 <pre><code class="lang-XML">
-<span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">kml</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.opengis.net/kml/2.2&quot;</span>&gt;</span>
 
-<span class="hljs-comment">&lt;!--&#x2191;&#x306E;&#x6587;&#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x3066;&#x8CBC;&#x308A;&#x4ED8;&#x3051;&#x308B;--&gt;</span>
+<span class="hljs-comment">&lt;!--↑の文をコピーして貼り付ける--&gt;</span>
 
-<span class="hljs-comment">&lt;!--&#x2193;KML&#x3092;&#x8A18;&#x8FF0;&#x3057;&#x3066;&#x3044;&#x304F;--&gt;</span>
+<span class="hljs-comment">&lt;!--↓KMLを記述していく--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">Document</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>&#x6771;&#x4EAC;&#x30B9;&#x30AB;&#x30A4;&#x30C4;&#x30EA;&#x30FC;&#x3068;&#x6771;&#x4EAC;&#x30BF;&#x30EF;&#x30FC;<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span> <span class="hljs-comment">&lt;!--&#x30C7;&#x30FC;&#x30BF;&#x540D;&#x3092;&#x8A18;&#x5165;--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>東京スカイツリーと東京タワー<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span> <span class="hljs-comment">&lt;!--データ名を記入--&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">open</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">open</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">StyleMap</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;m_ylw-pushpin&quot;</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x306E;&#x6307;&#x5B9A;&#x5148;&#x3092;&#x8A18;&#x8FF0;--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">StyleMap</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;m_ylw-pushpin&quot;</span>&gt;</span><span class="hljs-comment">&lt;!--スタイルの指定先を記述--&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Pair</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">key</span>&gt;</span>normal<span class="hljs-tag">&lt;/<span class="hljs-name">key</span>&gt;</span><span class="hljs-comment">&lt;!--&#x666E;&#x6BB5;&#x306E;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x306E;&#x6307;&#x5B9A;&#x5148;&#x3092;&#x8A18;&#x8FF0;--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">key</span>&gt;</span>normal<span class="hljs-tag">&lt;/<span class="hljs-name">key</span>&gt;</span><span class="hljs-comment">&lt;!--普段のスタイルの指定先を記述--&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">styleUrl</span>&gt;</span>#s_ylw-pushpin<span class="hljs-tag">&lt;/<span class="hljs-name">styleUrl</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Pair</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Pair</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">key</span>&gt;</span>highlight<span class="hljs-tag">&lt;/<span class="hljs-name">key</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30DE;&#x30A6;&#x30B9;&#x30AA;&#x30FC;&#x30D0;&#x30FC;&#x3057;&#x305F;&#x3068;&#x304D;&#x306E;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x306E;&#x6307;&#x5B9A;&#x5148;&#x3092;&#x8A18;&#x8FF0;--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">key</span>&gt;</span>highlight<span class="hljs-tag">&lt;/<span class="hljs-name">key</span>&gt;</span><span class="hljs-comment">&lt;!--マウスオーバーしたときのスタイルの指定先を記述--&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">styleUrl</span>&gt;</span>#s_ylw-pushpin_hl<span class="hljs-tag">&lt;/<span class="hljs-name">styleUrl</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Pair</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">StyleMap</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">Style</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;s_ylw-pushpin_hl&quot;</span>&gt;</span><span class="xml"><span class="hljs-comment">&lt;!--&#x30DE;&#x30A6;&#x30B9;&#x30AA;&#x30FC;&#x30D0;&#x30FC;&#x3057;&#x305F;&#x3068;&#x304D;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x306E;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x8A18;&#x8FF0;--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Style</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;s_ylw-pushpin_hl&quot;</span>&gt;</span><span class="xml"><span class="hljs-comment">&lt;!--マウスオーバーしたときのアイコンのスタイルを記述--&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">IconStyle</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">scale</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">scale</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x306E;&#x5927;&#x304D;&#x3055;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30A2;&#x30A4;&#x30B3;&#x30F3;URL&#x3092;&#x6307;&#x5B9A;&#x3000;&#x4EE5;&#x4E0B;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308C;&#x3070;&#x3001;&#x30AA;&#x30EA;&#x30B8;&#x30CA;&#x30EB;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x306B;&#x306A;&#x308B;--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">scale</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">scale</span>&gt;</span><span class="hljs-comment">&lt;!--アイコンの大きさ--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span>&gt;</span><span class="hljs-comment">&lt;!--アイコンURLを指定　以下を変更すれば、オリジナルのアイコンになる--&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">href</span>&gt;</span>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png<span class="hljs-tag">&lt;/<span class="hljs-name">href</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">Icon</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">hotSpot</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;20&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;2&quot;</span> <span class="hljs-attr">xunits</span>=<span class="hljs-string">&quot;pixels&quot;</span> <span class="hljs-attr">yunits</span>=<span class="hljs-string">&quot;pixels&quot;</span>/&gt;</span><span class="hljs-comment">&lt;!--&#x5B9F;&#x969B;&#x306E;&#x5730;&#x70B9;&#x3068;&#x3042;&#x3046;&#x3088;&#x3046;&#x306B;&#x4F4D;&#x7F6E;&#x3092;&#x305A;&#x3089;&#x3057;&#x3066;&#x8868;&#x793A;--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">hotSpot</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;20&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;2&quot;</span> <span class="hljs-attr">xunits</span>=<span class="hljs-string">&quot;pixels&quot;</span> <span class="hljs-attr">yunits</span>=<span class="hljs-string">&quot;pixels&quot;</span>/&gt;</span><span class="hljs-comment">&lt;!--実際の地点とあうように位置をずらして表示--&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">IconStyle</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">LineStyle</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x306B;&#x3064;&#x306A;&#x3050;&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x8272;&#x3092;&#x6307;&#x5B9A;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>ff7faaff<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30AA;&#x30EC;&#x30F3;&#x30B8;&#x7CFB;&#x306E;&#x8272;&#x3092;&#x6307;&#x5B9A;--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">LineStyle</span>&gt;</span><span class="hljs-comment">&lt;!--アイコンにつなぐラインの色を指定--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>ff7faaff<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span><span class="hljs-comment">&lt;!--オレンジ系の色を指定--&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">LineStyle</span>&gt;</span>
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">Style</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">Style</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;s_ylw-pushpin&quot;</span>&gt;</span><span class="xml"><span class="hljs-comment">&lt;!--&#x666E;&#x6BB5;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x306E;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x8A18;&#x8FF0;--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Style</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;s_ylw-pushpin&quot;</span>&gt;</span><span class="xml"><span class="hljs-comment">&lt;!--普段のアイコンのスタイルを記述--&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">IconStyle</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">scale</span>&gt;</span>1.1<span class="hljs-tag">&lt;/<span class="hljs-name">scale</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span>&gt;</span>
@@ -3334,41 +3333,41 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">LineStyle</span>&gt;</span>
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">Style</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">Placemark</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>&#x6771;&#x4EAC;&#x30B9;&#x30AB;&#x30A4;&#x30C4;&#x30EA;&#x30FC;<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x540D;&#x524D;--&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>&#x3053;&#x308C;&#x306F;&#x3001;&#x6771;&#x4EAC;&#x30B9;&#x30AB;&#x30A4;&#x30C4;&#x30EA;&#x30FC;&#x3067;&#x3059;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span><span class="hljs-comment">&lt;!--&#x8AAC;&#x660E;&#x6587;(html&#x3067;&#x8A18;&#x8FF0;&#x3067;&#x304D;&#x308B;)--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>東京スカイツリー<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><span class="hljs-comment">&lt;!--データの名前--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>これは、東京スカイツリーです。<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span><span class="hljs-comment">&lt;!--説明文(htmlで記述できる)--&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">LookAt</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">longitude</span>&gt;</span>139.8105736546319<span class="hljs-tag">&lt;/<span class="hljs-name">longitude</span>&gt;</span><span class="hljs-comment">&lt;!--&#x7D4C;&#x5EA6;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">latitude</span>&gt;</span>35.70869047827442<span class="hljs-tag">&lt;/<span class="hljs-name">latitude</span>&gt;</span><span class="hljs-comment">&lt;!--&#x7DEF;&#x5EA6;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">altitude</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">altitude</span>&gt;</span><span class="hljs-comment">&lt;!--&#x6A19;&#x9AD8;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">heading</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">heading</span>&gt;</span><span class="hljs-comment">&lt;!--&#x6A5F;&#x9996;&#x65B9;&#x4F4D;&#x3001;&#x5317;&#x304C;0&#xB0;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">tilt</span>&gt;</span>53.37<span class="hljs-tag">&lt;/<span class="hljs-name">tilt</span>&gt;</span><span class="hljs-comment">&lt;!--&#x50BE;&#x304D;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">range</span>&gt;</span>2164.7<span class="hljs-tag">&lt;/<span class="hljs-name">range</span>&gt;</span><span class="hljs-comment">&lt;!--&#x7BC4;&#x56F2;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">gx:altitudeMode</span>&gt;</span>relativeToSeaFloor<span class="hljs-tag">&lt;/<span class="hljs-name">gx:altitudeMode</span>&gt;</span><span class="hljs-comment">&lt;!--&#x57FA;&#x6E96;&#x306F;&#x6D77;&#x9762;&#x3068;&#x3059;&#x308B;--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">longitude</span>&gt;</span>139.8105736546319<span class="hljs-tag">&lt;/<span class="hljs-name">longitude</span>&gt;</span><span class="hljs-comment">&lt;!--経度--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">latitude</span>&gt;</span>35.70869047827442<span class="hljs-tag">&lt;/<span class="hljs-name">latitude</span>&gt;</span><span class="hljs-comment">&lt;!--緯度--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">altitude</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">altitude</span>&gt;</span><span class="hljs-comment">&lt;!--標高--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">heading</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">heading</span>&gt;</span><span class="hljs-comment">&lt;!--機首方位、北が0°--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tilt</span>&gt;</span>53.37<span class="hljs-tag">&lt;/<span class="hljs-name">tilt</span>&gt;</span><span class="hljs-comment">&lt;!--傾き--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">range</span>&gt;</span>2164.7<span class="hljs-tag">&lt;/<span class="hljs-name">range</span>&gt;</span><span class="hljs-comment">&lt;!--範囲--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">gx:altitudeMode</span>&gt;</span>relativeToSeaFloor<span class="hljs-tag">&lt;/<span class="hljs-name">gx:altitudeMode</span>&gt;</span><span class="hljs-comment">&lt;!--基準は海面とする--&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">LookAt</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">styleUrl</span>&gt;</span>#m_ylw-pushpin<span class="hljs-tag">&lt;/<span class="hljs-name">styleUrl</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Point</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">extrude</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">extrude</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;&#x7D4C;&#x7DEF;&#x5EA6;&#x3068;&#x6A19;&#x9AD8;&#x3092;&#x8A18;&#x8FF0;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">altitudeMode</span>&gt;</span>relativeToGround<span class="hljs-tag">&lt;/<span class="hljs-name">altitudeMode</span>&gt;</span><span class="hljs-comment">&lt;!--&#x5730;&#x9762;&#x3092;&#x57FA;&#x6E96;&#x306B;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x914D;&#x7F6E;--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">extrude</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">extrude</span>&gt;</span><span class="hljs-comment">&lt;!--ポイントの経緯度と標高を記述--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">altitudeMode</span>&gt;</span>relativeToGround<span class="hljs-tag">&lt;/<span class="hljs-name">altitudeMode</span>&gt;</span><span class="hljs-comment">&lt;!--地面を基準にアイコンを配置--&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">gx:drawOrder</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">gx:drawOrder</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">coordinates</span>&gt;</span>139.8107252956902,35.71002945292051,634<span class="hljs-tag">&lt;/<span class="hljs-name">coordinates</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Point</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">Placemark</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">Placemark</span>&gt;</span><span class="hljs-comment">&lt;!--&#x4E00;&#x3064;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x8907;&#x6570;&#x306E;Place Mark&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3053;&#x306E;&#x4E0B;&#x306B;&#x8A18;&#x8FF0;--&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>&#x6771;&#x4EAC;&#x30BF;&#x30EF;&#x30FC;<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x540D;&#x524D;--&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>&#x3053;&#x308C;&#x306F;&#x3001;&#x6771;&#x4EAC;&#x30BF;&#x30EF;&#x30FC;&#x3067;&#x3059;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Placemark</span>&gt;</span><span class="hljs-comment">&lt;!--一つのファイルに複数のPlace Markを作成する場合はこの下に記述--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>東京タワー<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><span class="hljs-comment">&lt;!--データの名前--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>これは、東京タワーです。<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">LookAt</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">longitude</span>&gt;</span>139.745476<span class="hljs-tag">&lt;/<span class="hljs-name">longitude</span>&gt;</span><span class="hljs-comment">&lt;!--&#x7D4C;&#x5EA6;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">latitude</span>&gt;</span>35.658537<span class="hljs-tag">&lt;/<span class="hljs-name">latitude</span>&gt;</span><span class="hljs-comment">&lt;!--&#x7DEF;&#x5EA6;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">altitude</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">altitude</span>&gt;</span><span class="hljs-comment">&lt;!--&#x6A19;&#x9AD8;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">heading</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">heading</span>&gt;</span><span class="hljs-comment">&lt;!--&#x6A5F;&#x9996;&#x65B9;&#x4F4D;&#x3001;&#x5317;&#x304C;0&#xB0;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">tilt</span>&gt;</span>53.37<span class="hljs-tag">&lt;/<span class="hljs-name">tilt</span>&gt;</span><span class="hljs-comment">&lt;!--&#x50BE;&#x304D;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">range</span>&gt;</span>2164.7<span class="hljs-tag">&lt;/<span class="hljs-name">range</span>&gt;</span><span class="hljs-comment">&lt;!--&#x7BC4;&#x56F2;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">gx:altitudeMode</span>&gt;</span>relativeToSeaFloor<span class="hljs-tag">&lt;/<span class="hljs-name">gx:altitudeMode</span>&gt;</span><span class="hljs-comment">&lt;!--&#x57FA;&#x6E96;&#x306F;&#x6D77;&#x9762;&#x3068;&#x3059;&#x308B;--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">longitude</span>&gt;</span>139.745476<span class="hljs-tag">&lt;/<span class="hljs-name">longitude</span>&gt;</span><span class="hljs-comment">&lt;!--経度--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">latitude</span>&gt;</span>35.658537<span class="hljs-tag">&lt;/<span class="hljs-name">latitude</span>&gt;</span><span class="hljs-comment">&lt;!--緯度--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">altitude</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">altitude</span>&gt;</span><span class="hljs-comment">&lt;!--標高--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">heading</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">heading</span>&gt;</span><span class="hljs-comment">&lt;!--機首方位、北が0°--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tilt</span>&gt;</span>53.37<span class="hljs-tag">&lt;/<span class="hljs-name">tilt</span>&gt;</span><span class="hljs-comment">&lt;!--傾き--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">range</span>&gt;</span>2164.7<span class="hljs-tag">&lt;/<span class="hljs-name">range</span>&gt;</span><span class="hljs-comment">&lt;!--範囲--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">gx:altitudeMode</span>&gt;</span>relativeToSeaFloor<span class="hljs-tag">&lt;/<span class="hljs-name">gx:altitudeMode</span>&gt;</span><span class="hljs-comment">&lt;!--基準は海面とする--&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">LookAt</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">styleUrl</span>&gt;</span>#m_ylw-pushpin<span class="hljs-tag">&lt;/<span class="hljs-name">styleUrl</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Point</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">extrude</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">extrude</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;&#x7D4C;&#x7DEF;&#x5EA6;&#x3068;&#x6A19;&#x9AD8;&#x3092;&#x8A18;&#x8FF0;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">altitudeMode</span>&gt;</span>relativeToGround<span class="hljs-tag">&lt;/<span class="hljs-name">altitudeMode</span>&gt;</span><span class="hljs-comment">&lt;!--&#x5730;&#x9762;&#x3092;&#x57FA;&#x6E96;&#x306B;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x914D;&#x7F6E;--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">extrude</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">extrude</span>&gt;</span><span class="hljs-comment">&lt;!--ポイントの経緯度と標高を記述--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">altitudeMode</span>&gt;</span>relativeToGround<span class="hljs-tag">&lt;/<span class="hljs-name">altitudeMode</span>&gt;</span><span class="hljs-comment">&lt;!--地面を基準にアイコンを配置--&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">gx:drawOrder</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">gx:drawOrder</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">coordinates</span>&gt;</span>139.745476,35.658537,333<span class="hljs-tag">&lt;/<span class="hljs-name">coordinates</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Point</span>&gt;</span>
@@ -3376,26 +3375,26 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">Document</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">kml</span>&gt;</span>
 </code></pre>
-<p>&#x4E0A;&#x8A18;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x8868;&#x793A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x203B; <a href="http://cesiumjs.org/Cesium/Build/Apps/CesiumViewer/index.html" target="_blank">Cesium viewer</a>&#x306B;&#x30C9;&#x30E9;&#x30C3;&#x30B0;&#x30A2;&#x30F3;&#x30C9;&#x30C9;&#x30ED;&#x30C3;&#x30D7;&#x3057;&#x3066;&#x8868;&#x793A;&#x3002;</p>
+<p>上記で作成したデータは以下のように表示できます。※ <a href="http://cesiumjs.org/Cesium/Build/Apps/CesiumViewer/index.html" target="_blank">Cesium viewer</a>にドラッグアンドドロップして表示。</p>
 <p><img src="pic/kml_pic1.png" alt="kml"></p>
-<p><a href="KML.html#menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x4F5C;&#x6210;">&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x4F5C;&#x6210;</h2>
-<p>&#x4EE5;&#x4E0B;&#x306F;&#x3001;&#x6771;&#x4EAC;&#x3068;&#x30CB;&#x30E5;&#x30FC;&#x30E8;&#x30FC;&#x30AF;&#x3092;&#x7D50;&#x3076;&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3092;&#x4FDD;&#x5B58;(&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3057;.kml&#x3067;&#x4FDD;&#x5B58;)&#x3057;Google Earth&#x3084;Cesium&#x3067;&#x8868;&#x793A;&#x3059;&#x308B;&#x3068;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x898B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x3092;&#x53C2;&#x8003;&#x306B;&#x30AA;&#x30EA;&#x30B8;&#x30CA;&#x30EB;&#x306E;&#x30E9;&#x30A4;&#x30F3;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x306B;&#x6311;&#x6226;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p><a href="KML.html#menu">▲メニューへもどる</a></p>
+<h2 id="ラインの作成">ラインの作成</h2>
+<p>以下は、東京とニューヨークを結ぶラインを作成したものです。以下のテキストを保存(テキストをコピーし.kmlで保存)しGoogle EarthやCesiumで表示するとデータを見ることができます。以下を参考にオリジナルのラインデータを作成に挑戦してください。</p>
 <pre><code class="lang-XML">
-<span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">kml</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.opengis.net/kml/2.2&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">Document</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>&#x6771;&#x4EAC;-NY<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>東京-NY<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">open</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">open</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">Style</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;line&quot;</span>&gt;</span><span class="xml">
-        <span class="hljs-tag">&lt;<span class="hljs-name">LineStyle</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x6307;&#x5B9A;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>ff2EF7FE<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span><span class="hljs-comment">&lt;!--&#x6700;&#x521D;&#x306E;2&#x6841;80(50%&#x900F;&#x904E;)&#x3067;&#x900F;&#x904E;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x3001;&#x5F8C;&#x308D;&#x306E;16&#x9032;&#x6570;&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x3067;2&#x6841;&#x305A;&#x3064;&#x3067;&#x305D;&#x308C;&#x305E;&#x308C;RGB(BGR&#x306E;&#x9806;)&#x3092;&#x793A;&#x3059;&#x3002;--&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">width</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">width</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30E9;&#x30A4;&#x30F3;&#x5E45;&#x3092;&#x6307;&#x5B9A;--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">LineStyle</span>&gt;</span><span class="hljs-comment">&lt;!--ラインのスタイルを指定--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>ff2EF7FE<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span><span class="hljs-comment">&lt;!--最初の2桁80(50%透過)で透過を指定し、後ろの16進数のカラーで2桁ずつでそれぞれRGB(BGRの順)を示す。--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">width</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">width</span>&gt;</span><span class="hljs-comment">&lt;!--ライン幅を指定--&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">LineStyle</span>&gt;</span>
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">Style</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">Placemark</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>tokyo-newyork<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>&#x6771;&#x4EAC;&#x3068;&#x30CB;&#x30E5;&#x30FC;&#x30E8;&#x30FC;&#x30AF;&#x3092;&#x3064;&#x306A;&#x3050;&#x7DDA;&#x3067;&#x3059;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>東京とニューヨークをつなぐ線です。<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">LookAt</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">longitude</span>&gt;</span>-152.8348568845707<span class="hljs-tag">&lt;/<span class="hljs-name">longitude</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">latitude</span>&gt;</span>41.8452340473708<span class="hljs-tag">&lt;/<span class="hljs-name">latitude</span>&gt;</span>
@@ -3405,11 +3404,11 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">range</span>&gt;</span>9465727.599999348<span class="hljs-tag">&lt;/<span class="hljs-name">range</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">gx:altitudeMode</span>&gt;</span>relativeToSeaFloor<span class="hljs-tag">&lt;/<span class="hljs-name">gx:altitudeMode</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">LookAt</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">styleUrl</span>&gt;</span>#line<span class="hljs-tag">&lt;/<span class="hljs-name">styleUrl</span>&gt;</span><span class="hljs-comment">&lt;!--line&#x306E;id&#x3092;&#x4F7F;&#x3063;&#x3066;&#x30B9;&#x30BF;&#x30A4;&#x30EA;&#x30F3;&#x30B0;--&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">LineString</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30E9;&#x30A4;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">styleUrl</span>&gt;</span>#line<span class="hljs-tag">&lt;/<span class="hljs-name">styleUrl</span>&gt;</span><span class="hljs-comment">&lt;!--lineのidを使ってスタイリング--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">LineString</span>&gt;</span><span class="hljs-comment">&lt;!--ラインを作成する。--&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">tessellate</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">tessellate</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">coordinates</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x9802;&#x70B9;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;--&gt;</span>
-                139.7321,35.7085,0<span class="hljs-comment">&lt;!--&#x7D4C;&#x7DEF;&#x5EA6;&#x3068;&#x6A19;&#x9AD8;--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">coordinates</span>&gt;</span><span class="hljs-comment">&lt;!--ラインの頂点を作成する。--&gt;</span>
+                139.7321,35.7085,0<span class="hljs-comment">&lt;!--経緯度と標高--&gt;</span>
                 285.9941,40.7121,0
             <span class="hljs-tag">&lt;/<span class="hljs-name">coordinates</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">LineString</span>&gt;</span>
@@ -3417,16 +3416,16 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">Document</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">kml</span>&gt;</span>
 </code></pre>
-<p>&#x4E0A;&#x8A18;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x8868;&#x793A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x203B; <a href="http://cesiumjs.org/Cesium/Build/Apps/CesiumViewer/index.html" target="_blank">Cesium viewer</a>&#x306B;&#x30C9;&#x30E9;&#x30C3;&#x30B0;&#x30A2;&#x30F3;&#x30C9;&#x30C9;&#x30ED;&#x30C3;&#x30D7;&#x3057;&#x3066;&#x8868;&#x793A;&#x3002;</p>
+<p>上記で作成したデータは以下のように表示できます。※ <a href="http://cesiumjs.org/Cesium/Build/Apps/CesiumViewer/index.html" target="_blank">Cesium viewer</a>にドラッグアンドドロップして表示。</p>
 <p><img src="pic/kml_pic2.png" alt="kml"></p>
-<p><a href="KML.html#menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x4F5C;&#x6210;">&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x4F5C;&#x6210;</h2>
-<p>&#x4EE5;&#x4E0B;&#x306F;&#x3001;&#x81EA;&#x7531;&#x306E;&#x5973;&#x795E;&#x5468;&#x8FBA;&#x3092;&#x30C8;&#x30EC;&#x30FC;&#x30B9;&#x3057;&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3092;&#x4FDD;&#x5B58;(&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3057;.kml&#x3067;&#x4FDD;&#x5B58;)&#x3057;Google Earth&#x3084;Cesium&#x3067;&#x8868;&#x793A;&#x3059;&#x308B;&#x3068;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x898B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x3092;&#x53C2;&#x8003;&#x306B;&#x30AA;&#x30EA;&#x30B8;&#x30CA;&#x30EB;&#x306E;&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x306B;&#x6311;&#x6226;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p><a href="KML.html#menu">▲メニューへもどる</a></p>
+<h2 id="ポリゴンのデータの作成">ポリゴンのデータの作成</h2>
+<p>以下は、自由の女神周辺をトレースしポリゴンを作成したものです。以下のテキストを保存(テキストをコピーし.kmlで保存)しGoogle EarthやCesiumで表示するとデータを見ることができます。以下を参考にオリジナルのポリゴンデータを作成に挑戦してください。</p>
 <pre><code class="lang-XML">
-<span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">kml</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.opengis.net/kml/2.2&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">Document</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>&#x81EA;&#x7531;&#x306E;&#x5973;&#x795E;<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>自由の女神<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">open</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">open</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">Style</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;polygon&quot;</span>&gt;</span><span class="xml">
         <span class="hljs-tag">&lt;<span class="hljs-name">PolyStyle</span>&gt;</span>
@@ -3435,16 +3434,16 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">PolyStyle</span>&gt;</span>
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">Style</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">Placemark</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>&#x81EA;&#x7531;&#x306E;&#x5973;&#x795E;<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>&#x3053;&#x308C;&#x304C;&#x81EA;&#x7531;&#x306E;&#x5973;&#x795E;&#x3067;&#x3059;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>自由の女神<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>これが自由の女神です。<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">styleUrl</span>&gt;</span>#polygon<span class="hljs-tag">&lt;/<span class="hljs-name">styleUrl</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Polygon</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x3092;&#x4F5C;&#x6210;--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Polygon</span>&gt;</span><span class="hljs-comment">&lt;!--ポリゴンを作成--&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">tessellate</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">tessellate</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">altitudeMode</span>&gt;</span>relativeToGround<span class="hljs-tag">&lt;/<span class="hljs-name">altitudeMode</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">outerBoundaryIs</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">LinearRing</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">coordinates</span>&gt;</span><span class="hljs-comment">&lt;!--&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x306E;&#x9802;&#x70B9;&#x3092;&#x4F5C;&#x6210;&#x3001;&#x7D4C;&#x7DEF;&#x5EA6;&#x6A19;&#x9AD8;&#x306E;&#x9806;&#x3067;&#x6307;&#x5B9A;--&gt;</span>
-                    -74.04499752154071,40.6892150948117,10 -74.04508902345016,40.68910500277669,10 -74.04490260924321,40.6890712241014,10 -74.0449452584661,40.68893225527901,10 -74.04477238706467,40.68895047011316,10 -74.04464566372177,40.68880536249563,10 -74.04450250063262,40.68890404524074,10 -74.04419793103934,40.68885309495814,10 -74.04413961652038,40.68907601900729,10 -74.04396055940559,40.68913292018742,10 -74.04409031001904,40.68927640684932,10 -74.04400857576606,40.68939908454744,10 -74.04420075240583,40.6894184734436,10 -74.04416169767181,40.68956379739579,10 -74.04432500067969,40.68953810849519,10 -74.0444281044832,40.68966015661734,10 -74.04459322088222,40.68959044901225,10 -74.04474235627428,40.68965401293135,10 -74.04477271590068,40.68955008337813,10 -74.04482177267657,40.68952193819843,10 -74.04495797510631,40.68954520507073,10 -74.0449279538866,40.68941648207719,10 -74.04509679444885,40.68933795131525,10 -74.04499752154071,40.6892150948117,10 <span class="hljs-comment">&lt;!--&#x59CB;&#x70B9;&#x3068;&#x540C;&#x3058;&#x7D4C;&#x7DEF;&#x5EA6;&#x6A19;&#x9AD8;--&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">coordinates</span>&gt;</span><span class="hljs-comment">&lt;!--ポリゴンの頂点を作成、経緯度標高の順で指定--&gt;</span>
+                    -74.04499752154071,40.6892150948117,10 -74.04508902345016,40.68910500277669,10 -74.04490260924321,40.6890712241014,10 -74.0449452584661,40.68893225527901,10 -74.04477238706467,40.68895047011316,10 -74.04464566372177,40.68880536249563,10 -74.04450250063262,40.68890404524074,10 -74.04419793103934,40.68885309495814,10 -74.04413961652038,40.68907601900729,10 -74.04396055940559,40.68913292018742,10 -74.04409031001904,40.68927640684932,10 -74.04400857576606,40.68939908454744,10 -74.04420075240583,40.6894184734436,10 -74.04416169767181,40.68956379739579,10 -74.04432500067969,40.68953810849519,10 -74.0444281044832,40.68966015661734,10 -74.04459322088222,40.68959044901225,10 -74.04474235627428,40.68965401293135,10 -74.04477271590068,40.68955008337813,10 -74.04482177267657,40.68952193819843,10 -74.04495797510631,40.68954520507073,10 -74.0449279538866,40.68941648207719,10 -74.04509679444885,40.68933795131525,10 -74.04499752154071,40.6892150948117,10 <span class="hljs-comment">&lt;!--始点と同じ経緯度標高--&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">coordinates</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">LinearRing</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">outerBoundaryIs</span>&gt;</span>
@@ -3453,11 +3452,11 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">Document</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">kml</span>&gt;</span>
 </code></pre>
-<p>&#x4E0A;&#x8A18;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x8868;&#x793A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x203B; <a href="http://cesiumjs.org/Cesium/Build/Apps/CesiumViewer/index.html" target="_blank">Cesium viewer</a>&#x306B;&#x30C9;&#x30E9;&#x30C3;&#x30B0;&#x30A2;&#x30F3;&#x30C9;&#x30C9;&#x30ED;&#x30C3;&#x30D7;&#x3057;&#x3066;&#x8868;&#x793A;&#x3002;</p>
+<p>上記で作成したデータは以下のように表示できます。※ <a href="http://cesiumjs.org/Cesium/Build/Apps/CesiumViewer/index.html" target="_blank">Cesium viewer</a>にドラッグアンドドロップして表示。</p>
 <p><img src="pic/kml_pic3.png" alt="kml"></p>
-<p><a href="KML.html#menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h4 id="&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;">&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;</h4>
-<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x30AD;&#x30E3;&#x30D7;&#x30C1;&#x30E3;&#x753B;&#x50CF;&#x306E;&#x51FA;&#x5178;&#x3084;&#x30AF;&#x30EC;&#x30B8;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../../license.html">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;</a>&#x3088;&#x308A;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p><a href="KML.html#menu">▲メニューへもどる</a></p>
+<h4 id="ライセンスに関する注意事項">ライセンスに関する注意事項</h4>
+<p>本教材で利用しているキャプチャ画像の出典やクレジットについては、<a href="../../license.html">その他のライセンスについて</a>よりご確認ください。</p>
 
                                 
                                 </section>
@@ -3501,12 +3500,56 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"KML","level":"3.1.10","depth":2,"next":{"title":"GeoJSON","level":"3.1.11","depth":2,"path":"materials/web_gis/GeoJSON/GeoJSON.md","ref":"./materials/web_gis/GeoJSON/GeoJSON.md","articles":[]},"previous":{"title":"CZML","level":"3.1.9","depth":2,"path":"materials/web_gis/CZML/CZML.md","ref":"./materials/web_gis/CZML/CZML.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/web_gis/KML/KML.md","mtime":"2019-06-21T04:19:34.387Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"KML","level":"3.1.10","depth":2,"next":{"title":"GeoJSON","level":"3.1.11","depth":2,"path":"materials/web_gis/GeoJSON/GeoJSON.md","ref":"./materials/web_gis/GeoJSON/GeoJSON.md","articles":[]},"previous":{"title":"CZML","level":"3.1.9","depth":2,"path":"materials/web_gis/CZML/CZML.md","ref":"./materials/web_gis/CZML/CZML.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/web_gis/KML/KML.md","mtime":"2022-01-31T13:55:13.072Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../../gitbook/gitbook.js"></script>
     <script src="../../../gitbook/theme.js"></script>
     

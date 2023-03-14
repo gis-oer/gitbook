@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Leaflet · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,83 +3273,83 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="leaflet&#x5165;&#x9580;">Leaflet&#x5165;&#x9580;</h1>
-<p>&#x672C;&#x6559;&#x6750;&#x306F;&#x3001;QGIS&#x306E;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3067;&#x3042;&#x308B;QGIS2WEB&#x3092;&#x7528;&#x3044;&#x3066;&#x3001;Leaflet&#x3067;WEB&#x5730;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x5B9F;&#x7FD2;&#x7528;&#x6559;&#x6750;&#x3067;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x306E;&#x6559;&#x6750;&#x306B;&#x5F93;&#x3063;&#x3066;&#x3001;<a href="https://yamauchi-inochu.github.io/leaf-test/index.html" target="_blank">&#x5B8C;&#x6210;&#x4F8B;</a>&#x306E;&#x3088;&#x3046;&#x306A;WEB&#x5730;&#x56F3;&#x304C;&#x4F5C;&#x6210;&#x3067;&#x304D;&#x308C;&#x3070;&#x5B9F;&#x7FD2;&#x5B8C;&#x4E86;&#x3067;&#x3059;&#x3002;&#x3053;&#x306E;&#x5B9F;&#x7FD2;&#x306B;&#x306F;&#x3001;Atom&#x7B49;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x304C;&#x5FC5;&#x8981;&#x3067;&#x3059;&#x3002;</p>
-<p>&#x672C;&#x6559;&#x6750;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x969B;&#x306F;&#x3001;<a href="../../../policy.html">&#x5229;&#x7528;&#x898F;&#x7D04;</a>&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x3044;&#x305F;&#x3060;&#x304D;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x6761;&#x4EF6;&#x306B;&#x540C;&#x610F;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x306E;&#x307F;&#x3054;&#x5229;&#x7528;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
+                                <h1 id="leaflet入門">Leaflet入門</h1>
+<p>本教材は、QGISのプラグインであるQGIS2WEBを用いて、LeafletでWEB地図を作成するための実習用教材です。以下の教材に従って、<a href="https://yamauchi-inochu.github.io/leaf-test/index.html" target="_blank">完成例</a>のようなWEB地図が作成できれば実習完了です。この実習には、Atom等のテキストエディタが必要です。</p>
+<p>本教材を使用する際は、<a href="../../../policy.html">利用規約</a>をご確認いただき、これらの条件に同意された場合にのみご利用下さい。</p>
 <h2 id="menu"><strong>Menu</strong></h2>
 <ul>
-<li><a href="#leaflet&#x3068;&#x306F;">Leaflet&#x3068;&#x306F;&#xFF1F;</a></li>
-<li><a href="#&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x8ABF;&#x6574;&#x3068;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;">&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x8ABF;&#x6574;&#x3068;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;</a></li>
-<li><a href="#qgis2leaf&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;">qgis2web&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;</a></li>
-<li><a href="#index.html&#x3092;&#x7DE8;&#x96C6;&#x3059;&#x308B;">index.html&#x3092;&#x7DE8;&#x96C6;&#x3059;&#x308B;</a></li>
-<li><a href="#leaflet&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3068;&#x4F7F;&#x3044;&#x65B9;">Leaflet&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3068;&#x4F7F;&#x3044;&#x65B9;</a></li>
+<li><a href="#leafletとは">Leafletとは？</a></li>
+<li><a href="#レイヤのスタイル調整とプラグインのインポート">レイヤのスタイル調整とプラグインのインポート</a></li>
+<li><a href="#qgis2leafを起動する">qgis2webを起動する</a></li>
+<li><a href="#index.htmlを編集する">index.htmlを編集する</a></li>
+<li><a href="#leafletのダウンロードと使い方">Leafletのダウンロードと使い方</a></li>
 </ul>
-<p><strong>&#x4F7F;&#x7528;&#x30C7;&#x30FC;&#x30BF;</strong>
-&#x5B9F;&#x7FD2;&#x3092;&#x306F;&#x3058;&#x3081;&#x308B;&#x524D;&#x306B;&#x4EE5;&#x4E0B;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p><strong>使用データ</strong>
+実習をはじめる前に以下のデータをダウンロードしてください。</p>
 <ul>
-<li><a href="https://raw.githubusercontent.com/gis-oer/datasets/master/vector/tokyo23ku-cvs.zip" target="_blank">&#x6771;&#x4EAC;23&#x533A;&#x306E;&#x30B3;&#x30F3;&#x30D3;&#x30CB;&#x30A8;&#x30F3;&#x30B9;&#x30B9;&#x30C8;&#x30A2; (c) OpenStreetMap Contributors</a><blockquote>
-<p>OpenStreetMap&#x304B;&#x3089;&#x53D6;&#x5F97;&#x3057;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x52A0;&#x5DE5;&#x3057;&#x5229;&#x7528;</p>
+<li><a href="https://raw.githubusercontent.com/gis-oer/datasets/master/vector/tokyo23ku-cvs.zip" target="_blank">東京23区のコンビニエンスストア (c) OpenStreetMap Contributors</a><blockquote>
+<p>OpenStreetMapから取得したデータを加工し利用</p>
 </blockquote>
 </li>
 </ul>
 <hr>
-<h2 id="leaflet&#x3068;&#x306F;&#xFF1F;">Leaflet&#x3068;&#x306F;&#xFF1F;</h2>
-<p>Leaflet&#x306F;&#x3001;WEB&#x5730;&#x56F3;&#x306E;&#x4F5C;&#x6210;&#x306E;&#x305F;&#x3081;&#x306E;&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x30BD;&#x30FC;&#x30B9;JavaScript&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3067;&#x3059;&#x3002;&#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x306A;&#x30B3;&#x30FC;&#x30C7;&#x30A3;&#x30F3;&#x30B0;&#x3067;&#x5BB9;&#x6613;&#x306B;&#x3001;&#x30E2;&#x30D0;&#x30A4;&#x30EB;&#x3084;&#x30C7;&#x30B9;&#x30AF;&#x30C8;&#x30C3;&#x30D7;&#x306E;&#x8868;&#x793A;&#x306B;&#x5BFE;&#x5FDC;&#x3057;&#x305F;WEB&#x5730;&#x56F3;&#x304C;&#x4F5C;&#x6210;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x5168;&#x4F53;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x30B5;&#x30A4;&#x30BA;&#x304C;&#x8EFD;&#x3044;&#x3053;&#x3068;&#x3084;&#x69D8;&#x3005;&#x306A;&#x5730;&#x56F3;&#x8868;&#x73FE;&#xFF08;&#x30DE;&#x30FC;&#x30AB;&#x3084;&#x30BF;&#x30A4;&#x30EB;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#xFF09;&#x304C;&#x3067;&#x304D;&#x308B;&#x3053;&#x3068;&#x304C;&#x7279;&#x5FB4;&#x3067;&#x3059;&#x3002;Leaflet&#x306B;&#x95A2;&#x3059;&#x308B;&#x8A73;&#x3057;&#x3044;&#x89E3;&#x8AAC;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x30EA;&#x30F3;&#x30AF;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<h2 id="leafletとは？">Leafletとは？</h2>
+<p>Leafletは、WEB地図の作成のためのオープンソースJavaScriptライブラリです。シンプルなコーディングで容易に、モバイルやデスクトップの表示に対応したWEB地図が作成できます。全体のファイルサイズが軽いことや様々な地図表現（マーカやタイル読み込み）ができることが特徴です。Leafletに関する詳しい解説は、以下のリンクを参照してください。</p>
 <blockquote>
-<p><a href="http://Leafletjs.com/" target="_blank">Leaflet&#x516C;&#x5F0F;</a>
+<p><a href="http://Leafletjs.com/" target="_blank">Leaflet公式</a>
 <a href="https://ja.wikipedia.org/wiki/Leaflet" target="_blank">Wikipedia</a></p>
 </blockquote>
-<p><a href="Leaflet.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x8ABF;&#x6574;&#x3068;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;">&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x8ABF;&#x6574;&#x3068;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;</h2>
-<p>QGIS&#x306B;&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3001;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x8ABF;&#x6574;&#x3059;&#x308B;&#x3002;&#x6B21;&#x306B;&#x3001;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x7BA1;&#x7406;&#x3068;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x304B;&#x3089;&#x3001;&#x300C;QGIS2WEB&#x300D;&#x3092;&#x691C;&#x7D22;&#x3057;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x3002;
-<img src="pic/leafpic_2.png" alt="QGIS&#x3067;&#x8ABF;&#x6574;"></p>
-<p><a href="Leaflet.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="qgis2web&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;">QGIS2web&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;</h2>
-<p><code>Web(W)&gt;qgis2web</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306A;&#x8A2D;&#x5B9A;&#x3092;&#x884C;&#x3044;&#x3001;<code>Update preview</code>&#x3092;&#x3057;&#x305F;&#x5F8C;&#x3001;<code>Export</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+<p><a href="Leaflet.html#Menu">▲メニューへもどる</a></p>
+<h2 id="レイヤのスタイル調整とプラグインのインポート">レイヤのスタイル調整とプラグインのインポート</h2>
+<p>QGISに実習用データを読み込み、スタイルを調整する。次に、プラグインの管理とインストールから、「QGIS2WEB」を検索し、インストールする。
+<img src="pic/leafpic_2.png" alt="QGISで調整"></p>
+<p><a href="Leaflet.html#Menu">▲メニューへもどる</a></p>
+<h2 id="qgis2webを起動する">QGIS2webを起動する</h2>
+<p><code>Web(W)&gt;qgis2web</code>をクリックする。以下のような設定を行い、<code>Update preview</code>をした後、<code>Export</code>をクリックする。
 <img src="pic/leafpic_3.png" alt="QGIS2Leaf"></p>
-<p>&#x2460;&#x3000;&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x305F;&#x3068;&#x304D;&#x306E;&#x30DD;&#x30C3;&#x30D7;&#x30A2;&#x30C3;&#x30D7;&#x306E;&#x8A2D;&#x5B9A;&#x3092;&#x884C;&#x3046;&#x3002;&#x2461;&#x3000;&#x30BA;&#x30FC;&#x30E0;&#x30EC;&#x30D9;&#x30EB;&#x3084;&#x8A08;&#x6E2C;&#x6A5F;&#x80FD;&#x306A;&#x3069;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x3002;&#x3053;&#x3053;&#x3067;&#x3001;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x51FA;&#x529B;&#x5148;&#x3092;&#x5909;&#x66F4;&#x3057;&#x3066;&#x304A;&#x304F;&#x3068;&#x826F;&#x3044;&#x3002;&#x3000;&#x2462;&#x3000;Basemap&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF08;&#x8907;&#x6570;&#x9078;&#x629E;&#x306F;&#x3001; Ctrl&#x30AD;&#x30FC;&#x3092;&#x62BC;&#x3057;&#x306A;&#x304C;&#x3089;&#x884C;&#x3046;&#xFF09;</p>
-<p>&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x3067;&#x3001;index.html&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x958B;&#x304D;&#x4E2D;&#x8EAB;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x3002;
+<p>①　レイヤをクリックしたときのポップアップの設定を行う。②　ズームレベルや計測機能などを設定する。ここで、ファイルの出力先を変更しておくと良い。　③　Basemapを選択する（複数選択は、 Ctrlキーを押しながら行う）</p>
+<p>ローカルで、index.htmlファイルを開き中身を確認する。
 <img src="pic/leafpic_4.png" alt="QGIS2Leaf"></p>
-<p><a href="Leaflet.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="indexhtml&#x3092;&#x7DE8;&#x96C6;&#x3059;&#x308B;">index.html&#x3092;&#x7DE8;&#x96C6;&#x3059;&#x308B;</h2>
-<p>&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x30A8;&#x30AF;&#x30B9;&#x30DD;&#x30FC;&#x30C8;&#x3057;&#x305F;index.html&#x3092;&#x7DE8;&#x96C6;&#x3057;&#x3001;&#x30D9;&#x30FC;&#x30B9;&#x30DE;&#x30C3;&#x30D7;&#x3001;&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x3001;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;&#x5404;&#x6A5F;&#x80FD;&#x306E;&#x8A73;&#x3057;&#x3044;&#x89E3;&#x8AAC;&#x306F;&#x3001;<a href="https://yamauchi-inochu.github.io/leaf-test/index.html" target="_blank">&#x5B8C;&#x6210;&#x4F8B;</a>&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x53C2;&#x8003;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<h3 id="&#x30D9;&#x30FC;&#x30B9;&#x30DE;&#x30C3;&#x30D7;&#xFF08;&#x5730;&#x7406;&#x9662;&#x5730;&#x56F3;&#xFF09;&#x306E;&#x8FFD;&#x52A0;">&#x30D9;&#x30FC;&#x30B9;&#x30DE;&#x30C3;&#x30D7;&#xFF08;&#x5730;&#x7406;&#x9662;&#x5730;&#x56F3;&#xFF09;&#x306E;&#x8FFD;&#x52A0;</h3>
-<p>index.html&#x3092;&#x958B;&#x304D;&#x6587;&#x3092;&#x958B;&#x304D;&#x3001;var basemap1&#x306E;&#x76F4;&#x5F8C;&#x306B;&#x4EE5;&#x4E0B;&#x3092;&#x4ED8;&#x3051;&#x52A0;&#x3048;&#x308B;&#x3002;</p>
+<p><a href="Leaflet.html#Menu">▲メニューへもどる</a></p>
+<h2 id="indexhtmlを編集する">index.htmlを編集する</h2>
+<p>以下では、エクスポートしたindex.htmlを編集し、ベースマップ、スケール、タイトルを追加する手法について解説します。各機能の詳しい解説は、<a href="https://yamauchi-inochu.github.io/leaf-test/index.html" target="_blank">完成例</a>のコードを参考にしてください。</p>
+<h3 id="ベースマップ（地理院地図）の追加">ベースマップ（地理院地図）の追加</h3>
+<p>index.htmlを開き文を開き、var basemap1の直後に以下を付け加える。</p>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">var</span> basemap2 = L.tileLayer(<span class="hljs-string">&apos;https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png&apos;</span>, {
-    attribution: <span class="hljs-string">&apos;&amp;copy; &lt;a href=&quot;https://maps.gsi.go.jp/development/ichiran.html#std&quot;&gt;&#x56FD;&#x571F;&#x5730;&#x7406;&#x9662;&lt;/a&gt;&apos;</span>,
-    maxZoom: <span class="hljs-number">18</span>
+    <span class="hljs-attr">attribution</span>: <span class="hljs-string">&apos;&amp;copy; &lt;a href=&quot;https://maps.gsi.go.jp/development/ichiran.html#std&quot;&gt;国土地理院&lt;/a&gt;&apos;</span>,
+    <span class="hljs-attr">maxZoom</span>: <span class="hljs-number">18</span>
 });
 </code></pre>
-<p>var baseMaps&#x306B;&apos;GSImap&apos;:basemap2&#x3092;&#x4ED8;&#x3051;&#x52A0;&#x3048;&#x308B;&#x3002;</p>
+<p>var baseMapsに&apos;GSImap&apos;:basemap2を付け加える。</p>
 <pre><code class="lang-JavaScript"><span class="hljs-keyword">var</span> baseMaps = {<span class="hljs-string">&apos;OSM&apos;</span>: basemap0, <span class="hljs-string">&apos;Stamen Terrain&apos;</span>: basemap1,<span class="hljs-string">&apos;GSImap&apos;</span>:basemap2};
 </code></pre>
-<h3 id="&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x306E;&#x8FFD;&#x52A0;">&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x306E;&#x8FFD;&#x52A0;</h3>
-<p>&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x8A2D;&#x5B9A;&#x306E;&#x5F8C;&#x306B;&#x3001;&#x4EE5;&#x4E0B;&#x3092;&#x8A18;&#x8F09;&#x3059;&#x308B;</p>
-<pre><code class="lang-JavaScript">L.control.scale().addTo(map);<span class="hljs-comment">//&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x3092;&#x633F;&#x5165;</span>
+<h3 id="スケールの追加">スケールの追加</h3>
+<p>レイヤのスタイル設定の後に、以下を記載する</p>
+<pre><code class="lang-JavaScript">L.control.scale().addTo(map);<span class="hljs-comment">//スケールを挿入</span>
 </code></pre>
-<h3 id="&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x306E;&#x8FFD;&#x52A0;">&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x306E;&#x8FFD;&#x52A0;</h3>
-<p>&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x305F;&#x76F4;&#x5F8C;&#x306B;&#x3001;&#x4EE5;&#x4E0B;&#x3092;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x3002;</p>
-<pre><code class="lang-JavaScript"><span class="hljs-keyword">var</span> title = <span class="hljs-keyword">new</span> L.Control();<span class="hljs-comment">//&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x3092;&#x8FFD;&#x52A0;(&#x4EE5;&#x4E0B;&#x306E;&#x8A18;&#x8FF0;&#x306F;&#x3001;QGIS2leaf&#x3092;&#x53C2;&#x8003;&#x306B;&#x3057;&#x305F;)</span>
+<h3 id="タイトルの追加">タイトルの追加</h3>
+<p>スケールを追加した直後に、以下を記述する。</p>
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">var</span> title = <span class="hljs-keyword">new</span> L.Control();<span class="hljs-comment">//タイトルを追加(以下の記述は、QGIS2leafを参考にした)</span>
 title.onAdd = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">map</span>) </span>{
-  <span class="hljs-keyword">this</span>._div = L.DomUtil.create(<span class="hljs-string">&apos;div&apos;</span>, <span class="hljs-string">&apos;info&apos;</span>);
-  <span class="hljs-keyword">this</span>.update();
-  <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._div;
+  <span class="hljs-built_in">this</span>._div = L.DomUtil.create(<span class="hljs-string">&apos;div&apos;</span>, <span class="hljs-string">&apos;info&apos;</span>);
+  <span class="hljs-built_in">this</span>.update();
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>._div;
 };
 title.update = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">this</span>._div.innerHTML = <span class="hljs-string">&apos;&lt;h2&gt;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&lt;/h2&gt;&#x30B5;&#x30D6;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&apos;</span>
+  <span class="hljs-built_in">this</span>._div.innerHTML = <span class="hljs-string">&apos;&lt;h2&gt;タイトル&lt;/h2&gt;サブタイトル&apos;</span>
 };
 title.addTo(map);
 </code></pre>
-<h3 id="&#x8868;&#x793A;&#x306E;&#x78BA;&#x8A8D;">&#x8868;&#x793A;&#x306E;&#x78BA;&#x8A8D;</h3>
-<p>index.html&#x3092;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3067;&#x958B;&#x304D;&#x3001;&#x7DE8;&#x96C6;&#x5185;&#x5BB9;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x3002;
+<h3 id="表示の確認">表示の確認</h3>
+<p>index.htmlをブラウザで開き、編集内容を確認する。
 <img src="pic/leafpic_10.png" alt="QGIS2Leaf"></p>
-<p><a href="Leaflet.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="leaflet&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3068;&#x4F7F;&#x3044;&#x65B9;">Leaflet&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3068;&#x4F7F;&#x3044;&#x65B9;</h2>
-<p>&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;QGIS&#x306E;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3092;&#x4F7F;&#x308F;&#x305A;&#x306B;&#x3001;Leaflet&#x3092;&#x7528;&#x3044;&#x3066;&#x7C21;&#x5358;&#x306A;WEB&#x5730;&#x56F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<p>&#x203B; &#x3053;&#x306E;&#x6559;&#x6750;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x306B;&#x3042;&#x305F;&#x3063;&#x3066;&#x3001;<a href="https://leafletjs.com/" target="_blank">Leaflet</a>&#x306E;Tutorials&#x3001;Docs&#x3092;&#x53C2;&#x8003;&#x306B;&#x3057;&#x305F;&#x3002;</p>
-<h3 id="&#x5C0E;&#x5165;">&#x5C0E;&#x5165;</h3>
-<p>Leaflet&#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x306F;&#x3044;&#x304F;&#x3064;&#x304B;&#x3042;&#x308B;&#x304C;&#x3001;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x7248;&#x3092;&#x7528;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x308B;&#x3002;<a href="https://leafletjs.com/" target="_blank">Leaflet&#x306E;&#x30DA;&#x30FC;&#x30B8;</a>&#x304B;&#x3089;&#x3001;Leaflet&#x306E;zip&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3001;&#x89E3;&#x51CD;&#x3057;&#x305F;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x5185;&#x306B;&#x4EE5;&#x4E0B;&#x306E;&#x5185;&#x5BB9;&#x3067;index.html&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<p><a href="Leaflet.html#Menu">▲メニューへもどる</a></p>
+<h2 id="leafletのダウンロードと使い方">Leafletのダウンロードと使い方</h2>
+<p>以下では、QGISのプラグインを使わずに、Leafletを用いて簡単なWEB地図を作成する手法について解説します。</p>
+<p>※ この教材を作成するにあたって、<a href="https://leafletjs.com/" target="_blank">Leaflet</a>のTutorials、Docsを参考にした。</p>
+<h3 id="導入">導入</h3>
+<p>Leafletを利用する手法はいくつかあるが、以下では、ダウンロード版を用いて解説している。<a href="https://leafletjs.com/" target="_blank">Leafletのページ</a>から、Leafletのzipファイルをダウンロードし、解凍したフォルダ内に以下の内容でindex.htmlを作成する。</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
@@ -3358,107 +3357,107 @@ title.addTo(map);
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;shortcut icon&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;image/x-icon&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;docs/images/favicon.ico&quot;</span>/&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./Leaflet.css&quot;</span> /&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./Leaflet.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./Leaflet.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-  <span class="hljs-comment">&lt;!--&#x8868;&#x793A;&#x3059;&#x308B;&#x5730;&#x56F3;&#x306E;&#x7BC4;&#x56F2;&#x3092;&#x8A18;&#x8F09;--&gt;</span>
+  <span class="hljs-comment">&lt;!--表示する地図の範囲を記載--&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;map0&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 500px; height: 500px;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="undefined">
-  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h3 id="&#x80CC;&#x666F;&#x5730;&#x56F3;&#x306E;&#x8868;&#x793A;">&#x80CC;&#x666F;&#x5730;&#x56F3;&#x306E;&#x8868;&#x793A;</h3>
-<p>&#x4F5C;&#x6210;&#x3057;&#x305F;index.html&#x306E;<body>&#x5185;&#x3092;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x3001;&#x7DE8;&#x96C6;&#x3057;&#x3066;&#x5730;&#x56F3;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x80CC;&#x666F;&#x5730;&#x56F3;&#x3068;&#x3057;&#x3066;&#x56FD;&#x571F;&#x5730;&#x7406;&#x9662;&#x306E;&#x5730;&#x7406;&#x9662;&#x30BF;&#x30A4;&#x30EB;&#xFF08;&#x6A19;&#x6E96;&#x5730;&#x56F3;&#xFF09;&#x3092;&#x5229;&#x7528;&#x3057;&#x305F;&#x3002;</body></p>
+<h3 id="背景地図の表示">背景地図の表示</h3>
+<p>作成したindex.htmlの<body>内を以下のように、編集して地図を読み込む。以下では背景地図として国土地理院の地理院タイル（標準地図）を利用した。</body></p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;map0&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 500px; height: 500px;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
     <span class="hljs-keyword">var</span> map1 = L.tileLayer(<span class="hljs-string">&apos;https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png&apos;</span>, {
-    maxZoom: <span class="hljs-number">18</span>,
-    attribution: <span class="hljs-string">&quot;&lt;a href=&apos;https://maps.gsi.go.jp/development/ichiran.html&apos; target=&apos;_blank&apos;&gt;&#x5730;&#x7406;&#x9662;&#x30BF;&#x30A4;&#x30EB;&lt;/a&gt;&quot;</span>
+    <span class="hljs-attr">maxZoom</span>: <span class="hljs-number">18</span>,
+    <span class="hljs-attr">attribution</span>: <span class="hljs-string">&quot;&lt;a href=&apos;https://maps.gsi.go.jp/development/ichiran.html&apos; target=&apos;_blank&apos;&gt;地理院タイル&lt;/a&gt;&quot;</span>
     });
-<span class="hljs-comment">//map0&#x306B;&#x8868;&#x793A;&#x3059;&#x308B;&#x5730;&#x56F3;&#x306E;&#x7DEF;&#x5EA6;&#x7D4C;&#x5EA6;&#x3001;&#x30BA;&#x30FC;&#x30E0;&#x30EC;&#x30D9;&#x30EB;&#x3001;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;</span>
+<span class="hljs-comment">//map0に表示する地図の緯度経度、ズームレベル、タイルを設定する</span>
     <span class="hljs-keyword">var</span> map = L.map(<span class="hljs-string">&apos;map0&apos;</span>,{
-      center:[<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>],
-      zoom:<span class="hljs-number">13</span>,
-      layers:[map1]
+      <span class="hljs-attr">center</span>:[<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>],
+      <span class="hljs-attr">zoom</span>:<span class="hljs-number">13</span>,
+      <span class="hljs-attr">layers</span>:[map1]
 });
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 </code></pre>
-<p>&#x8907;&#x6570;&#x306E;&#x80CC;&#x666F;&#x5730;&#x56F3;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3001;&#x5207;&#x308A;&#x66FF;&#x3048;&#x3066;&#x8868;&#x793A;&#x3059;&#x308B;&#x306B;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#x3002;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<p>複数の背景地図を読み込み、切り替えて表示するには以下のようにする。</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
 
-<span class="hljs-comment">//&#x5730;&#x56F3;1&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-comment">//地図1の設定</span>
 <span class="hljs-keyword">var</span> map1 = L.tileLayer(<span class="hljs-string">&apos;https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png&apos;</span>, {
-maxZoom: <span class="hljs-number">18</span>,
-attribution: <span class="hljs-string">&quot;&lt;a href=&apos;https://maps.gsi.go.jp/development/ichiran.html&apos; target=&apos;_blank&apos;&gt;&#x5730;&#x7406;&#x9662;&#x30BF;&#x30A4;&#x30EB;&lt;/a&gt;&quot;</span>
+<span class="hljs-attr">maxZoom</span>: <span class="hljs-number">18</span>,
+<span class="hljs-attr">attribution</span>: <span class="hljs-string">&quot;&lt;a href=&apos;https://maps.gsi.go.jp/development/ichiran.html&apos; target=&apos;_blank&apos;&gt;地理院タイル&lt;/a&gt;&quot;</span>
 });
 
-<span class="hljs-comment">//&#x5730;&#x56F3;2&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-comment">//地図2の設定</span>
 <span class="hljs-keyword">var</span> map2 = L.tileLayer(<span class="hljs-string">&apos;https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg&apos;</span>, {
-maxZoom: <span class="hljs-number">18</span>,
-attribution: <span class="hljs-string">&quot;&lt;a href=&apos;https://maps.gsi.go.jp/development/ichiran.html&apos; target=&apos;_blank&apos;&gt;&#x5730;&#x7406;&#x9662;&#x30BF;&#x30A4;&#x30EB;&lt;/a&gt;&quot;</span>
+<span class="hljs-attr">maxZoom</span>: <span class="hljs-number">18</span>,
+<span class="hljs-attr">attribution</span>: <span class="hljs-string">&quot;&lt;a href=&apos;https://maps.gsi.go.jp/development/ichiran.html&apos; target=&apos;_blank&apos;&gt;地理院タイル&lt;/a&gt;&quot;</span>
 });
 
-<span class="hljs-comment">//&#x5730;&#x56F3;1&#x3092;&#x30D9;&#x30FC;&#x30B9;&#x30DE;&#x30C3;&#x30D7;&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;</span>
+<span class="hljs-comment">//地図1をベースマップに設定する</span>
 <span class="hljs-keyword">var</span> map = L.map(<span class="hljs-string">&apos;map0&apos;</span>,{
-    center:[<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>],
-    zoom:<span class="hljs-number">13</span>,
-    layers:[map1]
+    <span class="hljs-attr">center</span>:[<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>],
+    <span class="hljs-attr">zoom</span>:<span class="hljs-number">13</span>,
+    <span class="hljs-attr">layers</span>:[map1]
 });
 
 <span class="hljs-keyword">var</span> maps = {
-<span class="hljs-string">&quot;&#x6A19;&#x6E96;&#x5730;&#x56F3;&quot;</span>: map1,
-<span class="hljs-string">&quot;&#x5199;&#x771F;&#xFF08;2007&#xFF5E;&#xFF09;&quot;</span>:map2
+<span class="hljs-string">&quot;標準地図&quot;</span>: map1,
+<span class="hljs-string">&quot;写真（2007～）&quot;</span>:map2
 };
 
-<span class="hljs-comment">// &#x5730;&#x56F3;1&#x3068;&#x5730;&#x56F3;2&#x3092;&#x5207;&#x308A;&#x66FF;&#x3048;&#x8868;&#x793A;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</span>
+<span class="hljs-comment">// 地図1と地図2を切り替え表示するためのウィンドウを追加する</span>
 L.control.layers(maps).addTo(map);
 
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
-<h3 id="&#x70B9;&#xFF08;&#x30DE;&#x30FC;&#x30AB;&#x30FC;&#xFF09;&#x3001;&#x7DDA;&#x3001;&#x9762;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x4F5C;&#x6210;">&#x70B9;&#xFF08;&#x30DE;&#x30FC;&#x30AB;&#x30FC;&#xFF09;&#x3001;&#x7DDA;&#x3001;&#x9762;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x4F5C;&#x6210;</h3>
-<p>&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x5EA7;&#x6A19;&#x5024;&#x3092;&#x3082;&#x3064;&#x70B9;&#x3001;&#x7DDA;&#x3001;&#x9762;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8A18;&#x8FF0;&#x3057;&#x3001;&#x5730;&#x56F3;&#x4E0A;&#x306B;&#x8868;&#x793A;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<h3 id="点（マーカー）、線、面データの作成">点（マーカー）、線、面データの作成</h3>
+<p>以下では座標値をもつ点、線、面のデータを記述し、地図上に表示する手法について解説しています。</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
 
-<span class="hljs-comment">//&#x70B9;&#xFF08;&#x30DE;&#x30FC;&#x30AB;&#x30FC;&#xFF09;&#x306E;&#x8FFD;&#x52A0;&#xFF08;&#x30DD;&#x30C3;&#x30D7;&#x30A2;&#x30C3;&#x30D7;&#x306E;&#x8FFD;&#x52A0;&#xFF09;</span>
-L.marker([<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>]).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x306E;&#x5730;&#x70B9;&#x306E;&#x5EA7;&#x6A19;&#x306F;&#x3001;36.0, 138.7&#x3067;&#x3059;&apos;</span>).addTo(map);
+<span class="hljs-comment">//点（マーカー）の追加（ポップアップの追加）</span>
+L.marker([<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>]).bindPopup(<span class="hljs-string">&apos;この地点の座標は、36.0, 138.7です&apos;</span>).addTo(map);
 
-<span class="hljs-comment">//&#x8907;&#x6570;&#x70B9;&#x306E;&#x8FFD;&#x52A0;</span>
-L.marker([<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>]).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x306E;&#x5730;&#x70B9;&#x306E;&#x5EA7;&#x6A19;&#x306F;&#x3001;36.0, 138.7&#x3067;&#x3059;&apos;</span>).addTo(map);
-L.marker([<span class="hljs-number">36.0</span>, <span class="hljs-number">138.9</span>]).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x306E;&#x5730;&#x70B9;&#x306E;&#x5EA7;&#x6A19;&#x306F;&#x3001;36.0, 138.9&#x3067;&#x3059;&apos;</span>).addTo(map);
-L.marker([<span class="hljs-number">36.05</span>, <span class="hljs-number">138.9</span>]).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x306E;&#x5730;&#x70B9;&#x306E;&#x5EA7;&#x6A19;&#x306F;&#x3001;36.05, 138.9&#x3067;&#x3059;&apos;</span>).addTo(map);
-L.marker([<span class="hljs-number">36.05</span>, <span class="hljs-number">138.7</span>]).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x306E;&#x5730;&#x70B9;&#x306E;&#x5EA7;&#x6A19;&#x306F;&#x3001;36.05, 138.7&#x3067;&#x3059;&apos;</span>).addTo(map);
+<span class="hljs-comment">//複数点の追加</span>
+L.marker([<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>]).bindPopup(<span class="hljs-string">&apos;この地点の座標は、36.0, 138.7です&apos;</span>).addTo(map);
+L.marker([<span class="hljs-number">36.0</span>, <span class="hljs-number">138.9</span>]).bindPopup(<span class="hljs-string">&apos;この地点の座標は、36.0, 138.9です&apos;</span>).addTo(map);
+L.marker([<span class="hljs-number">36.05</span>, <span class="hljs-number">138.9</span>]).bindPopup(<span class="hljs-string">&apos;この地点の座標は、36.05, 138.9です&apos;</span>).addTo(map);
+L.marker([<span class="hljs-number">36.05</span>, <span class="hljs-number">138.7</span>]).bindPopup(<span class="hljs-string">&apos;この地点の座標は、36.05, 138.7です&apos;</span>).addTo(map);
 
 
-<span class="hljs-comment">//&#x9762;&#x306E;&#x8FFD;&#x52A0;(&#x5857;&#x308A;&#x3064;&#x3076;&#x3057;&#x8272;&#x3001;&#x900F;&#x904E;&#x5EA6;&#x3092;&#x6307;&#x5B9A;)</span>
+<span class="hljs-comment">//面の追加(塗りつぶし色、透過度を指定)</span>
 L.polygon([
     [<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>],
     [<span class="hljs-number">36.0</span>, <span class="hljs-number">138.9</span>],
         [<span class="hljs-number">36.05</span>, <span class="hljs-number">138.9</span>],
         [<span class="hljs-number">36.05</span>, <span class="hljs-number">138.7</span>]
-], {color:<span class="hljs-string">&apos;pink&apos;</span>,fillOpacity:<span class="hljs-number">0.5</span>}).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x308C;&#x306F;&#x3001;&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x3067;&#x3059;&#x3002;&apos;</span>).addTo(map);
+], {<span class="hljs-attr">color</span>:<span class="hljs-string">&apos;pink&apos;</span>,<span class="hljs-attr">fillOpacity</span>:<span class="hljs-number">0.5</span>}).bindPopup(<span class="hljs-string">&apos;これは、ポリゴンです。&apos;</span>).addTo(map);
 
-<span class="hljs-comment">//&#x7DDA;&#x306E;&#x8FFD;&#x52A0;(&#x7DDA;&#x306E;&#x8272;&#x3001;&#x592A;&#x3055;&#x3092;&#x6307;&#x5B9A;)&#x3001;&#x9762;&#x3068;&#x7DDA;&#x306E;&#x63CF;&#x753B;&#x9806;&#x306B;&#x6CE8;&#x610F;&#x3059;&#x308B;</span>
+<span class="hljs-comment">//線の追加(線の色、太さを指定)、面と線の描画順に注意する</span>
 L.polyline([
     [<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>],
     [<span class="hljs-number">36.05</span>, <span class="hljs-number">138.8</span>],
     [<span class="hljs-number">36.0</span>, <span class="hljs-number">138.9</span>],
         [<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>]
-], {color: <span class="hljs-string">&apos;yellow&apos;</span>,weight: <span class="hljs-number">3.0</span>}).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x308C;&#x306F;&#x3001;&#x30E9;&#x30A4;&#x30F3;&#x3067;&#x3059;&#x3002;&apos;</span>).addTo(map);
+], {<span class="hljs-attr">color</span>: <span class="hljs-string">&apos;yellow&apos;</span>,<span class="hljs-attr">weight</span>: <span class="hljs-number">3.0</span>}).bindPopup(<span class="hljs-string">&apos;これは、ラインです。&apos;</span>).addTo(map);
 
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
-<p>&#x4E0A;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x3001;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x5316;&#x3057;&#x305F;Marker&#x3068;&#x4ED6;&#x306E;&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x3001;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30EA;&#x30B9;&#x30C8;&#x304B;&#x3089;&#x9078;&#x629E;&#x8868;&#x793A;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#x3002;</p>
-<pre><code class="lang-JavaScript"><span class="hljs-comment">//L.layerGroup()&#x3067;&#x30DE;&#x30FC;&#x30AB;&#x30FC;&#x3092;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x5316;&#x3059;&#x308B;</span>
+<p>上のコードを利用して、グループ化したMarkerと他のレイヤを、チェックリストから選択表示できるようにする。</p>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">//L.layerGroup()でマーカーをグループ化する</span>
 <span class="hljs-keyword">var</span> markers = L.layerGroup();
 
-L.marker([<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>]).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x306E;&#x5730;&#x70B9;&#x306E;&#x5EA7;&#x6A19;&#x306F;&#x3001;36.0, 138.7&#x3067;&#x3059;&apos;</span>).addTo(markers);
-L.marker([<span class="hljs-number">36.0</span>, <span class="hljs-number">138.9</span>]).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x306E;&#x5730;&#x70B9;&#x306E;&#x5EA7;&#x6A19;&#x306F;&#x3001;36.0, 138.8&#x3067;&#x3059;&apos;</span>).addTo(markers);
-L.marker([<span class="hljs-number">36.05</span>, <span class="hljs-number">138.9</span>]).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x306E;&#x5730;&#x70B9;&#x306E;&#x5EA7;&#x6A19;&#x306F;&#x3001;36.0, 138.9&#x3067;&#x3059;&apos;</span>).addTo(markers);
-L.marker([<span class="hljs-number">36.05</span>, <span class="hljs-number">138.7</span>]).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x306E;&#x5730;&#x70B9;&#x306E;&#x5EA7;&#x6A19;&#x306F;&#x3001;36.0, 138.9&#x3067;&#x3059;&apos;</span>).addTo(markers);
+L.marker([<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>]).bindPopup(<span class="hljs-string">&apos;この地点の座標は、36.0, 138.7です&apos;</span>).addTo(markers);
+L.marker([<span class="hljs-number">36.0</span>, <span class="hljs-number">138.9</span>]).bindPopup(<span class="hljs-string">&apos;この地点の座標は、36.0, 138.8です&apos;</span>).addTo(markers);
+L.marker([<span class="hljs-number">36.05</span>, <span class="hljs-number">138.9</span>]).bindPopup(<span class="hljs-string">&apos;この地点の座標は、36.0, 138.9です&apos;</span>).addTo(markers);
+L.marker([<span class="hljs-number">36.05</span>, <span class="hljs-number">138.7</span>]).bindPopup(<span class="hljs-string">&apos;この地点の座標は、36.0, 138.9です&apos;</span>).addTo(markers);
 
 
 <span class="hljs-keyword">var</span> polygon =
@@ -3467,7 +3466,7 @@ L.marker([<span class="hljs-number">36.05</span>, <span class="hljs-number">138.
     [<span class="hljs-number">36.0</span>, <span class="hljs-number">138.9</span>],
         [<span class="hljs-number">36.05</span>, <span class="hljs-number">138.9</span>],
         [<span class="hljs-number">36.05</span>, <span class="hljs-number">138.7</span>]
-], {color:<span class="hljs-string">&apos;pink&apos;</span>,fillOpacity:<span class="hljs-number">0.5</span>}).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x308C;&#x306F;&#x3001;&#x30DD;&#x30EA;&#x30B4;&#x30F3;&#x3067;&#x3059;&#x3002;&apos;</span>);
+], {<span class="hljs-attr">color</span>:<span class="hljs-string">&apos;pink&apos;</span>,<span class="hljs-attr">fillOpacity</span>:<span class="hljs-number">0.5</span>}).bindPopup(<span class="hljs-string">&apos;これは、ポリゴンです。&apos;</span>);
 
 <span class="hljs-keyword">var</span> polyline =
   L.polyline([
@@ -3475,49 +3474,49 @@ L.marker([<span class="hljs-number">36.05</span>, <span class="hljs-number">138.
     [<span class="hljs-number">36.05</span>, <span class="hljs-number">138.8</span>],
     [<span class="hljs-number">36.0</span>, <span class="hljs-number">138.9</span>],
         [<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>]
-], {color: <span class="hljs-string">&apos;yellow&apos;</span>,weight: <span class="hljs-number">3</span>}).bindPopup(<span class="hljs-string">&apos;&#x3053;&#x308C;&#x306F;&#x3001;&#x30E9;&#x30A4;&#x30F3;&#x3067;&#x3059;&#x3002;&apos;</span>);
+], {<span class="hljs-attr">color</span>: <span class="hljs-string">&apos;yellow&apos;</span>,<span class="hljs-attr">weight</span>: <span class="hljs-number">3</span>}).bindPopup(<span class="hljs-string">&apos;これは、ラインです。&apos;</span>);
 
-<span class="hljs-comment">//layers&#x306B;&#x6700;&#x521D;&#x306B;&#x8868;&#x793A;&#x3059;&#x308B;&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;</span>
+<span class="hljs-comment">//layersに最初に表示するレイヤを設定する</span>
 <span class="hljs-keyword">var</span> map = L.map(<span class="hljs-string">&apos;map0&apos;</span>,{
-    center:[<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>],
-    zoom:<span class="hljs-number">13</span>,
-    layers:[map1,markers,polyline,polygon]
+    <span class="hljs-attr">center</span>:[<span class="hljs-number">36.0</span>, <span class="hljs-number">138.7</span>],
+    <span class="hljs-attr">zoom</span>:<span class="hljs-number">13</span>,
+    <span class="hljs-attr">layers</span>:[map1,markers,polyline,polygon]
 });
 
 
 <span class="hljs-keyword">var</span> layers = {
-    <span class="hljs-string">&quot;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&quot;</span>: markers,
-    <span class="hljs-string">&quot;&#x30E9;&#x30A4;&#x30F3;&quot;</span>:polyline,
-    <span class="hljs-string">&quot;&#x30DD;&#x30EA;&#x30B4;&#x30F3;&quot;</span>:polygon
+    <span class="hljs-string">&quot;ポイント&quot;</span>: markers,
+    <span class="hljs-string">&quot;ライン&quot;</span>:polyline,
+    <span class="hljs-string">&quot;ポリゴン&quot;</span>:polygon
 };
 
 
 <span class="hljs-keyword">var</span> basemaps = {
-<span class="hljs-string">&quot;&#x6A19;&#x6E96;&#x5730;&#x56F3;&quot;</span>: map1,
-<span class="hljs-string">&quot;&#x5199;&#x771F;&#xFF08;2007&#xFF5E;&#xFF09;&quot;</span>:map2
+<span class="hljs-string">&quot;標準地図&quot;</span>: map1,
+<span class="hljs-string">&quot;写真（2007～）&quot;</span>:map2
 };
 
-<span class="hljs-comment">//&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x8868;&#x793A;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;</span>
+<span class="hljs-comment">//レイヤを選択して表示できるようにする</span>
 L.control.layers(basemaps,layers).addTo(map);
 </code></pre>
-<h3 id="&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x306E;&#x8868;&#x793A;">&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x306E;&#x8868;&#x793A;</h3>
-<p>&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x8868;&#x793A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
-<pre><code class="lang-Javascript">L.control.scale({imperial: <span class="hljs-literal">false</span>}).addTo(map);
+<h3 id="スケールの表示">スケールの表示</h3>
+<p>スケールは、以下のように記述することで表示できます。</p>
+<pre><code class="lang-Javascript">L.control.scale({<span class="hljs-attr">imperial</span>: <span class="hljs-literal">false</span>}).addTo(map);
 </code></pre>
-<h3 id="&#x5916;&#x90E8;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x8FFD;&#x52A0;">&#x5916;&#x90E8;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x8FFD;&#x52A0;</h3>
-<p>jQuery&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x3001;GeoJSON&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;</p>
-<pre><code class="lang-Javascript"><span class="hljs-comment">//GeoJSON&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x30DD;&#x30A4;&#x30F3;&#x30C8;</span>
-<span class="hljs-comment">//&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x5C5E;&#x6027;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;</span>
+<h3 id="外部ファイルの追加">外部ファイルの追加</h3>
+<p>jQueryを利用して、GeoJSONのファイルを読み込む。</p>
+<pre><code class="lang-Javascript"><span class="hljs-comment">//GeoJSONの読み込みポイント</span>
+<span class="hljs-comment">//クリックすると属性が表示されるようにする</span>
 $.getJSON(<span class="hljs-string">&quot;tokyo23ku-cvs.geojson&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
     L.geoJson(data).bindPopup(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">layer</span>) </span>{
     <span class="hljs-keyword">return</span> layer.feature.properties.name;
 }).addTo(map)
 });
 </code></pre>
-<p><a href="https://yamauchi-inochu.github.io/leaflet-sample/geojson.html" target="_blank">&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30DA;&#x30FC;&#x30B8;</a></p>
-<p><a href="Leaflet.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h4 id="&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;">&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;</h4>
-<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x30AD;&#x30E3;&#x30D7;&#x30C1;&#x30E3;&#x753B;&#x50CF;&#x306E;&#x51FA;&#x5178;&#x3084;&#x30AF;&#x30EC;&#x30B8;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../../license.html">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;</a>&#x3088;&#x308A;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p><a href="https://yamauchi-inochu.github.io/leaflet-sample/geojson.html" target="_blank">サンプルページ</a></p>
+<p><a href="Leaflet.html#Menu">▲メニューへもどる</a></p>
+<h4 id="ライセンスに関する注意事項">ライセンスに関する注意事項</h4>
+<p>本教材で利用しているキャプチャ画像の出典やクレジットについては、<a href="../../license.html">その他のライセンスについて</a>よりご確認ください。</p>
 
                                 
                                 </section>
@@ -3561,12 +3560,56 @@ $.getJSON(<span class="hljs-string">&quot;tokyo23ku-cvs.geojson&quot;</span>, <s
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Leaflet","level":"3.1.3","depth":2,"next":{"title":"ArcGIS API for JavaScript","level":"3.1.4","depth":2,"path":"materials/web_gis/arcgisapi4js/arcgisapi4js.md","ref":"./materials/web_gis/arcgisapi4js/arcgisapi4js.md","articles":[]},"previous":{"title":"Googleマイマップ","level":"3.1.2","depth":2,"path":"materials/web_gis/Google_mymap/Google_mymap.md","ref":"./materials/web_gis/Google_mymap/Google_mymap.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/web_gis/Leaflet/Leaflet.md","mtime":"2019-06-21T04:19:34.390Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Leaflet","level":"3.1.3","depth":2,"next":{"title":"ArcGIS API for JavaScript","level":"3.1.4","depth":2,"path":"materials/web_gis/arcgisapi4js/arcgisapi4js.md","ref":"./materials/web_gis/arcgisapi4js/arcgisapi4js.md","articles":[]},"previous":{"title":"Googleマイマップ","level":"3.1.2","depth":2,"path":"materials/web_gis/Google_mymap/Google_mymap.md","ref":"./materials/web_gis/Google_mymap/Google_mymap.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/web_gis/Leaflet/Leaflet.md","mtime":"2022-01-31T13:55:13.101Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../../gitbook/gitbook.js"></script>
     <script src="../../../gitbook/theme.js"></script>
     

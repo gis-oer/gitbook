@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>プラグイン開発1 · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,94 +3273,94 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x958B;&#x767A;1">&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x958B;&#x767A;1</h1>
-<p>QGIS&#x306E;&#x62E1;&#x5F35;&#x6A5F;&#x80FD;&#x3067;&#x3042;&#x308B;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x958B;&#x767A;&#x5165;&#x9580;&#x3068;&#x3044;&#x3046;&#x30C6;&#x30FC;&#x30DE;&#x3067;&#x3001;QGIS&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x958B;&#x767A;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x3001;&#x3053;&#x306E;&#x7AE0;&#x3068;&#x6B21;&#x306E;&#x7AE0;&#x3067;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+                                <h1 id="プラグイン開発1">プラグイン開発1</h1>
+<p>QGISの拡張機能であるプラグインの開発入門というテーマで、QGISで利用できるプラグインの開発手法について、この章と次の章で解説します。</p>
 <h2 id="menu"><strong>Menu</strong></h2>
 <ul>
-<li><a href="#&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x57FA;&#x672C;&#x69CB;&#x6210;">&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x57FA;&#x672C;&#x69CB;&#x6210;</a></li>
-<li><a href="#&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x30D3;&#x30EB;&#x30C0;&#x30FC;">&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x30D3;&#x30EB;&#x30C0;&#x30FC;</a></li>
-<li><a href="#&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x78BA;&#x8A8D;">&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x78BA;&#x8A8D;</a></li>
-<li><a href="#resouces.py&#x306E;&#x4F5C;&#x6210;">resouces.py&#x306E;&#x4F5C;&#x6210;</a></li>
-<li><a href="#&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x5B9F;&#x884C;">&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x5B9F;&#x884C;</a></li>
+<li><a href="#プラグインの基本構成">プラグインの基本構成</a></li>
+<li><a href="#プラグインビルダー">プラグインビルダー</a></li>
+<li><a href="#ディレクトリの確認">ディレクトリの確認</a></li>
+<li><a href="#resouces.pyの作成">resouces.pyの作成</a></li>
+<li><a href="#作成したプラグインの実行">作成したプラグインの実行</a></li>
 </ul>
-<h2 id="&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x57FA;&#x672C;&#x69CB;&#x6210;"><a name="&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x57FA;&#x672C;&#x69CB;&#x6210;"></a>&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x57FA;&#x672C;&#x69CB;&#x6210;</h2>
-<p>&#x3053;&#x306E;&#x7AE0;&#x3067;&#x306F;Python&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x304B;&#x3089;&#x4E00;&#x65E6;&#x96E2;&#x308C;&#x3066;&#x3001;Plugin&#x306B;&#x5FC5;&#x8981;&#x306A;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x7DE8;&#x96C6;&#x3057;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#x3002;
-QGIS&#x306E;&#x8D77;&#x52D5;&#x6642;&#x306B;&#x8AAD;&#x307F;&#x8FBC;&#x307E;&#x308C;&#x308B;Python&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306F;&#x3001;</p>
+<h2 id="プラグインの基本構成"><a name="プラグインの基本構成"></a>プラグインの基本構成</h2>
+<p>この章ではPythonコンソールから一旦離れて、Pluginに必要なファイルをテキストエディタを使用して編集していきます。
+QGISの起動時に読み込まれるPythonプラグインは、</p>
 <ul>
-<li><code>QGIS&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;/python/plugins</code></li>
-<li><code>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;/AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins</code>
-&#x306E;&#x3069;&#x3061;&#x3089;&#x304B;&#x306B;&#x5165;&#x308C;&#x3066;&#x304A;&#x304D;&#x307E;&#x3059;&#x3002;
-&#x901A;&#x5E38;&#x3001;&#x30AA;&#x30EA;&#x30B8;&#x30CA;&#x30EB;&#x306E;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x5F8C;&#x8005;&#x306B;&#x914D;&#x7F6E;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;Windows&#x3092;&#x60F3;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x304C;&#x3001;</li>
-<li><code>C:\Users\&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\PluginTest</code>
-&#x3068;&#x3044;&#x3046;&#x3088;&#x3046;&#x306A;&#x5F62;&#x3067;&#x3001;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3054;&#x3068;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;
-QGIS&#x306F;plugins&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x5185;&#x306E;&#x5404;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x898B;&#x3066;&#x3044;&#x304D;&#x3001;<code>metadata.txt</code>&#x3068;&#x3044;&#x3046;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304B;&#x3089;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x60C5;&#x5831;&#x3092;&#x8AAD;&#x307F;&#x53D6;&#x308A;&#x307E;&#x3059;&#x3002;&#x307E;&#x305F;&#x3001;&#x5404;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;QGIS&#x3078;&#x306E;&#x8FFD;&#x52A0;&#x306F;&#x3001;<code>__init__.py</code>
-&#x304B;&#x3089;&#x884C;&#x308F;&#x308C;&#x307E;&#x3059;&#x3002;<code>__init__.py</code>&#x5185;&#x306B;&#x306F;&#x3001;&#x51E6;&#x7406;&#x672C;&#x4F53;&#x304C;&#x8A18;&#x8FF0;&#x3055;&#x308C;&#x305F;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x8FD4;&#x3059;&#x95A2;&#x6570;&#x3092;&#x8A18;&#x8F09;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3059;&#x3002;&#x901A;&#x5E38;&#x3001;&#x51E6;&#x7406;&#x672C;&#x4F53;&#x306F;&#x5225;&#x306A;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x65B9;&#x308F;&#x304B;&#x308A;&#x3084;&#x3059;&#x3044;&#x306E;&#x3067;&#x3001;&#x540D;&#x524D;&#x306F;&#x4EFB;&#x610F;&#x3067;&#x826F;&#x3044;&#x3067;&#x3059;&#x304C;&#x3001;&#x6700;&#x4F4E;&#x3082;&#x3046;&#xFF11;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</li>
+<li><code>QGISインストールディレクトリ/python/plugins</code></li>
+<li><code>ユーザーのホームディレクトリ/AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins</code>
+のどちらかに入れておきます。
+通常、オリジナルのプラグインを作成した場合は、後者に配置することになります。Windowsを想定しますが、</li>
+<li><code>C:\Users\ユーザー名\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\PluginTest</code>
+というような形で、プラグインごとのディレクトリを作成することになります。
+QGISはpluginsディレクトリ内の各ディレクトリを見ていき、<code>metadata.txt</code>というファイルからプラグインの情報を読み取ります。また、各プラグインのQGISへの追加は、<code>__init__.py</code>
+から行われます。<code>__init__.py</code>内には、処理本体が記述されたクラスを返す関数を記載しておきます。通常、処理本体は別なファイルに記述する方わかりやすいので、名前は任意で良いですが、最低もう１ファイル作成することになります。</li>
 </ul>
-<h2 id="&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x30D3;&#x30EB;&#x30C0;&#x30FC;"><a name="&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x30D3;&#x30EB;&#x30C0;&#x30FC;"></a>&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x30D3;&#x30EB;&#x30C0;&#x30FC;</h2>
-<p>&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306B;&#x5FC5;&#x8981;&#x306A;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x500B;&#x5225;&#x306B;&#x7528;&#x610F;&#x3057;&#x3066;&#x3044;&#x304F;&#x3053;&#x3068;&#x3082;&#x53EF;&#x80FD;&#x3067;&#x3059;&#x304C;&#x3001;Plugin Builder 3&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x3068;&#x3001;&#x6700;&#x4F4E;&#x9650;&#x5FC5;&#x8981;&#x306A;&#x5185;&#x5BB9;&#x3092;&#x63C3;&#x3048;&#x3066;&#x304F;&#x308C;&#x308B;&#x306E;&#x3067;&#x4FBF;&#x5229;&#x3067;&#x3059;&#x3002;
-&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x8FFD;&#x52A0;&#x306F;QGIS&#x306E;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x30D0;&#x30FC;&#x304B;&#x3089;<code>&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3; &gt; &#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x7BA1;&#x7406;&#x3068;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;...</code>&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="プラグインビルダー"><a name="プラグインビルダー"></a>プラグインビルダー</h2>
+<p>プラグインに必要なファイルを個別に用意していくことも可能ですが、Plugin Builder 3プラグインを使用すると、最低限必要な内容を揃えてくれるので便利です。
+プラグインの追加はQGISのメニューバーから<code>プラグイン &gt; プラグインの管理とインストール...</code>を選択します。</p>
 <p><img src="pic/10pic-1.png" alt="add_plugin1"></p>
-<p>Plugin Builder 3&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>Plugin Builder 3を選択し、インストールしましょう。</p>
 <p><img src="pic/10pic-2.png" alt="add_plugin2"></p>
-<p>&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x304C;&#x7D42;&#x4E86;&#x3057;&#x305F;&#x3089;&#x3001;&#x65E9;&#x901F;Plugin Builder 3&#x3092;&#x8D77;&#x52D5;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>インストールが終了したら、早速Plugin Builder 3を起動しましょう。</p>
 <p><img src="pic/10pic-3.png" alt="open_plugin"></p>
-<p>&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;&#x3053;&#x3053;&#x3067;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x57FA;&#x672C;&#x60C5;&#x5831;&#x3092;&#x5165;&#x529B;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p>ウィンドウが表示されます。ここで作成するプラグインの基本情報を入力します。</p>
 <p><img src="pic/10pic-4.png" alt="plugin_builder_1"></p>
-<p>&#x307E;&#x305A;&#x306F;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x57FA;&#x672C;&#x60C5;&#x5831;&#x3068;&#x3057;&#x3066;&#x3001;</p>
+<p>まずはプラグインの基本情報として、</p>
 <pre><code>Class name:
-&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x30AF;&#x30E9;&#x30B9;&#x540D;&#x3067;&#x3059;&#x3002;Python&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5185;&#x3067;&#x4F7F;&#x7528;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;&#x30AD;&#x30E3;&#x30E1;&#x30EB;&#x30B1;&#x30FC;&#x30B9;(&#x8907;&#x5408;&#x8A9E;&#x3092;&#x3072;&#x3068;&#x7DB4;&#x308A;&#x3068;&#x3057;&#x3066;&#x3001;&#x8981;&#x7D20;&#x8A9E;&#x306E;&#x6700;&#x521D;&#x3092;&#x5927;&#x6587;&#x5B57;)&#x3067;&#x8A18;&#x8FF0;&#x3057;&#x307E;&#x3059;&#x3002;
-Plugin name:    &#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x30DE;&#x30CD;&#x30FC;&#x30B8;&#x30E3;&#x30FC;&#x7B49;&#x3067;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x540D;
-Description:    &#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x30DE;&#x30CD;&#x30FC;&#x30B8;&#x30E3;&#x30FC;&#x7B49;&#x3067;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x8AAC;&#x660E;&#x6587;
-Module name:    Python&#x306E;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x540D;
-Version number: &#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;
-Minimum QGIS version:   &#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x304C;&#x52D5;&#x4F5C;&#x3059;&#x308B;QGIS&#x306E;&#x6700;&#x4F4E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;
-Author/Company: &#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x4F5C;&#x8005;&#x540D;
-Email address:  &#x4F5C;&#x8005;&#x30E1;&#x30FC;&#x30EB;&#x30A2;&#x30C9;&#x30EC;&#x30B9;
-</code></pre><p>&#x3092;&#x5165;&#x529B;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<p>&#x7D9A;&#x3044;&#x3066;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x8A73;&#x7D30;&#x306A;&#x8AAC;&#x660E;&#x3092;&#x8A18;&#x8FF0;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x3053;&#x3067;&#x306F;&#x9069;&#x5F53;&#x306A;&#x6587;&#x3092;&#x5165;&#x308C;&#x3066;&#x304A;&#x304F;&#x3060;&#x3051;&#x306B;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+プラグインのクラス名です。Pythonファイル内で使用されます。キャメルケース(複合語をひと綴りとして、要素語の最初を大文字)で記述します。
+Plugin name:    プラグインマネージャー等で表示されるプラグイン名
+Description:    プラグインマネージャー等で表示されるプラグインの説明文
+Module name:    Pythonのモジュール名
+Version number: プラグインのバージョン
+Minimum QGIS version:   プラグインが動作するQGISの最低バージョン
+Author/Company: プラグイン作者名
+Email address:  作者メールアドレス
+</code></pre><p>を入力します。</p>
+<p>続いてプラグインの詳細な説明を記述します。ここでは適当な文を入れておくだけにしましょう。</p>
 <p><img src="pic/10pic-5.png" alt="plugin_builder_2"></p>
-<p>&#x4F5C;&#x6210;&#x3059;&#x308B;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x3068;&#x3057;&#x3066;3&#x7A2E;&#x985E;&#x7528;&#x610F;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x201D;Tool Button with dialog&#x201D;&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x304A;&#x3044;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;UI&#x3068;&#x3057;&#x3066;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x5B9F;&#x884C;&#x6642;&#x306B;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x3082;&#x4E00;&#x7DD2;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304F;&#x308C;&#x307E;&#x3059;&#x3002;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x8868;&#x793A;&#x3059;&#x308B;&#x6587;&#x5B57;&#x5217;&#x3068;&#x3001;&#x3069;&#x306E;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x306B;&#x8868;&#x793A;&#x3059;&#x308B;&#x304B;&#x3082;&#x8A2D;&#x5B9A;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>作成するプラグインのテンプレートとして3種類用意されています。”Tool Button with dialog”を選択しておいてください。UIとしてプラグイン実行時に表示されるダイアログも一緒に作成してくれます。メニューへ表示する文字列と、どのメニューに表示するかも設定しておきます。</p>
 <p><img src="pic/10pic-6.png" alt="plugin_builder_3"></p>
-<p>&#x591A;&#x8A00;&#x8A9E;&#x5BFE;&#x5FDC;&#x3084;&#x30D8;&#x30EB;&#x30D7;&#x7B49;&#x306E;&#x96DB;&#x5F62;&#x3082;&#x4E00;&#x7DD2;&#x306B;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x305F;&#x3060;&#x3057;&#x3001;&#x4ECA;&#x56DE;&#x306F;&#x6700;&#x5C0F;&#x9650;&#x306E;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x307F;&#x308B;&#x3053;&#x3068;&#x3092;&#x76EE;&#x7684;&#x3068;&#x3057;&#x307E;&#x3059;&#x306E;&#x3067;&#x3001;&#x3059;&#x3079;&#x3066;&#x306E;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x5916;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>多言語対応やヘルプ等の雛形も一緒に作成することができます。ただし、今回は最小限のプラグインを作成してみることを目的としますので、すべてのチェックを外しておきましょう。</p>
 <p><img src="pic/10pic-7.png" alt="plugin_builder_4"></p>
-<p> &#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x4E0D;&#x5177;&#x5408;&#x5831;&#x544A;&#x5148;&#x3092;&#x660E;&#x78BA;&#x306B;&#x3057;&#x3066;&#x304A;&#x304F;&#x305F;&#x3081;&#x3001;Bug tracker&#x3001;Repository&#x306E;URL&#x306E;&#x5165;&#x529B;&#x3092;&#x6C42;&#x3081;&#x3089;&#x308C;&#x307E;&#x3059;&#x3002;&#x3053;&#x3053;&#x3067;&#x306F;&#x9069;&#x5F53;&#x306A;&#x6587;&#x5B57;&#x5217;&#x3092;&#x5165;&#x308C;&#x3066;&#x304A;&#x304F;&#x3060;&#x3051;&#x306B;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x305F;&#x3060;&#x3057;&#x3001;&#x304D;&#x3061;&#x3093;&#x3068;&#x3057;&#x305F;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3092;&#x516C;&#x958B;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;GitHub&#x7B49;&#x3067;&#x516C;&#x958B;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x63A8;&#x5968;&#x3055;&#x308C;&#x3066;&#x307E;&#x3059;&#x3002;</p>
+<p> プラグインの不具合報告先を明確にしておくため、Bug tracker、RepositoryのURLの入力を求められます。ここでは適当な文字列を入れておくだけにしましょう。ただし、きちんとしたプラグインを公開する場合は、GitHub等で公開することが推奨されてます。</p>
 <p><img src="pic/10pic-8.png" alt="plugin_builder_5"></p>
-<p>&#x3053;&#x3053;&#x307E;&#x3067;&#x306E;&#x5165;&#x529B;&#x304C;&#x7D42;&#x308F;&#x308B;&#x3068;&#x3001;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x66F8;&#x304D;&#x51FA;&#x3057;&#x5148;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x6307;&#x5B9A;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;<code>/AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins</code>&#x306B;&#x66F8;&#x304D;&#x51FA;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p>ここまでの入力が終わると、プラグイン書き出し先のディレクトリの指定になります。ユーザーのホームディレクトリ<code>/AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins</code>に書き出してください。</p>
 <p><img src="pic/10pic-9.png" alt="plugin_builder_6"></p>
-<p>Generate&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x305F;&#x3053;&#x3068;&#x3092;&#x793A;&#x3059;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x304C;&#x73FE;&#x308C;&#x307E;&#x3059;&#x3002;OK&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3066;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x3092;&#x9589;&#x3058;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>Generateをクリックするとプラグインのフォルダが作成されたことを示すメッセージウィンドウが現れます。OKをクリックしてウィンドウを閉じましょう。</p>
 <p><img src="pic/10pic-10.png" alt="plugin_builder_7"></p>
-<h2 id="&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x78BA;&#x8A8D;"><a name="&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x78BA;&#x8A8D;"></a>&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x78BA;&#x8A8D;</h2>
-<p>&#x30A8;&#x30AF;&#x30B9;&#x30D7;&#x30ED;&#x30FC;&#x30E9;&#x30FC;&#x304B;&#x3089;<code>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;/AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins</code>&#x3092;&#x958B;&#x304D;&#x3001;plugin buider&#x306B;&#x3088;&#x308A;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="ディレクトリの確認"><a name="ディレクトリの確認"></a>ディレクトリの確認</h2>
+<p>エクスプローラーから<code>ユーザーのホームディレクトリ/AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins</code>を開き、plugin buiderによりファイルが作成されていることを確認します。</p>
 <p><img src="pic/10pic-11.png" alt="plugin_builder_folder"></p>
-<h2 id="resoucespy&#x306E;&#x4F5C;&#x6210;"><a name="resouces.py&#x306E;&#x4F5C;&#x6210;"></a>resouces.py&#x306E;&#x4F5C;&#x6210;</h2>
-<p>&#x3055;&#x3066;&#x3001;&#x66F8;&#x304D;&#x3060;&#x3055;&#x308C;&#x305F;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x307F;&#x305F;&#x3044;&#x3068;&#x3053;&#x308D;&#x3067;&#x3059;&#x304C;&#x3001;&#x305D;&#x306E;&#x524D;&#x306B;&#x3082;&#x3046;&#x4E00;&#x624B;&#x9593;&#x5FC5;&#x8981;&#x3067;&#x3059;&#x3002;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x30D0;&#x30FC;&#x306E;<code>&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;</code>&#x3068;&#x30C4;&#x30FC;&#x30EB;&#x30D0;&#x30FC;&#x306B;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x753B;&#x50CF;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x306F;&#x3001; &#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3068;&#x3057;&#x3066;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x753B;&#x50CF;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3078;&#x306E;&#x30D1;&#x30B9;&#x3092;&#x8A18;&#x8FF0;&#x3057;&#x305F;&#x3001;Qt&#x306E;&#x30EA;&#x30BD;&#x30FC;&#x30B9;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4E2D;&#x306B;&#x8A18;&#x8FF0;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x306F;&#x3001;<code>resources.qrc</code>&#x3068;&#x306A;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x30EA;&#x30BD;&#x30FC;&#x30B9;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306F;xml&#x3067;&#x8A18;&#x8FF0;&#x3055;&#x308C;&#x3066;&#x304A;&#x308A;&#x3001;&#x5185;&#x5BB9;&#x306F;&#x4E0B;&#x8A18;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="resoucespyの作成"><a name="resouces.pyの作成"></a>resouces.pyの作成</h2>
+<p>さて、書きだされたプラグインを実行してみたいところですが、その前にもう一手間必要です。メニューバーの<code>プラグイン</code>とツールバーに表示されるアイコン画像のファイル名は、 アイコンとして使用する画像ファイルへのパスを記述した、Qtのリソースファイルの中に記述されています。ファイル名は、<code>resources.qrc</code>となっています。リソースファイルはxmlで記述されており、内容は下記になります。</p>
 <pre><code class="lang-XML"><span class="hljs-tag">&lt;<span class="hljs-name">RCC</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">qresource</span> <span class="hljs-attr">prefix</span>=<span class="hljs-string">&quot;/plugins/PluginTest&quot;</span> &gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">file</span>&gt;</span>icon.png<span class="hljs-tag">&lt;/<span class="hljs-name">file</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">qresource</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">RCC</span>&gt;</span>
 </code></pre>
-<p>&#x3053;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB; &#x3092;Python&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3078;&#x5909;&#x63DB;&#x3057;&#x3066;&#x304A;&#x304F;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x306E;&#x3067;&#x3001;pyrcc4&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;&#x5909;&#x63DB;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;Windows&#x306E;&#x5834;&#x5408;&#x306B;&#x306F;OSGeo4W shell&#x3092;&#x7ACB;&#x3061;&#x4E0A;&#x3052;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x30C0;&#x30D6;&#x30EB;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3067;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3068;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;&#x304C;&#x7ACB;&#x3061;&#x4E0A;&#x304C;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>このファイル をPythonのコードへ変換しておく必要がありますので、pyrcc4コマンドで変換を行います。Windowsの場合にはOSGeo4W shellを立ち上げましょう。ダブルクリックで起動すると、コマンドプロンプトが立ち上がります。</p>
 <p><img src="pic/10pic-12.png" alt="osgeo4w_shell"></p>
-<p>OSGeo4W shell&#x4E0A;&#x3067;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x308B;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;&#x79FB;&#x52D5;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<pre><code>cd &#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;/AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\PluginTest`
-</code></pre><p>&#x79FB;&#x52D5;&#x3057;&#x305F;&#x5F8C;&#x3001;</p>
+<p>OSGeo4W shell上でプラグインを作成しているディレクトリに移動してください。</p>
+<pre><code>cd ユーザーのホームディレクトリ/AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\PluginTest`
+</code></pre><p>移動した後、</p>
 <pre><code>&gt;call qt5_env.bat
 &gt;call py3_env.bat
 &gt;pyrcc5 -o resources.py resources.qrc
 </code></pre><p><img src="pic/10pic-13.png" alt="commmand"></p>
-<p>&#x30A8;&#x30AF;&#x30B9;&#x30D7;&#x30ED;&#x30FC;&#x30E9;&#x30FC;&#x3067;resources.py&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x305F;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p>エクスプローラーでresources.pyが作成されたことを確認します。</p>
 <p><img src="pic/10pic-14.png" alt="resouces"></p>
-<p>&#x3053;&#x308C;&#x3067;&#x6700;&#x5C0F;&#x9650;&#x306E;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x4F5C;&#x6210;&#x306F;&#x7D42;&#x4E86;&#x3067;&#x3059;&#x3002;</p>
-<h2 id="&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x5B9F;&#x884C;"><a name="&#x4F5C;&#x6210;&#x4E0B;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x5B9F;&#x884C;"></a>&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x5B9F;&#x884C;</h2>
-<p>QGIS&#x3092;&#x7ACB;&#x3061;&#x4E0A;&#x3052;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
-<code>&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3; &gt; &#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x7BA1;&#x7406;&#x3068;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</code>&#x306E;&#x4E2D;&#x304B;&#x3089;&#x201D;plugin test&#x201D;&#x3092;&#x63A2;&#x3057;&#x3066;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x3066;&#x307F;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p>これで最小限のプラグイン作成は終了です。</p>
+<h2 id="作成したプラグインの実行"><a name="作成下プラグインの実行"></a>作成したプラグインの実行</h2>
+<p>QGISを立ち上げてみましょう。
+<code>プラグイン &gt; プラグインの管理とインストール</code>の中から”plugin test”を探してインストールしてみてください。</p>
 <p><img src="pic/10pic-15.png" alt="install_plugin"></p>
-<p>&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x30D0;&#x30FC;&#x304B;&#x3089;<code>&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3; &gt; Plugin Test</code>&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3068;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x3001;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x304C;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x304C;&#x308F;&#x304B;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>メニューバーから<code>プラグイン &gt; Plugin Test</code>を選択するとウィンドウが表示され、プラグインがインストールされていることがわかります。</p>
 <p><img src="pic/10pic-16.png" alt="display"></p>
-<p>&#x7A7A;&#x306E;dialog&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3060;&#x3051;&#x306E;&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3067;&#x3059;&#x304C;&#x3001;&#x5B9F;&#x884C;&#x3092;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>空のdialogが表示されるだけのプラグインですが、実行を確認できます。</p>
 <p><img src="pic/10pic-17.png" alt="execute"></p>
-<p></p><h2 style="background-color:#F8F5FD;text-align:center;" id="&#x6559;&#x6750;&#x306E;&#x5229;&#x7528;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;">&#x6559;&#x6750;&#x306E;&#x5229;&#x7528;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;</h2>&#x3000;&#x672C;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3067;&#x306F;&#x3001;&#x6559;&#x6750;&#x306E;&#x6539;&#x826F;&#x3092;&#x76EE;&#x7684;&#x3068;&#x3057;&#x305F;&#x4EFB;&#x610F;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;&#x3092;&#x5B9F;&#x65BD;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3054;&#x5354;&#x529B;&#x3044;&#x305F;&#x3060;&#x3051;&#x308B;&#x65B9;&#x306F;&#x3001;<a href="https://docs.google.com/forms/d/1r8RTFK3CPo4xNM6SdOEsAtdA0CrChD6KPVVU9kRxWRs/" target="_blank">&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;</a>&#x306B;&#x304A;&#x9032;&#x307F;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x3054;&#x5354;&#x529B;&#x306E;&#x307B;&#x3069;&#x3088;&#x308D;&#x3057;&#x304F;&#x304A;&#x9858;&#x3044;&#x3044;&#x305F;&#x3057;&#x307E;&#x3059;&#x3002;<br><br>&#x203B; &#x672C;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;&#x306E;&#x6210;&#x679C;&#x306F;&#x3001;&#x6559;&#x6750;&#x306E;&#x6539;&#x826F;&#x306E;&#x307B;&#x304B;&#x3001;&#x5B66;&#x4F1A;&#x3067;&#x306E;&#x767A;&#x8868;&#x7B49;&#x306E;&#x7814;&#x7A76;&#x76EE;&#x7684;&#x3067;&#x3082;&#x5229;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;<p></p>
+<p></p><h2 style="background-color:#F8F5FD;text-align:center;" id="教材の利用に関するアンケート">教材の利用に関するアンケート</h2>　本プロジェクトでは、教材の改良を目的とした任意アンケートを実施しています。ご協力いただける方は、<a href="https://docs.google.com/forms/d/1r8RTFK3CPo4xNM6SdOEsAtdA0CrChD6KPVVU9kRxWRs/" target="_blank">アンケート</a>にお進みください。ご協力のほどよろしくお願いいたします。<br><br>※ 本アンケートの成果は、教材の改良のほか、学会での発表等の研究目的でも利用します。<p></p>
 
                                 
                                 </section>
@@ -3405,12 +3404,56 @@ Email address:  &#x4F5C;&#x8005;&#x30E1;&#x30FC;&#x30EB;&#x30A2;&#x30C9;&#x30EC;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"プラグイン開発1","level":"2.1.11","depth":2,"next":{"title":"プラグイン開発2","level":"2.1.12","depth":2,"path":"materials/python/11/11.md","ref":"./materials/python/11/11.md","articles":[]},"previous":{"title":"一括処理","level":"2.1.10","depth":2,"path":"materials/python/09/09.md","ref":"./materials/python/09/09.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/python/10/10.md","mtime":"2019-04-18T06:08:44.789Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"プラグイン開発1","level":"2.1.11","depth":2,"next":{"title":"プラグイン開発2","level":"2.1.12","depth":2,"path":"materials/python/11/11.md","ref":"./materials/python/11/11.md","articles":[]},"previous":{"title":"一括処理","level":"2.1.10","depth":2,"path":"materials/python/09/09.md","ref":"./materials/python/09/09.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/python/10/10.md","mtime":"2022-01-31T13:55:12.453Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../../gitbook/gitbook.js"></script>
     <script src="../../../gitbook/theme.js"></script>
     

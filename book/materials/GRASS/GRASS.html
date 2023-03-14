@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>GRASSビギナーズマニュアル · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -55,7 +54,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="GRASS.html" />
+    <link rel="next" href="../06/06.html" />
     
     
     <link rel="prev" href="../QGIS/QGIS.html" />
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,138 +3273,138 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="grass&#x30D3;&#x30AE;&#x30CA;&#x30FC;&#x30BA;&#x30DE;&#x30CB;&#x30E5;&#x30A2;&#x30EB;">GRASS&#x30D3;&#x30AE;&#x30CA;&#x30FC;&#x30BA;&#x30DE;&#x30CB;&#x30E5;&#x30A2;&#x30EB;</h1>
-<p>&#x3000;&#x672C;&#x6559;&#x6750;&#x306F;&#x3001;GRASS GIS&#x306E;&#x5165;&#x9580;&#x8005;&#x5411;&#x3051;&#x5B9F;&#x7FD2;&#x7528;&#x6559;&#x6750;&#x3067;&#x3059;&#x3002;GRASS GIS&#xFF08;7&#x7CFB;&#xFF09;&#x306E;&#x6A5F;&#x80FD;&#x3084;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x306A;&#x3069;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
-<p>&#x3000;&#x8AB2;&#x984C;&#x5F62;&#x5F0F;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x672C;&#x6559;&#x6750;&#x3092;&#x4E00;&#x8AAD;&#x3057;&#x305F;&#x5F8C;&#x3001;&#x8AB2;&#x984C;&#x30DA;&#x30FC;&#x30B8;&#x3078;&#x304A;&#x9032;&#x307F;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;GIS&#x521D;&#x5B66;&#x8005;&#x306F;&#x3001;&#x672C;&#x6559;&#x6750;&#x3092;&#x9032;&#x3081;&#x308B;&#x524D;&#x306B;<a href="../00/00.html">GIS&#x306E;&#x57FA;&#x672C;&#x6982;&#x5FF5;</a>&#x306E;&#x6559;&#x6750;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304A;&#x3044;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x672C;&#x6559;&#x6750;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x969B;&#x306F;&#x3001;<a href="../../policy.html">&#x5229;&#x7528;&#x898F;&#x7D04;</a>&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x3044;&#x305F;&#x3060;&#x304D;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x6761;&#x4EF6;&#x306B;&#x540C;&#x610F;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x306E;&#x307F;&#x3054;&#x5229;&#x7528;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
+                                <h1 id="grassビギナーズマニュアル">GRASSビギナーズマニュアル</h1>
+<p>　本教材は、GRASS GISの入門者向け実習用教材です。GRASS GIS（7系）の機能やデータの読み込みなどについて解説しています。</p>
+<p>　課題形式で使用する場合は、本教材を一読した後、課題ページへお進みください。GIS初学者は、本教材を進める前に<a href="../00/00.html">GISの基本概念</a>の教材を確認しておいてください。本教材を使用する際は、<a href="../../policy.html">利用規約</a>をご確認いただき、これらの条件に同意された場合にのみご利用下さい。</p>
 <h2 id="menu"><strong>Menu</strong></h2>
 <ul>
-<li><a href="#grass_gis&#x3068;&#x306F;&#xFF1F;">GRASS GIS&#x3068;&#x306F;&#xFF1F;</a></li>
-<li><a href="#&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</a></li>
-<li><a href="#&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5F62;&#x5F0F;&#x306B;&#x3064;&#x3044;&#x3066;">&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5F62;&#x5F0F;&#x306B;&#x3064;&#x3044;&#x3066;</a></li>
-<li><a href="#grass&#x306E;&#x8D77;&#x52D5;">GRASS&#x306E;&#x8D77;&#x52D5;</a></li>
-<li><a href="#&#x6A5F;&#x80FD;&#x8AAC;&#x660E;">&#x6A5F;&#x80FD;&#x8AAC;&#x660E;</a></li>
-<li><a href="#&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306B;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;">&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306B;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</a></li>
-<li><a href="#&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3068;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;">&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3068;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;</a></li>
-<li><a href="#&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x8272;&#x5206;&#x3051;">&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x8272;&#x5206;&#x3051;</a></li>
-<li><a href="#&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;">&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;</a></li>
-<li><a href="#&#x53C2;&#x8003;&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x7D39;&#x4ECB;">&#x53C2;&#x8003;&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x7D39;&#x4ECB;</a></li>
+<li><a href="#grass_gisとは？">GRASS GISとは？</a></li>
+<li><a href="#インストール">インストール</a></li>
+<li><a href="#ファイル形式について">ファイル形式について</a></li>
+<li><a href="#grassの起動">GRASSの起動</a></li>
+<li><a href="#機能説明">機能説明</a></li>
+<li><a href="#マップセットにラスタデータを読み込む">マップセットにラスタデータを読み込む</a></li>
+<li><a href="#コマンドコンソールとモジュールツリー">コマンドコンソールとモジュールツリー</a></li>
+<li><a href="#レイヤの色分け">レイヤの色分け</a></li>
+<li><a href="#レイアウト">レイアウト</a></li>
+<li><a href="#参考ページの紹介">参考ページの紹介</a></li>
 </ul>
-<p><strong>&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;</strong></p>
-<p>&#x5B9F;&#x7FD2;&#x3092;&#x306F;&#x3058;&#x3081;&#x308B;&#x524D;&#x306B;&#x3001;<a href="https://github.com/gis-oer/datasets/raw/master/tokyo.zip" target="_blank">tokyo</a>&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<p><strong>&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#x6559;&#x6750;</strong></p>
-<p>&#x672C;&#x6559;&#x6750;&#x306F;&#x3001;<a href="https://github.com/gis-oer/gis-oer/raw/master/materials/GRASS/GRASS.pptx" target="_blank">&#x30B9;&#x30E9;&#x30A4;&#x30C9;_GRASS&#x30D3;&#x30AE;&#x30CA;&#x30FC;&#x30BA;&#x30DE;&#x30CB;&#x30E5;&#x30A2;&#x30EB;</a>&#x3068;&#x3057;&#x3066;&#x3082;&#x3001;&#x3054;&#x5229;&#x7528;&#x3044;&#x305F;&#x3060;&#x3051;&#x307E;&#x3059;&#x3002;</p>
+<p><strong>実習用データ</strong></p>
+<p>実習をはじめる前に、<a href="https://github.com/gis-oer/datasets/raw/master/tokyo.zip" target="_blank">tokyo</a>をダウンロードしてください。</p>
+<p><strong>スライド教材</strong></p>
+<p>本教材は、<a href="https://github.com/gis-oer/gis-oer/raw/master/materials/GRASS/GRASS.pptx" target="_blank">スライド_GRASSビギナーズマニュアル</a>としても、ご利用いただけます。</p>
 <hr>
-<h2 id="grassgis&#x3068;&#x306F;&#xFF1F;">GRASS_GIS&#x3068;&#x306F;&#xFF1F;</h2>
-<p>&#x3000;GRASS GIS&#x306F;&#x3001;&#x7121;&#x511F;&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x30BD;&#x30FC;&#x30B9;GIS&#x3067;&#x3059;&#x3002;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3084;&#x30D9;&#x30AF;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306B;&#x95A2;&#x9023;&#x3059;&#x308B;&#x51E6;&#x7406;&#x306E;&#x6A5F;&#x80FD;&#x304C;&#x5145;&#x5B9F;&#x3057;&#x3066;&#x304A;&#x308A;&#x3001;&#x5730;&#x5F62;&#x89E3;&#x6790;&#x3084;&#x753B;&#x50CF;&#x5206;&#x985E;&#x7B49;&#x3067;&#x6D3B;&#x7528;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x672C;&#x6559;&#x6750;&#x3067;&#x4E3B;&#x3068;&#x3057;&#x3066;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;QGIS&#x306E;&#x30C4;&#x30FC;&#x30EB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x304B;&#x3089;&#x3001;GRASS GIS&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;GRASS GIS&#x306E;&#x5165;&#x9580;&#x3068;&#x3057;&#x3066;&#x3001;&#x57FA;&#x672C;&#x6A5F;&#x80FD;&#x3068;&#x5730;&#x56F3;&#x306E;&#x4F5C;&#x6210;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;GRASS GIS&#x306E;&#x5B9F;&#x8DF5;&#x7684;&#x306A;&#x5229;&#x7528;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x77E5;&#x308A;&#x305F;&#x3044;&#x65B9;&#x306F;&#x3001;<a href="../15/15.html">&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;</a>&#x306E;&#x6559;&#x6750;&#x7B49;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;  </p>
-<p> <a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a>  </p>
-<h2 id="&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h2>
-<p>&#x3000;<a href="https://grass.osgeo.org/" target="_blank">GRASS GIS&#x306E;&#x516C;&#x5F0F;&#x30DA;&#x30FC;&#x30B8;</a> &#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3057;&#x3066;&#x3001;GRASS GIS&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3059;&#x308B;&#x3002;&#x89E3;&#x51CD;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30AC;&#x30A4;&#x30C9;&#x306B;&#x5F93;&#x3063;&#x3066;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3092;&#x884C;&#x3046;&#x3002;</p>
-<p><img src="pic/grasspic_1.png" alt="&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;"></p>
-<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5F62;&#x5F0F;&#x306B;&#x3064;&#x3044;&#x3066;">&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5F62;&#x5F0F;&#x306B;&#x3064;&#x3044;&#x3066;</h2>
-<p><img src="pic/grasspic_2.png" alt="&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5F62;&#x5F0F;"></p>
-<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="grass&#x306E;&#x8D77;&#x52D5;">GRASS&#x306E;&#x8D77;&#x52D5;</h2>
-<p>GRASS GIS&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x305F;&#x5F8C;&#x3001;&#x30C7;&#x30B9;&#x30AF;&#x30C8;&#x30C3;&#x30D7;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30C0;&#x30D6;&#x30EB;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;GRASS GIS&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3002;
-<img src="pic/grasspic_3.png" alt="&#x8D77;&#x52D5;&#x3059;&#x308B;"></p>
-<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h3 id="&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;">&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;</h3>
-<p><code>Select GRASS Location&gt;New</code>&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x3068;&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x540D;&#x306E;&#x8A2D;&#x5B9A;&#x304B;&#x3089;&#x3001;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x3002;<code>Create user mapset</code>&#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x3064;&#x3051;&#x3001;<code>&#x6B21;&#x3078;</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
-<img src="pic/grasspic_4.png" alt="&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;"></p>
-<p><code>EPSG&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x6307;&#x5B9A;</code>&#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x3064;&#x3051;&#x3001;<code>&#x6B21;&#x3078;</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
-<img src="pic/grasspic_5.png" alt="&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;"></p>
-<p>EPSG&#x30B3;&#x30FC;&#x30C9;&#x3092;<code>6667</code>&#x3068;&#x3057;&#x3001;<code>&#x6B21;&#x3078;</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
-<img src="pic/grasspic_6.png" alt="&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;"></p>
-<p>&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x3001;&#x65B0;&#x898F;&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x304C;&#x51FA;&#x529B;&#x3055;&#x308C;&#x308B;&#x3002;
-<img src="pic/grasspic_7.png" alt="&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;"></p>
-<p>&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3068;&#x3001;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x305F;&#x3081;&#x3001;&#x65B0;&#x898F;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x540D;&#x524D;&#x3092;&#x5165;&#x529B;&#x3057;&#x3001;<code>OK</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;<code>Select GRASS Mapset&#xFF1E;New</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
-<img src="pic/grasspic_8.png" alt="&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;"></p>
-<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h3 id="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;">&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;</h3>
-<p><code>Select GRASS Location</code>&#x3067;&#x5148;&#x307B;&#x3069;&#x51FA;&#x529B;&#x3057;&#x305F;&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;<code>Select GRASS Mapset</code>&#x3067;&#x5148;&#x307B;&#x3069;&#x306E;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;<code>Start GRASS session</code>&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3002;
-<img src="pic/grasspic_9.png" alt="&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;"></p>
-<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x753B;&#x9762;&#x8AAC;&#x660E;">&#x753B;&#x9762;&#x8AAC;&#x660E;</h2>
-<p>GRASS GIS&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3068;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306A;&#x753B;&#x9762;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3002;
-<img src="pic/grasspic_10.png" alt="&#x753B;&#x9762;&#x8AAC;&#x660E;"></p>
-<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x6A5F;&#x80FD;&#x8AAC;&#x660E;">&#x6A5F;&#x80FD;&#x8AAC;&#x660E;</h2>
-<p>&#x3000;GRASS GIS&#x306B;&#x306F;&#x3001;QGIS&#x306E;&#x3088;&#x3046;&#x306B;&#x5730;&#x56F3;&#x306E;&#x8868;&#x793A;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;&#x3001;&#x5206;&#x6790;&#x7B49;&#x306E;&#x6A5F;&#x80FD;&#x304C;&#x642D;&#x8F09;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x305D;&#x308C;&#x3089;&#x306E;&#x6A5F;&#x80FD;&#x306B;&#x3064;&#x3044;&#x3066;&#x7C21;&#x5358;&#x306B;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
-<img src="pic/grasspic_11.png" alt="&#x6A5F;&#x80FD;&#x8AAC;&#x660E;"></p>
+<h2 id="grassgisとは？">GRASS_GISとは？</h2>
+<p>　GRASS GISは、無償で利用できるオープンソースGISです。ラスタデータやベクタデータに関連する処理の機能が充実しており、地形解析や画像分類等で活用されています。本教材で主として利用しているQGISのツールボックスから、GRASS GISの機能を呼び出すこともできます。以下では、GRASS GISの入門として、基本機能と地図の作成手法について解説しています。GRASS GISの実践的な利用法について知りたい方は、<a href="../15/15.html">ラスタデータの分析</a>の教材等を参照してください。  </p>
+<p> <a href="GRASS.html#Menu">▲メニューへもどる</a>  </p>
+<h2 id="インストール">インストール</h2>
+<p>　<a href="https://grass.osgeo.org/" target="_blank">GRASS GISの公式ページ</a> にアクセスして、GRASS GISをダウンロードする。解凍したファイルのガイドに従ってインストールを行う。</p>
+<p><img src="pic/grasspic_1.png" alt="インストール"></p>
+<p><a href="GRASS.html#Menu">▲メニューへもどる</a></p>
+<h2 id="ファイル形式について">ファイル形式について</h2>
+<p><img src="pic/grasspic_2.png" alt="ファイル形式"></p>
+<p><a href="GRASS.html#Menu">▲メニューへもどる</a></p>
+<h2 id="grassの起動">GRASSの起動</h2>
+<p>GRASS GISをインストールした後、デスクトップのアイコンをダブルクリックし、GRASS GISを起動する。
+<img src="pic/grasspic_3.png" alt="起動する"></p>
+<p><a href="GRASS.html#Menu">▲メニューへもどる</a></p>
+<h3 id="ロケーションとマップセットの作成">ロケーションとマップセットの作成</h3>
+<p><code>Select GRASS Location&gt;New</code>を選択し、データベースとロケーション名の設定から、プロジェクトロケーションとロケーションタイトルを入力する。<code>Create user mapset</code>にチェックをつけ、<code>次へ</code>をクリックする。
+<img src="pic/grasspic_4.png" alt="ロケーションとマップセット"></p>
+<p><code>EPSGコードを指定</code>にチェックをつけ、<code>次へ</code>をクリックする。
+<img src="pic/grasspic_5.png" alt="ロケーションとマップセット"></p>
+<p>EPSGコードを<code>6667</code>とし、<code>次へ</code>をクリックする。
+<img src="pic/grasspic_6.png" alt="ロケーションとマップセット"></p>
+<p>以下のように、新規ロケーションが出力される。
+<img src="pic/grasspic_7.png" alt="ロケーションとマップセット"></p>
+<p>ロケーションを作成すると、マップセットのウィンドウが表示されるため、新規マップセットの名前を入力し、<code>OK</code>をクリックする。ウィンドウが表示されない場合は、<code>Select GRASS Mapset＞New</code>をクリックする。
+<img src="pic/grasspic_8.png" alt="ロケーションとマップセット"></p>
+<p><a href="GRASS.html#Menu">▲メニューへもどる</a></p>
+<h3 id="マップセットを表示する">マップセットを表示する</h3>
+<p><code>Select GRASS Location</code>で先ほど出力したロケーションを選択し、<code>Select GRASS Mapset</code>で先ほどのマップセットを選択し、<code>Start GRASS session</code>を実行する。
+<img src="pic/grasspic_9.png" alt="ロケーションとマップセット"></p>
+<p><a href="GRASS.html#Menu">▲メニューへもどる</a></p>
+<h2 id="画面説明">画面説明</h2>
+<p>GRASS GISを起動すると、以下のような画面が表示される。
+<img src="pic/grasspic_10.png" alt="画面説明"></p>
+<p><a href="GRASS.html#Menu">▲メニューへもどる</a></p>
+<h2 id="機能説明">機能説明</h2>
+<p>　GRASS GISには、QGISのように地図の表示、データ作成、分析等の機能が搭載されています。以下では、それらの機能について簡単に解説しています。
+<img src="pic/grasspic_11.png" alt="機能説明"></p>
 <ol>
-<li>&#x65B0;&#x898F;&#x30DE;&#x30C3;&#x30D7;&#x8868;&#x793A;&#x3000;</li>
-<li>&#x65B0;&#x898F;&#x30EF;&#x30FC;&#x30AF;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x4F5C;&#x6210;&#x3000;</li>
-<li>&#x30EF;&#x30FC;&#x30AF;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3068;&#x66F8;&#x304D;&#x51FA;&#x3057;</li>
-<li>&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x5185;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#xFF08;&#x2463;&#x306E;&#x53F3;&#x5074;&#x306E;&#x30DC;&#x30BF;&#x30F3;&#x306F;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5F62;&#x5F0F;&#x306B;&#x3088;&#x3063;&#x3066;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF09;</li>
-<li>&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7DE8;&#x96C6;&#x3000;</li>
-<li>&#x5C5E;&#x6027;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x8868;&#x793A;&#x3000;</li>
-<li>&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x3000;</li>
-<li>&#x30E9;&#x30B9;&#x30BF;&#x8A08;&#x7B97;&#x6A5F;&#x3000;</li>
-<li>&#x5E7E;&#x4F55;&#x88DC;&#x6B63;</li>
+<li>新規マップ表示　</li>
+<li>新規ワークスペース作成　</li>
+<li>ワークスペースの読み込みと書き出し</li>
+<li>マップセット内のデータ読み込み（④の右側のボタンは読み込むデータの形式によって選択する）</li>
+<li>データの編集　</li>
+<li>属性テーブルの表示　</li>
+<li>データのインポート　</li>
+<li>ラスタ計算機　</li>
+<li>幾何補正</li>
 </ol>
-<p>&#x5404;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x306E;&#x5185;&#x5BB9;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x3068;&#x304A;&#x308A;&#x3067;&#x3042;&#x308B;&#x3002;
-<img src="pic/grasspic_12.png" alt="&#x6A5F;&#x80FD;&#x8AAC;&#x660E;"></p>
-<p><img src="pic/grasspic_13.png" alt="&#x6A5F;&#x80FD;&#x8AAC;&#x660E;"></p>
-<p><img src="pic/grasspic_14.png" alt="&#x6A5F;&#x80FD;&#x8AAC;&#x660E;"></p>
-<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3068;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;">&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3068;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;</h2>
-<p>&#x3000;GRASS GIS&#x3067;&#x306F;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3084;&#x305D;&#x308C;&#x3092;&#x30C4;&#x30EA;&#x30FC;&#x4E0A;&#x306B;&#x307E;&#x3068;&#x3081;&#x305F;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;&#x304B;&#x3089;&#x51E6;&#x7406;&#x304C;&#x5B9F;&#x884C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x4E0A;&#x8A18;&#x306E;&#x5229;&#x7528;&#x4F8B;&#x306F;&#x3001;<a href="../15/15.html">&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;</a>&#x3084;<a href="../12/12.html">&#x30CD;&#x30C3;&#x30C8;&#x30EF;&#x30FC;&#x30AF;&#x5206;&#x6790;</a>&#x306E;&#x6559;&#x6750;&#x3067;&#x8A73;&#x3057;&#x304F;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x3001;&#x3053;&#x3061;&#x3089;&#x3067;&#x306F;&#x8AAC;&#x660E;&#x3057;&#x3066;&#x3044;&#x307E;&#x305B;&#x3093;&#x3002;
-&#x3000;<img src="pic/grasspic_15.png" alt="&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x3068;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30C4;&#x30EA;&#x30FC;"></p>
+<p>各メニューの内容は以下のとおりである。
+<img src="pic/grasspic_12.png" alt="機能説明"></p>
+<p><img src="pic/grasspic_13.png" alt="機能説明"></p>
+<p><img src="pic/grasspic_14.png" alt="機能説明"></p>
+<p><a href="GRASS.html#Menu">▲メニューへもどる</a></p>
+<h2 id="コマンドコンソールとモジュールツリー">コマンドコンソールとモジュールツリー</h2>
+<p>　GRASS GISでは、コマンドコンソールやそれをツリー上にまとめたモジュールツリーから処理が実行できます。上記の利用例は、<a href="../15/15.html">ラスタデータの分析</a>や<a href="../12/12.html">ネットワーク分析</a>の教材で詳しく解説しているため、こちらでは説明していません。
+　<img src="pic/grasspic_15.png" alt="コマンドコンソールとモジュールツリー"></p>
 <ul>
-<li>&#x30EC;&#x30A4;&#x30E4;&#x30FC;:&#x30EC;&#x30A4;&#x30E4;&#x3092;&#x8868;&#x793A;&#x3002;</li>
-<li>&#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;:&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5165;&#x529B;&#x3057;&#x3001;&#x51E6;&#x7406;&#x3092;&#x5B9F;&#x884C;&#x3002;</li>
-<li>&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#xFF1A;&#x30C4;&#x30EA;&#x30FC;&#x304B;&#x3089;&#x9078;&#x629E;&#x3057;&#x3001;&#x51E6;&#x7406;&#x3092;&#x5B9F;&#x884C;&#x3002;</li>
+<li>レイヤー:レイヤを表示。</li>
+<li>コンソール:コマンドを入力し、処理を実行。</li>
+<li>モジュール：ツリーから選択し、処理を実行。</li>
 </ul>
-<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306B;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;">&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306B;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</h2>
-<p>&#x3000;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x4E0B;&#x306E;&#x56F3;&#x306E;&#x8D64;&#x67A0;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;<code>&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;</code>&#x304B;&#x3089;&#x3001;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x30ED;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30E9;&#x30B9;&#x30BF;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;<code>&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;
-<img src="pic/grasspic_16.png" alt="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;"></p>
-<p>&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x3001;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3002;
-<img src="pic/grasspic_17.png" alt="&#x30DE;&#x30C3;&#x30D7;&#x30BB;&#x30C3;&#x30C8;"></p>
-<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h3 id="&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x8272;&#x5206;&#x3051;">&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x8272;&#x5206;&#x3051;</h3>
-<p>&#x30E9;&#x30B9;&#x30BF;&#x306E;&#x5024;&#xFF08;&#x3053;&#x3053;&#x3067;&#x306F;&#x6A19;&#x9AD8;&#x5024;&#xFF09;&#x306B;&#x5FDC;&#x3058;&#x305F;&#x8272;&#x5206;&#x3051;&#x306F;&#x3001;<code>&#x30E9;&#x30B9;&#x30BF;&#x30FC;&#xFF1E;&#x30AB;&#x30E9;&#x30FC;&#x8ABF;&#x6574;&#xFF1E;Manage color rules Interactively</code>&#x304B;&#x3089;&#x884C;&#x3046;&#x3002;&#x3053;&#x3053;&#x3067;&#x306F;&#x3001;&#x4F8B;&#x3068;&#x3057;&#x3066;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x5206;&#x985E;&#x6570;&#x3068;&#x5024;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&#x3002;
-<img src="pic/grasspic_18.png" alt="&#x8272;&#x5206;&#x3051;"></p>
+<p><a href="GRASS.html#Menu">▲メニューへもどる</a></p>
+<h2 id="マップセットにラスタデータを読み込む">マップセットにラスタデータを読み込む</h2>
+<p>　以下では、マップセットにデータを読み込む手法について解説しています。下の図の赤枠のアイコンをクリックし、<code>ラスターデータのインポート</code>から、作成したマップセットのロケーションと対応するラスタを選択し、<code>インポート</code>をクリックし読み込む。
+<img src="pic/grasspic_16.png" alt="マップセット"></p>
+<p>以下のように、ラスタデータが表示される。
+<img src="pic/grasspic_17.png" alt="マップセット"></p>
+<p><a href="GRASS.html#Menu">▲メニューへもどる</a></p>
+<h3 id="レイヤの色分け">レイヤの色分け</h3>
+<p>ラスタの値（ここでは標高値）に応じた色分けは、<code>ラスター＞カラー調整＞Manage color rules Interactively</code>から行う。ここでは、例として、以下のように分類数と値を入力する。
+<img src="pic/grasspic_18.png" alt="色分け"></p>
 <ol>
-<li>&#x5206;&#x985E;&#x6570;&#x3092;5&#x3068;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x5206;&#x985E;&#x5024;&#x3068;&#x8272;&#x3092;&#x8ABF;&#x6574;&#x3059;&#x308B;&#x3002;</li>
-<li><code>OK</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;</li>
+<li>分類数を5とする。</li>
+<li>分類値と色を調整する。</li>
+<li><code>OK</code>をクリックする。</li>
 </ol>
-<p>&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x3001;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x914D;&#x8272;&#x304C;&#x8ABF;&#x6574;&#x3067;&#x304D;&#x305F;&#x3002;
-<img src="pic/grasspic_19.png" alt="&#x8272;&#x5206;&#x3051;"></p>
-<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;">&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;</h2>
-<p>&#x3000;&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;GRASS GIS&#x3067;&#x306E;&#x30DE;&#x30C3;&#x30D7;&#x306E;&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x5730;&#x56F3;&#x306E;&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;&#x306F;&#x3001;<code>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#xFF1E;&#x30AB;&#x30FC;&#x30C8;&#x30B0;&#x30E9;&#x30D5;&#x30A3;&#x30C3;&#x30AF;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30B6;&#x30FC;</code>&#x304B;&#x3089;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3002;
-<img src="pic/grasspic_20.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;a"></p>
-<p><code>&#x30AB;&#x30FC;&#x30C8;&#x30B0;&#x30E9;&#x30D5;&#x30A3;&#x30C3;&#x30AF;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30B6;&#x30FC;</code>&#x3092;&#x8D77;&#x52D5;&#x3057;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x624B;&#x9806;&#x3067;&#x3001;&#x5730;&#x56F3;&#x3084;&#x51E1;&#x4F8B;&#x306A;&#x3069;&#x3092;&#x633F;&#x5165;&#x3059;&#x308B;&#x3002;
-<img src="pic/grasspic_21.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;b"></p>
+<p>以下のように、ラスタデータの配色が調整できた。
+<img src="pic/grasspic_19.png" alt="色分け"></p>
+<p><a href="GRASS.html#Menu">▲メニューへもどる</a></p>
+<h2 id="レイアウト">レイアウト</h2>
+<p>　以下では、GRASS GISでのマップのレイアウトについて解説しています。地図のレイアウトは、<code>ファイル＞カートグラフィックコンポーザー</code>から実行する。
+<img src="pic/grasspic_20.png" alt="レイアウトa"></p>
+<p><code>カートグラフィックコンポーザー</code>を起動し、以下の手順で、地図や凡例などを挿入する。
+<img src="pic/grasspic_21.png" alt="レイアウトb"></p>
 <ol>
-<li>&#x5730;&#x56F3;&#x306E;&#x7BC4;&#x56F2;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF08;&#x4E00;&#x756A;&#x6700;&#x521D;&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#xFF09;&#x3002;</li>
-<li>&#x30E9;&#x30B9;&#x30BF;&#x30DE;&#x30C3;&#x30D7;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x30D9;&#x30AF;&#x30BF;&#x30DE;&#x30C3;&#x30D7;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x51E1;&#x4F8B;&#x3001;&#x65B9;&#x4F4D;&#x3001;&#x7E2E;&#x5C3A;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;</li>
-<li>&#x5730;&#x56F3;&#x306E;&#x66F8;&#x304D;&#x51FA;&#x3057;&#xFF08;PDF&#xFF09;&#x3092;&#x3059;&#x308B;&#x3002;</li>
+<li>地図の範囲を選択する（一番最初に設定する）。</li>
+<li>ラスタマップを追加する。</li>
+<li>ベクタマップを追加する。</li>
+<li>凡例、方位、縮尺を追加する。</li>
+<li>地図の書き出し（PDF）をする。</li>
 </ol>
-<p>&#x5730;&#x56F3;&#x306E;&#x7BC4;&#x56F2;&#x3092;&#x30C9;&#x30E9;&#x30C3;&#x30B0;&#x3057;&#x3066;&#x8A2D;&#x5B9A;&#x3057;&#x3001;&#x30E9;&#x30B9;&#x30BF;&#x30DE;&#x30C3;&#x30D7;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;
-<img src="pic/grasspic_22.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;c"></p>
-<p>&#x4EE5;&#x4E0B;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;&#x5730;&#x56F3;&#x306E;&#x51E1;&#x4F8B;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;
-<img src="pic/grasspic_23.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;d"></p>
-<p>&#x4EE5;&#x4E0B;&#x306E;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;&#x5730;&#x56F3;&#x306E;&#x7E2E;&#x5C3A;&#x3068;&#x65B9;&#x4F4D;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x3002;&#x203B;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x306B;&#x3088;&#x3063;&#x3066;&#x3001;&#x65B9;&#x4F4D;&#x8A18;&#x53F7;&#x304C;&#x8FFD;&#x52A0;&#x3067;&#x304D;&#x306A;&#x3044;&#x5834;&#x5408;&#x304C;&#x3042;&#x308B;&#x3088;&#x3046;&#x3067;&#x3059;&#x3002;
-<img src="pic/grasspic_24.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;e"></p>
-<p>&#x7E2E;&#x5C3A;&#x306F;&#x3001;&#x9577;&#x3055;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x3001;&#x5358;&#x4F4D;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF08;&#x4ECA;&#x56DE;&#x306F;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x3092;&#x4F7F;&#x7528;&#xFF09;&#x3002;&#x7E2E;&#x5C3A;&#x30D0;&#x30FC;&#x306E;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;<code>OK</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x305F;&#x3089;&#x3001;&#x8FFD;&#x52A0;&#x30A2;&#x30A4;&#x30C6;&#x30E0;&#x306E;&#x914D;&#x7F6E;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3002;&#x65B9;&#x4F4D;&#x8A18;&#x53F7;&#x306F;&#x3001;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3067;&#x30B5;&#x30A4;&#x30BA;&#x3092;&#x6574;&#x3048;<code>OK</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;&#x305D;&#x308C;&#x305E;&#x308C;&#x8FFD;&#x52A0;&#x3067;&#x304D;&#x305F;&#x3089;&#x3001;&#x5730;&#x56F3;&#x306B;&#x8FFD;&#x52A0;&#x3057;&#x305F;&#x30A2;&#x30A4;&#x30C6;&#x30E0;&#x306E;&#x914D;&#x7F6E;&#x3092;&#x8ABF;&#x6574;&#x3059;&#x308B;&#x3002;</p>
-<p>&#x914D;&#x7F6E;&#x304C;&#x5B8C;&#x4E86;&#x3057;&#x305F;&#x3089;&#x3001;PDF&#x3067;&#x66F8;&#x304D;&#x51FA;&#x3059;&#xFF08;&#x30D7;&#x30EC;&#x30D3;&#x30E5;&#x30FC;&#x306F;&#x3001;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;&#x304C;&#x3042;&#x308B;&#xFF09;&#x3002;
-<img src="pic/grasspic_25.png" alt="&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;h"></p>
-<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x53C2;&#x8003;&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x7D39;&#x4ECB;">&#x53C2;&#x8003;&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x7D39;&#x4ECB;</h2>
+<p>地図の範囲をドラッグして設定し、ラスタマップを追加する。
+<img src="pic/grasspic_22.png" alt="レイアウトc"></p>
+<p>以下のアイコンをクリックし、地図の凡例を追加する。
+<img src="pic/grasspic_23.png" alt="レイアウトd"></p>
+<p>以下のアイコンをクリックし、地図の縮尺と方位を追加する。※バージョンによって、方位記号が追加できない場合があるようです。
+<img src="pic/grasspic_24.png" alt="レイアウトe"></p>
+<p>縮尺は、長さを設定し、単位を選択する（今回はデフォルトを使用）。縮尺バーのデザインを選択し、<code>OK</code>をクリックする。追加されたら、追加アイテムの配置を変更する。方位記号は、デザインを選択し、スタイルでサイズを整え<code>OK</code>をクリックする。それぞれ追加できたら、地図に追加したアイテムの配置を調整する。</p>
+<p>配置が完了したら、PDFで書き出す（プレビューは、表示されない場合がある）。
+<img src="pic/grasspic_25.png" alt="レイアウトh"></p>
+<p><a href="GRASS.html#Menu">▲メニューへもどる</a></p>
+<h2 id="参考ページの紹介">参考ページの紹介</h2>
 <ol>
-<li><a href="https://grass.osgeo.org/" target="_blank">GRASS GIS&#x306E;&#x516C;&#x5F0F;&#x30DA;&#x30FC;&#x30B8;</a></li>
-<li><a href="http://foss4g.kii.gscc.osaka-cu.ac.jp/moodle/" target="_blank">FOSS4G &#x3092;&#x6D3B;&#x7528;&#x3057;&#x305F;&#x885B;&#x661F;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5229;&#x7528;&#x306E;&#x305F;&#x3081;&#x306E;&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x30FB;&#x30EA;&#x30BD;&#x30FC;&#x30B9;&#x306E;&#x69CB;&#x7BC9;</a></li>
+<li><a href="https://grass.osgeo.org/" target="_blank">GRASS GISの公式ページ</a></li>
+<li><a href="http://foss4g.kii.gscc.osaka-cu.ac.jp/moodle/" target="_blank">FOSS4G を活用した衛星データの利用のためのオープン・リソースの構築</a></li>
 </ol>
-<p><a href="GRASS.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h4 id="&#x3053;&#x306E;&#x6559;&#x6750;&#x306E;&#x8AB2;&#x984C;&#x30DA;&#x30FC;&#x30B8;grass&#x3078;&#x9032;&#x3080;">&#x3053;&#x306E;&#x6559;&#x6750;&#x306E;[&#x8AB2;&#x984C;&#x30DA;&#x30FC;&#x30B8;_GRASS]&#x3078;&#x9032;&#x3080;</h4>
-<h4 id="&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;">&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;</h4>
-<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x30AD;&#x30E3;&#x30D7;&#x30C1;&#x30E3;&#x753B;&#x50CF;&#x306E;&#x51FA;&#x5178;&#x3084;&#x30AF;&#x30EC;&#x30B8;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../license.html">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;</a>&#x3088;&#x308A;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<p></p><h2 style="background-color:#F8F5FD;text-align:center;" id="&#x6559;&#x6750;&#x306E;&#x5229;&#x7528;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;">&#x6559;&#x6750;&#x306E;&#x5229;&#x7528;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;</h2>&#x3000;&#x672C;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3067;&#x306F;&#x3001;&#x6559;&#x6750;&#x306E;&#x6539;&#x826F;&#x3092;&#x76EE;&#x7684;&#x3068;&#x3057;&#x305F;&#x4EFB;&#x610F;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;&#x3092;&#x5B9F;&#x65BD;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3054;&#x5354;&#x529B;&#x3044;&#x305F;&#x3060;&#x3051;&#x308B;&#x65B9;&#x306F;&#x3001;<a href="https://customform.jp/form/input/14328/" target="_blank">&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;</a>&#x306B;&#x304A;&#x9032;&#x307F;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x3054;&#x5354;&#x529B;&#x306E;&#x307B;&#x3069;&#x3088;&#x308D;&#x3057;&#x304F;&#x304A;&#x9858;&#x3044;&#x3044;&#x305F;&#x3057;&#x307E;&#x3059;&#x3002;<br><br>&#x203B; &#x672C;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;&#x306E;&#x6210;&#x679C;&#x306F;&#x3001;&#x6559;&#x6750;&#x306E;&#x6539;&#x826F;&#x306E;&#x307B;&#x304B;&#x3001;&#x5B66;&#x4F1A;&#x3067;&#x306E;&#x767A;&#x8868;&#x7B49;&#x306E;&#x7814;&#x7A76;&#x76EE;&#x7684;&#x3067;&#x3082;&#x5229;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;&#x307E;&#x305F;&#x3001;&#x672C;&#x30A2;&#x30F3;&#x30B1;&#x30FC;&#x30C8;&#x3067;&#x306F;&#x3001;&#x500B;&#x4EBA;&#x304C;&#x7279;&#x5B9A;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306A;&#x8CEA;&#x554F;&#x306F;&#x8A2D;&#x3051;&#x3066;&#x304A;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;<p></p>
+<p><a href="GRASS.html#Menu">▲メニューへもどる</a></p>
+<h4 id="この教材の課題ページgrassへ進む">この教材の[課題ページ_GRASS]へ進む</h4>
+<h4 id="ライセンスに関する注意事項">ライセンスに関する注意事項</h4>
+<p>本教材で利用しているキャプチャ画像の出典やクレジットについては、<a href="../license.html">その他のライセンスについて</a>よりご確認ください。</p>
+<p></p><h2 style="background-color:#F8F5FD;text-align:center;" id="教材の利用に関するアンケート">教材の利用に関するアンケート</h2>　本プロジェクトでは、教材の改良を目的とした任意アンケートを実施しています。ご協力いただける方は、<a href="https://customform.jp/form/input/14328/" target="_blank">アンケート</a>にお進みください。ご協力のほどよろしくお願いいたします。<br><br>※ 本アンケートの成果は、教材の改良のほか、学会での発表等の研究目的でも利用します。また、本アンケートでは、個人が特定できるような質問は設けておりません。<p></p>
 
                                 
                                 </section>
@@ -3433,12 +3432,12 @@
 
             
                 
-                <a href="../QGIS/QGIS.html#参考ページ等" class="navigation navigation-prev " aria-label="Previous page: 参考ページ等">
+                <a href="../QGIS/QGIS.html" class="navigation navigation-prev " aria-label="Previous page: QGISビギナーズマニュアル(3系)">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="GRASS.html#GRASSGIS" class="navigation navigation-next " aria-label="Next page: GRASS GISとは？">
+                <a href="../06/06.html" class="navigation navigation-next " aria-label="Next page: リモートセンシングとその解析">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -3449,12 +3448,56 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GRASSビギナーズマニュアル","level":"1.6","depth":1,"next":{"title":"GRASS GISとは？","level":"1.6.1","depth":2,"anchor":"#GRASSGIS","path":"materials/GRASS/GRASS.md","ref":"./materials/GRASS/GRASS.md#GRASSGIS","articles":[]},"previous":{"title":"参考ページ等","level":"1.5.16","depth":2,"anchor":"#参考ページ等","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#参考ページ等","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/GRASS/GRASS.md","mtime":"2020-06-14T07:01:11.193Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GRASSビギナーズマニュアル","level":"1.6","depth":1,"next":{"title":"リモートセンシングとその解析","level":"1.7","depth":1,"path":"materials/06/06.md","ref":"./materials/06/06.md","articles":[{"title":"衛星画像の取得","level":"1.7.1","depth":2,"anchor":"#衛星画像の取得","path":"materials/06/06.md","ref":"./materials/06/06.md#衛星画像の取得","articles":[]},{"title":"SAC_Pluginの取得","level":"1.7.2","depth":2,"anchor":"#sac_pluginの取得","path":"materials/06/06.md","ref":"./materials/06/06.md#sac_pluginの取得","articles":[]},{"title":"RGB合成","level":"1.7.3","depth":2,"anchor":"#rgb合成","path":"materials/06/06.md","ref":"./materials/06/06.md#rgb合成","articles":[]},{"title":"NDVI","level":"1.7.4","depth":2,"anchor":"#ndvi","path":"materials/06/06.md","ref":"./materials/06/06.md#ndvi","articles":[]},{"title":"教師つき分類","level":"1.7.5","depth":2,"anchor":"#教師つき分類","path":"materials/06/06.md","ref":"./materials/06/06.md#教師つき分類","articles":[]},{"title":"教師なし分類","level":"1.7.6","depth":2,"anchor":"#教師なし分類","path":"materials/06/06.md","ref":"./materials/06/06.md#教師なし分類","articles":[]},{"title":"MultiSpecによる分析","level":"1.7.7","depth":2,"anchor":"#multispecによる分析","path":"materials/06/06.md","ref":"./materials/06/06.md#multispecによる分析","articles":[]}]},"previous":{"title":"QGISビギナーズマニュアル(3系)","level":"1.5","depth":1,"path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md","articles":[{"title":"QGISとは？","level":"1.5.1","depth":2,"anchor":"#qgisとは？","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#qgisとは？","articles":[]},{"title":"インストール","level":"1.5.2","depth":2,"anchor":"#インストール","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#インストール","articles":[]},{"title":"起動","level":"1.5.3","depth":2,"anchor":"#起動","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#起動","articles":[]},{"title":"ウインドウ","level":"1.5.4","depth":2,"anchor":"#ウインドウ","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#ウインドウ","articles":[]},{"title":"各種ボタン","level":"1.5.5","depth":2,"anchor":"#各種ボタン","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#各種ボタン","articles":[]},{"title":"データの読み込み","level":"1.5.6","depth":2,"anchor":"#データの読み込み","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#データの読み込み","articles":[]},{"title":"機能説明","level":"1.5.7","depth":2,"anchor":"#機能説明","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#機能説明","articles":[]},{"title":"属性テーブル","level":"1.5.8","depth":2,"anchor":"#属性テーブル","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#属性テーブル","articles":[]},{"title":"プロパティ","level":"1.5.9","depth":2,"anchor":"#プロパティ","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#プロパティ","articles":[]},{"title":"地図タイルの読み込み","level":"1.5.10","depth":2,"anchor":"#地図タイルの読み込み","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#地図タイルの読み込み","articles":[]},{"title":"地図のレイアウト","level":"1.5.11","depth":2,"anchor":"#地図のレイアウト","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#地図のレイアウト","articles":[]},{"title":"作業ファイルの保存","level":"1.5.12","depth":2,"anchor":"#作業ファイルの保存","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#作業ファイルの保存","articles":[]},{"title":"プラグイン","level":"1.5.13","depth":2,"anchor":"#プラグイン","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#プラグイン","articles":[]},{"title":"Python入門","level":"1.5.14","depth":2,"anchor":"#python入門","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#python入門","articles":[]},{"title":"データの保存形式","level":"1.5.15","depth":2,"anchor":"#データの保存形式","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#データの保存形式","articles":[]},{"title":"参考ページ等","level":"1.5.16","depth":2,"anchor":"#参考ページ等","path":"materials/QGIS/QGIS.md","ref":"./materials/QGIS/QGIS.md#参考ページ等","articles":[]}]},"articles":[{"title":"GRASS GISとは？","level":"1.6.1","depth":2,"anchor":"#GRASSGIS","path":"materials/GRASS/GRASS.md","ref":"./materials/GRASS/GRASS.md#GRASSGIS","articles":[]},{"title":"インストール","level":"1.6.2","depth":2,"anchor":"#インストール","path":"materials/GRASS/GRASS.md","ref":"./materials/GRASS/GRASS.md#インストール","articles":[]},{"title":"ファイル形式について","level":"1.6.3","depth":2,"anchor":"#ファイル形式について","path":"materials/GRASS/GRASS.md","ref":"./materials/GRASS/GRASS.md#ファイル形式について","articles":[]},{"title":"GRASSの起動","level":"1.6.4","depth":2,"anchor":"#grassの起動","path":"materials/GRASS/GRASS.md","ref":"./materials/GRASS/GRASS.md#grassの起動","articles":[]},{"title":"機能説明","level":"1.6.5","depth":2,"anchor":"#機能説明","path":"materials/GRASS/GRASS.md","ref":"./materials/GRASS/GRASS.md#機能説明","articles":[]},{"title":"マップセットにラスタデータを読み込む","level":"1.6.6","depth":2,"anchor":"#マップセットにラスタデータを読み込む","path":"materials/GRASS/GRASS.md","ref":"./materials/GRASS/GRASS.md#マップセットにラスタデータを読み込む","articles":[]},{"title":"コマンドコンソールとモジュールツリー","level":"1.6.7","depth":2,"anchor":"#コマンドコンソールとモジュールツリー","path":"materials/GRASS/GRASS.md","ref":"./materials/GRASS/GRASS.md#コマンドコンソールとモジュールツリー","articles":[]},{"title":"レイヤの色分け","level":"1.6.8","depth":2,"anchor":"#レイヤの色分け","path":"materials/GRASS/GRASS.md","ref":"./materials/GRASS/GRASS.md#レイヤの色分け","articles":[]},{"title":"レイアウト","level":"1.6.9","depth":2,"anchor":"#レイアウト","path":"materials/GRASS/GRASS.md","ref":"./materials/GRASS/GRASS.md#レイアウト","articles":[]},{"title":"参考ページの紹介","level":"1.6.10","depth":2,"anchor":"#参考ページの紹介","path":"materials/GRASS/GRASS.md","ref":"./materials/GRASS/GRASS.md#参考ページの紹介","articles":[]}],"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/GRASS/GRASS.md","mtime":"2022-01-31T13:55:09.818Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
     

@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>傾向面分析 · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -55,7 +54,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="16.html" />
+    <link rel="next" href="../17/17.html" />
     
     
     <link rel="prev" href="../15/15.html" />
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,43 +3273,43 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;">&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;</h1>
-<p>&#x672C;&#x6559;&#x6750;&#x306F;&#x3001;&#x300C;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;&#x300D;&#x306E;&#x5B9F;&#x7FD2;&#x7528;&#x6559;&#x6750;&#x3067;&#x3059;&#x3002;GIS&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x3092;&#x7528;&#x3044;&#x305F;&#x3001;&#x30E9;&#x30B9;&#x30BF;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5206;&#x6790;&#x306E;&#x624B;&#x6CD5;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x306B;&#x306F;&#x3001;&#x7121;&#x511F;&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;SAM&#x3092;&#x7528;&#x3044;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x8B1B;&#x7FA9;&#x7528;&#x6559;&#x6750;&#x3068;&#x3057;&#x3066;&#x3001;<a href="http://curricula.csis.u-tokyo.ac.jp/slide/4.html" target="_blank">&#x5730;&#x7406;&#x60C5;&#x5831;&#x79D1;&#x5B66;&#x6559;&#x80B2;&#x7528;&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#xFF08;GISc&#x30B9;&#x30E9;&#x30A4;&#x30C9;&#xFF09;</a>&#x306E;4&#x7AE0;&#x304C;&#x53C2;&#x8003;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;&#x672C;&#x6559;&#x6750;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x969B;&#x306F;&#x3001;<a href="../../policy.html">&#x5229;&#x7528;&#x898F;&#x7D04;</a>&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x3044;&#x305F;&#x3060;&#x304D;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x6761;&#x4EF6;&#x306B;&#x540C;&#x610F;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x306B;&#x306E;&#x307F;&#x3054;&#x5229;&#x7528;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
+                                <h1 id="傾向面分析">傾向面分析</h1>
+<p>本教材は、「傾向面分析」の実習用教材です。GISソフトウェアを用いた、ラスタデータの分析の手法について解説しています。ソフトウェアには、無償で利用できるSAMを用いています。講義用教材として、<a href="http://curricula.csis.u-tokyo.ac.jp/slide/4.html" target="_blank">地理情報科学教育用スライド（GIScスライド）</a>の4章が参考になります。本教材を使用する際は、<a href="../../policy.html">利用規約</a>をご確認いただき、これらの条件に同意された場合にのみご利用下さい。</p>
 <h2 id="menu"><strong>Menu</strong></h2>
 <ul>
-<li><a href="#sam&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">SAM&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</a></li>
-<li><a href="#&#x7B2C;1&#x6B21;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;">&#x7B2C;1&#x6B21;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;</a></li>
-<li><a href="#&#x7B2C;2&#x6B21;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;">&#x7B2C;2&#x6B21;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;</a></li>
+<li><a href="#samのインストール">SAMのインストール</a></li>
+<li><a href="#第1次傾向面分析">第1次傾向面分析</a></li>
+<li><a href="#第2次傾向面分析">第2次傾向面分析</a></li>
 </ul>
-<p><strong>&#x4F7F;&#x7528;&#x30C7;&#x30FC;&#x30BF;</strong></p>
+<p><strong>使用データ</strong></p>
 <ul>
-<li>&#x300E;&#x5730;&#x7406;&#x60C5;&#x5831;&#x79D1;&#x5B66; GIS&#x30B9;&#x30BF;&#x30F3;&#x30C0;&#x30FC;&#x30C9;&#x300F; p98&#x3001;&#x8868;16-1&#x3092;&#x5F15;&#x7528;&#x3057;&#x3001;CSV&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;</li>
+<li>『地理情報科学 GISスタンダード』 p98、表16-1を引用し、CSVデータを作成</li>
 </ul>
 <hr>
-<h2 id="sam&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">SAM&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h2>
-<p>&#x4EE5;&#x4E0B;&#x3067;&#x306F;&#x3001;SAM&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;&#x3092;&#x884C;&#x3046;&#x3002;
-<a href="https://www.ecoevol.ufg.br/sam/" target="_blank">SAM&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x30B5;&#x30A4;&#x30C8;</a>&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3057;&#x3001;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x5F8C;&#x306B;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x3001;SAM&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3002;
-&#xFF08;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x6642;&#x306B;&#x767B;&#x9332;&#x304C;&#x5FC5;&#x8981;&#x3001;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x30DA;&#x30FC;&#x30B8;&#x6700;&#x4E0B;&#x90E8;&#x306E;old version&#x304B;&#x3089;3.1&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;&#xFF09;
+<h2 id="samのインストール">SAMのインストール</h2>
+<p>以下では、SAMを利用して傾向面分析を行う。
+<a href="https://www.ecoevol.ufg.br/sam/" target="_blank">SAMのダウンロードサイト</a>にアクセスし、ダウンロード後にインストールし、SAMを起動する。
+（ダウンロード時に登録が必要、ダウンロードページ最下部のold versionから3.1をインストールする）
 <img src="pic/16pic_1.png" alt="SAM"></p>
-<p><a href="16.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x7B2C;1&#x6B21;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;">&#x7B2C;1&#x6B21;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;</h2>
-<p>File&gt;Open&gt;Open New Main Data File&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;txt&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3002;
-Preset Geographic Variables &#x306E;X Axis &#x3068; Y Axis&#x306B;&#x5024;&#x3092;&#x5165;&#x529B;&#x3057;&#x300C;close&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3002;
+<p><a href="16.html#Menu">▲メニューへもどる</a></p>
+<h2 id="第1次傾向面分析">第1次傾向面分析</h2>
+<p>File&gt;Open&gt;Open New Main Data Fileを選択し、txtファイルを読み込む。
+Preset Geographic Variables のX Axis と Y Axisに値を入力し「close」をクリックする。
 <img src="pic/16pic_2.png" alt="SAM"></p>
-<p>Structure&gt;Spatial Filtering&gt;Trend Surface Analysis&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3002;
-Response variable&#x304B;&#x3089;&#x4EBA;&#x53E3;&#x5BC6;&#x5EA6;&#x306E;&#x5217;&#x3092;&#x9078;&#x629E;&#x3057;&#x305F;&#x72B6;&#x614B;&#x3067; X&#x3068;Y&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;Auto Select Polynomial Order &#x304B;&#x3089;1st Order&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;Compute&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x51E6;&#x7406;&#x304C;&#x958B;&#x59CB;&#x3055;&#x308C;&#x7B2C;1&#x6B21;&#x50BE;&#x5411;&#x9762;&#x304C;&#x8A08;&#x7B97;&#x3055;&#x308C;&#x308B;&#x3002;
+<p>Structure&gt;Spatial Filtering&gt;Trend Surface Analysisを選択する。
+Response variableから人口密度の列を選択した状態で XとYを選択し、Auto Select Polynomial Order から1st Orderを選択し、Computeをクリックすると処理が開始され第1次傾向面が計算される。
 <img src="pic/16pic_3.png" alt="SAM"></p>
-<p><a href="16.html#Menu">&#x25B2;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x3078;&#x3082;&#x3069;&#x308B;</a></p>
-<h2 id="&#x7B2C;2&#x6B21;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;">&#x7B2C;2&#x6B21;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;</h2>
-<p>2nd Order&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;Compute&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x51E6;&#x7406;&#x304C;&#x958B;&#x59CB;&#x3055;&#x308C;&#x7B2C;2&#x6B21;&#x50BE;&#x5411;&#x9762;&#x304C;&#x8A08;&#x7B97;&#x3055;&#x308C;&#x308B;&#x3002;
-&#x540C;&#x69D8;&#x306E;&#x624B;&#x6CD5;&#x3067;&#x7B2C;4&#x6B21;&#x50BE;&#x5411;&#x9762;&#x307E;&#x3067;&#x6C42;&#x3081;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x3002;
+<p><a href="16.html#Menu">▲メニューへもどる</a></p>
+<h2 id="第2次傾向面分析">第2次傾向面分析</h2>
+<p>2nd Orderを選択し、Computeをクリックすると処理が開始され第2次傾向面が計算される。
+同様の手法で第4次傾向面まで求めることができる。
 <img src="pic/16pic_4.png" alt="SAM"></p>
-<h3 id="&#x7B2C;3&#x6B21;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;">&#x7B2C;3&#x6B21;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;</h3>
+<h3 id="第3次傾向面分析">第3次傾向面分析</h3>
 <p><img src="pic/16pic_5.png" alt="SAM"></p>
-<h3 id="&#x7B2C;4&#x6B21;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;">&#x7B2C;4&#x6B21;&#x50BE;&#x5411;&#x9762;&#x5206;&#x6790;</h3>
+<h3 id="第4次傾向面分析">第4次傾向面分析</h3>
 <p><img src="pic/16pic_6.png" alt="SAM"></p>
-<h4 id="&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;">&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;</h4>
-<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x30AD;&#x30E3;&#x30D7;&#x30C1;&#x30E3;&#x753B;&#x50CF;&#x306E;&#x51FA;&#x5178;&#x3084;&#x30AF;&#x30EC;&#x30B8;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../license.html">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;</a>&#x3088;&#x308A;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<h4 id="ライセンスに関する注意事項">ライセンスに関する注意事項</h4>
+<p>本教材で利用しているキャプチャ画像の出典やクレジットについては、<a href="../license.html">その他のライセンスについて</a>よりご確認ください。</p>
 
                                 
                                 </section>
@@ -3338,12 +3337,12 @@ Response variable&#x304B;&#x3089;&#x4EBA;&#x53E3;&#x5BC6;&#x5EA6;&#x306E;&#x5217
 
             
                 
-                <a href="../15/15.html#コストパス解析" class="navigation navigation-prev " aria-label="Previous page: コストパス解析">
+                <a href="../15/15.html" class="navigation navigation-prev " aria-label="Previous page: ラスタデータの分析">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="16.html#samのインストール" class="navigation navigation-next " aria-label="Next page: SAMのインストール">
+                <a href="../17/17.html" class="navigation navigation-next " aria-label="Next page: 空間的自己相関">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -3354,12 +3353,56 @@ Response variable&#x304B;&#x3089;&#x4EBA;&#x53E3;&#x5BC6;&#x5EA6;&#x306E;&#x5217
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"傾向面分析","level":"1.17","depth":1,"next":{"title":"SAMのインストール","level":"1.17.1","depth":2,"anchor":"#samのインストール","path":"materials/16/16.md","ref":"./materials/16/16.md#samのインストール","articles":[]},"previous":{"title":"コストパス解析","level":"1.16.8","depth":2,"anchor":"#コストパス解析","path":"materials/15/15.md","ref":"./materials/15/15.md#コストパス解析","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/16/16.md","mtime":"2019-06-21T04:19:32.078Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"傾向面分析","level":"1.17","depth":1,"next":{"title":"空間的自己相関","level":"1.18","depth":1,"path":"materials/17/17.md","ref":"./materials/17/17.md","articles":[{"title":"CrimeStatのインストール","level":"1.18.1","depth":2,"anchor":"#crimestatのインストール","path":"materials/17/17.md","ref":"./materials/17/17.md#crimestatのインストール","articles":[]},{"title":"Moran’s_I統計量","level":"1.18.2","depth":2,"anchor":"#moran’s_i統計量","path":"materials/17/17.md","ref":"./materials/17/17.md#moran’s_i統計量","articles":[]},{"title":"Geary's_C統計量","level":"1.18.3","depth":2,"anchor":"#geary's_C統計量","path":"materials/17/17.md","ref":"./materials/17/17.md#geary's_C統計量","articles":[]},{"title":"Join_count統計量","level":"1.18.4","depth":2,"anchor":"#join_count統計量","path":"materials/17/17.md","ref":"./materials/17/17.md#join_count統計量","articles":[]}]},"previous":{"title":"ラスタデータの分析","level":"1.16","depth":1,"path":"materials/15/15.md","ref":"./materials/15/15.md","articles":[{"title":"数値標高モデルの変換","level":"1.16.1","depth":2,"anchor":"#数値標高モデルの変換","path":"materials/15/15.md","ref":"./materials/15/15.md#数値標高モデルの変換","articles":[]},{"title":"数値標高モデルの視覚的分析","level":"1.16.2","depth":2,"anchor":"#数値標高モデルの視覚的分析","path":"materials/15/15.md","ref":"./materials/15/15.md#数値標高モデルの視覚的分析","articles":[]},{"title":"基本的な統計量の確認","level":"1.16.3","depth":2,"anchor":"#基本的な統計量の確認","path":"materials/15/15.md","ref":"./materials/15/15.md#基本的な統計量の確認","articles":[]},{"title":"ベクタの処理とラスタの集計の組み合わせ分析","level":"1.16.4","depth":2,"anchor":"#ベクタの処理とラスタの集計の組み合わせ分析","path":"materials/15/15.md","ref":"./materials/15/15.md#ベクタの処理とラスタの集計の組み合わせ分析","articles":[]},{"title":"フィルタリング","level":"1.16.5","depth":2,"anchor":"#フィルタリング","path":"materials/15/15.md","ref":"./materials/15/15.md#フィルタリング","articles":[]},{"title":"ラスタ演算","level":"1.16.6","depth":2,"anchor":"#ラスタ演算","path":"materials/15/15.md","ref":"./materials/15/15.md#ラスタ演算","articles":[]},{"title":"流域解析","level":"1.16.7","depth":2,"anchor":"#流域解析","path":"materials/15/15.md","ref":"./materials/15/15.md#流域解析","articles":[]},{"title":"コストパス解析","level":"1.16.8","depth":2,"anchor":"#コストパス解析","path":"materials/15/15.md","ref":"./materials/15/15.md#コストパス解析","articles":[]}]},"articles":[{"title":"SAMのインストール","level":"1.17.1","depth":2,"anchor":"#samのインストール","path":"materials/16/16.md","ref":"./materials/16/16.md#samのインストール","articles":[]},{"title":"第1次傾向面分析","level":"1.17.2","depth":2,"anchor":"#第1次傾向面分析","path":"materials/16/16.md","ref":"./materials/16/16.md#第1次傾向面分析","articles":[]},{"title":"第2次傾向面分析","level":"1.17.3","depth":2,"anchor":"#第2次傾向面分析","path":"materials/16/16.md","ref":"./materials/16/16.md#第2次傾向面分析","articles":[]}],"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/16/16.md","mtime":"2022-01-31T13:55:09.466Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
     

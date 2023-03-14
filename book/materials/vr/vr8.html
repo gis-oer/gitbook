@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>歩行機能のプログラミング · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,19 +3273,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="unity&#x3067;&#x306E;vr&#x306E;&#x5B9F;&#x88C5;">Unity&#x3067;&#x306E;VR&#x306E;&#x5B9F;&#x88C5;</h2>
-<p> Unity&#x306E;Meta Quest 2&#x5411;&#x3051;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x958B;&#x767A;&#x306E;&#x305F;&#x3081;&#x306E;&#x521D;&#x671F;&#x8A2D;&#x5B9A;&#x304C;&#x6E08;&#x307F;&#x307E;&#x3057;&#x305F;&#x306E;&#x3067;&#x3001;&#x5B9F;&#x88C5;&#x4F5C;&#x696D;&#x306B;&#x5165;&#x308A;&#x307E;&#x3059;&#x3002;</p>
-<h2 id="1-oculus&#x3067;&#x52D5;&#x4F5C;&#x3059;&#x308B;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30FC;&#xFF08;&#x30AB;&#x30E1;&#x30E9;&#xFF09;&#x306E;&#x5C0E;&#x5165;">1. Oculus&#x3067;&#x52D5;&#x4F5C;&#x3059;&#x308B;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30FC;&#xFF08;&#x30AB;&#x30E1;&#x30E9;&#xFF09;&#x306E;&#x5C0E;&#x5165;</h2>
-<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x306F;&#x3001;Oculus Integration&#x306E;&#x30A2;&#x30BB;&#x30C3;&#x30C8;&#x3092;&#x5C0E;&#x5165;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;Meta Quest 2&#x3067;&#x52D5;&#x4F5C;&#x3055;&#x305B;&#x308B;&#x305F;&#x3081;&#x306B;&#x3001;Oculus Integration&#x306B;&#x53CE;&#x9332;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;Oculus&#x5C02;&#x7528;&#x306E;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#xFF08;&#x30AB;&#x30E1;&#x30E9;&#xFF09;&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x307F;&#x307E;&#x3059;&#x3002;</p>
-<h3 id="&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x8FFD;&#x52A0;">&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x8FFD;&#x52A0;</h3>
-<p>Project&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x306E;Assets&#x5098;&#x4E0B;&#x304B;&#x3089;<code>Oculus&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#xFF1E;VR&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#xFF1E;Prefabs&#x30D5;&#x30A9;&#x30EB;&#x30C0;</code>&#x3092;&#x958B;&#x3044;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;<code>Prefabs&#x30D5;&#x30A9;&#x30EB;&#x30C0;</code>&#x306B;<code>OVRPlayerController</code>&#x3068;&#x3044;&#x3046;Prefab&#xFF08;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#xFF09;&#x304C;&#x5165;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;<code>OVRPlayerController</code>&#x3092;&#x3001;Hierarchy&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x306B;&#x30C9;&#x30E9;&#x30C3;&#x30B0;&#x30FB;&#x30A2;&#x30F3;&#x30C9;&#x30FB;&#x30C9;&#x30ED;&#x30C3;&#x30D7;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;&#x3059;&#x308B;&#x3068;&#x3001;&#x30B7;&#x30FC;&#x30F3;&#x306B;<code>OVRPlayerController</code>&#x304C;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
-<h3 id="vr&#x306E;&#x30AB;&#x30E1;&#x30E9;&#x306E;&#x6E96;&#x5099;">VR&#x306E;&#x30AB;&#x30E1;&#x30E9;&#x306E;&#x6E96;&#x5099;</h3>
-<p>&#x306A;&#x304A;&#x3001;<code>OVRPlayerController</code>&#x306B;&#x306F;<code>OVRCameraRig</code>&#x3068;&#x3044;&#x3046;&#x30AB;&#x30E1;&#x30E9;&#x304C;&#x542B;&#x307E;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;<code>OVRPlayerController</code>&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x305F;&#x3089;&#x3001;&#x3059;&#x3067;&#x306B;&#x5C0E;&#x5165;&#x3057;&#x305F;Standard Assets&#x306E;&#x30AD;&#x30E3;&#x30E9;&#x30AF;&#x30BF;&#x30FC;&#xFF08;&#x3064;&#x307E;&#x308A;&#x30AB;&#x30E1;&#x30E9;&#xFF09;&#x3068;&#x3001;&#x30AB;&#x30E1;&#x30E9;&#x540C;&#x58EB;&#x304C;&#x7AF6;&#x5408;&#x3057;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;Hierarchy&#x30D3;&#x30E5;&#x30FC;&#x304B;&#x3089;&#x3001;Standard Assets&#x306E;&#x30AB;&#x30E1;&#x30E9;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;<code>OVRPlayerController</code>&#x306E;&#x307F;&#x304C;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x305F;&#x3089;&#x3001;&#x30B7;&#x30FC;&#x30F3;&#x306E;&#x97EE;&#x5C71;&#x53CD;&#x5C04;&#x7089;&#x3068;<code>OVRPlayerController</code>&#x3092;&#x305D;&#x308C;&#x305E;&#x308C;&#x8FD1;&#x3065;&#x3051;&#x3066;&#x3001;<code>OVRPlayerController</code>&#x306E;&#x30AB;&#x30E1;&#x30E9;&#x304C;&#x3001;&#x97EE;&#x5C71;&#x53CD;&#x5C04;&#x7089;&#x3092;&#x898B;&#x308B;&#x3088;&#x3046;&#x306B;&#x4F4D;&#x7F6E;&#x30FB;&#x89D2;&#x5EA6;&#x3092;&#x8ABF;&#x6574;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;&#x76F4;&#x63A5;&#x3001;&#x30DE;&#x30A6;&#x30B9;&#x3067;<code>OVRPlayerController</code>&#x3092;&#x79FB;&#x52D5;&#x3067;&#x304D;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;<code>OVRPlayerController</code>&#x3092;&#x9078;&#x629E;&#x3057;&#x305F;&#x72B6;&#x614B;&#x3067;&#x3001;Unity&#x53F3;&#x5074;&#x306E;Inspector&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x306E;Position&#x306A;&#x3069;&#x306E;&#x6570;&#x5024;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x3001;&#x4F4D;&#x7F6E;&#x3092;&#x8ABF;&#x6574;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
-<h3 id="&#x5730;&#x9762;&#x306E;&#x8ABF;&#x6574;">&#x5730;&#x9762;&#x306E;&#x8ABF;&#x6574;</h3>
-<p><code>OVRPlayerController</code>&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;&#x305D;&#x306E;&#x5F8C;&#x3001;Standard Assets&#x306E;&#x30AB;&#x30E1;&#x30E9;&#x3092;&#x5229;&#x7528;&#x3057;&#x305F;&#x3068;&#x304D;&#x3068;&#x540C;&#x69D8;&#x306E;&#x65B9;&#x6CD5;&#x3067;&#x3001;<code>OVRPlayerController</code>&#x304C;&#x5730;&#x9762;&#xFF08;Plane&#xFF09;&#x306E;&#x4E0A;&#x306B;&#x3044;&#x308B;&#x3088;&#x3046;&#x306B;&#x3001;&#x5730;&#x9762;&#x306E;&#x9762;&#x7A4D;&#x3084;<code>OVRPlayerController</code>&#x306E;&#x4F4D;&#x7F6E;&#x3092;&#x8ABF;&#x6574;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;&#x3053;&#x306E;&#x969B;&#x3001;&#x30B7;&#x30FC;&#x30F3;&#x30D3;&#x30E5;&#x30FC;&#x3067;<code>OVRPlayerController</code>&#x304C;&#x7A7A;&#x4E2D;&#x306B;&#x6D6E;&#x3044;&#x3066;&#x3044;&#x3066;&#x3082;&#x3001;&#x4E0B;&#x306B;&#x5730;&#x9762;&#x304C;&#x3042;&#x308C;&#x3070;&#x3001;&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x5B9F;&#x884C;&#x6642;&#x306B;<code>OVRPlayerController</code>&#x306F;&#x91CD;&#x529B;&#x843D;&#x4E0B;&#x3057;&#x3066;&#x3001;&#x5730;&#x9762;&#x3067;&#x6B62;&#x307E;&#x308A;&#x307E;&#x3059;&#x3002;&#x53B3;&#x5BC6;&#x306B;&#x5730;&#x9762;&#x306B;&#x63A5;&#x5730;&#x3055;&#x305B;&#x3066;&#x304A;&#x304F;&#x5FC5;&#x8981;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;&#xFF09;&#x3002;</p>
-<h2 id="&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x52D5;&#x4F5C;&#x30C6;&#x30B9;&#x30C8;">&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x52D5;&#x4F5C;&#x30C6;&#x30B9;&#x30C8;</h2>
-<p>&#x305F;&#x3060;&#x3057;&#x3001;&#x3053;&#x3053;&#x3067;&#x6CE8;&#x610F;&#x3057;&#x306A;&#x3051;&#x308C;&#x3070;&#x3044;&#x3051;&#x306A;&#x3044;&#x70B9;&#x306F;&#x3001;PC&#x306E;Unity&#x306E;&#x30B2;&#x30FC;&#x30E0;&#x30D3;&#x30E5;&#x30FC;&#x3067;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3082;&#x3001;<code>OVRPlayerController</code>&#x306F;&#x6B63;&#x3057;&#x304F;&#x52D5;&#x4F5C;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x305B;&#x3093;&#x3002;&#x3064;&#x307E;&#x308A;&#x3001;&#x6B63;&#x3057;&#x3044;&#x52D5;&#x4F5C;&#x78BA;&#x8A8D;&#x306E;&#x305F;&#x3081;&#x306B;&#x306F;&#x3001;Meta Quest 2&#x306B;&#x8EE2;&#x9001;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x306E;&#x3067;&#x3001;PC&#x306E;&#x30B2;&#x30FC;&#x30E0;&#x30D3;&#x30E5;&#x30FC;&#x3067;&#x6B63;&#x3057;&#x304F;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x304F;&#x3066;&#x3082;&#x614C;&#x3066;&#x306A;&#x3044;&#x3067;&#x4E0B;&#x3055;&#x3044;&#xFF08;Meta Quest 2&#x3078;&#x306E;&#x8EE2;&#x9001;&#x65B9;&#x6CD5;&#x306F;&#x5F8C;&#x8FF0;&#xFF09;&#x3002;
-&#x4E0A;&#x8FF0;&#x3057;&#x305F;&#x65B9;&#x6CD5;&#x3067;&#x3001;Meta Quest 2&#x3078;&#x97EE;&#x5C71;&#x53CD;&#x5C04;&#x7089;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x30D3;&#x30EB;&#x30C9;&#x30FB;&#x8EE2;&#x9001;&#x3057;&#x305F;&#x5834;&#x5408;&#x3001;Meta Quest 2&#x3067;&#x306F;&#x3001;&#x30A2;&#x30BF;&#x30DE;&#x306E;&#x89D2;&#x5EA6;&#x306B;&#x3088;&#x3063;&#x3066;VR&#x8996;&#x7DDA;&#x306E;&#x89D2;&#x5EA6;&#x304C;&#x52D5;&#x304D;&#x307E;&#x3059;&#x3002;&#x307E;&#x305F;&#x3001;Meta Quest 2&#x306E;&#x5DE6;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30FC;&#x306E;&#x30B9;&#x30C6;&#x30A3;&#x30C3;&#x30AF;&#x3067;&#x524D;&#x9032;&#x30FB;&#x5F8C;&#x9000;&#x3068;&#x6A2A;&#x65B9;&#x5411;&#x3078;&#x306E;&#x79FB;&#x52D5;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x307E;&#x305F;&#x3001;&#x53F3;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30FC;&#x306E;&#x30B9;&#x30C6;&#x30A3;&#x30C3;&#x30AF;&#x3067;&#x3001;&#x8996;&#x7DDA;&#x306E;&#x65B9;&#x5411;&#x3082;&#x56DE;&#x8EE2;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+                                <h2 id="unityでのvrの実装">UnityでのVRの実装</h2>
+<p> UnityのMeta Quest 2向けのアプリを開発のための初期設定が済みましたので、実装作業に入ります。</p>
+<h2 id="1-oculusで動作するコントローラー（カメラ）の導入">1. Oculusで動作するコントローラー（カメラ）の導入</h2>
+<p>本教材では、Oculus Integrationのアセットを導入しました。Meta Quest 2で動作させるために、Oculus Integrationに収録されているOculus専用のコンポーネント（カメラ）を利用してみます。</p>
+<h3 id="コンポーネントの追加">コンポーネントの追加</h3>
+<p>ProjectウィンドウのAssets傘下から<code>Oculusフォルダ＞VRフォルダ＞Prefabsフォルダ</code>を開いて下さい。<code>Prefabsフォルダ</code>に<code>OVRPlayerController</code>というPrefab（コンポーネント）が入っています。<code>OVRPlayerController</code>を、Hierarchyウィンドウにドラッグ・アンド・ドロップして下さい。すると、シーンに<code>OVRPlayerController</code>が追加されます。</p>
+<h3 id="vrのカメラの準備">VRのカメラの準備</h3>
+<p>なお、<code>OVRPlayerController</code>には<code>OVRCameraRig</code>というカメラが含まれています。<code>OVRPlayerController</code>を追加したら、すでに導入したStandard Assetsのキャラクター（つまりカメラ）と、カメラ同士が競合しないようにする必要があります。Hierarchyビューから、Standard Assetsのカメラを削除して下さい。<code>OVRPlayerController</code>のみが追加されていることを確認したら、シーンの韮山反射炉と<code>OVRPlayerController</code>をそれぞれ近づけて、<code>OVRPlayerController</code>のカメラが、韮山反射炉を見るように位置・角度を調整して下さい。直接、マウスで<code>OVRPlayerController</code>を移動できない場合は、<code>OVRPlayerController</code>を選択した状態で、Unity右側のInspectorウィンドウのPositionなどの数値を入力して、位置を調整して下さい。</p>
+<h3 id="地面の調整">地面の調整</h3>
+<p><code>OVRPlayerController</code>を追加しました。その後、Standard Assetsのカメラを利用したときと同様の方法で、<code>OVRPlayerController</code>が地面（Plane）の上にいるように、地面の面積や<code>OVRPlayerController</code>の位置を調整して下さい。この際、シーンビューで<code>OVRPlayerController</code>が空中に浮いていても、下に地面があれば、アプリの実行時に<code>OVRPlayerController</code>は重力落下して、地面で止まります。厳密に地面に接地させておく必要はありません。）。</p>
+<h2 id="アプリの動作テスト">アプリの動作テスト</h2>
+<p>ただし、ここで注意しなければいけない点は、PCのUnityのゲームビューでアプリを実行しても、<code>OVRPlayerController</code>は正しく動作確認できません。つまり、正しい動作確認のためには、Meta Quest 2に転送する必要がありますので、PCのゲームビューで正しく表示されなくても慌てないで下さい（Meta Quest 2への転送方法は後述）。
+上述した方法で、Meta Quest 2へ韮山反射炉のアプリをビルド・転送した場合、Meta Quest 2では、アタマの角度によってVR視線の角度が動きます。また、Meta Quest 2の左コントローラーのスティックで前進・後退と横方向への移動ができます。また、右コントローラーのスティックで、視線の方向も回転できます。</p>
 
                                 
                                 </section>
@@ -3330,12 +3329,56 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"歩行機能のプログラミング","level":"5.1.8","depth":2,"next":{"title":"Meta Quest 2への転送と動作確認","level":"5.1.9","depth":2,"path":"materials/vr/vr9.md","ref":"./materials/vr/vr9.md","articles":[]},"previous":{"title":"Meta Quest 2向けのUnityの初期設定","level":"5.1.7","depth":2,"path":"materials/vr/vr7.md","ref":"./materials/vr/vr7.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/vr/vr8.md","mtime":"2022-06-16T17:11:11.655Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"歩行機能のプログラミング","level":"5.1.8","depth":2,"next":{"title":"Meta Quest 2への転送と動作確認","level":"5.1.9","depth":2,"path":"materials/vr/vr9.md","ref":"./materials/vr/vr9.md","articles":[]},"previous":{"title":"Meta Quest 2向けのUnityの初期設定","level":"5.1.7","depth":2,"path":"materials/vr/vr7.md","ref":"./materials/vr/vr7.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/vr/vr8.md","mtime":"2022-06-16T17:50:54.529Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
     

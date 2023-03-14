@@ -3,11 +3,10 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>地理情報を用いたVRアプリ開発入門 · GIS実習オープン教材</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="GIS-Open Educational Resources WG">
         
         
@@ -92,12 +91,12 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="検索すると入力" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -3235,8 +3234,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            GitBookで公開 
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -3274,75 +3273,75 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5730;&#x7406;&#x60C5;&#x5831;&#x3092;&#x7528;&#x3044;&#x305F;vr&#x30A2;&#x30D7;&#x30EA;&#x958B;&#x767A;&#x5165;&#x9580;">&#x5730;&#x7406;&#x60C5;&#x5831;&#x3092;&#x7528;&#x3044;&#x305F;VR&#x30A2;&#x30D7;&#x30EA;&#x958B;&#x767A;&#x5165;&#x9580;</h1>
-<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x306F;Unity&#x3092;&#x4F7F;&#x3063;&#x3066;&#x3001;&#x30D0;&#x30FC;&#x30C1;&#x30E3;&#x30EB;&#x306A;&#x4EEE;&#x60F3;&#x7A7A;&#x9593;&#x3092;&#x6563;&#x6B69;&#x3059;&#x308B;VR&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x69CB;&#x7BC9;&#x3059;&#x308B;&#x624B;&#x6CD5;&#x3092;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;Unity&#x3092;&#x7528;&#x3044;&#x308B;&#x3053;&#x3068;&#x3067;&#x96E3;&#x3057;&#x3044;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x306E;&#x77E5;&#x8B58;&#x304C;&#x306A;&#x304F;&#x3066;&#x3082;&#x3001;&#x30D0;&#x30FC;&#x30C1;&#x30E3;&#x30EB;&#x30EA;&#x30A2;&#x30EA;&#x30C6;&#x30A3;&#xFF08;VR&#xFF09;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x69CB;&#x7BC9;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x672C;&#x6559;&#x6750;&#x3067;&#x306F;&#x3001;PC&#x3067;&#x52D5;&#x4F5C;&#x3059;&#x308B;WebGL&#x30A2;&#x30D7;&#x30EA;&#x3068;&#x3001;<code>Facebook&#x793E;&#x306E;Meta Quest 2</code>&#x3067;&#x52D5;&#x4F5C;&#x3059;&#x308B;VR&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x958B;&#x767A;&#x624B;&#x9806;&#x3092;&#x8AAC;&#x660E;&#x3057;&#x307E;&#x3059;&#x3002;&#x672C;&#x6559;&#x6750;&#x306F;&#x3001;WebGL&#x3084;VR&#x30A2;&#x30D7;&#x30EA;&#x30FB;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x958B;&#x767A;&#x4F53;&#x9A13;&#x306E;&#x305F;&#x3081;&#x306E;&#x5165;&#x9580;&#x6559;&#x6750;&#x3067;&#x3059;&#x306E;&#x3067;&#x3001;Unity&#x306E;&#x7C21;&#x5358;&#x306A;&#x5165;&#x9580;&#x30AC;&#x30A4;&#x30C9;&#x3068;&#x3057;&#x3066;&#x3054;&#x5229;&#x7528;&#x3044;&#x305F;&#x3060;&#x304F;&#x3053;&#x3068;&#x3082;&#x53EF;&#x80FD;&#x3067;&#x3059;&#x3002;</p>
-<p>&#x203B;&#x3000;&#x672C;&#x6559;&#x6750;&#x306E;&#x6574;&#x5099;&#x306B;&#x3042;&#x305F;&#x308A;&#x3001;&#x6771;&#x4EAC;&#x5927;&#x5B66;CSIS&#x5BA2;&#x54E1;&#x7814;&#x7A76;&#x54E1;/&#x30D5;&#x30EA;&#x30FC;&#x30E9;&#x30F3;&#x30B9;&#x30A8;&#x30F3;&#x30B8;&#x30CB;&#x30A2;&#x306E;&#x9DB4;&#x5CA1;&#x8B19;&#x4E00;&#x6C0F;&#x306E;&#x5354;&#x529B;&#x3092;&#x5F97;&#x307E;&#x3057;&#x305F;&#x3002;</p>
-<h2 id="&#x672C;&#x6559;&#x6750;&#x3067;&#x89E3;&#x8AAC;&#x3059;&#x308B;&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x6982;&#x89B3;">&#x672C;&#x6559;&#x6750;&#x3067;&#x89E3;&#x8AAC;&#x3059;&#x308B;&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x6982;&#x89B3;</h2>
-<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x306F;&#x3001;3D&#x7A7A;&#x9593;&#x3092;&#x6B69;&#x3044;&#x3066;&#x97EE;&#x5C71;&#x53CD;&#x5C04;&#x7089;&#x3092;&#x773A;&#x3081;&#x308B;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x958B;&#x767A;&#x3057;&#x307E;&#x3059;&#x3002;3D&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x8868;&#x793A;&#x3057;&#x3001;3D&#x7A7A;&#x9593;&#x3092;&#x79FB;&#x52D5;&#x3067;&#x304D;&#x308B;&#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x306A;&#x6A5F;&#x80FD;&#x3092;&#x6709;&#x3057;&#x307E;&#x3059;&#x3002;&#x672C;&#x6559;&#x6750;&#x3067;&#x306F;&#x3001;&#x3053;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x306B;&#x3064;&#x3044;&#x3066;&#x3001;&#x5165;&#x9580;&#x3068;&#x3057;&#x3066;&#x30A6;&#x30A7;&#x30D6;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3067;&#x52D5;&#x4F5C;&#x3059;&#x308B;WebGL&#x7248;&#x3001;&#x5FDC;&#x7528;&#x3068;&#x3057;&#x3066;Meta Quest 2&#x3067;&#x52D5;&#x4F5C;&#x3059;&#x308B;VR&#x7248;&#x306E;&#x958B;&#x767A;&#x624B;&#x6CD5;&#x3092;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;
-<code>&#x97EE;&#x5C71;&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x52D5;&#x4F5C;&#x306E;&#x69D8;&#x5B50;&#xFF08;&#x30A2;&#x30D7;&#x30EA;&#x753B;&#x9762;&#x306E;&#x52D5;&#x753B;&#x30AD;&#x30E3;&#x30D7;&#x30C1;&#x30E3;&#xFF09;</code></p>
+                                <h1 id="地理情報を用いたvrアプリ開発入門">地理情報を用いたVRアプリ開発入門</h1>
+<p>本教材ではUnityを使って、バーチャルな仮想空間を散歩するVRアプリを構築する手法を解説します。Unityを用いることで難しいプログラミングの知識がなくても、バーチャルリアリティ（VR）のアプリを構築できます。本教材では、PCで動作するWebGLアプリと、<code>Facebook社のMeta Quest 2</code>で動作するVRアプリの開発手順を説明します。本教材は、WebGLやVRアプリ・コンテンツ開発体験のための入門教材ですので、Unityの簡単な入門ガイドとしてご利用いただくことも可能です。</p>
+<p>※　本教材の整備にあたり、東京大学CSIS客員研究員/フリーランスエンジニアの鶴岡謙一氏の協力を得ました。</p>
+<h2 id="本教材で解説するアプリの概観">本教材で解説するアプリの概観</h2>
+<p>本教材では、3D空間を歩いて韮山反射炉を眺めるアプリを開発します。3Dモデルを表示し、3D空間を移動できるシンプルな機能を有します。本教材では、このアプリについて、入門としてウェブブラウザで動作するWebGL版、応用としてMeta Quest 2で動作するVR版の開発手法を解説します。
+<code>韮山アプリの動作の様子（アプリ画面の動画キャプチャ）</code></p>
 <p><img src="img/vr_demo.gif" alt="demo"></p>
 <blockquote>
-<p>&#x5B9F;&#x7FD2;&#x7528;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#x3001;<a href="https://pointcloud.pref.shizuoka.jp/lasmap/ankenmap?ankenno=30XXX01010001" target="_blank">30-XXX01-01-00-01&#x3000;&#xA9;&#x9759;&#x5CA1;&#x770C;&#xFF30;&#xFF23;&#xFF24;&#xFF22;&#x3000;CC-BY</a>&#x3092;&#x6539;&#x5909;&#x3057;&#x3001;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>実習用データは、<a href="https://pointcloud.pref.shizuoka.jp/lasmap/ankenmap?ankenno=30XXX01010001" target="_blank">30-XXX01-01-00-01　©静岡県ＰＣＤＢ　CC-BY</a>を改変し、作成しています。</p>
 </blockquote>
-<h2 id="&#x5B66;&#x7FD2;&#x306B;&#x5FC5;&#x8981;&#x306A;&#x6A5F;&#x6750;">&#x5B66;&#x7FD2;&#x306B;&#x5FC5;&#x8981;&#x306A;&#x6A5F;&#x6750;</h2>
+<h2 id="学習に必要な機材">学習に必要な機材</h2>
 <ul>
-<li>PC&#xFF08;Windows 10&#xFF09;:&#x3000;3D&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x51E6;&#x7406;&#x3057;&#x30B0;&#x30E9;&#x30D5;&#x30A3;&#x30C3;&#x30AF;&#x30B9;&#x8868;&#x793A;&#x3055;&#x305B;&#x308B;&#x305F;&#x3081;&#x3001;&#x305D;&#x308C;&#x306B;&#x9069;&#x3057;&#x305F;&#x6027;&#x80FD;&#x306E;PC&#x304C;&#x5FC5;&#x8981;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#xFF08;&#x7B46;&#x8005;&#x306F;&#x3001;(OS:Windows 10, CPU:Intel Core i9 9900K, &#x30E1;&#x30E2;&#x30EA;:32GB, GPU: nVidia RTS2080Ti(11GB))&#x3092;&#x4F7F;&#x7528;&#xFF09;&#x3002;&#x672C;&#x6559;&#x6750;&#x306E;&#x89E3;&#x8AAC;&#x306F;&#x3001;Windows&#x306B;&#x3088;&#x308B;&#x3082;&#x306E;&#x3092;&#x5BFE;&#x8C61;&#x3068;&#x3057;&#x307E;&#x3059;&#x3002;Mac&#x3001;Linux&#x306A;&#x3069;&#x306E;&#x4ED6;&#x306E;&#x74B0;&#x5883;&#x306F;&#x3001;&#x672C;&#x6559;&#x6750;&#x306E;&#x8AAC;&#x660E;&#x5BFE;&#x8C61;&#x3067;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;Unity&#x306F;&#x3001;Mac&#x7248;&#x3084;Linux&#x7248;&#x306E;Unity&#x3082;&#x3042;&#x308A;&#x307E;&#x3059;&#x304C;&#x3001;&#x5B66;&#x7FD2;&#x30FB;&#x958B;&#x767A;&#x3092;&#x9032;&#x3081;&#x308B;&#x5834;&#x5408;&#x3001;&#x3054;&#x81EA;&#x8EAB;&#x3067;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x308A;&#x3001;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#x304C;&#x5FC5;&#x8981;&#x306B;&#x306A;&#x308B;&#x3053;&#x3068;&#x3001;&#x5FC5;&#x305A;&#x3057;&#x3082;&#x52D5;&#x4F5C;&#x3055;&#x305B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x306A;&#x3044;&#x53EF;&#x80FD;&#x6027;&#x304C;&#x3042;&#x308B;&#x3053;&#x3068;&#x306B;&#x3054;&#x7559;&#x610F;&#x4E0B;&#x3055;&#x3044;&#x3002;</li>
-<li>Meta Quest 2:&#x3000;VR&#x3067;&#x4F53;&#x9A13;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x5FC5;&#x8981;&#x3067;&#x3059;&#x3002;&#x5FC5;&#x9808;&#x3067;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;Oculus&#x306B;&#x306F;&#x4ED6;&#x306E;&#x6A5F;&#x7A2E;&#x3082;&#x3042;&#x308A;&#x307E;&#x3059;&#x304C;&#x3001;Meta Quest 2&#x306E;&#x307F;&#x306E;&#x52D5;&#x4F5C;&#x3092;&#x89E3;&#x8AAC;&#x306E;&#x5BFE;&#x8C61;&#x3068;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>PC（Windows 10）:　3Dモデルを処理しグラフィックス表示させるため、それに適した性能のPCが必要になります（筆者は、(OS:Windows 10, CPU:Intel Core i9 9900K, メモリ:32GB, GPU: nVidia RTS2080Ti(11GB))を使用）。本教材の解説は、Windowsによるものを対象とします。Mac、Linuxなどの他の環境は、本教材の説明対象ではありません。Unityは、Mac版やLinux版のUnityもありますが、学習・開発を進める場合、ご自身で設定したり、操作方法が必要になること、必ずしも動作させることができない可能性があることにご留意下さい。</li>
+<li>Meta Quest 2:　VRで体験する場合は必要です。必須ではありません。Oculusには他の機種もありますが、Meta Quest 2のみの動作を解説の対象とします。</li>
 </ul>
-<p>&#x203B;&#x3000;&#x6CE8;&#x610F;&#x70B9;&#xFF1A; Unity, Oculus, Windows 10&#x306A;&#x3069;&#x306F;&#x3001;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;&#x3084;&#x65B0;&#x6A5F;&#x80FD;&#x306E;&#x8FFD;&#x52A0;&#x304C;&#x983B;&#x7E41;&#x306B;&#x884C;&#x308F;&#x308C;&#x3066;&#x304A;&#x308A;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x305F;&#x3081;&#x3001;&#x3053;&#x308C;&#x3089;&#x306E;&#x4ED5;&#x69D8;&#x306E;&#x5909;&#x66F4;&#x3084;&#x4E92;&#x63DB;&#x7B49;&#x304C;&#x7406;&#x7531;&#x3067;&#x3001;&#x672C;&#x6559;&#x6750;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x304C;&#x3001;&#x672C;&#x6559;&#x6750;&#x306E;&#x65B9;&#x6CD5;&#x3067;&#x306F;&#x3046;&#x307E;&#x304F;&#x52D5;&#x4F5C;&#x3057;&#x306A;&#x3044;&#x3053;&#x3068;&#x3084;&#x3001;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x306B;&#x3088;&#x308B;&#x4E0D;&#x5177;&#x5408;&#x306A;&#x3069;&#x306E;&#x554F;&#x984C;&#x304C;&#x8D77;&#x304D;&#x308B;&#x3053;&#x3068;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x5FC5;&#x305A;&#x3057;&#x3082;&#x52D5;&#x4F5C;&#x3057;&#x306A;&#x3044;&#x53EF;&#x80FD;&#x6027;&#x304C;&#x3042;&#x308B;&#x3053;&#x3068;&#x306B;&#x3054;&#x7559;&#x610F;&#x3092;&#x304A;&#x9858;&#x3044;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<h2 id="unity&#x306B;&#x3064;&#x3044;&#x3066;">Unity&#x306B;&#x3064;&#x3044;&#x3066;</h2>
-<p>&#x672C;&#x6559;&#x6750;&#x3067;&#x306F;&#x3001;Unity&#x3068;&#x3044;&#x3046;&#x958B;&#x767A;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x958B;&#x767A;&#x3092;&#x9032;&#x3081;&#x307E;&#x3059;&#x3002;Unity&#x3068;&#x306F;&#x3001;<a href="https://unity.com/ja/" target="_blank">Unity Technologies&#x793E;</a>&#x304C;&#x516C;&#x958B;&#x3057;&#x3066;&#x3044;&#x308B;&#x30B2;&#x30FC;&#x30E0;&#x30FB;&#x30A2;&#x30D7;&#x30EA;&#x958B;&#x767A;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x3067;&#x3059;&#x3002;2004&#x5E74;&#x306B;&#x30C7;&#x30F3;&#x30DE;&#x30FC;&#x30AF;&#x3067;&#x767A;&#x7965;&#x3057;&#x3001;&#x73FE;&#x5728;&#x306F;&#x30B5;&#x30F3;&#x30D5;&#x30E9;&#x30F3;&#x30B7;&#x30B9;&#x30B3;&#x306B;Unity Technologies&#x793E;&#x306E;&#x672C;&#x793E;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;(&#x65E5;&#x672C;&#x6CD5;&#x4EBA;&#x306F;&#x300C;&#x30E6;&#x30CB;&#x30C6;&#x30A3;&#x30FB;&#x30C6;&#x30AF;&#x30CE;&#x30ED;&#x30B8;&#x30FC;&#x30BA;&#x30FB;&#x30B8;&#x30E3;&#x30D1;&#x30F3;&#x682A;&#x5F0F;&#x4F1A;&#x793E;&#x300D;)&#x3002;Unity&#x306F;&#x3001;&#x30B2;&#x30FC;&#x30E0;&#x3001;&#x5B66;&#x7FD2;&#x30A2;&#x30D7;&#x30EA;&#x3001;&#x5EFA;&#x7BC9;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x30C7;&#x30E2;&#x30F3;&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306A;&#x3069;&#x3001;&#x69D8;&#x3005;&#x306A;&#x5206;&#x91CE;&#x3067;&#x6D3B;&#x7528;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
-<h3 id="vr&#x958B;&#x767A;&#x3067;unity&#x304C;&#x5229;&#x7528;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x7406;&#x7531;">VR&#x958B;&#x767A;&#x3067;Unity&#x304C;&#x5229;&#x7528;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x7406;&#x7531;</h3>
-<p>&#x672C;&#x6765;&#xFF13;D&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x51E6;&#x7406;&#x3059;&#x308B;&#x3088;&#x3046;&#x306A;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x3092;&#x884C;&#x3063;&#x3066;&#x30A2;&#x30D7;&#x30EA;&#x3084;&#x30B2;&#x30FC;&#x30E0;&#x3068;&#x3057;&#x3066;&#x5B8C;&#x6210;&#x3055;&#x305B;&#x308B;&#x3053;&#x3068;&#x306F;&#x3001;&#x6280;&#x8853;&#x7684;&#x306B;&#x30CF;&#x30FC;&#x30C9;&#x30EB;&#x304C;&#x9AD8;&#x304F;&#x3001;&#x76F8;&#x5FDC;&#x306E;&#x958B;&#x767A;&#x6280;&#x80FD;&#x3092;&#x8981;&#x3057;&#x307E;&#x3059;&#x3002;&#x307E;&#x305F;&#x3001;&#x4E00;&#x304B;&#x3089;&#x5168;&#x3066;&#x81EA;&#x5206;&#x3060;&#x3051;&#x3067;&#x958B;&#x767A;&#x3059;&#x308B;&#x3053;&#x3068;&#x306F;&#x52B4;&#x529B;&#x30FB;&#x6642;&#x9593;&#x306A;&#x3069;&#x306E;&#x30B3;&#x30B9;&#x30C8;&#x304C;&#x81A8;&#x5927;&#x306B;&#x306A;&#x308A;&#x304C;&#x3061;&#x3067;&#x3059;&#x3002;&#x305D;&#x3053;&#x3067;&#x3001;Unity&#x3068;&#x3044;&#x3046;&#x30AA;&#x30FC;&#x30EB;&#x30A4;&#x30F3;&#x30EF;&#x30F3;&#x306E;&#x958B;&#x767A;&#x74B0;&#x5883;&#x3092;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x3067;&#x3001;&#x958B;&#x767A;&#x4F5C;&#x696D;&#x3092;&#x7C21;&#x7D20;&#x5316;&#x30FB;&#x52B9;&#x7387;&#x5316;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;3D&#x51E6;&#x7406;&#x3001;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x3001;&#x30A2;&#x30D7;&#x30EA;&#x3068;&#x3057;&#x3066;&#x306E;&#x30D3;&#x30EB;&#x30C9;&#xFF08;&#x51FA;&#x529B;&#xFF09;&#x307E;&#x3067;&#x3001;&#x57FA;&#x672C;&#x7684;&#x306B;Unity&#x3092;&#x4F7F;&#x3046;&#x3060;&#x3051;&#x3067;&#x884C;&#x3046;&#x3053;&#x3068;&#x3082;&#x53EF;&#x80FD;&#x3067;&#x3059;&#xFF08;Unity&#x3060;&#x3051;&#x3067;&#x306F;&#x96E3;&#x3057;&#x3044;&#x3053;&#x3068;&#x306F;&#x3001;Visual Studio&#x306A;&#x3069;&#x3082;&#x5229;&#x7528;&#x3057;&#x307E;&#x3059;&#xFF08;&#x5F8C;&#x8FF0;&#xFF09;&#xFF09;&#x3002;</p>
-<h3 id="unity&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306E;&#x6CE8;&#x610F;">Unity&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306E;&#x6CE8;&#x610F;</h3>
-<p>Unity&#x306F;&#x3001;&#x5546;&#x7528;&#x306E;&#x958B;&#x767A;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x306E;&#x305F;&#x3081;&#x3001;&#x5229;&#x7528;&#x5F62;&#x614B;&#x306B;&#x3088;&#x3063;&#x3066;&#x306F;&#x5229;&#x7528;&#x6599;&#x91D1;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;&#x5927;&#x5B66;&#x751F;&#x304C;&#x81EA;&#x8EAB;&#x306E;&#x5B66;&#x7FD2;&#x30FB;&#x7814;&#x7A76;&#x7528;&#x306B;&#x5229;&#x7528;&#x3059;&#x308B;&#x7528;&#x9014;&#x3067;&#x306E;&#x300C;Unity Free&#x300D;&#xFF08;&#x7121;&#x6599;&#x30D7;&#x30E9;&#x30F3;&#xFF09;&#x306E;&#x5229;&#x7528;&#x3092;&#x60F3;&#x5B9A;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x81EA;&#x8EAB;&#x306E;&#x5229;&#x7528;&#x7528;&#x9014;&#x30FB;&#x6240;&#x5C5E;&#x306A;&#x3069;&#x3068;&#x3001;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x898F;&#x7D04;&#x3092;&#x3088;&#x304F;&#x78BA;&#x8A8D;&#x3057;&#x3001;&#x540C;&#x610F;&#x3067;&#x304D;&#x308B;&#x5834;&#x5408;&#x3001;Unity&#x304C;&#x4F7F;&#x7528;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x30E9;&#x30A4;&#x30BB;&#x30F3;&#x30B9;&#x306F;&#x9075;&#x5B88;&#x3057;&#x3066;&#x3001;&#x81EA;&#x5DF1;&#x8CAC;&#x4EFB;&#x3067;&#x5229;&#x7528;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
-<h3 id="&#x4ED6;&#x306E;&#x958B;&#x767A;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;">&#x4ED6;&#x306E;&#x958B;&#x767A;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;</h3>
-<p>Unity&#x306E;&#x4EE5;&#x5916;&#x306B;&#x3082;&#x3001;&#x30A2;&#x30D7;&#x30EA;&#x30FB;&#x30B2;&#x30FC;&#x30E0;&#x306A;&#x3069;&#x306E;&#x958B;&#x767A;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x306F;&#x3044;&#x304F;&#x3064;&#x3082;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x4F8B;&#x3048;&#x3070;&#x3001;Epic&#x793E;&#x306E;Unreal Engine&#x3068;&#x3044;&#x3046;&#x958B;&#x767A;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x304C;&#x6709;&#x540D;&#x3067;&#x3059;&#x3002;Unreal Engine&#x3082;&#x4E16;&#x754C;&#x4E2D;&#x306E;&#x30B2;&#x30FC;&#x30E0;&#x306A;&#x3069;&#x306E;&#x958B;&#x767A;&#x3067;&#x5229;&#x7528;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;Sony Interactive Entertainment&#x793E;&#x306E;PlayStation 5&#x306E;&#x521D;&#x56DE;&#x767A;&#x8868;&#x4F1A;&#x3067;&#x3001;Unreal Engine&#x3067;&#x958B;&#x767A;&#x3055;&#x308C;&#x305F;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306E;&#x30C7;&#x30E2;&#x30F3;&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x304C;&#x62AB;&#x9732;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x3002;Unreal Engine&#x306F;&#x3001;&#x5199;&#x5B9F;&#x7684;&#x306A;&#x8868;&#x73FE;&#x304C;&#x9AD8;&#x304F;&#x3001;&#x4E0A;&#x624B;&#x306B;&#x5B9F;&#x88C5;&#x3059;&#x308C;&#x3070;&#x3001;&#x307E;&#x308B;&#x3067;&#x5B9F;&#x5199;&#x306E;&#x3088;&#x3046;&#x306A;&#x8868;&#x73FE;&#x3082;&#x53EF;&#x80FD;&#x3067;&#x3059;&#x3002;&#x30D6;&#x30EB;&#x30FC;&#x30D7;&#x30EA;&#x30F3;&#x30C8;&#x3068;&#x3044;&#x3046;&#x30C0;&#x30A4;&#x30A2;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3066;&#x7C21;&#x4FBF;&#x306B;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x5B9F;&#x88C5;&#x3067;&#x304D;&#x308B;&#x6A19;&#x6E96;&#x6A5F;&#x80FD;&#x304C;&#x3042;&#x308B;&#x3053;&#x3068;&#x3082;&#x7279;&#x5FB4;&#x306E;&#x4E00;&#x3064;&#x3067;&#x3059;&#x3002;Unity&#x3067;&#x306F;C#&#x8A00;&#x8A9E;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x304C;&#x3001;Unreal Engine&#x3067;&#x306F;C++&#x8A00;&#x8A9E;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;&#x4E00;&#x822C;&#x7684;&#x306B;&#x3001;C++&#x8A00;&#x8A9E;&#x306E;&#x307B;&#x3046;&#x304C;&#x7FD2;&#x5F97;&#x3084;&#x5229;&#x7528;&#x306B;&#x3088;&#x308A;&#x9AD8;&#x5EA6;&#x306A;&#x77E5;&#x8B58;&#x304C;&#x5FC5;&#x8981;&#x306B;&#x306A;&#x308B;&#x3068;&#x3044;&#x308F;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x4ED6;&#x306E;&#x958B;&#x767A;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x3068;&#x3057;&#x3066;&#x3001;Amazon lumberyard&#x3001;CryEngine&#x306A;&#x3069;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p>
-<h2 id="&#x5B66;&#x7FD2;&#x9805;&#x76EE;&#x3068;&#x9806;&#x5E8F;">&#x5B66;&#x7FD2;&#x9805;&#x76EE;&#x3068;&#x9806;&#x5E8F;</h2>
-<p>&#x672C;&#x6559;&#x6750;&#x306E;&#x89E3;&#x8AAC;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x5206;&#x304B;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;1&#x304B;&#x3089;&#x9806;&#x306B;&#x5B66;&#x7FD2;&#x3092;&#x306F;&#x3058;&#x3081;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p>※　注意点： Unity, Oculus, Windows 10などは、アップデートや新機能の追加が頻繁に行われております。このため、これらの仕様の変更や互換等が理由で、本教材のアプリが、本教材の方法ではうまく動作しないことや、バージョンによる不具合などの問題が起きることがあります。必ずしも動作しない可能性があることにご留意をお願いします。</p>
+<h2 id="unityについて">Unityについて</h2>
+<p>本教材では、Unityという開発ソフトウェアを使って開発を進めます。Unityとは、<a href="https://unity.com/ja/" target="_blank">Unity Technologies社</a>が公開しているゲーム・アプリ開発ソフトウェアです。2004年にデンマークで発祥し、現在はサンフランシスコにUnity Technologies社の本社があります(日本法人は「ユニティ・テクノロジーズ・ジャパン株式会社」)。Unityは、ゲーム、学習アプリ、建築モデルを表示するデモンストレーションなど、様々な分野で活用されています。</p>
+<h3 id="vr開発でunityが利用されている理由">VR開発でUnityが利用されている理由</h3>
+<p>本来３Dモデルを処理するようなプログラミングを行ってアプリやゲームとして完成させることは、技術的にハードルが高く、相応の開発技能を要します。また、一から全て自分だけで開発することは労力・時間などのコストが膨大になりがちです。そこで、Unityというオールインワンの開発環境を使うことで、開発作業を簡素化・効率化することができます。3D処理、プログラミング、アプリとしてのビルド（出力）まで、基本的にUnityを使うだけで行うことも可能です（Unityだけでは難しいことは、Visual Studioなども利用します（後述））。</p>
+<h3 id="unityライセンスの注意">Unityライセンスの注意</h3>
+<p>Unityは、商用の開発ソフトウェアのため、利用形態によっては利用料金が発生します。大学生が自身の学習・研究用に利用する用途での「Unity Free」（無料プラン）の利用を想定しています。自身の利用用途・所属などと、ライセンス規約をよく確認し、同意できる場合、Unityが使用できます。ライセンスは遵守して、自己責任で利用して下さい。</p>
+<h3 id="他の開発ソフトウェア">他の開発ソフトウェア</h3>
+<p>Unityの以外にも、アプリ・ゲームなどの開発ソフトウェアはいくつもあります。例えば、Epic社のUnreal Engineという開発ソフトウェアが有名です。Unreal Engineも世界中のゲームなどの開発で利用されています。Sony Interactive Entertainment社のPlayStation 5の初回発表会で、Unreal Engineで開発されたコンテンツのデモンストレーションが披露されました。Unreal Engineは、写実的な表現が高く、上手に実装すれば、まるで実写のような表現も可能です。ブループリントというダイアグラムを組み合わせて簡便にアプリを実装できる標準機能があることも特徴の一つです。UnityではC#言語を使ってプログラミングを行いますが、Unreal EngineではC++言語を使ってプログラミングを行います。一般的に、C++言語のほうが習得や利用により高度な知識が必要になるといわれています。他の開発ソフトウェアとして、Amazon lumberyard、CryEngineなどがあります。</p>
+<h2 id="学習項目と順序">学習項目と順序</h2>
+<p>本教材の解説は、以下のように分かれています。1から順に学習をはじめてください。</p>
 <table>
 <thead>
 <tr>
-<th>&#x5B66;&#x7FD2;&#x9806;</th>
-<th>&#x9805;&#x76EE;</th>
+<th>学習順</th>
+<th>項目</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
-<td><a href="vr1.html">Unity&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3068;&#x521D;&#x671F;&#x8A2D;&#x5B9A;</a></td>
+<td><a href="vr1.html">Unityのインストールと初期設定</a></td>
 </tr>
 <tr>
 <td>2</td>
-<td><a href="vr2.html">Unity&#x306E;&#x57FA;&#x672C;&#x753B;&#x9762;&#x3068;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;</a></td>
+<td><a href="vr2.html">Unityの基本画面と操作方法</a></td>
 </tr>
 <tr>
 <td>3</td>
-<td><a href="vr3.html">&#x5730;&#x7406;&#x60C5;&#x5831;&#x306E;&#x53D6;&#x308A;&#x8FBC;&#x307F;&#x3068;&#x8868;&#x793A;&#x8A2D;&#x5B9A;</a></td>
+<td><a href="vr3.html">地理情報の取り込みと表示設定</a></td>
 </tr>
 <tr>
 <td>4</td>
-<td><a href="vr4.html">&#x30A2;&#x30BB;&#x30C3;&#x30C8;&#x306E;&#x5229;&#x7528;&#x3068;&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x8ABF;&#x6574;</a></td>
+<td><a href="vr4.html">アセットの利用とアプリの調整</a></td>
 </tr>
 <tr>
 <td>5</td>
-<td><a href="vr5.html">&#x30C6;&#x30B9;&#x30C8;&#x3068;&#x30D3;&#x30EB;&#x30C9;</a></td>
+<td><a href="vr5.html">テストとビルド</a></td>
 </tr>
 <tr>
 <td>6</td>
-<td><a href="vr6.html">VR&#x958B;&#x767A;&#x306E;&#x6982;&#x8981;&#x3068;Meta Quest 2&#x306E;&#x8A2D;&#x5B9A;</a></td>
+<td><a href="vr6.html">VR開発の概要とMeta Quest 2の設定</a></td>
 </tr>
 <tr>
 <td>7</td>
-<td><a href="vr7.html">Meta Quest 2&#x5411;&#x3051;&#x306E;Unity&#x306E;&#x521D;&#x671F;&#x8A2D;&#x5B9A;</a></td>
+<td><a href="vr7.html">Meta Quest 2向けのUnityの初期設定</a></td>
 </tr>
 <tr>
 <td>8</td>
-<td><a href="vr8.html">&#x6B69;&#x884C;&#x6A5F;&#x80FD;&#x306E;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;</a></td>
+<td><a href="vr8.html">歩行機能のプログラミング</a></td>
 </tr>
 <tr>
 <td>9</td>
-<td><a href="vr9.html">Meta Quest 2&#x3078;&#x306E;&#x8EE2;&#x9001;&#x3068;&#x52D5;&#x4F5C;&#x78BA;&#x8A8D;</a></td>
+<td><a href="vr9.html">Meta Quest 2への転送と動作確認</a></td>
 </tr>
 </tbody>
 </table>
@@ -3389,12 +3388,56 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"地理情報を用いたVRアプリ開発入門","level":"5.1","depth":1,"next":{"title":"Unityのインストールと初期設定","level":"5.1.1","depth":2,"path":"materials/vr/vr1.md","ref":"./materials/vr/vr1.md","articles":[]},"previous":{"title":"GPSログの活用","level":"4.1.6","depth":2,"path":"materials/equipment/gps/gps.md","ref":"./materials/equipment/gps/gps.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":">= 3.0.0"},"file":{"path":"materials/vr/README.md","mtime":"2022-06-16T17:42:15.651Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2022-07-13T14:48:52.917Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"地理情報を用いたVRアプリ開発入門","level":"5.1","depth":1,"next":{"title":"Unityのインストールと初期設定","level":"5.1.1","depth":2,"path":"materials/vr/vr1.md","ref":"./materials/vr/vr1.md","articles":[]},"previous":{"title":"GPSログの活用","level":"4.1.6","depth":2,"path":"materials/equipment/gps/gps.md","ref":"./materials/equipment/gps/gps.md","articles":[]},"articles":[{"title":"Unityのインストールと初期設定","level":"5.1.1","depth":2,"path":"materials/vr/vr1.md","ref":"./materials/vr/vr1.md","articles":[]},{"title":"Unityの基本画面と操作方法","level":"5.1.2","depth":2,"path":"materials/vr/vr2.md","ref":"./materials/vr/vr2.md","articles":[]},{"title":"地理情報の取り込みと表示設定","level":"5.1.3","depth":2,"path":"materials/vr/vr3.md","ref":"./materials/vr/vr3.md","articles":[]},{"title":"アセットの利用とアプリの調整","level":"5.1.4","depth":2,"path":"materials/vr/vr4.md","ref":"./materials/vr/vr4.md","articles":[]},{"title":"テストとビルド","level":"5.1.5","depth":2,"path":"materials/vr/vr5.md","ref":"./materials/vr/vr5.md","articles":[]},{"title":"VR開発の概要とMeta Quest 2の設定","level":"5.1.6","depth":2,"path":"materials/vr/vr6.md","ref":"./materials/vr/vr6.md","articles":[]},{"title":"Meta Quest 2向けのUnityの初期設定","level":"5.1.7","depth":2,"path":"materials/vr/vr7.md","ref":"./materials/vr/vr7.md","articles":[]},{"title":"歩行機能のプログラミング","level":"5.1.8","depth":2,"path":"materials/vr/vr8.md","ref":"./materials/vr/vr8.md","articles":[]},{"title":"Meta Quest 2への転送と動作確認","level":"5.1.9","depth":2,"path":"materials/vr/vr9.md","ref":"./materials/vr/vr9.md","articles":[]}],"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","splitter","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 3.7.1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/vr/README.md","mtime":"2022-06-16T17:50:54.429Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-03-14T07:38:37.632Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
     
