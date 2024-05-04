@@ -3290,7 +3290,7 @@ QGISの起動時に読み込まれるPythonプラグインは、</p>
 <p>macOS の場合、以下のような構成になります。</p>
 <ul>
 <li><code>/Applications/QGIS-LTR.app/Contents/Resources/python/plugins</code></li>
-<li><code>/Library/Application\ Support/QGIS/QGIS3/profiles/default/python/plugins/</code></li>
+<li><code>ユーザーのホームディレクトリ/Library/Application\ Support/QGIS/QGIS3/profiles/default/python/plugins/</code></li>
 </ul>
 <p>通常、オリジナルのプラグインを作成した場合は、後者に配置することになります。Windowsを想定しますが、</p>
 <ul>
@@ -3343,7 +3343,7 @@ Email address:  作者メールアドレス
     <span class="hljs-tag">&lt;/<span class="hljs-name">qresource</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">RCC</span>&gt;</span>
 </code></pre>
-<p>このファイル をPythonのコードへ変換しておく必要がありますので、pyrcc4コマンドで変換を行います。Windowsの場合にはOSGeo4W shellを立ち上げましょう。ダブルクリックで起動すると、コマンドプロンプトが立ち上がります。</p>
+<p>このファイル をPythonのコードへ変換しておく必要がありますので、pyrcc5コマンドで変換を行います。Windowsの場合にはOSGeo4W shellを立ち上げましょう。ダブルクリックで起動すると、コマンドプロンプトが立ち上がります。</p>
 <p><img src="pic/10pic-12.png" alt="osgeo4w_shell"></p>
 <p>OSGeo4W shell上でプラグインを作成しているディレクトリに移動してください。</p>
 <pre><code>cd ユーザーのホームディレクトリ/AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\PluginTest`
@@ -3352,6 +3352,7 @@ Email address:  作者メールアドレス
 &gt;call py3_env.bat
 &gt;pyrcc5 -o resources.py resources.qrc
 </code></pre><p><img src="pic/10pic-13.png" alt="commmand"></p>
+<p>macOS の場合、pyrcc5 は、/Applications/QGIS-LTR.app/Contents/MacOS/bin/pyrcc5 です。なお、pyrcc5 はテキストファイルです。もし上記でエラーが発生した場合、テキストエディタで開いて修正することもできます。</p>
 <p>エクスプローラーでresources.pyが作成されたことを確認します。</p>
 <p><img src="pic/10pic-14.png" alt="resouces"></p>
 <p>これで最小限のプラグイン作成は終了です。</p>
@@ -3407,7 +3408,7 @@ Email address:  作者メールアドレス
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"プラグイン開発1","level":"2.1.11","depth":2,"next":{"title":"プラグイン開発2","level":"2.1.12","depth":2,"path":"materials/python/11/11.md","ref":"./materials/python/11/11.md","articles":[]},"previous":{"title":"一括処理","level":"2.1.10","depth":2,"path":"materials/python/09/09.md","ref":"./materials/python/09/09.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"UA-113165547-3"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 4.0.4","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/python/10/10.md","mtime":"2023-12-01T05:15:52.868Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2023-12-01T05:21:32.199Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"プラグイン開発1","level":"2.1.11","depth":2,"next":{"title":"プラグイン開発2","level":"2.1.12","depth":2,"path":"materials/python/11/11.md","ref":"./materials/python/11/11.md","articles":[]},"previous":{"title":"一括処理","level":"2.1.10","depth":2,"path":"materials/python/09/09.md","ref":"./materials/python/09/09.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","collapsible-menu","creativecommons","favicon","ga","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"ga":{"configuration":"auto","token":"G-24NFQ32TDR"},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 4.0.4","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/python/10/10.md","mtime":"2023-12-12T11:48:57.679Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2024-05-04T10:04:54.460Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
