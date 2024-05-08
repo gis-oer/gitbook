@@ -3,5 +3,6 @@
 .travis.yml
 /book/prh
 .DS_Store
+/book/ga.txt
 *.txt
 /book/materials/archive/previous_contents
