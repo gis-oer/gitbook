@@ -26,6 +26,10 @@
     
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
@@ -3325,9 +3329,10 @@
 <p><img src="pic/t8-3.png" alt="完成例"></p>
 <h3 id="手順">手順</h3>
 <ol>
-<li><a href="https://github.com/gis-oer/datasets/raw/master/tasks/susono_task.zip" target="_blank">裾野市_AED設置施設</a>をダウンロードし、susono_AED.csvのfx（経度）とfy（緯度）のフィールドを利用し、QGISでCSVデータを読み込む。</li>
-<li>QGISで読み込んだCSVデータを名前を付けて保存から新規のシェープファイルとして出力する。名前を付けて保存のデータ形式を<code>ESRI Shapefile</code>に切り替え、CRSはJGD2000とする。</li>
-<li><a href="../../08/08.md">空間データ</a> の教材を参考に、2.で作成したシェープファイルを世界測地系の平面直角座標系第Ⅷ系に変換する（名前を付けて保存から、新規のデータ作成を行う）。</li>
+<li><a href="https://github.com/gis-oer/datasets/raw/master/tasks/susono_task.zip" target="_blank">裾野市_AED設置施設</a>をダウンロードし、new_susono_aed.csvを使って、CSVアドレスマッチングサービスで、fx（経度）とfy（緯度）を求める。全国街区レベル（緯経度・旧測地系）を選択してください。旧測地系はTokyo（4301）です。</li>
+<li>QGISでCSVデータを読み込む。</li>
+<li>QGISで読み込んだCSVデータを名前を付けて保存から新規のシェープファイルとして出力する。名前を付けて保存のデータ形式を<code>ESRI Shapefile</code>に切り替え、CRSはTokyoとする。</li>
+<li><a href="../../08/08.md">空間データ</a> の教材を参考に、1.で作成したシェープファイルをJGD2011の平面直角座標系第Ⅷ系に変換する（名前を付けて保存から、新規のデータ作成を行う）。</li>
 <li><a href="../../QGIS/QGIS.md">QGISビギナーズマニュアル</a>を参考に、地図をレイアウトする(背景地図を設定すると良い)。</li>
 </ol>
 <h4 id="実習用データのソース">実習用データのソース</h4>
@@ -3375,7 +3380,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第3回・空間データ","level":"6.1.6","depth":2,"next":{"title":"第4回・空間データの統合・修正","level":"6.1.7","depth":2,"path":"materials/tasks/t_10.md","ref":"./materials/tasks/t_10.md","articles":[]},"previous":{"title":"第2回・既存データの地図データと属性データ","level":"6.1.5","depth":2,"path":"materials/tasks/t_07.md","ref":"./materials/tasks/t_07.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","collapsible-menu","creativecommons","favicon","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"github":{"url":"https://github.com/gis-oer/gis-oer"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 4.0.4","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/tasks/t_08.md","mtime":"2022-01-31T13:55:12.800Z","type":"markdown"},"gitbook":{"version":"4.0.8","time":"2024-05-08T13:58:21.467Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第3回・空間データ","level":"6.1.6","depth":2,"next":{"title":"第4回・空間データの統合・修正","level":"6.1.7","depth":2,"path":"materials/tasks/t_10.md","ref":"./materials/tasks/t_10.md","articles":[]},"previous":{"title":"第2回・既存データの地図データと属性データ","level":"6.1.5","depth":2,"path":"materials/tasks/t_07.md","ref":"./materials/tasks/t_07.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-sharing-plus","toggle-chapters","creativecommons","favicon","github","github-buttons"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/gis-oer/gis-oer"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/favicon.ico","bookmark":"./img/favicon.ico","appleTouch":"./img/apple-touch-icon.png","appleTouchMore":{"120x120":"./img/favicon.ico","180x180":"./img/favicon.ico"}},"github-buttons":{"buttons":[{"user":"gis-oer","repo":"gis-oer","type":"star","size":"small","count":true}]},"creativecommons":{},"sharing":{"qq":false,"all":["facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"GIS-Open Educational Resources WG","honkit":">= 4.0.4","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GIS実習オープン教材","language":"ja","gitbook":"*"},"file":{"path":"materials/tasks/t_08.md","mtime":"2024-05-24T06:14:47.653Z","type":"markdown"},"gitbook":{"version":"4.0.8","time":"2025-04-30T06:55:14.329Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3429,7 +3434,7 @@
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
         
     
         
